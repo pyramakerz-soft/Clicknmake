@@ -1,0 +1,55 @@
+SSH-Connection:
+
+ssh username@machine-ip -L 5555:127.0.0.1:5555
+
+ADB:
+
+adb connect 127.0.01:62001
+
+adb devices
+
+adb shell
+
+adb push filename /path/
+
+adb logcat --pid=$(adb shell pidof -s package_name)
+
+
+apktool:
+
+java -jar apktool.jar d allsafe.apk
+
+java -jar apktool.jar b allsafe/ -o allsafe2.apk
+
+apkleaks:
+
+python3 apkleaks.py -f app.apk -o results.txt
+
+Objection:
+
+objection -g package_name explore
+
+Frida:
+
+adb shell
+su
+cd data/local/tmp
+./frida-server4
+
+
+frida-ps -Ua
+
+
+frida -U -l hook.js -f infosecadventures.allsafe
+
+Medusa:
+
+python3 medusa.py
+
+showall
+
+use module_name
+
+run -f infosecadventures.allsafe
+
+
