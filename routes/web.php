@@ -211,8 +211,11 @@ Route::get('/student/dashboard', [DashboardController::class, 'index'])->middlew
 
 // Start student  dashboard routes
 
-Route::get('/theme', [DashboardController::class, 'index'])->name('student.theme');
+Route::get('/theme', [DashboardController::class, 'theme'])->name('student.theme');
+Route::get('/dashboard', [DashboardController::class, 'index'])->name('student.index');
+
 Route::get('/materials/{materialId}/units', [ControllersUnitController::class, 'index'])->name('student_units.index');
+Route::get('/units/{unitId}', [ControllersUnitController::class, 'unitContent'])->name('student_units.unitContent');
 Route::get('/units/{unitId}/chapters', [ControllersChapterController::class, 'index'])->name('student_chapters.index');
 
 Route::get('/chapters/{chapterId}/lessons', [ControllersChapterController::class, 'showLessons'])->name('student_lessons.index');

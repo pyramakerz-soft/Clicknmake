@@ -51,6 +51,32 @@
                                 <img src="{{ asset( $unit->image) }}" alt="{{ $unit->title }}" width="100">
                             @endif
                         </div>
+                        <div class="mb-3">
+                            <label for="ebook_path" class="form-label">Select Ebook</label>
+                            <select name="ebook_path" class="form-control" id="ebook_path">
+                                @foreach (\App\Models\Ebook::all() as $ebook)
+                                    <option value="{{ $ebook->file_path }}"
+                                        {{ Str::contains($unit->ebook_path, $ebook->file_path) ? 'selected' : '' }}>
+                                        {{ $ebook->title }}
+                                    </option>
+                                @endforeach
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="workshop_path" class="form-label">Select Workshop</label>
+                            <select name="workshop_path" class="form-control" id="workshop_path">
+                                @foreach (\App\Models\Ebook::all() as $ebook)
+                                    <option value="{{ $ebook->file_path }}"
+                                        {{ Str::contains($unit->workshop_path, $ebook->file_path) ? 'selected' : '' }}>
+                                        {{ $ebook->title }}
+                                    </option>
+                                @endforeach
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="video_path" class="form-label">Enter Video Url</label>
+                            <input type="text" name="video_path" id="video_path" class="form-control">
+                        </div>
 
                         <div class="mb-3 form-check">
                             <input type="checkbox" name="is_active" class="form-check-input" id="is_active" value="1"

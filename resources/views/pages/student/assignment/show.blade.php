@@ -8,7 +8,7 @@
 
 @php
     $menuItems = [
-        ['label' => 'Dashboard', 'icon' => 'fi fi-rr-table-rows', 'route' => route('student.theme')],
+        ['label' => 'Dashboard', 'icon' => 'fi fi-rr-table-rows', 'route' => route('student.index')],
         ['label' => 'Assignment', 'icon' => 'fas fa-home', 'route' => route('student.assignment')],
         ['label' => 'Chat', 'icon' => 'fa-solid fa-message', 'route' => route('chat.all')],
     ];

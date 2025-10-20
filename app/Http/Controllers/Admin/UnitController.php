@@ -124,6 +124,7 @@ class UnitController extends Controller
             'material_id' => 'required|exists:materials,id',
             'image' => 'nullable|mimes:jpeg,png,jpg,gif',
             'is_active' => 'nullable|boolean',
+            
         ]);
 
         // Handle image upload if exists
@@ -137,6 +138,9 @@ class UnitController extends Controller
             'title' => $request->title,
             'material_id' => $request->material_id,
             'is_active' => $request->is_active ?? 0,
+            'ebook_path' => $request->ebook_path,
+            'workshop_path' => $request->workshop_path,
+            'video_path' => $request->video_path,
         ]);
 
         return redirect()->route('units.index')->with('success', 'Unit updated successfully.');
