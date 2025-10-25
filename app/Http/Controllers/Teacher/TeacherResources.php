@@ -64,10 +64,16 @@ class TeacherResources extends Controller
         // $MaterialIds = Material::whereIn('stage_id', $stageIds)->pluck('id');
         $MaterialIds = $school->materials->whereIn('stage_id', $stageIds)->pluck('id');
 
-        $groupedLessons = LessonResource::with('lesson')
+        $lessonIds = Lesson::whereHas('chapter.unit.material', function ($query) use ($MaterialIds) {
+            $query->whereIn('id', $MaterialIds);
+        })->pluck('id');
+        $groupedLessons = LessonResource::with('lesson.chapter.unit.material')
+            ->whereIn('lesson_id', $lessonIds)
+            ->whereHas('schools', function ($query) use ($school) {
+                $query->where('schools.id', $school->id);
+            })
             ->get()
             ->groupBy('lesson_id');
-
         $themeStages = Material::whereIn('id', $MaterialIds)
             ->with(['resources', 'stage'])
             ->get()

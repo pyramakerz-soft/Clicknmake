@@ -6,8 +6,10 @@ use App\Http\Controllers\Controller;
 use App\Models\LessonResource;
 use App\Models\Lesson;
 use App\Models\Material;
+use App\Models\School;
 use App\Models\Stage;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Validator;
 use ZipArchive;
@@ -84,7 +86,9 @@ class LessonResourceController extends Controller
         $request->validate([
             'lesson_id' => 'required|exists:lessons,id',
             'file_path' => 'required|file|max:204800',
+            'title' => 'required|string|max:255',
         ]);
+        
 
         $file = $request->file('file_path');
         $extension = $file->getClientOriginalExtension();
@@ -111,12 +115,22 @@ class LessonResourceController extends Controller
                 $zip->extractTo($extractPath);
                 $zip->close();
 
-                LessonResource::create([
+                $lessonResource = LessonResource::create([
                     'lesson_id' => $request->lesson_id,
-                    'title' => $originalName,
+                    'title' => $request->title,
                     'path' => 'lesson_resources/' . $uniqueFolderName,
                     'type' => 'zip',
                 ]);
+                if ($request->filled('selected_schools')) {
+                    $schoolIds = json_decode($request->selected_schools, true);
+                    // Example: store pivot table relation
+                    foreach ($schoolIds as $schoolId) {
+                        DB::table('lesson_resource_school')->insert([
+                            'lesson_resource_id' => $lessonResource->id,
+                            'school_id' => $schoolId,
+                        ]);
+                    }
+                }
 
                 return redirect()->back()->with('success', 'ZIP file extracted and lesson resource saved successfully.');
             } else {
@@ -128,15 +142,36 @@ class LessonResourceController extends Controller
 
             $file->move($basePath, $fileName);
 
-            LessonResource::create([
+            $lessonResource = LessonResource::create([
                 'lesson_id' => $request->lesson_id,
-                'title' => $originalName,
+                'title' => $request->title,
                 'path' => $filePath,
                 'type' => $extension,
             ]);
 
+            if ($request->filled('selected_schools')) {
+                $schoolIds = json_decode($request->selected_schools, true);
+                // Example: store pivot table relation
+                foreach ($schoolIds as $schoolId) {
+                    DB::table('lesson_resource_school')->insert([
+                        'lesson_resource_id' => $lessonResource->id,
+                        'school_id' => $schoolId,
+                    ]);
+                }
+            }
+
             return redirect()->back()->with('success', 'Lesson resource uploaded successfully.');
         }
+    }
+    public function getSchoolsByLesson($lessonId)
+    {
+        $lesson = Lesson::with('chapter.unit.material.stage')->findOrFail($lessonId);
+        $gradeId = $lesson->chapter->unit->material->stage_id ?? null;
+        $schools = School::whereHas('stages', function ($query) use ($gradeId) {
+            $query->where('stages.id', $gradeId);
+        })->get();
+        
+        return response()->json($schools);
     }
     public function download(Request $request)
     {
@@ -179,16 +214,34 @@ class LessonResourceController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit($id)
     {
+        $resource = LessonResource::with('lesson.chapter.unit.material', 'schools')->findOrFail($id);
+        $schools = School::all();
+
+        return view('admin.lesson_resources.edit', compact('resource', 'schools'));
     }
 
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, string $student_id)
+    public function update(Request $request, $id)
     {
+        $resource = LessonResource::findOrFail($id);
+
+        $request->validate([
+            'title' => 'required|string|max:255',
+        ]);
+
+        $resource->update([
+            'title' => $request->title,
+        ]);
+
+        if ($request->filled('selected_schools')) {
+            $schoolIds = json_decode($request->selected_schools, true);
+            $resource->schools()->sync($schoolIds);
+        }
+
+        return redirect()->route('lesson_resource.index')->with('success', 'Lesson resource updated successfully.');
     }
+
 
     /**
      * Remove the specified resource from storage.

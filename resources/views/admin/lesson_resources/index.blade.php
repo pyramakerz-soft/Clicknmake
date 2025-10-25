@@ -90,6 +90,7 @@
                                         <button type="submit" class="btn btn-danger"
                                             onclick="return confirm('Are you sure you want to delete this resource?');">Delete</button>
                                     </form>
+                                    <a href="{{ route('lesson_resource.edit', $resource->id) }}" class="btn btn-primary">Edit</a>
                                 </td>
                             </tr>
                             @endforeach

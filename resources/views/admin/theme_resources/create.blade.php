@@ -43,6 +43,11 @@
                         <label for="file_path" class="form-label">Upload Resource</label>
                         <input type="file" name="file_path" class="form-control" id="file_path" required>
                     </div>
+                    
+                    <div class="mb-3">
+                        <label for="title" class="form-label">Title</label>
+                        <input type="text" name="title" class="form-control" id="title" required>
+                    </div>
 
                     <button type="submit" class="btn btn-primary">Add Resource</button>
                 </form>

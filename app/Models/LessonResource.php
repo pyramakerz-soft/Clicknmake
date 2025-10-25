@@ -20,4 +20,8 @@ class LessonResource extends Model
     {
         return $this->belongsTo(User::class, 'teacher_id');
     }
+    public function schools()
+    {
+        return $this->belongsToMany(School::class, 'lesson_resource_school');
+    }
 }

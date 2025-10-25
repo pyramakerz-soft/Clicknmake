@@ -119,33 +119,50 @@
 
         <!-- LESSON RESOURCES -->
         <h4 class="section-title">Lesson Resources</h4>
-        <div class="row">
-            @forelse ($groupedLessons as $lessonId => $resources)
-                <div class="col-md-4 mb-4">
-                    <div class="resource-card" onclick="toggleDetails('lesson-{{ $lessonId }}')">
-                        <h5><strong style="color: #17253e;">Lesson:</strong>
-                            <span class="title">{{ $resources->first()->lesson->title ?? 'N/A' }}</span>
-                        </h5>
-                        <ul class="mt-3 resource-list p-0" id="lesson-{{ $lessonId }}" style="display: none;">
-                            @foreach ($resources as $res)
-                                <li class="d-flex justify-content-between align-items-center">
-                                    <div>
-                                        <div class="fw-bold">{{ $res->title }}</div>
-                                        <div class="resource-type">{{ strtoupper($res->type) }}</div>
-                                    </div>
-                                    <a href="{{ asset($res->path) }}" target="_blank"
-                                        class="btn btn-sm btn-outline-primary ms-3">
-                                        {{ strtoupper($res->type) === 'ZIP' ? 'Download' : 'View' }}
-                                    </a>
-                                </li>
-                            @endforeach
-                        </ul>
-                    </div>
+<div class="row">
+    @forelse ($groupedLessons as $lessonId => $resources)
+        @php
+            $lesson = $resources->first()->lesson ?? null;
+            $chapter = $lesson?->chapter;
+            $unit = $chapter?->unit;
+            $material = $unit?->material;
+        @endphp
+
+        <div class="col-md-4 mb-4">
+            <div class="resource-card" onclick="toggleDetails('lesson-{{ $lessonId }}')">
+                <h5>
+                    <strong style="color: #17253e;">Lesson:</strong>
+                    <span class="title">{{ $lesson?->title ?? 'N/A' }}</span>
+                </h5>
+
+                <!-- Lesson hierarchy -->
+                <div class="mt-2 text-muted" style="font-size: 0.9rem;">
+                    <div><strong>Material:</strong> {{ $material?->title ?? 'N/A' }}</div>
+                    <div><strong>Unit:</strong> {{ $unit?->title ?? 'N/A' }}</div>
+                    <div><strong>Chapter:</strong> {{ $chapter?->title ?? 'N/A' }}</div>
                 </div>
-            @empty
-                <p class="text-muted">No lesson resources found.</p>
-            @endforelse
+
+                <ul class="mt-3 resource-list p-0" id="lesson-{{ $lessonId }}" style="display: none;">
+                    @foreach ($resources as $res)
+                        <li class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <div class="fw-bold">{{ $res->title }}</div>
+                                <div class="resource-type">{{ strtoupper($res->type) }}</div>
+                            </div>
+                            <a href="{{ asset($res->path) }}" target="_blank"
+                               class="btn btn-sm btn-outline-primary ms-3">
+                                {{ strtoupper($res->type) === 'ZIP' ? 'Download' : 'View' }}
+                            </a>
+                        </li>
+                    @endforeach
+                </ul>
+            </div>
         </div>
+    @empty
+        <p class="text-muted">No lesson resources found.</p>
+    @endforelse
+</div>
+
 
         <hr class="my-5">
 

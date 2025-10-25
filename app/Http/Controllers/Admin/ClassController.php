@@ -164,4 +164,58 @@ class ClassController extends Controller
 
         return Excel::download(new StudentsExport($id), $fileName);
     }
+
+    public function promoteMultiple(Request $request)
+    {
+        $request->validate([
+            'class_ids' => 'required|array|min:1',
+        ]);
+
+        $classIds = $request->class_ids;
+        $classes = Group::with(['stage', 'students.stage'])->whereIn('id', $classIds)->get();
+
+        $promotedCount = 0;
+        $skippedClasses = [];
+
+        foreach ($classes as $class) {
+            // 🔹 Extract numeric grade level (e.g., "Grade 3" → 3)
+            $currentGradeNum = (int) filter_var($class->stage->name, FILTER_SANITIZE_NUMBER_INT);
+
+            if (!$currentGradeNum) {
+                $skippedClasses[] = $class->name . ' (' . $class->stage->name . ')';
+                continue;
+            }
+
+            // 🔹 Find next stage by incrementing number
+            $nextStageName = 'Grade ' . ($currentGradeNum + 1);
+            $nextStage = Stage::whereRaw('LOWER(name) = ?', [strtolower($nextStageName)])->first();
+
+            if (!$nextStage) {
+                // No higher grade — skip this class
+                $skippedClasses[] = $class->name . ' (' . $class->stage->name . ')';
+                continue;
+            }
+
+            // ✅ Promote class to next stage
+            $class->update(['stage_id' => $nextStage->id]);
+            foreach ($class->students as $student) {
+                if (isset($student->stage)) {
+                    $student->update(['stage_id' => $nextStage->id]);
+                }
+            }
+
+            $promotedCount++;
+        }
+
+        // ✅ Build success message
+        $message = "{$promotedCount} class(es) promoted successfully.";
+        if (count($skippedClasses) > 0) {
+            $message .= " The following class(es) were skipped (no higher grade): " . implode(', ', $skippedClasses) . ".";
+        }
+
+        return response()->json(['message' => $message]);
+    }
+
+
+
 }

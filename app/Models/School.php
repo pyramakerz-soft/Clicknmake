@@ -70,5 +70,9 @@ class School extends Model
     {
         return $this->belongsToMany(Observer::class, 'observer_school');
     }
+    public function lessonResources()
+    {
+        return $this->belongsToMany(LessonResource::class, 'lesson_resource_school');
+    }
 
 }

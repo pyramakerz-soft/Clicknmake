@@ -62,6 +62,7 @@ class MaterialResourceController extends Controller
         $request->validate([
             'theme_id' => 'required|exists:materials,id',
             'file_path' => 'required|file|max:204800',
+            'title' => 'required|string|max:255',
         ]);
 
         $file = $request->file('file_path');
@@ -73,7 +74,7 @@ class MaterialResourceController extends Controller
 
         MaterialResource::create([
             'material_id' => $request->theme_id,
-            'title' => pathinfo($file->getClientOriginalName(), PATHINFO_FILENAME),
+            'title' => $request->title,
             'path' => $filePath,
             'type' => $fileType,
         ]);

@@ -91,10 +91,15 @@ Route::prefix('admin')->group(function () {
         Route::resource('lessons', LessonController::class);
         Route::resource('stages', StageController::class);
         Route::resource('lesson_resource', LessonResourceController::class);
+        Route::get('/lesson-resource/schools/{lessonId}', [LessonResourceController::class, 'getSchoolsByLesson'])
+            ->name('lesson_resource.schools');
+
         Route::resource('theme_resource', MaterialResourceController::class);
         // Route::resource('assignments', AssignmentController::class);
         Route::resource('ebooks', EbookController::class);
         Route::resource('classes', ClassController::class);
+        Route::post('/classes/promote-multiple', [ClassController::class, 'promoteMultiple'])->name('classes.promoteMultiple');
+
         Route::get('/lessons/{lesson}/view', [LessonController::class, 'viewEbook'])->name('lesson.view');
 
         Route::resource('students', StudentController::class);
