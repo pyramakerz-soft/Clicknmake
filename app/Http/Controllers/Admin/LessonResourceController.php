@@ -63,19 +63,21 @@ class LessonResourceController extends Controller
         //     ->get()
         //     ->sortBy(fn($lesson) => $lesson->chapter?->unit?->material?->id ?? '');
 
-        $lessons = Lesson::query()
-            ->with('chapter.unit.material')
-            ->get()
-            ->sortBy([
-                fn($lesson) => $lesson->chapter?->unit?->material?->title ?? 0,
-                fn($lesson) => $lesson->chapter?->unit?->title ?? 0,
-                fn($lesson) => $lesson->chapter?->title ?? 0,
-                fn($lesson) => strtolower($lesson->title),
-            ]);
+        // $lessons = Lesson::query()
+        //     ->with('chapter.unit.material')
+        //     ->get()
+        //     ->sortBy([
+        //         fn($lesson) => $lesson->chapter?->unit?->material?->title ?? 0,
+        //         fn($lesson) => $lesson->chapter?->unit?->title ?? 0,
+        //         fn($lesson) => $lesson->chapter?->title ?? 0,
+        //         fn($lesson) => strtolower($lesson->title),
+        //     ]);
+
+        $stages = Stage::with('materials.units.chapters.lessons')->get();
 
 
 
-        return view('admin.lesson_resources.create', compact('lessons'));
+        return view('admin.lesson_resources.create', compact('stages'));
     }
 
     /**
@@ -88,7 +90,6 @@ class LessonResourceController extends Controller
             'file_path' => 'required|file|max:204800',
             'title' => 'required|string|max:255',
         ]);
-        
 
         $file = $request->file('file_path');
         $extension = $file->getClientOriginalExtension();
@@ -100,6 +101,15 @@ class LessonResourceController extends Controller
             File::makeDirectory($basePath, 0777, true, true);
         }
 
+        // 🧩 Get school IDs (if user didn't select, fallback to all)
+        if ($request->filled('selected_schools')) {
+            $schoolIds = json_decode($request->selected_schools, true);
+        } else {
+            // fallback: attach to all schools
+            $schoolIds = \App\Models\School::pluck('id')->toArray();
+        }
+
+        // 🧱 Handle ZIP files
         if (strtolower($extension) === 'zip') {
             $zip = new ZipArchive;
             $zipPath = $file->getRealPath();
@@ -121,48 +131,35 @@ class LessonResourceController extends Controller
                     'path' => 'lesson_resources/' . $uniqueFolderName,
                     'type' => 'zip',
                 ]);
-                if ($request->filled('selected_schools')) {
-                    $schoolIds = json_decode($request->selected_schools, true);
-                    // Example: store pivot table relation
-                    foreach ($schoolIds as $schoolId) {
-                        DB::table('lesson_resource_school')->insert([
-                            'lesson_resource_id' => $lessonResource->id,
-                            'school_id' => $schoolId,
-                        ]);
-                    }
-                }
+
+                // Attach schools (all or selected)
+                $lessonResource->schools()->sync($schoolIds);
 
                 return redirect()->back()->with('success', 'ZIP file extracted and lesson resource saved successfully.');
             } else {
                 return back()->withErrors(['file_path' => 'Failed to open the ZIP file.']);
             }
-        } else {
-            $fileName = time() . '_' . $file->getClientOriginalName();
-            $filePath = 'lesson_resources/' . $fileName;
-
-            $file->move($basePath, $fileName);
-
-            $lessonResource = LessonResource::create([
-                'lesson_id' => $request->lesson_id,
-                'title' => $request->title,
-                'path' => $filePath,
-                'type' => $extension,
-            ]);
-
-            if ($request->filled('selected_schools')) {
-                $schoolIds = json_decode($request->selected_schools, true);
-                // Example: store pivot table relation
-                foreach ($schoolIds as $schoolId) {
-                    DB::table('lesson_resource_school')->insert([
-                        'lesson_resource_id' => $lessonResource->id,
-                        'school_id' => $schoolId,
-                    ]);
-                }
-            }
-
-            return redirect()->back()->with('success', 'Lesson resource uploaded successfully.');
         }
+
+        // 🧱 Handle normal files
+        $fileName = time() . '_' . $file->getClientOriginalName();
+        $filePath = 'lesson_resources/' . $fileName;
+
+        $file->move($basePath, $fileName);
+
+        $lessonResource = LessonResource::create([
+            'lesson_id' => $request->lesson_id,
+            'title' => $request->title,
+            'path' => $filePath,
+            'type' => $extension,
+        ]);
+
+        // Attach schools (all or selected)
+        $lessonResource->schools()->sync($schoolIds);
+
+        return redirect()->back()->with('success', 'Lesson resource uploaded successfully.');
     }
+
     public function getSchoolsByLesson($lessonId)
     {
         $lesson = Lesson::with('chapter.unit.material.stage')->findOrFail($lessonId);

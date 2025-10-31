@@ -20,4 +20,8 @@ class MaterialResource extends Model
     {
         return $this->belongsTo(Material::class);
     }
+    public function schools()
+    {
+        return $this->belongsToMany(School::class, 'material_resource_school');
+    }
 }

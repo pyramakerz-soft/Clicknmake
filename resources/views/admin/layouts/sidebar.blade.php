@@ -27,12 +27,7 @@
                     </a>
                 </li>
             @endcan
-            {{-- <li class="sidebar-item {{ request()->is('admin/teacher_resources') ? 'active' : '' }}">
-            <a class="sidebar-link" href="{{ route('teacher_resources.index') }}">
-                <i class="align-middle" data-feather="sliders"></i> <span class="align-middle">Teacher
-                    resources</span>
-            </a>
-            </li> --}}
+           
             @can('read role')
                 <li class="sidebar-item {{ request()->is('admin/roles') ? 'active' : '' }}">
                     <a class="sidebar-link" href="{{ route('admin.roles.index') }}">
@@ -70,6 +65,12 @@
                 <a class="sidebar-link" href="{{ route('theme_resource.index') }}">
                     <i class="align-middle" data-feather="sliders"></i><span class="align-middle">
                         Theme Resources</span>
+                </a>
+            </li>
+            <li class="sidebar-item {{ request()->is('admin/teacher_resources') ? 'active' : '' }}">
+                <a class="sidebar-link" href="{{ route('teacher_resources.index') }}">
+                    <i class="align-middle" data-feather="sliders"></i> <span class="align-middle">Teacher
+                        resources</span>
                 </a>
             </li>
 

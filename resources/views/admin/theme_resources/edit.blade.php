@@ -10,13 +10,10 @@
         <main class="content">
             <div class="container-fluid p-0">
 
-                <h1>Edit Lesson Resource</h1>
+                <h1>Edit Theme Resource</h1>
 
                 @if (session('success'))
                     <div class="alert alert-success">{{ session('success') }}</div>
-                @endif
-                @if (session('error'))
-                    <div class="alert alert-danger">{{ session('error') }}</div>
                 @endif
                 @if ($errors->any())
                     <div class="alert alert-danger">
@@ -28,79 +25,43 @@
                     </div>
                 @endif
 
-                <form action="{{ route('lesson_resource.update', $resource->id) }}" method="POST" enctype="multipart/form-data">
+                <form action="{{ route('theme_resource.update', $resource->id) }}" method="POST" enctype="multipart/form-data">
                     @csrf
                     @method('PUT')
 
-                    <!-- Grade (Stage) -->
+                    <!-- Display Grade (Stage) -->
                     <div class="mb-3">
                         <label for="stage_id" class="form-label">Grade</label>
                         <select id="stage_id" class="form-control" disabled>
-                            <option value="{{ $resource->lesson->chapter->unit->material->stage->id }}">
-                                {{ $resource->lesson->chapter->unit->material->stage->name }}
+                            <option value="{{ $resource->material->stage->id }}">
+                                {{ $resource->material->stage->name }}
                             </option>
                         </select>
-                        <input type="hidden" name="stage_id" value="{{ $resource->lesson->chapter->unit->material->stage->id }}">
+                        <input type="hidden" name="stage_id" value="{{ $resource->material->stage->id }}">
                     </div>
 
-                    <!-- Theme (Material) -->
+                    <!-- Display Theme (Material) -->
                     <div class="mb-3">
-                        <label for="material_id" class="form-label">Theme</label>
-                        <select id="material_id" class="form-control" disabled>
-                            <option value="{{ $resource->lesson->chapter->unit->material->id }}">
-                                {{ $resource->lesson->chapter->unit->material->title }}
+                        <label for="theme_id" class="form-label">Theme</label>
+                        <select id="theme_id" class="form-control" disabled>
+                            <option value="{{ $resource->material->id }}">
+                                {{ $resource->material->title }}
                             </option>
                         </select>
-                        <input type="hidden" name="material_id" value="{{ $resource->lesson->chapter->unit->material->id }}">
-                    </div>
-
-                    <!-- Unit -->
-                    <div class="mb-3">
-                        <label for="unit_id" class="form-label">Unit</label>
-                        <select id="unit_id" class="form-control" disabled>
-                            <option value="{{ $resource->lesson->chapter->unit->id }}">
-                                {{ $resource->lesson->chapter->unit->title }}
-                            </option>
-                        </select>
-                        <input type="hidden" name="unit_id" value="{{ $resource->lesson->chapter->unit->id }}">
-                    </div>
-
-                    <!-- Chapter -->
-                    <div class="mb-3">
-                        <label for="chapter_id" class="form-label">Chapter</label>
-                        <select id="chapter_id" class="form-control" disabled>
-                            <option value="{{ $resource->lesson->chapter->id }}">
-                                {{ $resource->lesson->chapter->title }}
-                            </option>
-                        </select>
-                        <input type="hidden" name="chapter_id" value="{{ $resource->lesson->chapter->id }}">
-                    </div>
-
-                    <!-- Lesson -->
-                    <div class="mb-3">
-                        <label for="lesson_id" class="form-label">Lesson</label>
-                        <select id="lesson_id" class="form-control" disabled>
-                            <option value="{{ $resource->lesson->id }}">
-                                {{ $resource->lesson->title }}
-                            </option>
-                        </select>
-                        <input type="hidden" name="lesson_id" value="{{ $resource->lesson->id }}">
+                        <input type="hidden" name="theme_id" value="{{ $resource->material->id }}">
                     </div>
 
                     <div class="mb-3">
-                        <label for="title" class="form-label">Resource Title</label>
-                        <input type="text" name="title" id="title" class="form-control" 
+                        <label for="title" class="form-label">Title</label>
+                        <input type="text" name="title" class="form-control" id="title" 
                                value="{{ $resource->title }}" required>
                     </div>
 
                     <!-- Select Schools Button -->
-                    <button type="button" class="btn btn-secondary" id="selectSchoolsBtn">
-                        Edit School Visibility
-                    </button>
+                    <button type="button" class="btn btn-secondary" id="selectSchoolsBtn">Edit School Visibility</button>
 
-                    <button type="submit" class="btn btn-primary">Update Resource</button>
+                    <button type="submit" class="btn btn-primary">Save Changes</button>
 
-                    <!-- Hidden input for selected schools -->
                     <input type="hidden" name="selected_schools" id="selected_schools" 
                            value='@json($resource->schools->pluck("id"))'>
                 </form>
@@ -116,9 +77,7 @@
                             <div class="modal-body">
                                 <div class="d-flex justify-content-between align-items-center mb-2">
                                     <strong>Schools List</strong>
-                                    <button type="button" id="selectAllSchools" class="btn btn-sm btn-outline-primary">
-                                        Select All
-                                    </button>
+                                    <button type="button" id="selectAllSchools" class="btn btn-sm btn-outline-primary">Select All</button>
                                 </div>
                                 <div id="schoolsList" class="row g-3"></div>
                             </div>
@@ -145,17 +104,17 @@ document.addEventListener('DOMContentLoaded', function() {
     const selectAllBtn = document.getElementById('selectAllSchools');
 
     let allSchools = @json($schools);
-    let selectedSchools = JSON.parse(selectedSchoolsInput.value || '[]');
+    let selectedSchools = @json($resource->schools->pluck('id'));
 
     selectSchoolsBtn.addEventListener('click', function() {
         schoolsList.innerHTML = '';
         allSchools.forEach(school => {
-            const checked = selectedSchools.includes(school.id) ? 'checked' : '';
             const div = document.createElement('div');
             div.classList.add('col-md-4');
+            const isChecked = selectedSchools.includes(school.id);
             div.innerHTML = `
                 <div class="form-check">
-                    <input class="form-check-input school-checkbox" type="checkbox" value="${school.id}" ${checked} id="school_${school.id}">
+                    <input class="form-check-input school-checkbox" type="checkbox" value="${school.id}" ${isChecked ? 'checked' : ''} id="school_${school.id}">
                     <label class="form-check-label" for="school_${school.id}">${school.name}</label>
                 </div>
             `;
@@ -169,8 +128,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     saveSchoolsBtn.addEventListener('click', function() {
-        const selected = Array.from(document.querySelectorAll('.school-checkbox:checked')).map(cb => cb.value);
-        selectedSchoolsInput.value = JSON.stringify(selected);
+        selectedSchools = Array.from(document.querySelectorAll('.school-checkbox:checked')).map(cb => parseInt(cb.value));
+        selectedSchoolsInput.value = JSON.stringify(selectedSchools);
         bootstrap.Modal.getInstance(document.getElementById('schoolsModal')).hide();
     });
 });

@@ -8,6 +8,7 @@ use App\Models\Lesson;
 use App\Models\LessonResource;
 use App\Models\Material;
 use App\Models\MaterialResource;
+use App\Models\School;
 use App\Models\Stage;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
@@ -47,17 +48,26 @@ class MaterialResourceController extends Controller
         //     ->get()
         //     ->sortBy(fn($lesson) => $lesson->chapter?->unit?->material?->id ?? '');
 
-        $themes = Material::all();
+        // $themes = Material::all();
+        $stages = Stage::all();
 
 
-
-        return view('admin.theme_resources.create', compact('themes'));
+        return view('admin.theme_resources.create', compact('stages'));
     }
+    public function getThemesByStage($stageId)
+    {
+        $themes = Material::where('stage_id', $stageId)
+            ->select('id', 'title')
+            ->get();
+
+        return response()->json($themes);
+    }
+
 
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+   public function store(Request $request)
     {
         $request->validate([
             'theme_id' => 'required|exists:materials,id',
@@ -72,15 +82,37 @@ class MaterialResourceController extends Controller
 
         $file->move(public_path('material_resources'), $fileName);
 
-        MaterialResource::create([
+        $resource = MaterialResource::create([
             'material_id' => $request->theme_id,
             'title' => $request->title,
             'path' => $filePath,
             'type' => $fileType,
         ]);
 
+        // Decode selected schools from request
+        $selectedSchools = json_decode($request->selected_schools ?? '[]', true);
+
+        // 🟢 If no schools were selected, assign the resource to ALL schools by default
+        if (empty($selectedSchools)) {
+            $selectedSchools = School::pluck('id')->toArray();
+        }
+
+        // Sync school visibility
+        $resource->schools()->sync($selectedSchools);
+
         return redirect()->back()->with('success', 'Material resource uploaded successfully.');
     }
+
+
+    public function getSchoolsByTheme($themeId)
+    {
+        $schools = School::whereHas('materials', function ($query) use ($themeId) {
+            $query->where('materials.id', $themeId);
+        })->get();
+        
+        return response()->json($schools);
+    }
+
     public function download(Request $request)
     {
         $resources = MaterialResource::where('material_id', $request->download_theme_id)->get();
@@ -245,12 +277,44 @@ class MaterialResourceController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id) {}
+    public function edit($id)
+    {
+        $resource = MaterialResource::with('material.stage', 'schools')->findOrFail($id);
+        $themes = Material::all();
+        $schools = School::all();
 
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, string $student_id) {}
+        return view('admin.theme_resources.edit', compact('resource', 'themes', 'schools'));
+    }
+
+
+    public function update(Request $request, $id)
+    {
+        $resource = MaterialResource::findOrFail($id);
+
+        $request->validate([
+            'title' => 'required|string|max:255',
+            'theme_id' => 'required|exists:materials,id',
+            'selected_schools' => 'nullable|string'
+        ]);
+
+        // Update basic info
+        $resource->update([
+            'title' => $request->title,
+            'material_id' => $request->theme_id,
+        ]);
+
+        // Update school visibility
+        $selectedSchools = json_decode($request->selected_schools, true) ?? [];
+
+        // If none are selected, default to all
+        if (empty($selectedSchools)) {
+            $selectedSchools = School::pluck('id')->toArray();
+        }
+
+        $resource->schools()->sync($selectedSchools);
+
+        return redirect()->route('theme_resource.index')->with('success', 'Resource updated successfully.');
+    }
 
     /**
      * Remove the specified resource from storage.

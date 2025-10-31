@@ -18,10 +18,13 @@ class TeacherResource extends Model
     {
         return $this->belongsTo(Stage::class);
     }
+    public function material()
+    {
+        return $this->belongsTo(Material::class);
+    }
 
     public function school()
     {
         return $this->belongsTo(School::class);
     }
-
 }

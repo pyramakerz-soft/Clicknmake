@@ -76,8 +76,8 @@ Route::prefix('admin')->group(function () {
     Route::get('/get-students-school/{school}', [ReportController::class, 'getSchoolStudents'])->name('getSchoolStudents');
     Route::get('/login', [AuthController::class, 'showLoginForm'])->name('admin.login');
     Route::post('/loginP', [AuthController::class, 'login'])
-    ->middleware('throttle:5,1') 
-    ->name('admin.login.post');
+        ->middleware('throttle:5,1')
+        ->name('admin.login.post');
     Route::middleware('auth:admin,web')->group(function () {
         Route::post('/logout', [AuthController::class, 'logout'])->name('admin.logout');
 
@@ -95,6 +95,13 @@ Route::prefix('admin')->group(function () {
             ->name('lesson_resource.schools');
 
         Route::resource('theme_resource', MaterialResourceController::class);
+
+        Route::get('/theme-resource/schools/{themeId}', [MaterialResourceController::class, 'getSchoolsByTheme'])
+            ->name('theme_resource.schools');
+
+        Route::get('/theme-resource/themes/{stageId}', [MaterialResourceController::class, 'getThemesByStage'])
+            ->name('theme_resource.themes');
+
         // Route::resource('assignments', AssignmentController::class);
         Route::resource('ebooks', EbookController::class);
         Route::resource('classes', ClassController::class);
