@@ -8,6 +8,7 @@
     $menuItems = [
         ['label' => 'Observations', 'icon' => 'fi fi-rr-table-rows', 'route' => route('observer.dashboard')],
         ['label' => 'Observations Report', 'icon' => 'fi fi-rr-table-rows', 'route' => route('observer.report')],
+        ['label' => 'Resources', 'icon' => 'fi fi-rr-table-rows', 'route' => route('observer.teacherResources')],
     ];
 @endphp
 
@@ -60,6 +61,15 @@
                     </button>
                 </div>
             @endif
+              <form method="GET" class="mb-3">
+                    <select name="template_id" onchange="this.form.submit()" class="form-control" style="width: 200px;">
+                        @foreach($templates as $template)
+                        <option value="{{ $template->id }}" {{ $selectedTemplateId == $template->id ? 'selected' : '' }}>
+                            {{ $template->name }}
+                        </option>
+                        @endforeach
+                    </select>
+                </form>
             @if (isset($data))
                 <div class="flex mb-4" style="gap:10px; padding:10px; justify-content:space-between">
                     <div class="mb-4" style="gap:10px; padding:10px; max-width:75%; flex:1">
@@ -159,6 +169,7 @@
         <div class="bg-white rounded-lg shadow-lg p-6 w-full sm:w-3/4 md:w-1/2 lg:w-1/3 max-h-[90vh] overflow-y-auto">
             <h2 class="text-xl font-bold mb-4">Filters</h2>
             <form id="filter-form-modal" action="{{ route('observer.report') }}" method="GET">
+                <input type="hidden" name="template_id" value="{{ $selectedTemplateId }}">
                 <div class="mb-4">
                     <label for="teacher_id_modal" class="block text-sm font-medium text-gray-700">Teacher</label>
                     <select name="teacher_id" id="teacher_id_modal" class="w-full p-2 border border-gray-300 rounded">

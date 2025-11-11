@@ -22,6 +22,16 @@
                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                 </div>
                 @endif
+                <form method="GET" class="mb-3">
+                    <select name="template_id" onchange="this.form.submit()" class="form-control" style="width: 200px;">
+                        @foreach($templates as $template)
+                        <option value="{{ $template->id }}" {{ $selectedTemplateId == $template->id ? 'selected' : '' }}>
+                            {{ $template->name }}
+                        </option>
+                        @endforeach
+                    </select>
+                </form>
+
                 <div id="content-to-export" style="margin-top: -20px;">
                     <div class="p-3 text-secondary my-4" style="padding: 20px;">
                         <div class="d-flex" style="justify-content: space-between;">
@@ -236,7 +246,7 @@
                 document.body.removeChild(tempContainer);
             });
     });
-</script>
+</script>   
 
 <script>
     document.getElementById('export-excel').addEventListener('click', function() {

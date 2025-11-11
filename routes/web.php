@@ -119,6 +119,7 @@ Route::prefix('admin')->group(function () {
         Route::get('observers/observation_report', [ObserverController::class, 'observationReport'])->name('observers.obsReport');
         Route::delete('/questions/{id}', [ObserverController::class, 'deleteQuestion'])->name('questions.destroy');
         // Routes for questions and headers
+        Route::post('/template/store', [ObserverController::class, 'storeTemplate'])->name('templates.store');
         Route::post('/questions/store', [ObserverController::class, 'storeQuestion'])->name('questions.storeQuestion');
         Route::delete('/headers/{id}', [ObserverController::class, 'deleteHeader'])->name('headers.deleteHeader');
         Route::post('/headers/store', [ObserverController::class, 'storeHeader'])->name('headers.storeHeader');
@@ -364,11 +365,19 @@ Route::prefix('observer')->middleware('auth:observer')->group(function () {
 
     // Route::get('/observations/export', [ObserverDashboardController::class, 'exportObservations'])->name('observer.observations.export');
 
-    Route::get('/observer/observations/export', [ObserverDashboardController::class, 'exportObservations'])
+    Route::get('/observations/export', [ObserverDashboardController::class, 'exportObservations'])
         ->name('observer.observations.export');
 
-    Route::get('/observer/observation/{id}/export', [ObserverDashboardController::class, 'exportSingleObservation'])
+    Route::get('/observation/{id}/export', [ObserverDashboardController::class, 'exportSingleObservation'])
         ->name('observer.observation.export');
+
+    Route::get('/teacher_resources', [ObserverDashboardController::class, 'showTeacherResources'])
+        ->name('observer.teacherResources');
+
+    Route::get('/admin_resources', [ObserverDashboardController::class, 'showAdminResources'])
+        ->name('observer.admin_resources');
+
+
 
 
     Route::get('/report', [ObserverDashboardController::class, 'report'])->name('observer.report');
@@ -378,7 +387,7 @@ Route::prefix('observer')->middleware('auth:observer')->group(function () {
     Route::get('/observation/get_coteachers/{school_id}', [ObserverDashboardController::class, 'getCoteachers'])->name('observer.observation.getCoteachers');
 
     Route::get('/observation/get_stages/{teacher_id}', [ObserverDashboardController::class, 'getStages'])->name('observer.observation.getStages');
-    Route::get('/observation/store/', [ObserverDashboardController::class, 'store'])->name('observation.store');
+    Route::post('/observation/store/', [ObserverDashboardController::class, 'store'])->name('observation.store');
     Route::delete('/observation/delete/{id}', [ObserverDashboardController::class, 'destroy'])->name('observation.destroy');
     Route::get('/observation/view/{id}', [ObserverDashboardController::class, 'view'])->name('observation.view');
 });

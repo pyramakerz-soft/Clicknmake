@@ -102,9 +102,9 @@ $userAuth = auth()->guard('teacher')->user();
 @section('content')
 @include('components.profile')
 
-<div class="container mt-4">
+<div class="container mt-4" style="max-width: 1450px !important;">
     <div class="d-flex justify-content-between align-items-center mb-4">
-        <h4 class="section-title">My Resources</h4>
+        <h4 class="section-title">Teacher Resources</h4>
         <div class="d-flex gap-2">
             <a href="{{ route('teacher.resources.admin') }}" class="btn btn-outline-primary ">
                 <i class="fa-solid fa-folder-open me-1"></i> View Admin Resources
@@ -168,6 +168,11 @@ $userAuth = auth()->guard('teacher')->user();
 
                                         <div class="card-body d-flex flex-column">
                                             <h6 class="fw-bold">{{ $res->name }}</h6>
+                                            @if($res->teacher)
+                                            <p class="text-muted small mb-1">
+                                                <i>By {{ $res->teacher->name }}</i>
+                                            </p>
+                                            @endif
                                             <p class="text-muted small mb-2">
                                                 {{ $res->video_url ? 'VIDEO' : strtoupper(pathinfo($res->file_path, PATHINFO_EXTENSION)) }}
                                             </p>
@@ -178,7 +183,7 @@ $userAuth = auth()->guard('teacher')->user();
                                                     title="{{ $res->video_url ? 'Watch Video' : 'View File' }}">
                                                     <i class="{{ $res->video_url ? 'fas fa-play' : 'fas fa-eye' }}"></i>
                                                 </a>
-
+                                                @if($userAuth && $userAuth->id === $res->teacher_id)
                                                 <a href="{{ route('teacher.resources.edit', $res->id) }}"
                                                     class="btn btn-sm btn-outline-warning">
                                                     <i class="fas fa-edit"></i>
@@ -191,6 +196,7 @@ $userAuth = auth()->guard('teacher')->user();
                                                         <i class="fa-solid fa-trash"></i>
                                                     </button>
                                                 </form>
+                                                @endif
                                             </div>
                                         </div>
 

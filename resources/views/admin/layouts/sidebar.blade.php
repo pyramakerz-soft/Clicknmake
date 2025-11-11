@@ -162,8 +162,7 @@
             @can('read observationQuestion')
                 <li class="sidebar-item {{ request()->is('admin/observers/observation_questions') ? 'active' : '' }}">
                     <a class="sidebar-link" href="{{ route('observers.addQuestions') }}">
-                        <i class="align-middle" data-feather="square"></i> <span class="align-middle">Observation
-                            Questions</span>
+                        <i class="align-middle" data-feather="square"></i> <span class="align-middle">Observation Templates</span>
                     </a>
                 </li>
             @endcan

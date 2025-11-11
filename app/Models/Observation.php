@@ -34,4 +34,8 @@ class Observation extends Model
     {
         return $this->hasMany(ObservationHistory::class);
     }
+    public function template()
+    {
+        return $this->belongsTo(ObservationTemplate::class, 'observation_template_id');
+    }
 }

@@ -9,10 +9,21 @@
 
         <main class="content">
             <div class="container-fluid p-0">
+                <form method="GET" class="mb-3">
+                    <select name="template_id" onchange="this.form.submit()" class="form-control" style="width: 200px;">
+                        @foreach($templates as $template)
+                        <option value="{{ $template->id }}" {{ $selectedTemplate == $template->id ? 'selected' : '' }}>
+                            {{ $template->name }}
+                        </option>
+                        @endforeach
+                    </select>
+                </form>
+                <button class="btn btn-success mb-3" onclick="openAddTemplateModal()">Create Template</button>
+
                 <div class="flex" style="justify-content: space-between; align-items: center;">
                     <h1 class="text-lg font-semibold text-[#667085]" style="font-size:24px; display:flex; gap:10px; align-items:center;justify-content:space-between;">
                         <div>
-                            Observation Questions and Headers
+                            Observation Templates and Questions
                         </div>
                         <button class="btn btn-primary mb-3" onclick="openAddHeaderModal()">Add Header</button>
                     </h1>
@@ -110,6 +121,7 @@
         <h2>Add Header</h2>
         <form action="{{ route('headers.storeHeader') }}" method="POST">
             @csrf
+            <input type="hidden" name="template_id" value="{{ $selectedTemplate }}">
             <div class="form-group mb-3">
                 <label for="headerName">Header Name</label>
                 <input type="text" name="name" id="headerName" class="form-control" required>
@@ -177,6 +189,23 @@
         </form>
     </div>
 </div>
+
+<!-- Add Template Modal -->
+<div id="addTemplateModal" class="modal" style="display: none;">
+    <div class="modal-content" style="text-align: left;">
+        <span class="close" onclick="closeAddTemplateModal()">&times;</span>
+        <h2>Create Template</h2>
+        <form action="{{ route('templates.store') }}" method="POST">
+            @csrf
+            <div class="form-group mb-3">
+                <label for="templateName">Template Name</label>
+                <input type="text" name="name" id="templateName" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-success">Create</button>
+        </form>
+    </div>
+</div>
+
 
 <style>
     /* Modal Background */
@@ -258,7 +287,7 @@
 
     // Close modals when clicking outside of them
     window.onclick = function(event) {
-        const modals = ['addHeaderModal', 'addQuestionModal', 'EditHeaderModal', 'EditQuestionModal'];
+        const modals = ['addTemplateModal', 'addHeaderModal', 'addQuestionModal', 'EditHeaderModal', 'EditQuestionModal'];
         modals.forEach(modalId => {
             const modal = document.getElementById(modalId);
             if (event.target === modal) {
@@ -266,5 +295,14 @@
             }
         });
     };
+</script>
+<script>
+    function openAddTemplateModal() {
+        document.getElementById('addTemplateModal').style.display = 'flex';
+    }
+
+    function closeAddTemplateModal() {
+        document.getElementById('addTemplateModal').style.display = 'none';
+    }
 </script>
 @endsection

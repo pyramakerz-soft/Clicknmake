@@ -8,6 +8,7 @@
     $menuItems = [
         ['label' => 'Observations', 'icon' => 'fi fi-rr-table-rows', 'route' => route('observer.dashboard')],
         ['label' => 'Observations Report', 'icon' => 'fi fi-rr-table-rows', 'route' => route('observer.report')],
+        ['label' => 'Resources', 'icon' => 'fi fi-rr-table-rows', 'route' => route('observer.teacherResources')],
     ];
 @endphp
 
@@ -70,6 +71,7 @@
             <table class="w-full border border-gray-300 text-sm text-left">
                 <thead class="bg-gray-100">
                     <tr>
+                        <th class="border px-4 py-2">Template</th>
                         <th class="border px-4 py-2">Observation Name</th>
                         <!-- <th class="border px-4 py-2">Observer Name</th> -->
                         <th class="border px-4 py-2">Teacher Name</th>
@@ -86,7 +88,7 @@
                             @php
                                 $school = App\Models\School::find($observation->school_id);
                             @endphp
-                            <td class="border px-4 py-2">{{ $observation->name }}</td>
+                            <td class="border px-4 py-2">{{ $observation->template->name }}</td>
                             <!-- <td class="border px-4 py-2">{{ App\Models\Observer::find($observation->observer_id)->name }}</td> -->
                             <td class="border px-4 py-2">{{ $observation->teacher_name }}</td>
                             <td class="border px-4 py-2">{{ $observation->coteacher_name }}</td>
@@ -139,6 +141,18 @@
         <div class="bg-white rounded-lg shadow-lg p-6 w-full sm:w-3/4 md:w-1/2 lg:w-1/3 max-h-[90vh] overflow-y-auto">
             <h2 class="text-xl font-bold mb-4">Filters</h2>
             <form id="filter-form-modal" action="{{ route('observer.dashboard') }}" method="GET">
+                <div class="mb-4">
+                    <label for="template_id_modal" class="block text-sm font-medium text-gray-700">Template</label>
+                    <select name="template_id" id="template_id_modal" class="w-full p-2 border border-gray-300 rounded">
+                        <option value="">All Template</option>
+                        @foreach ($templates as $template)
+                            <option value="{{ $template->id }}"
+                                {{ request('template_id') == $template->id ? 'selected' : '' }}>
+                                {{ $template->name }}
+                            </option>
+                        @endforeach
+                    </select>
+                </div>
                 <div class="mb-4">
                     <label for="teacher_id_modal" class="block text-sm font-medium text-gray-700">Teacher</label>
                     <select name="teacher_id" id="teacher_id_modal" class="w-full p-2 border border-gray-300 rounded">
@@ -232,77 +246,77 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
     <script>
-        document.getElementById('export-all-pdf').addEventListener('click', function() {
-            fetch('{{ route('observer.observations.export') }}')
-                .then(response => response.json())
-                .then(data => {
-                    if (data.length === 0) {
-                        alert("No observations available to export.");
-                        return;
-                    }
+        // document.getElementById('export-all-pdf').addEventListener('click', function() {
+        //     fetch('{{ route('observer.observations.export') }}')
+        //         .then(response => response.json())
+        //         .then(data => {
+        //             if (data.length === 0) {
+        //                 alert("No observations available to export.");
+        //                 return;
+        //             }
 
-                    const pdfContainer = document.createElement('div');
-                    pdfContainer.innerHTML = `
-                <h1 style="text-align:center; font-size:18px; font-weight:bold; margin-bottom:10px;">Observation Reports</h1>
-            `;
+        //             const pdfContainer = document.createElement('div');
+        //             pdfContainer.innerHTML = `
+        //         <h1 style="text-align:center; font-size:18px; font-weight:bold; margin-bottom:10px;">Observation Reports</h1>
+        //     `;
 
-                    data.forEach(observation => {
-                        pdfContainer.innerHTML += `
-                <div style="border:1px solid #ddd; padding:15px; margin-bottom:10px; border-radius:5px;">
-                    <h3 style="color:#333; font-size:16px; font-weight:bold;">${observation.name}</h3>
-                    <p><strong>Teacher:</strong> ${observation.teacher_name}</p>
-                    <p><strong>Co-Teacher:</strong> ${observation.coteacher_name}</p>
-                    <p><strong>School:</strong> ${observation.school}</p>
-                    <p><strong>City:</strong> ${observation.city}</p>
-                    <p><strong>Stage:</strong> ${observation.stage}</p>
-                    <p><strong>Subject:</strong> ${observation.subject}</p>
-                    <p><strong>Date:</strong> ${observation.activity}</p>
-                    <p><strong>Comments:</strong> ${observation.note || 'No comments provided'}</p>
+        //             data.forEach(observation => {
+        //                 pdfContainer.innerHTML += `
+        //         <div style="border:1px solid #ddd; padding:15px; margin-bottom:10px; border-radius:5px;">
+        //             <h3 style="color:#333; font-size:16px; font-weight:bold;">${observation.name}</h3>
+        //             <p><strong>Teacher:</strong> ${observation.teacher_name}</p>
+        //             <p><strong>Co-Teacher:</strong> ${observation.coteacher_name}</p>
+        //             <p><strong>School:</strong> ${observation.school}</p>
+        //             <p><strong>City:</strong> ${observation.city}</p>
+        //             <p><strong>Stage:</strong> ${observation.stage}</p>
+        //             <p><strong>Subject:</strong> ${observation.subject}</p>
+        //             <p><strong>Date:</strong> ${observation.activity}</p>
+        //             <p><strong>Comments:</strong> ${observation.note || 'No comments provided'}</p>
 
-                    <h4 style="font-size:14px; margin-top:10px; font-weight:bold;">Ratings</h4>
-                    <table style="width:100%; border-collapse:collapse; margin-top:10px;">
-                        <thead>
-                            <tr style="background:#f4f4f4;">
-                                <th style="border:1px solid #ddd; padding:6px; text-align:left;">Question</th>
-                                <th style="border:1px solid #ddd; padding:6px; text-align:center;">Average Rating</th>
-                                <th style="border:1px solid #ddd; padding:6px; text-align:center;">Max Rating</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            ${observation.questions.map(q => `
-                                                                <tr>
-                                                                    <td style="border:1px solid #ddd; padding:6px;">${q.name}</td>
-                                                                    <td style="border:1px solid #ddd; padding:6px; text-align:center;">${q.avg_rating}</td>
-                                                                    <td style="border:1px solid #ddd; padding:6px; text-align:center;">${q.max_rating}</td>
-                                                                </tr>
-                                                            `).join('')}
-                        </tbody>
-                    </table>
-                </div>
-                `;
-                    });
+        //             <h4 style="font-size:14px; margin-top:10px; font-weight:bold;">Ratings</h4>
+        //             <table style="width:100%; border-collapse:collapse; margin-top:10px;">
+        //                 <thead>
+        //                     <tr style="background:#f4f4f4;">
+        //                         <th style="border:1px solid #ddd; padding:6px; text-align:left;">Question</th>
+        //                         <th style="border:1px solid #ddd; padding:6px; text-align:center;">Average Rating</th>
+        //                         <th style="border:1px solid #ddd; padding:6px; text-align:center;">Max Rating</th>
+        //                     </tr>
+        //                 </thead>
+        //                 <tbody>
+        //                     ${observation.questions.map(q => `
+        //                                                         <tr>
+        //                                                             <td style="border:1px solid #ddd; padding:6px;">${q.name}</td>
+        //                                                             <td style="border:1px solid #ddd; padding:6px; text-align:center;">${q.avg_rating}</td>
+        //                                                             <td style="border:1px solid #ddd; padding:6px; text-align:center;">${q.max_rating}</td>
+        //                                                         </tr>
+        //                                                     `).join('')}
+        //                 </tbody>
+        //             </table>
+        //         </div>
+        //         `;
+        //             });
 
-                    const options = {
-                        margin: 10,
-                        filename: 'Observations_Report.pdf',
-                        pagebreak: {
-                            mode: ['avoid-all', 'css', 'legacy']
-                        },
-                        html2canvas: {
-                            scale: 2,
-                            useCORS: true
-                        },
-                        jsPDF: {
-                            unit: 'mm',
-                            format: 'a4',
-                            orientation: 'portrait'
-                        }
-                    };
+        //             const options = {
+        //                 margin: 10,
+        //                 filename: 'Observations_Report.pdf',
+        //                 pagebreak: {
+        //                     mode: ['avoid-all', 'css', 'legacy']
+        //                 },
+        //                 html2canvas: {
+        //                     scale: 2,
+        //                     useCORS: true
+        //                 },
+        //                 jsPDF: {
+        //                     unit: 'mm',
+        //                     format: 'a4',
+        //                     orientation: 'portrait'
+        //                 }
+        //             };
 
-                    html2pdf().set(options).from(pdfContainer).toPdf().save();
-                })
-                .catch(err => console.error('Error fetching observation details:', err));
-        });
+        //             html2pdf().set(options).from(pdfContainer).toPdf().save();
+        //         })
+        //         .catch(err => console.error('Error fetching observation details:', err));
+        // });
 
         // Modal toggle
         document.getElementById('filter-modal-btn').addEventListener('click', function() {

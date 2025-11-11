@@ -11,8 +11,13 @@ class ObservationHeader extends Model
     protected $guarded = [];
 
 
-    public function observation_question()
+    public function questions()
     {
-        return $this->hasMany(ObservationQuestion::class);
+        return $this->hasMany(ObservationQuestion::class, 'observation_header_id');
+    }
+
+    public function template()
+    {
+        return $this->belongsTo(ObservationTemplate::class);
     }
 }

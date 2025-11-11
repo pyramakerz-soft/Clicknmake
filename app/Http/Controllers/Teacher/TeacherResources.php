@@ -28,10 +28,16 @@ class TeacherResources extends Controller
         $stages = Stage::whereHas('teachers', function ($query) use ($user) {
             $query->where('teacher_id', $user->id);
         })->get();
+        $stageIds = $stages->pluck('id');
 
+        $school = School::find($user->school_id);
+
+        // Filter materials by both school and stage visibility
+        $MaterialIds = $school->materials->whereIn('stage_id', $stageIds)->pluck('id');
         // Resources filtered by teacher & grade
         $resourcesQuery = TeacherResource::with(['stage', 'material'])
-            ->where('teacher_id', $user->id);
+            ->whereIn('material_id', $MaterialIds)
+            ->whereIn('stage_id', $stageIds);
 
         if ($selectedGrade) {
             $resourcesQuery->where('stage_id', $selectedGrade);
@@ -177,7 +183,7 @@ class TeacherResources extends Controller
         return redirect()->route('teacher.resources.index')->with('success', 'Resources uploaded successfully!');
     }
 
-   public function edit($id)
+    public function edit($id)
     {
         $user = Auth::guard('teacher')->user();
 
@@ -196,10 +202,12 @@ class TeacherResources extends Controller
         // Stages for the dropdown
         $stages = Stage::whereIn('id', $stageIds)->get();
 
+
+
         return view('pages.teacher.resources.edit', compact('resource', 'stages', 'materials'));
     }
 
-   public function update(Request $request, $id)
+    public function update(Request $request, $id)
     {
         $request->validate([
             'name' => 'required|string|max:255',

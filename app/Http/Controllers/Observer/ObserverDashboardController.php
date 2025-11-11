@@ -4,15 +4,18 @@ namespace App\Http\Controllers\Observer;
 
 use App\Http\Controllers\Controller;
 use App\Models\Chapter;
+use App\Models\LessonResource;
 use App\Models\Material;
 use App\Models\Observation;
 use App\Models\ObservationHeader;
 use App\Models\ObservationHistory;
 use App\Models\ObservationQuestion;
+use App\Models\ObservationTemplate;
 use App\Models\Observer;
 use App\Models\School;
 use App\Models\Stage;
 use App\Models\Teacher;
+use App\Models\TeacherResource;
 use App\Models\Unit;
 use Auth;
 use Illuminate\Http\Request;
@@ -30,6 +33,7 @@ class ObserverDashboardController extends Controller
         $cities = School::distinct()->whereNotNull('city')->pluck('city');
         $observers = Observer::all();
         $stages = Stage::all();
+        $templates = ObservationTemplate::all();
         // $query = Observation::where('observer_id', $observer->id);
         $query = Observation::with(['school', 'subject', 'stage', 'teacher', 'observer', 'histories.observation_question'])
             ->where('observer_id', $observer->id);
@@ -48,6 +52,9 @@ class ObserverDashboardController extends Controller
         }
         if ($request->filled('observer_id')) {
             $query->where('observer_id', $request->observer_id);
+        }
+        if ($request->filled('template_id')) {
+            $query->where('observation_template_id', $request->template_id);
         }
         if ($request->filled('city')) {
             $query->whereHas('school', function ($query) use ($request) {
@@ -74,7 +81,7 @@ class ObserverDashboardController extends Controller
         $observations = $query->get();
 
 
-        return view('pages.observer.observer', compact('teachers', 'stages', 'cities', 'observers', 'schools', 'observer', 'observations'));
+        return view('pages.observer.observer', compact('teachers', 'stages', 'cities', 'observers', 'schools', 'observer', 'observations', 'templates'));
     }
     public function exportObservations()
     {
@@ -144,18 +151,41 @@ class ObserverDashboardController extends Controller
         ]);
     }
 
-    public function createObservation()
+    public function createObservation(Request $request)
     {
         $observer = Auth::guard('observer')->user();
-        
-        $observations = Observation::all();
+
+        // Load templates with headers + questions
+        $templates = ObservationTemplate::with('headers.questions')->get();
+
+        if ($templates->isEmpty()) {
+            return back()->with('error', 'No observation templates found. Please contact admin.');
+        }
+
+        // Force-select template → default to first
+        $selectedTemplateId = $request->get('template_id', $templates->first()->id);
+
+        $selectedTemplate = $templates->where('id', $selectedTemplateId)->first();
+
+        // Data for right-side form
         $teachers = Teacher::with('school')->whereNull('alias_id')->get();
-        $headers = ObservationHeader::all();
         $cities = School::distinct()->whereNotNull('city')->pluck('city');
         $grades = Stage::all();
 
-        return view('pages.observer.create_observation', compact('observer', 'grades', 'cities', 'observations', 'teachers', 'headers'));
+        // Only headers belonging to the selected template
+        $headers = $selectedTemplate ? $selectedTemplate->headers : collect();
+
+        return view('pages.observer.create_observation', compact(
+            'observer',
+            'grades',
+            'cities',
+            'teachers',
+            'templates',
+            'selectedTemplateId',
+            'headers'
+        ));
     }
+
     public function getSchool($teacherId)
     {
         $schools = [];
@@ -203,45 +233,52 @@ class ObserverDashboardController extends Controller
     }
     public function store(Request $request)
     {
-        // dd($request->all());
         $validated = $request->validate([
-            'observation_name' => 'required|string',
-            'observer_id' => 'required|integer',
-            'teacher_id' => 'required|integer',
-            'coteacher_id' => 'nullable|integer',
-            'grade_id' => 'required|integer',
+            'observation_name' => 'required|string|max:255',
+            'observer_id' => 'required|integer|exists:observers,id',
+            'teacher_id' => 'required|integer|exists:teachers,id',
+            'coteacher_id' => 'nullable|integer|exists:teachers,id',
+            'grade_id' => 'required|integer|exists:stages,id',
+            'school_id' => 'required|integer|exists:schools,id',
+            'template_id' => 'required|integer|exists:observation_templates,id',
             'date' => 'required|date',
-            'lesson_segment' => 'required',
-            '_token' => 'required',
+            'lesson_segment' => 'required|array',
+            'lesson_segment.*' => 'string',
+            'note' => 'nullable|string',
         ]);
 
-        // $teacher = Teacher::find($request->teacher_id);
-        $teacher = Teacher::where('id', $request->teacher_id)
+
+        // ✅ Correct teacher lookup – prevents wrong "OR" issue
+        $teacher = Teacher::where(function ($q) use ($request) {
+            $q->where('id', $request->teacher_id)
+                ->orWhere('alias_id', $request->teacher_id);
+        })
             ->where('school_id', $request->school_id)
-            ->orWhere('alias_id', $request->teacher_id)
-            ->where('school_id', $request->school_id)->first();
-        // dd($request->all(), $teacher);
+            ->firstOrFail();
+
         $coteacher = Teacher::find($request->coteacher_id);
 
+        // ✅ Create Observation
         $observation = Observation::create([
             'name' => $request->observation_name,
-            'teacher_name' => $teacher->name,
             'observer_id' => $request->observer_id,
             'teacher_id' => $teacher->id,
-            'stage_id' => $request->grade_id,
-            'school_id' => $teacher->school_id,
-            'activity' => $request->date,
-            'coteacher_id' => $request->coteacher_id,
+            'teacher_name' => $teacher->name,
+            'coteacher_id' => $coteacher->id ?? null,
             'coteacher_name' => $coteacher->name ?? null,
-            'material_id' => null,
+            'stage_id' => $request->grade_id,
+            'school_id' => $request->school_id,
+            'observation_template_id' => $request->template_id,
+            'activity' => $request->date,
             'note' => $request->note,
-            'subject_area' => $request->subject_area,
             'lesson_segment' => json_encode($request->lesson_segment),
         ]);
 
+        // ✅ Insert question answers
         foreach ($request->all() as $key => $value) {
             if (str_starts_with($key, 'question-')) {
-                $questionId = str_replace('question-', '', $key);
+                $questionId = (int) str_replace('question-', '', $key);
+
                 ObservationHistory::create([
                     'observation_id' => $observation->id,
                     'question_id' => $questionId,
@@ -250,8 +287,11 @@ class ObserverDashboardController extends Controller
             }
         }
 
-        return redirect()->route('observer.dashboard')->with('success', 'Observation created successfully!');
+        return redirect()
+            ->route('observer.dashboard')
+            ->with('success', 'Observation created successfully!');
     }
+
     public function destroy(string $id)
     {
         $observation = Observation::findOrFail($id);
@@ -261,13 +301,35 @@ class ObserverDashboardController extends Controller
     public function view(string $id)
     {
         $observer = Auth::guard('observer')->user();
-        $headers = ObservationHeader::all();
-        $observation = Observation::find($id);
-        $answers = ObservationHistory::where('observation_id', $id)->get();
-        return view('pages.observer.view_observation', compact('observer', 'headers', 'observation', 'answers'));
+
+        $observation = Observation::with([
+            'template.headers.questions'  // Load template → headers → questions
+        ])->findOrFail($id);
+
+        // Get the answers for this observation, keyed by question_id for easy access
+        $answers = ObservationHistory::where('observation_id', $id)
+            ->get()
+            ->keyBy('question_id');
+
+        $template = $observation->template;
+        $headers = $template ? $template->headers : collect();
+
+        return view('pages.observer.view_observation', compact(
+            'observer',
+            'observation',
+            'headers',
+            'answers'
+        ));
     }
+
     public function report(Request $request)
     {
+        $Obs = Observation::whereNull('observation_template_id')->get();
+        foreach ($Obs as $ob) {
+            $ob->observation_template_id = 1;
+            $ob->save();
+        }
+
         $observer = Auth::guard('observer')->user();
         $teachers = Teacher::with('school')->whereNull('alias_id')->get();
         $schools = School::all();
@@ -275,7 +337,15 @@ class ObserverDashboardController extends Controller
         $stages = Stage::all();
         $headers = ObservationHeader::all();
 
-        foreach ($headers as $header) {
+        $templates = ObservationTemplate::with('headers.questions')->get();
+        if ($templates->isEmpty()) {
+            return back()->with('error', 'No templates found. Please create a template first.');
+        }
+
+        $selectedTemplateId = $request->get('template_id', $templates->first()->id);
+        $selectedTemplate = ObservationTemplate::with('headers.questions')->findOrFail($selectedTemplateId);
+
+        foreach ($selectedTemplate->headers as $header) {
             if (!isset($data[$header->id])) {
                 $data[$header->id] = [
                     'header_id' => $header->id,
@@ -283,9 +353,9 @@ class ObserverDashboardController extends Controller
                     'questions' => [],
                 ];
             }
-            $questions = ObservationQuestion::where('observation_header_id', $header->id)->get();
+
             $headerQuestions = [];
-            foreach ($questions as $question) {
+            foreach ($header->questions as $question) {
                 if (!isset($headerQuestions[$question->id])) {
                     $headerQuestions[$question->id] = [
                         'question_id' => $question->id,
@@ -299,10 +369,10 @@ class ObserverDashboardController extends Controller
         }
         // dd($data);
 
-        $query = Observation::where('observer_id', $observer->id);
-        if ($query->get()->count() == 0) {
-            return redirect()->back()->with('error', 'No observations found for this observer');
-        }
+        $query = Observation::where("observation_template_id", $selectedTemplateId)->where('observer_id', $observer->id);
+        // if ($query->get()->count() == 0) {
+        //     return redirect()->back()->with('error', 'No observations found for this observer');
+        // }
         if ($request->filled('teacher_id')) {
             $teacherIds = Teacher::where('id', $request->teacher_id)
                 ->orWhere('alias_id', $request->teacher_id)->pluck('id');
@@ -340,9 +410,9 @@ class ObserverDashboardController extends Controller
         if ($request->has('include_comments')) {
             $query->whereNotNull('note');
         }
-        if ($query->get()->count() == 0) {
-            return redirect()->back()->with('error', 'No observations found for set filters');
-        }
+        // if ($query->get()->count() == 0) {
+        //     return redirect()->back()->with('error', 'No observations found for set filters');
+        // }
 
         $observations = $query->pluck('id');
 
@@ -359,7 +429,9 @@ class ObserverDashboardController extends Controller
         if (isset($data)) {
             foreach ($data as $header) {
                 foreach ($header['questions'] as $question) {
-                    $data[$header['header_id']]['questions'][$question['question_id']]['avg_rating'] = round($data[$header['header_id']]['questions'][$question['question_id']]['avg_rating'] / $obsCount, 2);
+                    $total = $data[$header['header_id']]['questions'][$question['question_id']]['avg_rating'];
+                    $data[$header['header_id']]['questions'][$question['question_id']]['avg_rating'] =
+                        $obsCount > 0 ? round($total / $obsCount, 2) : 0;
                 }
             }
             $overallComments = Observation::whereIn('id', $observations)
@@ -368,10 +440,129 @@ class ObserverDashboardController extends Controller
                 ->get(['note', 'teacher_id']);
 
             $cities = School::distinct()->whereNotNull('city')->pluck('city');
-            return view('pages.observer.observation_report', compact('stages', 'cities', 'teachers', 'observer', 'observers', 'schools', 'headers', 'data', 'overallComments'));
+            return view('pages.observer.observation_report', compact('stages', 'cities', 'teachers', 'observer', 'observers', 'schools', 'headers', 'data', 'overallComments', 'templates', 'selectedTemplateId'));
         } else {
             $cities = School::distinct()->whereNotNull('city')->pluck('city');
-            return view('pages.observer.observation_report', compact('stages', 'cities', 'teachers', 'observer', 'observers', 'schools', 'headers'));
+            return view('pages.observer.observation_report', compact('stages', 'cities', 'teachers', 'observer', 'observers', 'schools', 'headers', 'templates', 'selectedTemplateId'));
         }
+    }
+
+    public function showTeacherResources(Request $request)
+    {
+        $selectedGrade = $request->get('grade');
+        $selectedInstructor = $request->get('instructor');
+        $selectedType = $request->get('type');
+        $selectedTheme = $request->get('theme');
+
+        $stages = Stage::all();
+        $instructors = Teacher::with("school")->orderBy('name')->get();
+        $themes = Material::orderBy('title')->get();
+
+        $resourcesQuery = TeacherResource::with(['stage', 'material', 'teacher']);
+
+        if ($selectedGrade) {
+            $resourcesQuery->where('stage_id', $selectedGrade);
+        }
+
+        if ($selectedInstructor) {
+            $resourcesQuery->where('teacher_id', $selectedInstructor);
+        }
+
+        if ($selectedType) {
+            $resourcesQuery->where('type', $selectedType);
+        }
+
+        if ($selectedTheme) {
+            $resourcesQuery->where('material_id', $selectedTheme);
+        }
+
+        $resources = $resourcesQuery->get();
+
+        $groupedResources = $resources
+            ->groupBy(fn($res) => $res->stage?->name ?? 'Other')
+            ->map(
+                fn($stageGroup) =>
+                $stageGroup->groupBy(fn($res) => $res->material?->title ?? 'No Theme')
+            );
+
+        $types = TeacherResource::select('type')->distinct()->pluck('type');
+        return view('pages.observer.teacher_resources', compact(
+            'stages',
+            'instructors',
+            'themes',
+            'selectedGrade',
+            'selectedInstructor',
+            'selectedType',
+            'selectedTheme',
+            'groupedResources',
+            'types'
+        ));
+    }
+
+    public function showAdminResources(Request $request)
+    {
+        $selectedGrade = $request->get('grade');
+        $selectedTheme = $request->get('theme');
+        $selectedType = $request->get('type');
+
+        // Filters dropdown data
+        $stages = Stage::orderBy('name')->get();
+        $themes = Material::orderBy('title')->get();
+        $types = LessonResource::select('type')->distinct()->pluck('type');
+
+        // ✅ Lesson Resources Query
+        $lessonResourcesQuery = LessonResource::with('lesson.chapter.unit.material');
+
+        if ($selectedGrade) {
+            $lessonResourcesQuery->whereHas('lesson.chapter.unit.material.stage', function ($q) use ($selectedGrade) {
+                $q->where('id', $selectedGrade);
+            });
+        }
+
+        if ($selectedTheme) {
+            $lessonResourcesQuery->whereHas('lesson.chapter.unit.material', function ($q) use ($selectedTheme) {
+                $q->where('id', $selectedTheme);
+            });
+        }
+
+        if ($selectedType) {
+            $lessonResourcesQuery->where('type', $selectedType);
+        }
+
+        $groupedLessons = $lessonResourcesQuery->get()->groupBy('lesson_id');
+
+        // ✅ Theme Resources Query
+        $materialsQuery = Material::with(['resources', 'stage']);
+
+        if ($selectedGrade) {
+            $materialsQuery->where('stage_id', $selectedGrade);
+        }
+
+        if ($selectedTheme) {
+            $materialsQuery->where('id', $selectedTheme);
+        }
+
+        $themeStages = $materialsQuery->get()
+            ->each(function ($material) use ($selectedType) {
+                if ($selectedType) {
+                    $material->setRelation(
+                        'resources',
+                        $material->resources->where('type', $selectedType)
+                    );
+                }
+            })
+            ->filter(fn($material) => $material->resources->isNotEmpty())
+            ->groupBy(fn($material) => $material->stage->name);
+
+        return view('pages.observer.admin_resources', compact(
+            'groupedLessons',
+            'themeStages',
+            'stages',
+            'themes',
+            'types',
+            'selectedGrade',
+            'selectedTheme',
+            'selectedType'
+        ));
     }
 }

@@ -34,6 +34,7 @@
     $menuItems = [
         ['label' => 'Observations', 'icon' => 'fi fi-rr-table-rows', 'route' => route('observer.dashboard')],
         ['label' => 'Observations Report', 'icon' => 'fi fi-rr-table-rows', 'route' => route('observer.report')],
+        ['label' => 'Resources', 'icon' => 'fi fi-rr-table-rows', 'route' => route('observer.teacherResources')],
     ];
 @endphp
 
@@ -58,24 +59,28 @@
 ">
             {{-- Timer: 25:00 --}}
         </div>
-
+        <form method="GET" class="mb-3">
+            <label for="template_id" class="block mb-2 form-control text-gray-700">Selected Observation Template:</label>
+            <select name="template_id" onchange="this.form.submit()" class="form-control" style="width: 200px;">
+                @foreach($templates as $template)
+                    <option value="{{ $template->id }}" {{ $selectedTemplateId == $template->id ? 'selected' : '' }}>
+                        {{ $template->name }}
+                    </option>
+                @endforeach
+            </select>
+        </form>
         <div class="overflow-x-auto">
-            <form action="{{ route('observation.store') }}" id="obsform" method="GET" enctype="multipart/form-data"
+            <form action="{{ route('observation.store') }}" id="obsform" method="POST" enctype="multipart/form-data"
                 class="mb-4 flex" style="gap:10px; padding:10px" id="observation_form">
                 @csrf
-
+                <input type="hidden" name="template_id" value="{{ $selectedTemplateId }}">
 
                 <div class="questions mb-3" style="max-width: 65%;">
                     @foreach ($headers as $header)
                         <h1 class="text-lg font-semibold text-[#667085] mb-4" style="font-size:24px">{{ $header->header }}
                         </h1>
-                        @php
-                            $questions = App\Models\ObservationQuestion::where(
-                                'observation_header_id',
-                                $header->id,
-                            )->get();
-                        @endphp
-                        @foreach ($questions as $question)
+                       
+                       @foreach ($header->questions as $question)
                             <h3 class="text-base font-medium text-gray-700 mb-2" style="font-size:18px">-
                                 {{ $question->question }}</h3>
                             <div class="mb-6">
@@ -314,8 +319,8 @@
 
         function getSchool(teacherId) {
             $.ajax({
-                url: '/LMS/lms_pyramakerz/public/observer/observation/get_school/' + teacherId,
-                // url: "/observer/observation/get_school/" + teacherId,
+                // url: '/LMS/lms_pyramakerz/public/observer/observation/get_school/' + teacherId,
+                url: "/observer/observation/get_school/" + teacherId,
                 type: "GET",
                 dataType: "json",
                 success: function(data) {
@@ -352,8 +357,8 @@
 
         function getStages(teacherId) {
             $.ajax({
-                url: '/LMS/lms_pyramakerz/public/observer/observation/get_stages/' + teacherId,
-                // url: '/observer/observation/get_stages/' + teacherId,
+                // url: '/LMS/lms_pyramakerz/public/observer/observation/get_stages/' + teacherId,
+                url: '/observer/observation/get_stages/' + teacherId,
                 type: "GET",
                 dataType: "json",
                 success: function(data) {
@@ -387,8 +392,8 @@
 
                 if (schoolId) {
                     $.ajax({
-                        url: '/LMS/lms_pyramakerz/public/observer/observation/get_coteachers/' + schoolId,
-                        // url: "/observer/observation/get_coteachers/" + schoolId,
+                        // url: '/LMS/lms_pyramakerz/public/observer/observation/get_coteachers/' + schoolId,
+                        url: "/observer/observation/get_coteachers/" + schoolId,
                         type: "GET",
                         dataType: "json",
                         success: function(data) {
