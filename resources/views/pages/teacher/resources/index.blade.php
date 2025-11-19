@@ -173,16 +173,28 @@ $userAuth = auth()->guard('teacher')->user();
                                                 <i>By {{ $res->teacher->name }}</i>
                                             </p>
                                             @endif
+
                                             <p class="text-muted small mb-2">
                                                 {{ $res->video_url ? 'VIDEO' : strtoupper(pathinfo($res->file_path, PATHINFO_EXTENSION)) }}
                                             </p>
 
                                             <div class="mt-auto d-flex gap-2">
-                                                <a href="{{ $res->video_url ?: asset($res->file_path) }}" target="_blank"
+
+                                                {{-- VIEW BUTTON --}}
+                                                @if($res->video_url)
+                                                <a href="{{ $res->video_url }}" target="_blank"
                                                     class="btn btn-sm btn-outline-primary flex-grow-1"
-                                                    title="{{ $res->video_url ? 'Watch Video' : 'View File' }}">
-                                                    <i class="{{ $res->video_url ? 'fas fa-play' : 'fas fa-eye' }}"></i>
+                                                    title="Watch Video">
+                                                    <i class="fas fa-play"></i>
                                                 </a>
+                                                @else
+                                                <a href="{{ route('teacher.resources.view', [$res->id, "teacher"]) }}"
+                                                    class="btn btn-sm btn-outline-primary flex-grow-1"
+                                                    target="_blank">
+                                                    <i class="fas fa-eye"></i> View
+                                                </a>
+                                                @endif
+
                                                 @if($userAuth && $userAuth->id === $res->teacher_id)
                                                 <a href="{{ route('teacher.resources.edit', $res->id) }}"
                                                     class="btn btn-sm btn-outline-warning">
@@ -203,6 +215,7 @@ $userAuth = auth()->guard('teacher')->user();
                                     </div>
                                 </div>
                                 @endforeach
+
                             </div>
                         </div>
                     </div>
@@ -257,12 +270,16 @@ $userAuth = auth()->guard('teacher')->user();
         });
     });
 </script>
-@section('page_js')
 <script>
     function toggleDetails(id) {
         const el = document.getElementById(id);
         el.style.display = (el.style.display === 'none' || el.style.display === '') ? 'block' : 'none';
     }
+
+    function toggleResource(id) {
+        const el = document.getElementById(id);
+        el.style.display = (el.style.display === 'none' || el.style.display === '') ? 'block' : 'none';
+    }
 </script>
-@endsection
+
 @endsection

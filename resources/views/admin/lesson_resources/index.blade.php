@@ -91,6 +91,8 @@
                                             onclick="return confirm('Are you sure you want to delete this resource?');">Delete</button>
                                     </form>
                                     <a href="{{ route('lesson_resource.edit', $resource->id) }}" class="btn btn-primary">Edit</a>
+                                    <a href="{{ route('admin.resources.view', [$resource->id, "lesson"]) }}" class="btn btn-primary">View</a>
+
                                 </td>
                             </tr>
                             @endforeach

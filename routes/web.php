@@ -102,6 +102,8 @@ Route::prefix('admin')->group(function () {
         Route::get('/theme-resource/themes/{stageId}', [MaterialResourceController::class, 'getThemesByStage'])
             ->name('theme_resource.themes');
 
+        Route::get('/resources/view/{resource}/{type}', [MaterialResourceController::class, 'viewResource'])->name('admin.resources.view');
+
         // Route::resource('assignments', AssignmentController::class);
         Route::resource('ebooks', EbookController::class);
         Route::resource('classes', ClassController::class);
@@ -285,6 +287,8 @@ Route::prefix('teacher')->middleware('auth:teacher')->group(function () {
 
     Route::get('/teacher/resources', [TeacherResources::class, 'index'])->name('teacher.resources.index');
     Route::get('/teacher/resources/admin', [TeacherResources::class, 'adminResources'])->name('teacher.resources.admin');
+    // web.php
+    Route::get('/resources/view/{resource}/{type}', [TeacherResources::class, 'viewResource'])->name('teacher.resources.view');
 
     Route::get('/teacher/resources/create', [TeacherResources::class, 'create'])->name('teacher.resources.create');
     Route::get('/teacher/resources/{id}/edit', [TeacherResources::class, 'edit'])->name('teacher.resources.edit');
@@ -376,6 +380,9 @@ Route::prefix('observer')->middleware('auth:observer')->group(function () {
 
     Route::get('/admin_resources', [ObserverDashboardController::class, 'showAdminResources'])
         ->name('observer.admin_resources');
+
+    Route::get('/resources/view/{resource}/{type}', [ObserverDashboardController::class, 'viewResource'])->name('observer.resources.view');
+
 
 
 

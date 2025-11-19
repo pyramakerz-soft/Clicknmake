@@ -80,6 +80,7 @@
                                     class="btn btn-sm btn-warning" title="Edit">
                                     <i class="fas fa-edit"></i>
                                 </a>
+                                <a href="{{ route('admin.resources.view', [$resource->id, "teacher"]) }}" class="btn btn-sm btn-primary"><i class="fas fa-eye"></i></a>
 
                                 <form action="{{ route('teacher_resources.destroy', $resource->id) }}" method="POST" class="d-inline">
                                     @csrf
@@ -90,6 +91,7 @@
                                         <i class="fas fa-trash"></i>
                                     </button>
                                 </form>
+
                             </td>
                         </tr>
                         @endforeach

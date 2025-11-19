@@ -238,7 +238,7 @@ $menuItems = [
                                                 </p>
 
                                                 <div class="mt-auto d-flex gap-2">
-                                                    <a href="{{ $res->video_url ?: asset($res->file_path) }}" target="_blank"
+                                                    <a href="{{ $res->video_url ?: route('observer.resources.view', [$res->id, "teacher"]) }}" target="_blank"
                                                         class="btn btn-sm btn-outline-primary flex-grow-1"
                                                         title="{{ $res->video_url ? 'Watch Video' : 'View File' }}">
                                                         <i class="{{ $res->video_url ? 'fas fa-play' : 'fas fa-eye' }}"></i>

@@ -155,7 +155,7 @@ $userAuth = auth()->guard('teacher')->user();
                             <div class="fw-bold">{{ $res->title }}</div>
                             <div class="resource-type">{{ strtoupper($res->type) }}</div>
                         </div>
-                        <a href="{{ asset($res->path) }}" target="_blank"
+                        <a href="{{ route('teacher.resources.view', [$res->id, "lesson"]) }}" target="_blank"
                             class="btn btn-sm btn-outline-primary ms-3">
                             {{ strtoupper($res->type) === 'ZIP' ? 'Download' : 'View' }}
                         </a>
@@ -192,7 +192,7 @@ $userAuth = auth()->guard('teacher')->user();
                                 <div class="fw-bold">{{ $res->title }}</div>
                                 <div class="resource-type">{{ strtoupper($res->type) }}</div>
                             </div>
-                            <a href="{{ asset($res->path) }}" target="_blank"
+                            <a href="{{ route('teacher.resources.view', [$res->id, "theme"]) }}" target="_blank"
                                 class="btn btn-sm btn-outline-primary ms-3">
                                 {{ strtoupper($res->type) === 'ZIP' ? 'Download' : 'View' }}
                             </a>

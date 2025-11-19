@@ -10,11 +10,13 @@ use App\Models\Material;
 use App\Models\MaterialResource;
 use App\Models\School;
 use App\Models\Stage;
+use App\Models\TeacherResource;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Validator;
 use Str;
 use ZipArchive;
+use Imagick;
 
 class MaterialResourceController extends Controller
 {
@@ -67,7 +69,7 @@ class MaterialResourceController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-   public function store(Request $request)
+    public function store(Request $request)
     {
         $request->validate([
             'theme_id' => 'required|exists:materials,id',
@@ -109,7 +111,7 @@ class MaterialResourceController extends Controller
         $schools = School::whereHas('materials', function ($query) use ($themeId) {
             $query->where('materials.id', $themeId);
         })->get();
-        
+
         return response()->json($schools);
     }
 
@@ -331,5 +333,162 @@ class MaterialResourceController extends Controller
         $resource->delete();
 
         return redirect()->back()->with('success', 'Resource deleted successfully.');
+    }
+    public function viewResource($id, $type)
+    {
+        if ($type === "teacher") {
+            $resource = TeacherResource::findOrFail($id);
+            $file = $resource->file_path;
+        } elseif ($type === "lesson") {
+            $resource = LessonResource::findOrFail($id);
+            $file = $resource->path;
+        } elseif ($type === "theme") {
+            $resource = MaterialResource::findOrFail($id);
+            $file = $resource->path;
+        }
+
+        $fullPath = public_path($file);
+        $ext = strtolower(pathinfo($file, PATHINFO_EXTENSION));
+
+        $converted = null;
+        $convertedType = null;
+
+        // Detect platform (Windows / Linux)
+        $isWindows = strtoupper(substr(PHP_OS, 0, 3)) === 'WIN';
+
+        // LibreOffice path
+        $soffice = $isWindows
+            ? '"C:\\Program Files\\LibreOffice\\program\\soffice.com"'
+            : 'libreoffice';
+
+        if (!$isWindows) {
+            putenv("HOME=/tmp");
+            putenv("TMPDIR=" . storage_path("temp"));
+        }
+
+        // ============================
+        // PPT/PPTX → SLIDES (PNG/JPG)
+        // ============================
+        if (in_array($ext, ['ppt', 'pptx'])) {
+            $outputDir = storage_path('app/public/converted/slides/' . pathinfo($file, PATHINFO_FILENAME));
+            if (!is_dir($outputDir)) mkdir($outputDir, 0777, true);
+
+            $existingSlides = array_merge(glob($outputDir . '/*.png'), glob($outputDir . '/*.jpg'));
+
+            if (count($existingSlides) === 0) {
+                $format = $isWindows ? 'jpg' : 'png';
+                $cmd = $soffice . " --headless --convert-to $format --outdir \"$outputDir\" \"$fullPath\"";
+                exec($cmd . " 2>&1", $output, $result);
+                if ($result !== 0) dd("LibreOffice conversion failed.", $cmd, $output);
+
+                $existingSlides = array_merge(glob($outputDir . '/*.png'), glob($outputDir . '/*.jpg'));
+            }
+
+            $slides = [];
+            foreach ($existingSlides as $img) {
+                $slides[] = str_replace(storage_path('app/public/'), 'storage/', $img);
+            }
+
+            $converted = $slides;
+            $convertedType = 'slides';
+        }
+
+        // ============================
+        // PDF → IMAGES
+        // ============================
+        if ($ext === 'pdf') {
+            $outputDir = storage_path('app/public/converted/pdf_images/' . pathinfo($file, PATHINFO_FILENAME));
+            if (!is_dir($outputDir)) mkdir($outputDir, 0777, true);
+
+            $existing = glob($outputDir . '/*.png');
+
+            if (count($existing) === 0) {
+                try {
+                    $imagick = new Imagick();
+                    $imagick->setResolution(150, 150);
+                    $imagick->readImage($fullPath);
+
+                    foreach ($imagick as $index => $page) {
+                        $page->setImageFormat("png");
+                        $page->writeImage($outputDir . "/page_" . ($index + 1) . ".png");
+                    }
+
+                    $imagick->clear();
+                    $imagick->destroy();
+                } catch (\Exception $e) {
+                    dd("PDF → Image conversion failed", $e->getMessage());
+                }
+
+                $existing = glob($outputDir . '/*.png');
+            }
+
+            $pages = [];
+            foreach ($existing as $img) {
+                $pages[] = str_replace(storage_path('app/public/'), 'storage/', $img);
+            }
+
+            $converted = $pages;
+            $convertedType = 'slides';
+        }
+
+        // ============================
+        // DOC/DOCX → PDF → IMAGES
+        // ============================
+        if (in_array($ext, ['doc', 'docx'])) {
+            $tempPdfDir = storage_path('app/public/converted/docx_pdf/');
+            if (!is_dir($tempPdfDir)) mkdir($tempPdfDir, 0777, true);
+
+            $pdfPath = $tempPdfDir . pathinfo($file, PATHINFO_FILENAME) . ".pdf";
+
+            // Convert DOCX → PDF via LibreOffice
+            if (!file_exists($pdfPath)) {
+                $cmd = $soffice . " --headless --convert-to pdf --outdir \"$tempPdfDir\" \"$fullPath\"";
+                exec($cmd . " 2>&1", $output, $result);
+                if ($result !== 0) dd("DOCX → PDF conversion failed", $cmd, $output);
+            }
+
+            // Convert PDF → IMAGES
+            $outputDir = storage_path('app/public/converted/docx_images/' . pathinfo($file, PATHINFO_FILENAME));
+            if (!is_dir($outputDir)) mkdir($outputDir, 0777, true);
+
+            $existing = glob($outputDir . '/*.png');
+
+            if (count($existing) === 0) {
+                try {
+                    $imagick = new Imagick();
+                    $imagick->setResolution(150, 150);
+                    $imagick->readImage($pdfPath);
+
+                    foreach ($imagick as $index => $page) {
+                        $page->setImageFormat("png");
+                        $page->writeImage($outputDir . "/page_" . ($index + 1) . ".png");
+                    }
+
+                    $imagick->clear();
+                    $imagick->destroy();
+                } catch (\Exception $e) {
+                    dd("DOCX PDF → Image conversion failed", $e->getMessage());
+                }
+
+                $existing = glob($outputDir . '/*.png');
+            }
+
+            $pages = [];
+            foreach ($existing as $img) {
+                $pages[] = str_replace(storage_path('app/public/'), 'storage/', $img);
+            }
+
+            $converted = $pages;
+            $convertedType = 'slides';
+        }
+
+        // ============================
+        // IMAGES + VIDEO (direct)
+        // ============================
+        if (in_array($ext, ['jpg', 'jpeg', 'png', 'gif', 'webp', 'mp4', 'mov', 'webm'])) {
+            return view('admin.resources.view', compact('resource', 'file', 'ext', 'converted', 'convertedType'));
+        }
+
+        return view('admin.resources.view', compact('resource', 'file', 'ext', 'converted', 'convertedType'));
     }
 }

@@ -72,7 +72,7 @@
                                         <button type="submit" class="btn btn-danger"
                                             onclick="return confirm('Are you sure you want to delete this resource?');">Delete</button>
                                     </form>
-                                    <a href="{{ route('theme_resource.edit', $resource->id) }}" class="btn btn-primary">Edit</a>
+                                    <a href="{{ route('admin.resources.view', [$resource->id, "theme"]) }}" class="btn btn-primary">View</a>
                                 </td>
                             </tr>
                             @endforeach
