@@ -124,7 +124,9 @@ class UnitController extends Controller
             'material_id' => 'required|exists:materials,id',
             'image' => 'nullable|mimes:jpeg,png,jpg,gif',
             'is_active' => 'nullable|boolean',
-            
+            'ebook_path' => 'nullable|string|max:255',
+            'workshop_path' => 'nullable|string|max:255',
+            'video_path' => 'nullable|string|max:255'
         ]);
 
         // Handle image upload if exists
