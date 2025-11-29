@@ -182,7 +182,9 @@
                     </button>
                 </h2>
                 <div id="accordion-{{ $unit->id }}" class="accordion-body">
-
+                    <a href="{{ route('student_units.unitContent', $unit->id) }}" class="unit-link">
+                        Unit Resources →
+                    </a>
 
                     <div class="chapters">
                         @forelse ($unit->chapters as $chapter)
