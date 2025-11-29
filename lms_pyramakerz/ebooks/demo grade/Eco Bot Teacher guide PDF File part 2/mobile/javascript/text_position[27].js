@@ -1,0 +1,1 @@
+﻿positionForPages[27]={page:27,positions:[{word:"Add the potentiometer to the circuit. ",left:0.120945,top:0.117534,width:0.282855,height:0.017450},{word:"Practice  ",left:0.116813,top:0.057892,width:0.124413,height:0.031753},{word:"57",left:0.488813,top:0.956153,width:0.022415,height:0.013184}]};

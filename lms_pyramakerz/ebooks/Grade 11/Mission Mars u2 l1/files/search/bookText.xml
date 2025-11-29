@@ -1,0 +1,380 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Search><pages Count="5"><page Index="1"><![CDATA[Unit
+
+
+
+
+                2
+
+
+
+
+
+
+          Lesson
+
+
+                1
+
+
+
+
+
+
+          Innovators in Action
+
+
+          Surviving Dust Storms.
+
+
+
+
+
+
+
+
+
+
+
+                                         Ready, Set, Learn!
+
+
+
+                                         You need to know
+
+                                           •  What an LDR (Light Dependent Resistor) is.
+
+                                           •  How to write simple Arduino code and connect
+                                              components (like the LDR) to an Arduino board to read
+                                              data from sensors.
+                                         You will be able to:
+
+                                           •  Explore the concept of energy conservation in biology,
+                                              such as hibernation or dormancy, and apply these
+                                              principles to design a rover that can survive harsh
+                                              conditions like dust storms on Mars.
+
+                                           •  Understand the principles of light intensity and how
+                                              it changes during Martian dust storms, affecting rover
+                                              operation and energy conservation.
+
+                                           •  Program the rover to automatically enter "storm mode" by
+                                              integrating light sensors (LDR) with Arduino, enabling the
+                                              rover to conserve energy during Martian dust storms.
+
+
+
+
+
+
+
+
+                                                                                                            27]]></page><page Index="2"><![CDATA[Let’s
+
+            Think!
+
+
+
+          How do animals like bears and frogs survive harsh winters?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          What does "energy conservation" mean in the animal world, and how could that concept
+          be applied to a rover on Mars?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          28]]></page><page Index="3"><![CDATA[Explorer’s
+
+            Toolkit
+
+
+
+
+                DIY Lab
+
+          Work in teams to answer questions about how animals save energy in harsh conditions.
+
+          Use your knowledge (and tools) wisely to survive the challenge!
+
+          Connect what you learn to how a Mars rover survives dust storms.
+          Rules:
+
+          The teacher asks a question about
+          animals’ energy-saving strategies.
+          If stuck, you may use one tool:
+
+            •  AI Search
+            •  Hint from Teacher
+
+            •  Replace the Question
+
+          Correct answers = points. The team with the most
+          points wins!
+
+          After the Competition reflect on the following:
+
+          How could the rover charge its battery?
+
+
+
+
+
+
+
+
+
+
+          How can the idea of energy conservation, similar to how animals conserve energy, help
+          the rover survive a dust storm on Mars?
+
+
+
+
+
+
+
+
+
+
+
+
+               Dig Deeper
+
+          Click on the link to learn more about light intensity and how it changes
+          during Martian dust storms, affecting rover operation and energy conservation.
+
+                https://www.nasa.gov/solar-system/nasas-insight-sees-power-levels-
+                stabilize-after-dust-storm/
+
+
+
+
+
+
+
+
+
+
+                                                                                                            29]]></page><page Index="4"><![CDATA[Hey friends
+                                                  let’s wrap up!
+
+
+
+
+          How can energy conservation in biology and light
+          intensity changes help design a Mars rover?
+
+          Energy Conservation in Biology: Animals like bears
+          and frogs survive harsh conditions through hibernation
+          or dormancy. These processes help them conserve
+          energy during cold or resource-scarce periods.
+          Similarly, engineers can apply this concept to Mars
+          rovers, designing them to "hibernate" or reduce activity
+          during dust storms, conserving energy for critical tasks.
+
+          Light Intensity During Dust Storms: Mars experiences frequent dust storms that reduce
+          light intensity. This decreases the rover's ability to charge its solar panels. Engineers
+          use this knowledge to create systems that conserve energy during low-light conditions,
+          ensuring the rover can survive and function during extended dust storms.
+
+
+
+            Assessment
+
+
+
+
+
+
+                   Apprentice
+
+          Assist the rover in collecting sunlight and charging its battery. Connect a solar panel to the
+          charging module and integrate it into your rover’s design.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          30]]></page><page Index="5"><![CDATA[Builder
+
+          To help the rover save energy during a sandstorm, attach an LDR (light sensor) to the rover.
+          Code it so that when the sensor detects low light, it sends a signal to the Arduino to pause
+          all rover functions.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                               Well done on your
+                                                   design so far!
+
+
+
+
+
+
+          Now, let’s return to the steps of the Engineering
+          Design Process.
+
+
+          It’s time to move into the improve phase.
+
+
+
+
+
+
+
+                Now I Can
+
+                Explore the concept of energy conservation in biology, such as hibernation
+                or dormancy, and apply these principles to design a rover that can
+                survive harsh conditions like dust storms on Mars.                                     
+                Understand the principles of light intensity and how it changes during
+                Martian dust storms, affecting rover operation and energy conservation.                
+
+                Program the rover to automatically enter "storm mode" by integrating light
+                sensors (LDR) with Arduino, enabling the rover to conserve energy during
+                Martian dust storms.                                                                   
+
+
+
+                                                                                                            31]]></page></pages></Search>

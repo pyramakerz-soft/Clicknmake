@@ -1,0 +1,2818 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Search><pages Count="40"><page Index="1"><![CDATA[NEW EDDITION]]></page><page Index="2"><![CDATA[All rights reserved  no part of this book may be reproduced,
+                                stored in a retrieval system, or transmitted in any form or by
+                                any means, electronic, mechanical, photocopying, recording or
+                                otherwise, without prior written permission of the publishers.]]></page><page Index="3"><![CDATA[Index
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                level            01             level            02             level            03
+
+
+
+                Electricity                     Electricity                     Electricity
+
+                 Lesson 1                       Lesson 1                        Lesson 1
+                 Lesson 2                       Lesson 2                        Lesson 2
+                 Lesson 3                       Lesson 3                        Lesson 3
+                 Lesson 4                       Lesson 4
+
+
+
+
+
+                Mechatronics                    Mechatronics                    Mechatronics
+
+
+                 Session 1                      Session 1                       Session 1
+                 Session 2                      Session 2                       Session 2
+
+
+
+
+
+                Design      [Tinker CAD]        Arduino                         Arduino
+
+
+                 Lesson 1                       Lesson 1                        Lesson 1
+                 Lesson 2                       Lesson 2                        Lesson 2
+                 Lesson 3                       Lesson 3                        Lesson 3
+                 Lesson 4                                                       Lesson 4
+                 Lesson 5]]></page><page Index="4"><![CDATA[level
+
+                                                                                                01
+
+                 LESSON 1                                                                  Electricity
+
+
+
+
+
+
+                ELECTRICITY
+
+
+
+
+
+                & CIRCUITS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           Level 01 - Electricity - Lesson 01                                                                 01]]></page><page Index="5"><![CDATA[Can you imagine a world where we don't
+                          have electricity, no light or switches to
+
+                          turn on, no computers to turn on, no hot
+                          water and way more?
+
+                          Electricity is a big oart of our lives, and
+                          sometimes we don't enen realize it.
+
+
+                          let's take a look at what
+
+                          electricty is.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                           01
+
+           Level 01 - Electricity - Lesson 01]]></page><page Index="6"><![CDATA[What is Electricty?
+
+
+
+                   It is a fundamental form of energy observable in positive and
+                   negative forms occurs naturally ( as in lightning) or is produced and
+                   that is expressed in terms of electric current ow.
+
+                   Electricity is a secondary source od energy, which means it must be
+                   created from other forms of energy. With technology, electricity
+                   can be generated from dierent sources of energy.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                      Source
+                                                           of
+
+                                                      energy
+                                                                                      Non-
+                     Renewable
+                                                                                 renewable
+                        energy
+                                                                                    energy
+
+
+
+
+
+
+
+
+
+
+
+
+                                  Solar Energy                       Fossil Fuel Oil
+
+                                                                                             Coal
+                                               Biomass Energy
+                  Hydropower Energy
+
+
+                                    Energy                                      Energy
+                                  The fuel of life                             The fuel of life
+
+                                                                 Nuclear
+                                                                                           Natural Gas
+
+                     Geothermal Energy   Wind Energy
+                  RENEWABLE ENERGY                                    NON-RENEWABLE ENERGY
+
+
+
+
+
+
+
+           Level 01 - Electricity - Lesson 01]]></page><page Index="7"><![CDATA[Electric Circuit
+
+
+
+
+
+
+                   Can you observe this
+
+                   circuit and explain why the
+                   lamp doesn't work?
+
+
+
+
+
+
+                   Let's make a simple circuit to know what is a closed circuit.
+
+
+
+                   1.  Connect one end of the bulb to the
+                       negative end of one battery ( "-" )
+
+
+
+                   2.  Attach the other end of the bulb to
+                       the positive end of the battery ( "+" )
+
+
+
+                       Now what happens?
+
+
+                       Batteries supply electricity. When they’re connected
+                       properly, they ( Power ) things like a ﬂashlight, an alarm
+                       clock, a radio... even a robot !
+
+
+
+
+
+                   WHY DIDN'T THE LIGHT BULB LIGHT UP WHEN YOU CONNECTED IT TO
+                   ONE END OF THE BATTERY WITH A BULB?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           Level 01 - Electricity - Lesson 01]]></page><page Index="8"><![CDATA[What can we do with the electric power …
+                   look around you and think.
+
+
+                   We need a power source that will motivate the ﬂow of the current
+                   in the circuit.
+
+
+
+
+                   We can provide a power source in the electric circuit from a battery.
+
+
+
+                   Battery
+
+                       A battery converts chemical energy into
+                       electrical energy. It is used in a circuit to
+                       power other components.
+                       Batteries are connected to several
+                       components to build an electric circuit.
+
+
+
+                   LED
+                       It is a component that makes light when
+                       electricity ﬂows through it.
+
+
+
+                   Wires
+                       Jumper wires have connector pins at
+                       each end, wires are conductors as they
+                       are made of copper which is good
+                       conductor of electricity.
+
+
+                   Resistance
+
+                       A resistor limits the electrical current
+                       that ﬂows through a circuit. Resistors
+                       are useful as they protect components
+                       from burning out.
+
+
+
+
+
+
+                   Electrical components change the electrical energy to another form
+                   of energy as resistance changes electric energy into thermal energy.
+
+
+
+
+
+
+
+
+
+
+           Level 01 - Electricity - Lesson 01]]></page><page Index="9"><![CDATA[Workshop
+
+
+
+                   We need a battery, wires, resistors, and LED. Connect them on the
+                   smart pad.
+
+
+
+                   Steps:
+
+
+                   1.  Connect the battery's positive end
+                      with the LED's positive end (the
+                      taller side)
+
+
+
+                   2.  Connect the LED's negative end
+                      (the shorter side) to a resistor's
+                      terminal.
+
+
+                   3.  Connect the other terminal of the
+                      resistor to the battery's negative
+                      end.
+
+
+                   4.  Connect smartpad with your power
+                      source using power cable and see
+                      what happens.
+
+
+
+                   Change the positions of the resistor and the LED with each other
+                   and see what happens.
+
+
+
+                   What if we want to lighten three LEDs together, can you make it?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           Level 01 - Electricity - Lesson 01]]></page><page Index="10"><![CDATA[LET'S CONNECT USING OTHER
+
+                   COMPONENTS.
+
+
+
+
+                   Buzzer
+
+                       A buzzer or beeper is an audio
+                       signaling device that produces sound
+                       when current ﬂows through it.
+
+
+
+                   Push-button/ switch
+
+                       Push-buttons and switches work on a
+                       simple electric mechanism to activate or
+                       deactivate the circuit When pressed.
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   We need a battery, wires, resistors, and LED. Connect them
+                   on the smart pad.
+
+                       Connect a buzzer, switch and a resister to close the circuit.
+
+                       The expected output is hearing beeping voice of the buzzer
+                       turning the switch on.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           Level 01 - Electricity - Lesson 01]]></page><page Index="11"><![CDATA[WHO
+
+
+                   Am I ?
+
+
+
+
+
+
+
+
+                   Yasmine Yehia
+
+
+                   From  Egypt,  her  scientiﬁc  research  ultimately  is  to  increase
+                   biodiesel fuel in generating electricity.
+
+
+                   She is the youngest female scientist (used to attend STEM school).
+                   Back in  2015,  Yasmine  landed  ﬁrst  place  globally  in  the  "Intel
+                   Science  and  Engineering  Competition,  "in  the  Earth  and
+                   Environmental Sciences category, with her project entitled
+                   "The Potential Strength of Rice Straw."
+
+                   Yasmine's project was around improving cleaning & clearing water
+                   sources ﬁrstly, then she shifting it to solving electricity problem and
+                   reducing  air  pollution.  She  used  biological  treatments  to  help
+                   purifying  water  and  heating  it  by  burning  rice  straw  The
+                   competition.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           Level 01 - Electricity - Lesson 01]]></page><page Index="12"><![CDATA[level
+
+                                                                                                01
+
+                 LESSON 2                                                                  Electricity
+
+
+
+
+
+
+                ELECTRICITY
+
+
+
+
+
+                & ITS TYPES
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           Level 01 - Electricity - Lesson 02]]></page><page Index="13"><![CDATA[Electricity is one of the nest inventions
+
+                        in our lives. Everything and anything that
+
+                        we see runs on one or the other form of
+                        electricity.
+
+
+
+                        But can you guess the dierence between
+                        these two pictures?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        There  are  two  main  types  of  electricity,  Static  Electricity,
+                        generated by rubbing two or more objects causing to build
+                        up friction, Dynamic Electricity, generated by the ﬂow of
+                        electrical charge through a conductor across an electrical
+                        ﬁeld.
+
+
+
+
+
+                        Static electricity:
+
+                        is  commonly  experienced  during  dry  weather  or  in
+                        environments with low humidity.
+                        It  can  be  generated  by  various  means,  such  as  friction
+                        between  two  materials,  rubbing  objects  together,  or
+                        through the movement of certain materials, like clothing
+                        against the skin.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                           01
+
+           Level 01 - Electricity - Lesson 02]]></page><page Index="14"><![CDATA[Workshop 1
+
+
+
+                   In this workshop we will need:
+
+                    1.  A piece of hard rubber/ Small pieces of paper
+                    2.  A glass rod or a plastic ruler rubbed with a cloth.
+
+                   Steps
+
+
+                      Rub the ruler with the cloth Static electricity will be
+                      generated.
+
+                      Bring the charged ruler near to rubber if paper pieces and
+                      observe what happens.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   Workshop 2
+
+
+
+                   When two objects – such as your hair and the balloon –
+                   rub together,generates a type of electricity called static
+                   electricity.
+
+
+                    1.  Supercharge Your Balloon With Static Electricity.
+                    2.  Put Your Electriﬁed Balloon to Small paper pieces and see
+                       What Floats.
+
+
+
+
+                 Dynamic electricity:
+                    is a type of electricity that continuously ﬂow from one point
+                    to another. The ﬂow of electricity is similar to the ﬂow of a ﬂowing
+                    river, so dynamic electricity is called electric current.
+
+
+
+
+
+
+
+
+
+           Level 01 - Electricity - Lesson 02]]></page><page Index="15"><![CDATA[level
+
+                                                                                                01
+
+                 LESSON 3                                                                  Electricity
+
+
+
+
+
+
+                CONDUCTORS
+
+
+
+
+
+                & INSULATORS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           Level 01 - Electricity - Lesson 03]]></page><page Index="16"><![CDATA[First let's watch this video…
+
+
+                       https://www.youtube.com/watch?v=PZhe7NOLVhA
+
+                                                                                        Scan Here!
+
+
+
+
+                   1-Conductors
+
+
+
+                   Materials that allow electricity to pass through them easily are
+                   called electrical conductors.
+
+
+                   Examples of these materials:
+
+                   1. Metals, such as iron, steel, copper, and aluminum.
+                   2. Water also conducts electricity, which is why electrical objects
+                      should not be used near water.
+
+
+                   Examples of metal used in conductors:
+
+                   Electrical objects use metal parts to conduct electricity, such as:
+
+                   1. The copper wires inside electrical leads.
+                   2. The metal pins in plugs.
+                   3. The metal wire ﬁlaments in light bulbs.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                     In a simple electrical circuit, copper wire is used
+                                                     to carry electricity from the energy source
+                                                     (such as a battery) to an electrical component
+                                                     (such as a lamp, motor, or bell).
+
+
+
+
+
+
+                                                           01
+
+           Level 01 - Electricity - Lesson 03]]></page><page Index="17"><![CDATA[2-insulators
+
+
+
+
+                   Materials that do not allow electricity to pass through them are
+                   called electrical insulators.
+
+
+
+                   Examples of these materials:
+
+                   1. Plastic.
+                   2. Rubber.
+                   3. Wood.
+                   4. Glass.
+                   5. Air is also an insulator.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   •   Most electrical objects are made using insulators to keep them safe. Plugs, for
+                       example, have plastic cases. Electrical wires are wrapped in plastic, which is
+                       ﬂexible as well as insulating.
+
+                   •   The copper wires used in simple electrical circuits are coated in plastic. This
+                       prevents electricity from ﬂowing out of the circuit
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                           01
+
+           Level 01 - Electricity - Lesson 03]]></page><page Index="18"><![CDATA[Workshop
+
+
+
+                   Did you know that there are dierent types of  play
+                   dough?!
+
+
+
+                   There are two types of play dough but what is the
+                   difference ?
+
+
+                   1. Conductive play dough(clayronics) :
+                   allow electricity to ﬂow through circuit.
+
+
+                   2.   Insulating play dough:
+                   electricity can't pass through the circuit.
+
+
+
+
+
+
+
+
+
+                   But how do we use it to make a circuit?
+
+
+
+
+
+                       Let's watch this video..
+
+                       https://www.youtube.com/watch?v=VcdqBmFETNw
+
+                                                                                        Scan Here!
+
+
+
+
+                   Ok, we need ..
+                       Conductive play dough.
+                       Leds.
+                       Battery.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           Level 01 - Electricity - Lesson 03]]></page><page Index="19"><![CDATA[level
+
+                                                                                                01
+
+                 LESSON 4                                                                  Electricity
+
+
+
+
+
+
+                MAKE
+
+
+
+
+
+                A BATTERY
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           Level 01 - Electricity - Lesson 04]]></page><page Index="20"><![CDATA[Can you imagine a world where all
+                          appliances had to be plugged in?
+
+
+                          Imagine all your toys that
+
+
+                          move with a wire connected to
+
+                          them.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                           01
+
+           Level 01 - Electricity - Lesson 04]]></page><page Index="21"><![CDATA[A battery is a device that converts chemical energy contained
+                   within its active materials directly into electric using an
+                   electrochemical oxidation-reduction (redox) reaction.
+
+                   This type of reaction involves the transfer of electrons from one
+                   material to another via an electric circuit.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   A chemical reaction between the metals and the electrolyte frees
+                   more electrons in one metal than it does in the other.
+
+                   The metal that frees more electrons develops a positive charge,
+                   and the other metal develops a negative charge.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                           01
+
+           Level 01 - Electricity - Lesson 04]]></page><page Index="22"><![CDATA[Workshop
+
+
+                   Make a battery out of copper coins.
+
+
+
+                   Equipment:
+                   1. Copper coins.
+
+                   2. Vinegar.
+                   3. Foil and cardboard.
+
+
+                   Steps:
+
+                   1. Clean the coins by soaking them in           (salt and vinegar) .
+                   2. Dry them with a paper towel.
+
+                   3. Cut circles of the clipboard in size of the coins.
+                   4. Soak them in vinegar.
+                   5. Take some foil and fold it over several times. Draw a circle with the
+                       size of the coin. Cut it out.
+
+                   6. Place down a coin put it on top of one of the cardboard discs then
+                       add one piece of foil.
+                   7. Add another coin on top and keep repeating the process.
+                   8. You need to be careful that the foil doesn’t fold down the side and
+
+                       contact any other layers.
+                   9. Check the voltage using the AVO meter.
+                   10. Fix all the layers using a strip of tape.
+                   11. Connect one terminal of a wire to the lower coin and another one
+
+                       to the upper coin.
+                   12. Connect the other terminals with a LED, and you will ﬁnd out that
+                       the LED will turn on.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           Level 01 - Electricity - Lesson 01]]></page><page Index="23"><![CDATA[Watch this video.
+
+
+                       https://youtu.be/vIHfUJu3aKo?si=udaW-zjd04DTWN2n
+
+                                                                                        Scan Here!
+
+
+
+                   The cardboard soaked in vinegar water serves as
+                   the electrolyte between the two terminals.
+
+
+                   NASA  is  always  working  to  make  ﬂight  safer,  more
+                   convenient and more environmentally friendly. Airplanes
+                   powered by electricity rather than by burning fuel
+                   produce  much  fewer  harmful  emissions,  which  helps
+
+                   protect the environment. This type of propulsion is known
+                   as electriﬁed aircraft propulsion.
+
+
+
+                   One of NASA’s newest experimental airplanes is the X-57
+                   (Maxwell).  This  airplane  is  completely  powered  by
+                   batteries.  This  airplane  was  built  to  learn  more  about
+                   electriﬁed  aircraft  propulsion.  But,  it  is  just  the  start!
+                   Using  what  it  learns  from  the  X-57, NASA is working to
+                   build larger passenger-carrying airplanes that are at least
+                   partially powered by electricity. The goal is to help reduce
+                   emissions drastically over the next 20 years.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                           01
+
+           Level 01 - Electricity - Lesson 04]]></page><page Index="24"><![CDATA[Workshop
+
+
+
+                   Assemble a simple battery at home.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   Equipment:
+
+                   1. Copper and zinc plates.
+                   2. Wires with clamps       (crocodiles) .
+                   3. AVO meter.
+                   4. LED.
+                   5. Plastic cups.
+                   6. Sodium chloride.
+                   7. Hot water.
+
+
+
+
+                   Steps:
+
+                   A.  Use crocodile clip wires to connect some copper and zinc plates.
+
+                   B.  To prepare a table salt solution:
+                       1.  Dissolve 100g of salt in 1L of hot water.
+                       2. Pour the solution into cups and lower the “wired” plates into them.
+                       3. It is important that each cup contains both a zinc plate and a copper plate.
+                       4. Connect a LED, and it will turn on.
+
+
+
+
+
+                       Watch this video.
+
+
+                       https://youtu.be/IrgyesPSmSI?si=mI8owbYxkF1WQAEX
+
+                                                                                        Scan Here!
+
+
+                   In our battery, the zinc plates act as anodes, and the copper plates
+                   act as cathodes.
+
+
+
+
+
+
+
+           Level 01 - Electricity - Lesson 04]]></page><page Index="25"><![CDATA[level
+
+                                                                                                01
+
+                 LESSON 1                                                                  Mechatronics
+
+
+
+
+
+
+                MECHANICS
+
+
+
+
+
+                In these lessons you will learn some basic
+                concepts of mechanical engineering.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           Level 01 - Mechatronics - Lesson 01]]></page><page Index="26"><![CDATA[Screw & Nut
+
+
+                   A screw is a special kind of inclined plane. It's basically an inclined
+                   plane wrapped around a pole. Screws can be used to lift things or
+                   to hold them together.
+
+
+                   Examples of the screw simple machine include :
+
+                      • swivel chairs.
+                      • jar lids.
+                      • screws.
+
+
+
+
+                       Watch a video
+
+                       https://www.youtube.com/watch?v=e9oGNB1gHt
+                       c&list=PL786ED3CB23AE24E8&index=2
+
+                                                                                        Scan Here!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           Level 01 - Mechatronics - Lesson 01]]></page><page Index="27"><![CDATA[Wheel
+
+
+                   A wheel is most commonly deﬁned as a solid disc or as a circular
+                   ring with spokes, designed to turn around a smaller axle (a rod)
+                   passing through its center. The wheel and attached axle both turn
+                   at the same speed.
+
+
+
+                   Wheels and axles are found in many machines where there is a need
+                   to control the direction of movement and turning force, such as :
+
+
+                      • Bicycles.
+                      • roller skates.
+                      • vehicles.
+                                                      Watch a video
+                      • helicopters.
+                      • shing reels.                 https://www.youtube.com/wat
+                      • trolleys.                     ch?v=ByLXZCP4ixc&t=156s
+                      • push-chairs.                                                    Scan Here!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           Level 01 - Mechatronics - Lesson 01]]></page><page Index="28"><![CDATA[Wedge
+
+
+                   A wedge is a simple machine used to split material. It gets thinner
+                   at one end that is used to split material such as wood. A knife is an
+                   example of a wedge.
+
+
+
+
+                      Watch a video                               Watch a video
+
+
+                      https://www.youtube.                        https://www.youtube.
+                      com/watch?v=aoXnh                           com/watch?v=jtk2V0
+                      yY5RTk&t=101s           Scan Here!          M6k3M&t=420s           Scan Here!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   Gears
+
+
+                   A gear is most commonly deﬁned as a toothed wheel; the teeth of a
+                   gear prevent slipping. When one gear is engaged with another
+                   gear they are said to mesh. When a set of gears work together, they
+                   transmit movement and force.
+
+
+                   Gears are found in many machines where there is a need to control
+                   the speed of rotary movement and turning force. Examples include
+                   cars, bicycles, old-fashioned egg beaters, tin openers and
+                   grandfather clocks.
+
+
+
+
+
+
+
+
+
+                      Watch a video
+
+                      https://www.youtube.
+                      com/watch?v=aoXnh
+                      yY5RTk&t=101s           Scan Here!
+
+
+
+
+
+
+
+
+
+           Level 01 - Mechatronics - Lesson 01]]></page><page Index="29"><![CDATA[Gear train
+
+
+                   A gear train includes at least two gears that work together to
+                   increase torque, increase speed, or change direction. A gear train
+                   includes a driver gear and a driven gear. Power is applied directly to
+                   the driver gear which causes it to rotate.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   Gears Example
+
+
+                   A lower, easier gear, with the smaller chain ring up front and a
+                   larger cog in the back, lets you accelerate faster. This helps you get
+                   started from a stop, or when you’re climbing a steep hill. The
+                   higher, harder gear (big chain ring, small cog) helps you increase
+                   your top speed
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           Level 01 - Mechatronics - Lesson 01]]></page><page Index="30"><![CDATA[SIMPLE MACHINES WORKSHEET
+
+
+
+
+                   Which simple machine best represents the object shown?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   which simple machine best represents the object shown?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   which simple machine best represents the object shown?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           Level 01 - Mechatronics - Lesson 01]]></page><page Index="31"><![CDATA[level
+
+                                                                                                01
+
+                 LESSON 2                                                                  Mechatronics
+
+
+
+
+                 INTRODUCTION TO
+                MECHANICS
+
+
+
+
+
+                In these lessons you will learn some basic
+                concepts of mechanical engineering.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           Level 01 - Mechatronics - Lesson 02]]></page><page Index="32"><![CDATA[What Is Force?
+
+
+                   Have you ever been in the middle of enjoying a scrumptious piece
+                   of food, and just as it enters your mouth...splat, it slips out of your
+                   hands and falls on the ﬂoor? If so, then you've experienced force.
+
+                   Force happens all around us, all of the time. Force is a push or a pull
+                   of an object that causes the object to speed up, slow down, or stay
+                   in one place. In other words, a force is what causes an object to
+                   move. Friction and gravity are two types of forces that inﬂuence
+                   how an object moves. Let's learn more about them.
+
+
+
+
+
+                      Watch a video
+
+                      https://www.youtube.
+                      com/watch?v=7_9fMF
+                      Gfy9w                   Scan Here!
+
+
+
+
+
+                   Push and Pull Forces
+                   A push is the force that moves an object away from something, like
+                   when you push a plate of Brussels sprouts away in disgust. We use
+                   the force of push when we kick a soccer ball, press the gas peddle
+                   of a car, push our chair in, and press the buttons on a phone.
+
+
+                   A push and a pull are
+                   opposite forces,
+                   meaning they move
+                   objects in different
+                   directions. Therefore, a
+                   pull is the force of
+                   bringing an object
+                   closer. We use the force                                                   Ball changes direction
+                   of a pull when we move
+                   our bowl of ice cream
+                   closer to us, open a
+                   door, or climb up a
+                   rope.
+
+
+
+
+
+
+
+
+
+
+
+           Level 01 - Mechatronics - Lesson 02]]></page><page Index="33"><![CDATA[The Force of Friction
+
+
+                   Friction is the force that acts to slow an object down. Imagine
+                   trying to ride your bike through sand. Just thinking about this can
+                   make your legs burn from all the hard work. That is because the
+                   sand is a type of friction. In other words, it's a force working against
+                   your legs as they push against the peddles.
+
+
+
+
+
+
+                      Watch a video
+
+
+                      https://www.youtube.com/watch?v=PNDRIicw4E0
+                                                                                         Scan Here!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           Level 01 - Mechatronics - Lesson 02]]></page><page Index="34"><![CDATA[The Force of Gravity
+
+
+                   Gravity is the pulling of an object towards Earth's center. When a
+                   ball is thrown up in the air, it slows down and falls back to the
+                   ground. That is because gravity pulls the ball back towards the
+                   earth.
+
+
+
+
+
+                      Watch a video
+
+
+                      https://www.youtube.com/watch?v=Ed7rg7MuuEQ
+                                                                                     Scan Here!
+
+
+
+
+                   Everything on Earth is
+                   inﬂuenced by the force of
+                   gravity.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   Homework
+
+
+
+                   Push and Pull Forces in Your Home
+                   Consider the objects in your home and ﬁnd ﬁve objects that you
+                   exert a push force on and ﬁve objects you exert a pull force on, for
+                   a total of ten objects. If a push and a pull force can be exerted on a
+                   speciﬁc object you may only use it as an example of push or pull
+                   force, not both. If you are having trouble ﬁnding ten objects in
+                   your home, consider places and objects around your home as well,
+                   for example the park.
+
+
+
+
+
+
+
+
+
+           Level 01 - Mechatronics - Lesson 02]]></page><page Index="35"><![CDATA[Simple machines
+
+
+
+                   (pulley – inclined plane – wheel - lever – screw)
+
+                   We use simple machines every day – when we open a door, turn
+                   on a tap, open a tin, or ride a bike. Simple machines make it easy
+                   for us to do work.
+
+
+
+
+                   Pulley
+
+                   Pulleys are made by looping a rope over one or more wheels. They
+                   are often used to lift heavy objects: pulling down on one end of the
+                   rope creates an upward pull at the other end.
+
+
+
+
+
+
+                      Watch a video
+
+                      https://www.youtube.c
+                      om/watch?v=hjFMZek
+                      hoXU&list=PL786ED3C
+                      B23AE24E8&index=4       Scan Here!
+
+
+
+
+
+                   Inclined plane
+
+                   An inclined plane is one of the six types of simple machines. It's
+                   exactly what it sounds like - it is a plane (a ﬂat surface) that is
+                   inclined, or slanted, at an acute angle. Inclined planes connect a
+                   lower level to a higher level; they make work easier.
+
+                   Inclined planes have been around for thousands of years. They
+                   were even used to make the building of the ancient pyramids
+                   easier! Today, inclined planes continue to be a big part of our
+                   world.
+
+
+
+
+
+
+
+                      Watch a video
+
+                      https://www.youtube.c
+                      om/watch?v=ByLXZCP
+                      4ixc&t=122s
+                                              Scan Here!
+
+
+
+
+
+
+
+           Level 01 - Mechatronics - Lesson 02]]></page><page Index="36"><![CDATA[Lever
+
+
+                   A lever is most commonly deﬁned as a rod or arm that tilts around
+                   a pivot, also called a fulcrum, to produce useful motion. The load is
+                   moved by the effort (a push or pull) used to make the lever tilt
+                   about the pivot.
+
+
+                   Levers are found in many machines, such as wheelbarrows, oars,
+                   rakes, nutcrackers, tweezers, screwdrivers, snow shovels,
+                   hammers, bottle openers, light switches, staplers, crowbars,
+                   scissors and see-saws.
+
+
+
+
+
+
+                      Watch a video
+
+
+                      https://www.youtube.com/watch?v=D23IZxYaLHs&list=PL7
+                      86ED3CB23AE24E8&index=2
+                                                                                       Scan Here!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           Level 01 - Mechatronics - Lesson 02]]></page><page Index="37"><![CDATA[level
+
+                                                                                                01
+
+                 LESSON 1                                                                    Design
+                                                                                             [Tinker CAD]
+
+
+
+
+
+                INTRODUCTION TO 3D
+
+
+                DESIGN AND MODELING
+
+
+
+                CONCEPTS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           Level 01 - Design  [Tinker CAD]  - Lesson 01]]></page><page Index="38"><![CDATA[Are you a fan of dget toys games? Do
+                          you like to know how to make your own
+
+                          using 3D printers?
+                          dget toys are recognized as more than
+
+                          just ‘toys’ – they are helpful for people
+                          dealing with anxiety, stress, or boredom.
+
+                          You can design any dget toy by
+                          understanding  3D modeling, Design
+
+                          using CAD and Print using 3D printers.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                           01
+
+           Level 01 - Design  [Tinker CAD]  - Lesson 01]]></page><page Index="39"><![CDATA[The main Idea
+
+
+
+                   3D modeling is the process of creating a digital 3D representation
+                   of an object. This can be done using a variety of software
+                   programs, such as TinkerCAD, SolidWorks, and Fusion.
+
+
+                   Once a 3D model is created, it can be used for a variety of
+                   purposes, such as:
+
+
+                      Computer-aided design (CAD):
+                      3D models can be used to create CAD models, which are used in
+                      engineering and manufacturing to design and prototype new
+                      products.
+
+
+
+                      3D printing:
+                      3D printing is the process of creating a physical object from a
+                      digital 3D model.
+
+
+
+                      Virtual reality (VR) and augmented reality (AR):
+                      3D models can be used to create immersive VR and AR
+                      experiences. This can be used for a variety of applications, such as
+                      gaming, training, and education.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           Level 01 - Design  [Tinker CAD]  - Lesson 01]]></page><page Index="40"><![CDATA[3D modeling is a challenging process, but it is also a very
+                   rewarding one. With the right tools and skills, you can create
+                   anything you can imagine.
+
+
+                   Let’s start with Computer-aided
+
+
+                   design (CAD)
+
+
+
+
+
+                    First
+
+                    You have a set of 2D and 3D shapes can you recognize the
+                    difference.
+
+                    The main difference between 2D and 3D is the number of
+                    dimensions they have. 2D objects have two dimensions, length
+                    and width, while 3D objects have three dimensions, length, width,
+                    and height. This means that 2D objects can only be represented
+                    on a ﬂat surface, while 3D objects can be represented in a
+                    three-dimensional space.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    Second
+
+                    You can design any 3D shapes using Tinker CAD software.
+
+                    Autodesk’s Tinkercad app is probably the easiest, most accessible
+                    and most fun 3D modeling application for creating your ﬁrst 3D
+                    print. No previous 3D modeling experience needed and best of all:
+                    this 3D design app is totally free.
+
+
+
+
+
+
+
+
+
+
+
+           Level 01 - Design  [Tinker CAD]  - Lesson 01]]></page></pages></Search>

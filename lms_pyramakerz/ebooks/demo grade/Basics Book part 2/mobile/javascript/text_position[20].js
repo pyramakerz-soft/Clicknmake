@@ -1,0 +1,1 @@
+﻿positionForPages[20]={page:20,positions:[{word:"Level 01 - Design ",left:0.086467,top:0.957739,width:0.131626,height:0.014068},{word:"[Tinker CAD]",left:0.218092,top:0.958873,width:0.056140,height:0.008202},{word:" - ",left:0.274233,top:0.957739,width:0.013924,height:0.014068},{word:"Lesson 04",left:0.288157,top:0.957493,width:0.079978,height:0.014346}]};

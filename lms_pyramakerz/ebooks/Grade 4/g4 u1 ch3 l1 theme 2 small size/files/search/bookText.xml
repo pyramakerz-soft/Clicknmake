@@ -1,0 +1,520 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Search><pages Count="7"><page Index="1"><![CDATA[UNIT 01       [ Beginner ]                                                LESSON 01
+
+                  Chapter 03 : Electricity Domain.                                      Move the arm.
+
+
+
+
+
+
+               Stepping Stone:
+               Stepping Stone:
+
+
+
+                 You need to know…                               You will be able to…
+
+
+                         What is electricity?                           Identify the dierence
+                                                                        between series and parallel
+                                                                        connections.
+                         How to create a basic circuit
+                         with a power source, wires,                    Explain how current ows in
+                         and a bulb.                                    a series connection versus a
+                                                                        parallel connection.
+                         The dierence between open
+                         and closed circuits.                           Construct simple circuits using
+                                                                        series and parallel
+                                                                        connections.
+
+                                                                        Understand short circuits
+                                                                        concept.
+
+
+
+
+
+
+
+             Ali: "Let’s connect a motor so our
+             project moves automatically when
+             we press a button!"
+
+             Laila: "That sounds great! How do
+             we do that?"
+
+
+             Ali: "We’ll connect it in parallel so
+             the motor has its own power
+             path."
+
+
+             Laila: [Looking confused] "Parallel?
+             What does that mean?"
+
+             Ali: "Don’t worry, I’ll show you
+             when we start building!"
+             Laila smiles and nods as they grab
+             the materials to begin.
+
+
+
+
+
+
+
+
+                                                          25]]></page><page Index="2"><![CDATA[let's                                              What do you think
+                 let's
+                                                                   happens to the brightness
+                                                                   of bulbs if we connect
+              Think                                                them in dierent ways?
+              Think
+
+                                                                   Can we make a bulb light
+                                                                   up even if one part of the
+                                                                   circuit is broken?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                         26]]></page><page Index="3"><![CDATA[Explore
+               Explore
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  Let’s learn more about series and parallel by
+                  playing this game..
+                  https://universeandmore.com/
+
+                                                                                              Scan Here!
+
+                    WATCH IT..
+
+
+
+                                        Click the link to learn more about parallel
+                                        and series circuits in a simple way!
+
+                                        https://www.youtube.com/watch?v=-mmcku7KhDQ
+                                        &t=18s
+
+                                                                                              Scan Here!
+
+                    READ ABOUT IT..
+
+
+                 To Learn more about series and parallel circuits
+                 you can read the following article
+                 https://conceptslab.in/explaining-parallel-and-series-circuits-
+                 to-kids/                                                                     Scan Here!
+
+
+
+
+
+
+                                            Series Circuit:
+                                            A series circuit is a type of electrical circuit in which all the
+                                            components are connected in a single path. The current
+                                            ows through each component one after the other.
+                                            If one component stops working, the entire circuit is broken.
+
+                                            Parallel Circuit:
+                                            A parallel circuit is a type of electrical circuit where
+                                            components are connected across multiple paths. The
+                                            current splits and ows through each path separately.
+                                            If one component stops working, the others continue to work
+                                            because the circuit is not completely broken.
+
+
+
+
+
+
+
+
+                                                          27]]></page><page Index="4"><![CDATA[Assessment Exercise
+
+
+
+
+
+
+
+
+
+                          Focus                                                    Series – parallel
+                          Focus
+
+
+
+
+
+              Fill in the blank with the correct word from the table.
+
+              1. In a                        connection, the motors are lined up one after the other.
+                       . .............................
+
+                 With a                        connection, the motors are working side-by-side and
+                           . .............................
+                 each gets the full power from the battery.
+
+                 If one motor in a                        circuit fails, the whole circuit stops
+                                       . .............................
+                 working.
+
+
+                 A                        connection is more reliable because if one motor breaks,
+                    . .............................
+                 the other one can still make the oater move.
+
+
+
+              2.    Decide whether each of these circuits is a series or parallel circuit
+                    and circle your answer:
+
+
+
+
+                      A.                                        B.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                      C.                                        D.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                         28]]></page><page Index="5"><![CDATA[Practice
+                          Practice
+
+
+
+
+              Let’s build a simple circuit on a breadboard using a motor, wires, and a switch.
+              First, connect it in series, then in parallel, and observe what will happen.
+
+
+                 Parallel
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                 Series
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                    Write your observation:
+
+                                                                    . ........................................................................................................
+               let's                                                . ........................................................................................................
+               let's
+
+
+                                                                    . ........................................................................................................
+            Think                                                   What do you think caused
+             Think
+
+                                                                    this to happen?
+
+                                                                    . ........................................................................................................
+
+
+                                                                    . ........................................................................................................
+                                                                    . ........................................................................................................
+
+
+
+
+
+
+
+
+                                                         29]]></page><page Index="6"><![CDATA[• If the button is connected directly across
+                                                 the power source without any resistance,
+                                                 pressing the button creates a path with very
+                                                 low resistance.
+
+
+                                                 • Electricity always takes the path of least
+                                                 resistance. When you press the button, most
+                                                 of the current ows through the button's
+                                                 low-resistance path instead of through the
+                                                 motor. As a result, the motor stops running
+                                                 because it isn't receiving enough current.
+
+
+
+
+
+
+
+                           Challenge
+                           Challenge
+
+
+
+
+               Consider how you can modify the circuit so the motor
+               operates independently of the button.
+
+
+
+
+
+
+
+
+
+
+
+                                        Return back to your EDP paper
+                                        and add this to improve part.
+
+
+
+
+
+
+
+
+
+
+
+
+                  SHOW CASE
+
+
+
+                Include a motor and a switch in your project and test it.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                          30]]></page><page Index="7"><![CDATA[NOW I CAN..
+
+
+
+                       Identify the dierence between series and parallel connections.
+                       Explain how current ows in a series connection versus a parallel
+                       connection.
+                       Construct simple circuits using series and parallel connections.
+                       Understand short circuits concept.
+
+
+
+
+
+
+
+
+                   With our robotic arm now powered and moving
+                   thanks to the electricity and circuits, it’s time to
+                   take the next step-creating a hand that can grasp
+                   and hold objects.
+
+                   Just like engineers design machines to be both
+                   functional and ecient, we’ll focus on building a
+                   hand that not only works seamlessly with the arm
+                   but also looks purposeful and practical.
+
+                   Let’s dive into the exciting challenge of designing
+                   and constructing a moving hand to bring our
+                   robotic arm to life!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                          31]]></page></pages></Search>

@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Search><pages Count="3"><page Index="1"><![CDATA[UNIT 01        [ Beginner ]                                                LESSON 01
+
+                  Chapter 03 : Programing Domain.                              Select Your Location!
+
+
+
+
+
+
+               Stepping Stone:
+               Stepping Stone:
+
+
+
+                 You neet to know…                               You will be able to…
+
+
+                         How to use App Inventor for
+                                                                        Understand the basic functionality of a
+                         creating a user interface and                  mobile application and how it interacts
+                         coding.                                        with hardware components.
+                         Blutooth client on app inventor and
+                                                                        Identify the key components of
+                         how to connect it the blutooth module.
+                                                                        Bluetooth communication, including
+                                                                        Bluetooth modules and the necessary
+                                                                        protocols.
+
+                                                                        Recall the key features of a museum car
+                                                                        system, such as the controls, motors,
+                                                                        and spots for stopping.
+                                                                        Describe how to design a user
+                                                                        interface that allows visitors to select
+                                                                        stop.
+
+
+
+
+
+
+
+                                                                   How can you ensure the car
+
+                                                                   stops at the exact location
+               let's                                               selected by the user in the
+               let's
+                                                                   app?
+
+
+            Think                                                  . ........................................................................................................... .
+            Think
+
+                                                                   . ........................................................................................................... .
+
+                                                                   . ........................................................................................................... .
+
+                                                                   . ........................................................................................................... .
+
+                                                                   . ........................................................................................................... .
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                          20]]></page><page Index="2"><![CDATA[Explore
+               Explore
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                 Control the car using your mobile
+                 phone and try to navigate it around
+                 obstacles within a set time limit. Can
+                 you avoid all obstacles and complete it
+                 before time runs out?
+
+
+
+
+
+
+
+                      READ IT..
+
+
+
+
+                  To help you understand the Bluetooth block in MIT App
+                  Inventor and how to establish a basic Bluetooth
+                  connection, you can refer to the following guide:
+
+
+
+
+                  chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj
+                  /https://iot.appinventor.mit.edu/assets/howtos/MIT_App_
+                  Inventor_Basic_Connection.pdf
+                                                                                           Scan Here!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                          21]]></page><page Index="3"><![CDATA[Assessment Exercise
+
+
+
+
+
+
+
+
+
+                          Focus
+                           Focus
+
+
+
+
+
+              Create a user-friendly interface
+              for your application using MIT App
+              Inventor, ensuring that it is
+              intuitive and easy to navigate for
+              users, to choose the spot they want
+              so the car can go there.
+
+
+
+
+
+
+
+
+                          Practice
+                          Practice
+
+
+
+
+               Create the code for your application
+               and connect it to the car
+
+
+
+
+
+
+
+
+
+                                        After we created our app let’s go
+                                        back and add this part to create
+                                        part.
+
+
+
+
+
+
+
+
+
+
+                    NOW I CAN..
+
+
+
+
+                       Create an intuitive user interface that allows users to select specic
+                       spots for the museum car to stop.
+
+
+
+
+
+
+
+                                                         22]]></page></pages></Search>

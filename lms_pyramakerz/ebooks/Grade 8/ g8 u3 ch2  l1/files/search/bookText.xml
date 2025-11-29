@@ -1,0 +1,295 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Search><pages Count="5"><page Index="1"><![CDATA[UNIT 03         [ Advanced ]                                               LESSON 01
+
+                  Chapter 02 : Web Development.                                  Make it interactive.
+
+
+
+
+
+
+               Stepping Stone:
+               Stepping Stone:
+
+
+
+                 You need to know…                               You will be able to…
+
+
+                         The basic structure of an HTML                 Recognise media queries to ensure the
+                         document, including tags.                      website works well on dierent screen
+                                                                        sizes.
+                         The purpose of CSS and how it works            Introduce frameworks like Bootstrap
+                         with HTML.                                     for quicker and more consistent
+                                                                        styling.
+                         How Use the HTML <form> Tag
+                         Eectively.                                    Understand what JavaScript is and its
+                                                                        role in making websites interactive.
+                         CSS layout techniques (exbox, grid).
+                                                                        Include JavaScript in an HTML le.
+
+
+                                                                        Respond to user actions, such as button
+                                                                        clicks or form submissions using java
+                                                                        script.
+
+
+
+
+                                                                   How do you think a website
+                                                                   could improve your experience
+                                                                   in an amusement park?
+               let's                                               . ............................................................................................................
+               let's
+
+                                                                   . ............................................................................................................
+            Think                                                  What kinds of features or
+            Think
+                                                                   information you think you can
+                                                                   add to your website?
+
+                                                                   . ............................................................................................................
+
+                                                                   . ............................................................................................................
+                                                                   How can we make the website
+                                                                   more interactive and engaging
+                                                                   for users?
+
+
+                                                                   . ............................................................................................................
+                                                                   . ............................................................................................................
+
+
+
+
+
+
+                                                          35]]></page><page Index="2"><![CDATA[Explore
+               Explore
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                 Create a website for the amusement park using html and Css
+                 including the following :
+
+                    Navigation Bar.
+                    Interactive Booking Form.
+                    Carousel or Image Gallery.
+                    Information Cards for Rides and Attractions.
+
+
+
+
+
+
+                    WATCH IT..
+
+
+
+
+                                        Click on the link to learn about how to make
+                                        your website t to dierent screen sizes using
+                                        Css media queries.
+                                        https://www.youtube.com/watch?v=2KL-z9A56SQ
+                                                                                              Scan Here!
+
+
+
+                                        Watch the video to learn more about java
+                                        script.
+                                        https://www.youtube.com/watch?v=upDLs1sn7g4
+
+                                                                                              Scan Here!
+
+
+
+                                        Add java script to html
+                                        https://www.youtube.com/watch?v=lvvXw3HncDM
+
+
+                                                                                              Scan Here!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                          36]]></page><page Index="3"><![CDATA[Assessment Exercise
+
+
+
+
+
+
+
+
+
+                          Focus
+                          Focus
+
+
+
+              What is JavaScript primarily used for in web development?
+
+
+              A) Styling web pages.
+              B) Creating interactive website features.
+              C) Managing databases.
+              D) Hosting websites.
+
+
+
+
+
+
+
+                         Practice
+                          Practice
+
+
+
+
+              Include java script le to your html le.
+
+              Add an event listener to a button to trigger a specic action when it’s
+              clicked.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              Handle form data when the user submits it. Prevent the default form
+              submission to process the data dynamically
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                          37]]></page><page Index="4"><![CDATA[Return back to the EDP paper and
+                                        add this to the improve part.
+
+
+
+
+
+
+
+
+
+
+
+                    NOW I CAN..
+
+
+
+
+                    Recognise media queries to ensure the website works well on dierent
+                    screen sizes.
+
+
+                    Introduce frameworks like Bootstrap for quicker and more consistent
+                    styling.
+
+
+                    Understand what JavaScript is and its role in making websites
+                    interactive.
+
+                    Include JavaScript in an HTML le.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                          38]]></page><page Index="5"><![CDATA[CREATE YOUR STORY]]></page></pages></Search>

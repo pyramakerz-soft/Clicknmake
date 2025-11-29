@@ -1,0 +1,1 @@
+﻿positionForPages[10]={page:10,positions:[{word:"Parts of the Books Included ",left:0.088235,top:0.088474,width:0.208405,height:0.019243}]};

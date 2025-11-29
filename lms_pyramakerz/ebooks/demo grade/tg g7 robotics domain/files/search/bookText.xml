@@ -1,0 +1,631 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Search><pages Count="13"><page Index="1"><![CDATA[Theme 1
+
+
+
+               [Insert Theme Name]
+
+
+
+
+               Learning Outcomes
+
+
+               By the end of this theme, students will be able to:
+
+                   1.  [Outcome1]
+                   2.  [Outcome 2]
+                   3.  [Outcome 3]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            "What might happen if the car responds too slowly or erratically to the commands?"
+                          (This allows students to think critically about issues like lag or unreliability, which may
+                              affect the car’s performance.)
+                          Conclude with Evaluative Questions:
+
+                            "How can we ensure that the car responds quickly and reliably, even when it’s far away
+                              from the mobile device?"
+                          (This question encourages students to apply their understanding of Bluetooth and potential
+                              solutions, such as signal strength, interference, or improving the system’s communication
+                              protocols.)
+                            "What strategies or technologies do you think could improve the reliability of
+                              communication between the car and the mobile app?"
+                              (This could lead to discussions on optimizing Bluetooth range, using stronger signals, or
+                              considering other wireless communication methods like Wi-Fi.)
+
+
+
+                       o  Question Wall Strategy:
+                          Implementation for the Engage Part of the Lesson:
+
+
+                          Objective: To encourage students to generate questions and reflections about the problem of
+                          making the remote-controlled car respond quickly and reliably, and to explore their thinking
+                          as a group
+
+
+                          Set Up the Question Board:
+
+                          1)Before the lesson begins, set up the board in the classroom where students can write down
+                          their questions or thoughts.
+
+                          2) Introduce the Question: How can we make the remote control car respond quickly and
+                          reliably to commands sent from the mobile app, even when the car is far away?
+                          3) Provide Sticky Notes and Instructions.
+                          4) Group Discussion:
+                             Divide students into groups and give them time to discuss with each other then let them stick their
+                          answers on the board
+
+
+
+
+
+               3. Explore
+
+                     Teacher Role:
+                       Guiding the Exploration:
+
+                       o  Provide clear instructions:
+                          Explain the task: "Now, we'll start connecting the components and learning about how to
+                          control motor speed using PWM."
+                       o  Demonstrate safety practices:
+                          Emphasize safety rules regarding electrical components, especially when working with
+                          batteries.]]></page><page Index="2"><![CDATA[]]></page><page Index="3"><![CDATA[Lesson Plan
+
+
+               1. Engage
+
+                     Teacher Role:
+
+                          o  Activate Prior Knowledge: The teacher should help students connect the project to their
+                              existing knowledge and experiences. This can be done by:
+
+                                Asking students to brainstorm ideas about how to control a car remotely
+                                Discussing the different components used in the project and their functions
+                                Relating the project to other technologies that students are familiar with, such as
+                                 video games or remote-controlled toys.
+
+                          o  Use engaging strategies (e.g., showing visuals, asking questions) to spark curiosity.
+                          o  Provide support during discussions and encourage diverse viewpoints.
+                     Expected From Students:
+                          o  Active Participation in Brainstorming: Students should actively contribute ideas about
+                              how to control a car remotely. This includes:
+
+                                Offering suggestions, even if they seem unconventional.
+                                Building upon each other's ideas.
+                                Respectfully considering different viewpoints.
+                                Examples: "Maybe we could use a remote control?", "What about a phone app?",
+                                 "Could we use signals like radio waves?"
+                          o  Connecting to Prior Knowledge: Students should make connections between the project
+                              and their existing knowledge of technology
+                     Parts of the books included.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                     Introduction:
+                          o  The "Real-World Application" Hook
+
+                                The Hook: Show a short (10 second) video clip of a real-world application of remote-
+                                 controlled technology. Example:]]></page><page Index="4"><![CDATA[  A drone delivering a package.
+                                 https://youtube.com/shorts/KbYCNYaHphM?si=C2UxZDTAOilyKReg
+
+                                The Preview: Briefly explain that these technologies rely on similar principles to what they
+                                 will be learning.
+                                The Question: Ask: "What are the advantages of being able to control something remotely,
+                                 without physically being there?"
+                                Connecting to the Lesson: Explain that they will be designing and building a small-scale
+                                 remote-controlled car using Bluetooth, just like some of these real-world examples.
+                          o  Show and Tell & Picture Walk:
+                                        Bring out the actual components of the robotic car:
+                                Arduino Uno
+                                (2)Motors
+                                L298N Motor Driver
+                                Battery
+                                Bluetooth Module
+
+                                 Show a simple picture of a basic circuit diagram showing how the components
+                                 connect.
+                                (Picture Walk): Display larger, clearer images or diagrams of each component.
+                                 Briefly explain the function of each one in simple terms, relating it back to the
+                                 idea of controlling the car remotely. For example, "The Bluetooth module
+                                 receives signals from your phone, telling the Arduino what to do."
+
+                   Reflection:
+                       Purpose of Reflection:
+                       Encourages critical thinking and helps students connect story themes to lesson objectives.
+
+
+
+               2. Think
+
+                     Questions
+                       How can we make the remote control car respond qquickly and reliably to commands sent from
+                       the mobile app, even when the car is far away?
+                     Strategy:
+                          o  Scaffold Strategy: Ask scaffolded questions to lead students to a deeper understanding.
+
+                          Begin with Simple Recall Questions:
+
+                            "What components do we use in the car to make it move?"
+                          (This helps students recall basic elements like motors, motor drivers, and controllers involved
+                              in the car’s movement.)
+                            "What do you think Bluetooth is used for in this system?"
+                          (This question encourages students to recall how Bluetooth facilitates communication
+                              between the car and the mobile phone.)
+                          Progress to More Analytical Questions:
+                            "Why do you think the car needs to respond quickly to commands from the mobile app?"
+                          (This question helps students think about the importance of responsiveness in controlling the
+                              car, especially in tasks like navigation or avoiding obstacles.)]]></page><page Index="5"><![CDATA[  "What might happen if the car responds too slowly or erratically to the commands?"
+                          (This allows students to think critically about issues like lag or unreliability, which may
+                              affect the car’s performance.)
+                          Conclude with Evaluative Questions:
+
+                            "How can we ensure that the car responds quickly and reliably, even when it’s far away
+                              from the mobile device?"
+                          (This question encourages students to apply their understanding of Bluetooth and potential
+                              solutions, such as signal strength, interference, or improving the system’s communication
+                              protocols.)
+                            "What strategies or technologies do you think could improve the reliability of
+                              communication between the car and the mobile app?"
+                              (This could lead to discussions on optimizing Bluetooth range, using stronger signals, or
+                              considering other wireless communication methods like Wi-Fi.)
+
+
+
+                       o  Question Wall Strategy:
+                          Implementation for the Engage Part of the Lesson:
+
+                          Objective: To encourage students to generate questions and reflections about the problem of
+                          making the remote-controlled car respond quickly and reliably, and to explore their thinking
+                          as a group
+
+                          Set Up the Question Board:
+
+
+                          1)Before the lesson begins, set up the board in the classroom where students can write down
+                          their questions or thoughts.
+
+
+                          2) Introduce the Question: How can we make the remote control car respond quickly and
+                          reliably to commands sent from the mobile app, even when the car is far away?
+                          3) Provide Sticky Notes and Instructions.
+                          4) Group Discussion:
+                             Divide students into groups and give them time to discuss with each other then let them stick their
+                          answers on the board
+
+
+
+
+               3. Explore
+
+                     Teacher Role:
+                       Guiding the Exploration:
+
+                       o  Provide clear instructions:
+                          Explain the task: "Now, we'll start connecting the components and learning about how to
+                          control motor speed using PWM."
+                       o  Demonstrate safety practices:
+                          Emphasize safety rules regarding electrical components, especially when working with
+                          batteries.]]></page><page Index="6"><![CDATA[o  Facilitate connections:
+                          Help students connect the motors, motor driver, and battery according to the circuit diagram.
+                       o  Play the prepared video on PWM in Arduino.
+                          https://youtu.be/7OYLakRyjTc?si=sTPXokQCRRnFqO2U
+                       o  Ask guiding questions:
+                       "What do you think will happen if we change the PWM values in the Arduino code?"
+                       "How can we use PWM to control the speed of the motors?"
+                       "What might happen if the PWM value is too high or too low?"
+                       o  Encourage experimentation:
+                          Encourage students to try different PWM values and observe the motor's behavior.
+                        Monitoring and Support:
+
+                       o  Circulate around the classroom: Observe student work and provide individual assistance as
+                          needed.
+                       o  Encourage collaboration: Foster a collaborative learning environment where students can
+                          help each other.
+
+
+                     Expected From Students:
+                       o  Correctly wired circuit with motor, motor driver, and power.
+                       o  Notes from the PWM video summarizing the key concepts.
+                       o  Understand of how PWM works and how it affects motor speed.
+                     Parts of the books included.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+               4. Explain
+
+                     Teacher Role:
+                       Provide Direct Instruction:
+
+                       Introduce the Key Components: The teacher will introduce and explain the function of each
+                       component of the robotic car: Arduino Uno, motors, L298N motor driver, Bluetooth module, and
+                       the battery.
+                              o  Arduino Uno: A microcontroller that acts as the brain of the car, controlling inputs
+                                 (e.g., Bluetooth signals) and outputs (e.g., motor movements).
+                              o  Motors: The motors allow the car to move by turning the wheels. They are controlled
+                                 through the L298N motor driver.
+                              o  L298N Motor Driver: This component is responsible for controlling the direction and
+                                 speed of the motors based on signals from the Arduino.
+                              o  Bluetooth Module: This allows the car to communicate wirelessly with a mobile
+                                 device.
+                              o  Battery: Powers the car’s electronics and motors.
+                       Explain How They Work Together: The teacher will guide students through the flow of
+                       information and power:
+                              The mobile app sends commands to the Bluetooth module.
+                              The Bluetooth module transmits the signal to the Arduino.
+                              The Arduino processes the signal and sends appropriate commands to the motor driver.
+                              The motor driver controls the motors, which in turn moves the car.
+
+
+                       Ask students to explain the process in their own words, prompting them with questions
+                       like:
+                       "How does the mobile app send commands to the car?"
+                       "What role does the Arduino play in the communication process?"
+                       "How do the motors actually move the car based on the signals they receive?"
+                     Parts of the books included.
+                   https://youtu.be/7OYLakRyjTc?si=sTPXokQCRRnFqO2U]]></page><page Index="7"><![CDATA[  Activity - Do It:
+                            Materials Needed
+                              2 motors
+                              Arduino
+                              Bread board
+                              Motor driver
+                              Jumpers
+                              Battery
+                              Bluetooth module
+
+                            Step-by-Step Instructions
+                              o  Connection
+                              Connection
+                                Motor Driver Pinout
+                                 •  IN1: Control input for Motor 1 (Pin 2 on Arduino)
+                                 •  IN2: Control input for Motor 1 (Pin 3 on Arduino)
+                                 •  IN3: Control input for Motor 2 (Pin 4 on Arduino)
+                                 •  IN4: Control input for Motor 2 (Pin 5 on Arduino)
+                                 •  OUT1: Motor 1 connection (connect to one terminal of the first motor)
+                                 •  OUT2: Motor 1 connection (connect to the other terminal of the first motor)
+                                 •  OUT3: Motor 2 connection (connect to one terminal of the second motor)
+                                 •  OUT4: Motor 2 connection (connect to the other terminal of the second motor)
+                                Bluetooth Module to Arduino
+                                 •  VCC: 5V (from Arduino)
+                                 •  GND: Ground (from Arduino)
+                                 •  TX: Bluetooth module transmit pin (connect to Arduino RX)
+                                 •  RX: Bluetooth module receive pin (connect to Arduino TX)
+                                Connect the 5V and GND of the arduino to + and – of the bread board, so any need
+                                 for a connection to the 5V or the GND of the Arduino we connect it to the + and – of
+                                 the bread board
+                              o  Circuit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                     Expected From Students:
+                       Listen Actively: Pay attention to the teacher's explanation of the components and how they work
+                          together in the robotic car.
+
+                   Understand and Describe the Process: Be able to explain how each component (Arduino, motors,
+                       motor driver, Bluetooth module, and battery) functions and how they interact to make the car
+                       work.
+
+                   Collaborate with Peers: Discuss with classmates to check understanding and share ideas about how
+                       the system works.
+
+                   Take Notes: Record important information about the components and their roles, which will help in
+                       building and understanding the robotic car.
+
+
+
+
+
+
+               5. Elaborate
+
+                     Teacher Role:
+
+                          o  Facilitate hands-on exploration by guiding students in assembling the robotic car.
+                          o  Encourage critical thinking and problem-solving as students test and modify the car.
+                          o  Support group work by answering questions and helping students troubleshoot.
+                          o  Introduce challenges or extensions to deepen learning (e.g., modifying code or testing the
+                              car's range).
+                     Expected From Students:
+                          o  Be able to connect the car with the mobile application
+                          o  Actively engage in building, testing, and modifying the car.
+                          o  Collaborate with peers to solve problems and troubleshoot.
+                          o  Apply knowledge to identify and fix issues in the system.
+                     Parts of the books included.]]></page><page Index="8"><![CDATA[// Define the motor control pins
+               int motor1Pin1 = 2;
+               int motor1Pin2 = 3;
+               int motor2Pin1 = 4;
+               int motor2Pin2 = 5;
+
+               void setup() {
+                 // Set motor control pins as outputs
+                 pinMode(motor1Pin1, OUTPUT);
+                 pinMode(motor1Pin2, OUTPUT);
+                 pinMode(motor2Pin1, OUTPUT);
+                 pinMode(motor2Pin2, OUTPUT);
+
+                 // Start serial communication for Bluetooth
+                 Serial.begin(9600);
+               }
+
+               void loop() {
+                 // Check if data is available from Bluetooth
+                 if (Serial.available()) {
+                   char command = Serial.read();
+
+                   // Example commands to control motors
+                   if (command == 'F') {   // Move Forward
+                     digitalWrite(motor1Pin1, HIGH);
+                     digitalWrite(motor1Pin2, LOW);
+                     digitalWrite(motor2Pin1, HIGH);
+                     digitalWrite(motor2Pin2, LOW);
+                   }
+                   else if (command == 'B') { // Move Backward
+                     digitalWrite(motor1Pin1, LOW);
+                     digitalWrite(motor1Pin2, HIGH);
+                     digitalWrite(motor2Pin1, LOW);
+                     digitalWrite(motor2Pin2, HIGH);
+                   }
+                   else if (command == 'L') { // Turn Left
+                     digitalWrite(motor1Pin1, LOW);
+                     digitalWrite(motor1Pin2, HIGH);
+                     digitalWrite(motor2Pin1, HIGH);
+                     digitalWrite(motor2Pin2, LOW);
+                   }
+                   else if (command == 'R') { // Turn Right
+                     digitalWrite(motor1Pin1, HIGH);
+                     digitalWrite(motor1Pin2, LOW);
+                     digitalWrite(motor2Pin1, LOW);
+                     digitalWrite(motor2Pin2, HIGH);
+                   }
+                   else if (command == 'S') { // Stop
+                     digitalWrite(motor1Pin1, LOW);
+                     digitalWrite(motor1Pin2, LOW);
+                     digitalWrite(motor2Pin1, LOW);
+                     digitalWrite(motor2Pin2, LOW);
+                   }
+                 }
+               }]]></page><page Index="9"><![CDATA[  Reflection Questions]]></page><page Index="10"><![CDATA[4. Explain
+
+                     Teacher Role:
+                       Provide Direct Instruction:
+
+                       Introduce the Key Components: The teacher will introduce and explain the function of each
+                       component of the robotic car: Arduino Uno, motors, L298N motor driver, Bluetooth module, and
+                       the battery.
+                              o  Arduino Uno: A microcontroller that acts as the brain of the car, controlling inputs
+                                 (e.g., Bluetooth signals) and outputs (e.g., motor movements).
+                              o  Motors: The motors allow the car to move by turning the wheels. They are controlled
+                                 through the L298N motor driver.
+                              o  L298N Motor Driver: This component is responsible for controlling the direction and
+                                 speed of the motors based on signals from the Arduino.
+                              o  Bluetooth Module: This allows the car to communicate wirelessly with a mobile
+                                 device.
+                              o  Battery: Powers the car’s electronics and motors.
+                       Explain How They Work Together: The teacher will guide students through the flow of
+                       information and power:
+                              The mobile app sends commands to the Bluetooth module.
+                              The Bluetooth module transmits the signal to the Arduino.
+                              The Arduino processes the signal and sends appropriate commands to the motor driver.
+                              The motor driver controls the motors, which in turn moves the car.
+
+
+                       Ask students to explain the process in their own words, prompting them with questions
+                       like:
+                       "How does the mobile app send commands to the car?"
+                       "What role does the Arduino play in the communication process?"
+                       "How do the motors actually move the car based on the signals they receive?"
+                     Parts of the books included.
+                   https://youtu.be/7OYLakRyjTc?si=sTPXokQCRRnFqO2U]]></page><page Index="11"><![CDATA[  Expected From Students:
+                       Listen Actively: Pay attention to the teacher's explanation of the components and how they work
+                          together in the robotic car.
+
+                   Understand and Describe the Process: Be able to explain how each component (Arduino, motors,
+                       motor driver, Bluetooth module, and battery) functions and how they interact to make the car
+                       work.
+
+                   Collaborate with Peers: Discuss with classmates to check understanding and share ideas about how
+                       the system works.
+
+                   Take Notes: Record important information about the components and their roles, which will help in
+                       building and understanding the robotic car.
+
+
+
+
+
+               5. Elaborate
+
+                     Teacher Role:
+
+                          o  Facilitate hands-on exploration by guiding students in assembling the robotic car.
+                          o  Encourage critical thinking and problem-solving as students test and modify the car.
+                          o  Support group work by answering questions and helping students troubleshoot.
+                          o  Introduce challenges or extensions to deepen learning (e.g., modifying code or testing the
+                              car's range).
+                     Expected From Students:
+                          o  Be able to connect the car with the mobile application
+                          o  Actively engage in building, testing, and modifying the car.
+                          o  Collaborate with peers to solve problems and troubleshoot.
+                          o  Apply knowledge to identify and fix issues in the system.
+                     Parts of the books included.]]></page><page Index="12"><![CDATA[6. Evaluate
+
+                     Teacher Role:
+
+                            Design assessment tasks (e.g., testing the car’s responsiveness or troubleshooting).
+                            Ask students some questions to make sure they understand the main objectives of the
+                              Lesson
+                            Encourage self-assessment and peer review, using rubrics or checklists.
+                   o  Parts of the books included.]]></page><page Index="13"><![CDATA[]]></page></pages></Search>

@@ -1,0 +1,435 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Search><pages Count="6"><page Index="1"><![CDATA[UNIT 03         [ Advanced ]                                               LESSON 01
+
+                  Chapter 01 : Robotics Domain.               What Will Happen If Animal Escaped?
+
+
+
+
+
+
+               Stepping Stone:
+               Stepping Stone:
+
+
+
+                 You need to know…                               You will be able to…
+
+
+                         Simple circuits, including how                 Recognize limit switches. (sprites)
+                         switches work to control                       to represent dierent organisms
+                         current ow.                                   in the food chain.
+
+                                                                        How multiple limit switches can
+                                                                        be used to
+                                                                        monitor dierent elements.
+
+
+                                                                        Create a monitoring system that
+                                                                        triggers an alert when a set
+                                                                        condition, such as a missing
+                                                                        animal, is detected.
+
+
+
+
+
+
+
+
+               Adam: Mrs. Sara but how can
+               we check if an animal is
+               missing?
+
+
+               Mrs. Sara (smiling): "That's a
+               fantastic question, Adam! We
+               can actually connect multiple
+               limit switches to a central
+               controller-or as I like to call it,
+               the 'brain' of our project. The
+               brain can check all the limit
+               switches at once, and if even
+               one animal is missing, it will
+               trigger an alarm
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                         29]]></page><page Index="2"><![CDATA[How can we make our diorama
+                                                                   interactive and intelligent? Use
+                let's                                              the EDP (Engineering Design
+                 let's
+                                                                   Process) template to
+                                                                   brainstorm creative ideas.
+              Think                                                . .............................................................................................................
+              Think
+
+
+
+                                                                   . .............................................................................................................
+
+                                                                   . .............................................................................................................
+
+
+
+
+
+
+
+
+
+
+
+                                           Arduino acts like a tiny brain that helps control
+                                           things such as lights, sounds, and even robots! It’s a
+                                           special type of computer called a microcontroller.
+
+                                           Unlike regular computers that perform multiple
+                                           tasks at once, Arduino focuses on doing one task at
+                                           a time, making it perfect for projects where we
+                                           need to control various devices.
+
+
+               We’ll use Arduino as the central
+               component of our simulator, and to
+               understand how it works, you’ll get
+               to play some exciting games!"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                         30]]></page><page Index="3"><![CDATA[Explore
+               Explore
+
+
+
+
+
+
+
+
+
+
+
+
+                                   Let’s play the game to understand the
+                                   concepts that are used by Arduino to
+                                   control the LED.
+
+
+                                   https://www.mathplayground.com/code-panda
+                                   /index.html                                                Scan Here!
+
+
+
+
+                    WATCH IT..
+
+
+
+                                        Let’s watch this video to
+                                        understand what coding is?
+                                        (for revision )
+                                        https://www.youtube.com/watch?v=g
+                                        1J4181W8ss
+                                                                                              Scan Here!
+
+
+
+                                        What is a loop?
+                                        https://youtu.be/wxds6MAtUQ0?si=8h
+                                        kfoX8764Pam7ls
+                                                                                              Scan Here!
+
+
+
+                                        what is If and If/Else Statements?
+
+                                        https://youtu.be/sO4UYCbTxxo?siEwR47Zoh6d
+                                        _i1yJc
+                                                                                              Scan Here!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                          31]]></page><page Index="4"><![CDATA[Assessment Exercise
+
+
+
+
+
+
+
+
+
+                          Focus
+                          Focus
+
+
+
+
+              What is coding?
+              A) Drawing pictures.
+              B) Giving instructions to a computer.
+              C) Reading a book.
+
+
+              Why do computers need coding languages?
+
+              A) To play music.
+              B) To understand instructions.
+              C) paint pictures.
+
+
+
+
+
+
+
+
+
+
+
+
+                          Practice
+                          Practice
+
+
+
+
+
+              How can we make the
+              LED blink? Open
+              Tinkercad, choose the
+              circuit’s option, search
+              for a blinking LED
+              circuit, and explore the
+              block coding section!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                          32]]></page><page Index="5"><![CDATA[Great job, friends! Now that you know how
+                                          Arduino works, we need to create a trigger to
+                                          show that an animal has disappeared. Use the
+                                          EDP template to brainstorm ideas!
+
+
+
+
+
+
+
+
+
+                let's                                              Can you guess what this
+                 let's
+                                                                   switch does?
+
+              Think                                                . .............................................................
+              Think
+
+                                                                   . .............................................................
+                                                                   . .............................................................
+
+
+                                                                   . .............................................................
+
+
+
+
+
+
+                    WATCH IT..
+
+
+                                        Let’s watch this video to understand
+                                        more about limit switch..
+
+
+                                        https://www.youtube.com/watch?v=gcfu80zwwAQ
+                                                                                              Scan Here!
+
+
+
+
+
+
+                                                 Imagine a tiny, magic switch. This switch is so
+                                                 small, you can barely see it!
+                                                 We call it a micro-limit switch.
+
+                                                 How does it work?
+
+                                                    It's a touchy switch: It turns on or ofhen
+                                                    something touches it, it turns on or o.
+
+
+                                                    It's like a gate: It can open or close a door,
+                                                    turn on or o a light, or even start a
+                                                    machine.
+
+
+
+
+
+
+                                                          33]]></page><page Index="6"><![CDATA[Assessment Exercise
+
+
+
+
+
+
+
+
+
+                          Focus
+                          Focus
+
+
+
+
+              What is a micro limit switch?
+              A) A big, heavy switch.
+              B) A tiny switch that turns on or o when touched.
+              C) A switch that makes loud noises.
+
+
+              Why do toy cars have micro limit switches?
+
+              A) To make them look cool.
+              B) To help them stop when they hit something.
+              C) To make them go faster.
+
+
+
+
+
+
+
+
+
+
+
+
+                          Practice
+                          Practice
+
+
+
+
+
+              Replace the on/o switch
+              with a limit switch to control
+              the LED.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                          34]]></page></pages></Search>

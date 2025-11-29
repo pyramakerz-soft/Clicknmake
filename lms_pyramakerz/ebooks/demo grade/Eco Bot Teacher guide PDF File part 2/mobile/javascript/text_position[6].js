@@ -1,0 +1,1 @@
+﻿positionForPages[6]={page:6,positions:[{word:"Adding motors and wheels to the floater.",left:0.120943,top:0.114742,width:0.449544,height:0.025459},{word:"Showcase ",left:0.112275,top:0.060661,width:0.128412,height:0.028607},{word:"36",left:0.488813,top:0.956153,width:0.022415,height:0.013184}]};

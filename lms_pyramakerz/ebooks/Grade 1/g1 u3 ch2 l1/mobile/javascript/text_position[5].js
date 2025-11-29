@@ -1,0 +1,1 @@
+﻿positionForPages[5]={page:5,positions:[{word:"40",left:0.473613,top:0.955482,width:0.036571,height:0.018048},{word:"ﻚﺘﺼﻗ ﺊﺸﻧأ",left:0.394631,top:0.102936,width:0.210733,height:0.029445}]};

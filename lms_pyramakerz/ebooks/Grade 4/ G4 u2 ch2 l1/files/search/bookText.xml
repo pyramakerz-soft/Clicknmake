@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Search><pages Count="4"><page Index="1"><![CDATA[LESSON 01
+                                                                                                 LESSON 01
+              Chapter 02               Robotics Domain                                Function Your Bridge
+                                                                                      Function Your Bridge
+
+
+
+
+
+
+                 Stepping Stone:
+                 Stepping Stone:
+
+
+                   You need to know …                     You will be able to…
+
+                                                                  Design and build separate
+                          What an Arduino board is and
+                          its basic parts.                        circuits to control servo motor.
+
+                          Identify how to upload code to          Understand the sensors especially
+                          an Arduino.                             water level sensor and how to
+                                                                  function in our project.
+                          Explore the Arduino IDE and
+                          basic coding.
+
+
+
+
+
+
+               "Yesterday, I saw on TV that a bridge
+               collapsed because of ooding.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                    "That’s a problem we might face with our
+                                                                    bridge, so we need to nd a solution.
+                                                                    Does anyone have any ideas?"
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                      "Mrs. Sara, we could
+                                                                                      lift the bridge when
+                                                                                      there’s a ood."
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                         24]]></page><page Index="2"><![CDATA[What electrical
+
+                  let's                                    components can we
+                  let's
+                                                           add to lift and lower
+                Think                                      the bridge?
+                Think
+
+
+
+
+                                                            . ...........................................................................................................................
+
+                                                            . ...........................................................................................................................
+
+                                                            . ...........................................................................................................................
+
+                                                            . ...........................................................................................................................
+
+                                                            . ...........................................................................................................................
+
+
+
+
+
+           Do you think we will
+
+           use the Arduino
+
+           board in this step?
+
+
+
+           . ...........................................................................................................................
+           . ...........................................................................................................................
+
+           . ...........................................................................................................................
+
+           . ...........................................................................................................................
+
+           . ...........................................................................................................................
+
+
+
+
+
+
+
+
+
+
+
+                                       Do you know that :A servo motor is a
+                                       special type of motors that can
+
+                                       accurately control how something turns
+                                       or moves in a straight line.
+
+
+
+
+
+
+
+
+
+
+
+                                                          25]]></page><page Index="3"><![CDATA[Explore
+           Explore
+
+
+
+
+
+
+
+
+
+
+
+                                                    Connect a servo motor to
+
+                                                    Arduino and try to control it
+                                                    by coding.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                Watch it..
+                Watch it..
+                                                               Read about it
+
+
+                Servo Motors require power and                 Servo Motors Vs Dc Motor
+                signal. To understand how to use
+                them we have to understand how                 https://www.telcointercon.com
+                they work. Follow the link to learn
+                more about that.                               /blog/servo-motors-vs-dc-motors/
+
+                                                                                                  Scan Here!
+                 https://www.youtube.com/  Scan Here!
+                 watch?v=tHOH-bYjR4k
+
+
+
+
+
+
+
+
+
+
+                                                         26]]></page><page Index="4"><![CDATA[Assessment
+                                 Assessment
+
+
+
+
+
+            Focus
+
+
+
+
+
+
+
+            Which Arduino pin should we use to connect the servo motor's
+            signal wire?
+
+
+
+            . ..............................................................................................................................................................................................................................................................................
+
+            . ..............................................................................................................................................................................................................................................................................
+
+            . ..............................................................................................................................................................................................................................................................................
+
+
+
+           Practice
+           Practice
+
+
+
+            Simulate on tinkercad
+            a servomotor
+            controlled by LDR.
+
+
+
+
+
+
+
+
+           Challenge
+           Challenge
+
+
+
+
+
+
+            Try to add 2 servo motors on
+            tinkercad and simulate it.
+
+
+
+
+
+
+
+
+                  Showcase                           Lift the bridge up and down.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                          27]]></page></pages></Search>

@@ -1,0 +1,1 @@
+﻿positionForPages[12]={page:12,positions:[{word:"Attach the propeller to your model. ",left:0.120944,top:0.116394,width:0.271088,height:0.017450},{word:"Show Case ",left:0.115098,top:0.052039,width:0.138481,height:0.028606},{word:"42",left:0.488813,top:0.956153,width:0.022415,height:0.013184}]};

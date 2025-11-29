@@ -1,0 +1,3619 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Search><pages Count="48"><page Index="1"><![CDATA[But what happens if a lamp breaks or a component is
+
+                   disconnected?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   In a series circuit, if a lamp breaks or a component is disconnected,
+                   the circuit is broken, and all the components stop working at the
+                   same time.
+
+                   So, Series circuits are useful if you want a warning that one of the
+                   components in the circuit has failed. They also use less wiring than
+                   parallel circuits.
+
+
+
+
+
+
+                   Parallel circuits
+                   The components are connected in multiple branches, forming
+                   separate paths for the electric current to ﬂow In parallel circuits
+                   different components are connected on different branches of the
+                   wire.
+                   Meaning that the electric current has more than one path to ﬂow
+                   in the same circuit.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           Level 02 - Electricity - Lesson 03]]></page><page Index="2"><![CDATA[What happens if a lamp breaks or a component is
+
+                   disconnected?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   In a parallel circuit, if a lamp breaks or a component is
+                   disconnected from one parallel wire, the components on different
+                   branches keep working.
+                   So, Parallel circuits are useful if you want components to continue
+                   to work, even if one component has failed. This is why our homes
+                   are wired up with parallel circuits.
+
+
+
+
+
+
+
+                       https://www.youtube.com/watch?v=RQ3djos_LY8
+
+
+
+                                                                                        Scan Here!
+
+
+
+
+
+
+
+                   Workshop
+
+
+
+
+
+
+
+
+                       You can practice on this link:
+                       https://phet.colorado.edu/sims/html/circuit-construction-ki
+                       t-dc/latest/circuit-construction-kit-dc_en.html
+                                                                                        Scan Here!
+
+
+
+
+
+
+
+
+
+           Level 02 - Electricity - Lesson 03]]></page><page Index="3"><![CDATA[level
+
+                                                                                                02
+
+                 LESSON 4                                                                  Electricity
+
+
+
+
+
+
+                OHM’S LAW
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           Level 02 - Electricity - Lesson 04]]></page><page Index="4"><![CDATA[Have you ever thought about how to calculate the
+
+                   current owing in the circuit?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   Ohm’s law is one of the most popular and important laws that
+                   helps us deﬁne the relationship between the most basic elements
+                   of power which are voltage, current, and resistance.
+
+
+
+
+
+                   Resistance
+
+                   Resistance (R) is a measure of the opposition to current ﬂow in an
+                   electrical circuit.
+                   Measured in ohms.
+
+
+
+                   Current
+
+                   Current is the ﬂow of electric charge carriers such as electrons.
+                   Electrical current ﬂows from negative to positive points.
+                   Measured in ampere (A).
+
+
+
+                   Voltage
+
+                   Voltage is the pressure from an electric circuit’s power source that
+                   pushes energized electrons (current) through a running loop,
+                   allowing them to perform work like illuminating a light.
+                   It is measured in Volt.
+
+
+
+
+
+
+
+
+
+
+
+
+           Level 02 - Electricity - Lesson 04]]></page><page Index="5"><![CDATA[What is Ohm’s law?
+
+
+                   Ohm’s law states that the current through a conductor between
+                   two points is directly proportional to the voltage across the two
+                   points. Ohm’s law formula is written as;
+
+
+
+
+
+
+
+
+                   V     I
+                   Therefore, V = RI where R is a
+                   constant called resistance.
+
+                   R depends on the dimensions of the
+                   conductor, and on the material of the
+                   conductor. Its unit is Ohm (Ω).
+
+
+
+
+
+
+
+
+
+
+                   Ohm’s Law formula
+
+                   Ohm’s law can be demonstrated in a mathematical form:
+
+
+
+
+                                                      V = IR
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           Level 02 - Electricity - Lesson 04]]></page><page Index="6"><![CDATA[Where:
+
+
+
+                    Quantity     Ohm's Law      Unit of measure    Role in circuits
+                                 symbol         (abbreviation)
+
+                    Voltage           V         Volt (V)           Pressure that triggers electron ﬂow
+
+                    Current           I         Ampere, amp (A)    Rate of electron ﬂow
+
+
+                    Resistance        R         Ohm (Ω)            Flow inhibitor
+
+
+
+
+                   If two of these values are known, you can use Ohm's Law to
+                   calculate the third. Just modify the pyramid as follows:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   Example 1:
+
+
+                   Voltage (E) and resistance (R) are known, calculate the current.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   What is the current in the circuit?
+
+                   I = E/R = 12V/6Ω = 2A.
+
+
+
+
+
+
+
+           Level 02 - Electricity - Lesson 04]]></page><page Index="7"><![CDATA[Example 2:
+
+                   Voltage (E) and current (I) are known. Calculate the resistance R.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   What is the resistance created by the lamp?
+
+                   R = E/I = 24V/6A = 4Ω
+
+
+
+
+
+
+
+                   Example 3:
+
+                   Current (I) and resistance (R) are known. What is the voltage?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   What is the voltage in the circuit?
+
+                   E = I x R = (5A)(8Ω) = 40 V
+
+
+
+
+
+
+
+
+           Level 02 - Electricity - Lesson 04]]></page><page Index="8"><![CDATA[AVOmeter – Multimeter
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   AVO meter stands for A – ampere, V – volt, O – ohm meter. It is also
+                   known as a multimeter. Avometer or multimeter is a tester that is
+                   used to measure electric current, the potential difference between
+                   two points in a circuit, and also measures resistance in a circuit.
+
+
+                   It consists of a display screen, a dial, or buttons to select the type
+                   of measurement, and two probes (red and black) that are used to
+                   make contact with the electrical component being measured.
+
+
+
+
+
+
+
+
+                   Measuring Voltage
+
+                   To measure voltage, connect the
+                   avometer’s probes to the
+                   appropriate points in the circuit.
+                   Select the voltage range suitable for
+                   the expected measurement and
+                   read the displayed value on the
+                   avometer’s scale or digital screen.
+
+
+
+
+
+
+
+                   Measuring Current
+
+                   When measuring current, the
+                   avometer is placed in series with
+                   the circuit.
+
+
+
+
+
+
+
+
+
+
+           Level 02 - Electricity - Lesson 04]]></page><page Index="9"><![CDATA[Measuring Resistance
+
+                   To measure resistance, disconnect
+                   the component from the circuit or
+                   power source. Connect the
+                   avometer’s probes to the
+                   component’s terminals and set the
+                   avometer to the resistance
+                   measurement mode. Read the
+                   displayed resistance value on the
+                   scale or digital screen.
+
+
+
+
+
+
+
+
+
+
+
+                   Here are the steps to use an Avo meter:
+
+
+
+
+                   1.  Select the type of measurement: The dial or buttons on the Avo
+                      meter allow you to select the type of measurement you want to
+                      make, such as voltage, current, or resistance.
+
+
+                   2. Connect the probes: Depending on the type of measurement you
+                      are making, you will need to connect the probes to different parts
+                      of the circuit. For example, to measure voltage, you would connect
+                      the red probe to the positive side of the component being
+                      measured and the black probe to the negative side.
+
+                   Note: the black probe is always connected to the com hole of the Avometer.
+
+
+                   3. Take the measurement: Once the probes are connected, you can
+                      take the measurement by reading the value on the display screen.
+                      Make sure you are reading the correct units and range.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           Level 02 - Electricity - Lesson 04]]></page><page Index="10"><![CDATA[Some tips to keep in mind while using an Avo meter:
+
+
+                   •   Always make sure the probes are connected correctly before
+                       taking a measurement.
+                   •   Be careful not to touch the probes while taking a measurement,
+                       as this can cause inaccurate readings or even damage the Avo
+                       meter.
+                   •   Use the correct range and units for the measurement you are
+                       taking to ensure accurate results.
+                   •   Always turn off the Avometer after use to conserve the battery.
+
+
+
+
+                   Workshop 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   Workshop 2
+
+
+
+
+                   Add short circuits
+                   workhop for sc.
+
+
+
+
+
+
+
+           Level 02 - Electricity - Lesson 04]]></page><page Index="11"><![CDATA[level
+
+                                                                                                02
+
+                 LESSON 1                                                                  Mechatronics
+
+
+
+
+
+
+                GEARS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           Level 02 - Mechatronics - Lesson 01]]></page><page Index="12"><![CDATA[Have you ever wondered how do cars move?
+
+
+                   When you push the fuel pedal the car moves, when the pedal is
+                   pushed harder it moves at a higher speed.
+
+                   Thanks to the gearbox inside the car.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   What are the gears?
+                   Gears are mechanisms that mesh together via teeth and are used
+                   to transmit rotary motion from one shaft to another. Geared
+                   devices can change the speed, torque, and direction of a power
+                   source.
+
+
+                   Gears are deﬁned by two important items: radius and number of
+                   teeth. They are typically mounted, or connected to other parts, via
+                   a shaft or base.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   When a large gear is connected with a small one, the smaller gear
+                   will rotate faster than the bigger one. Turning the big gear slowly
+                   will require less energy than it would rotate the small one quickly;
+                   so, by using gear, there is saving of energy and making work
+                   easier.
+
+
+
+
+
+
+           Level 02 - Mechatronics - Lesson 01]]></page><page Index="13"><![CDATA[Three basics, we should know to understand how gears
+                   transmit speed and torque.
+
+
+
+                   Rotational velocity
+                       is the velocity of an object rotating around an axis.
+
+
+
+
+                   Torque
+                       is a rotating force produced by a motor. The more torque
+                       the motor produces, the greater is its ability to perform
+                       work
+
+
+
+                   Power
+
+                       is how rapidly work is accomplished.
+
+
+
+
+                   Power equals rotational velocity multiplied by the torque
+
+
+
+
+
+                   So, the power-driven to any of
+                   the gears is either translated to
+                   torque or rotational velocity.
+
+                   when two gears mesh together,
+                   power is applied to one of them
+                   and thus transmitted to the
+                   other.
+
+
+                   the bigger gear will translate this power to large torque at the
+                   expense of the speed (high torque low speed), while the smaller
+                   gear will translate such power to high speed and low torque.
+
+
+
+                   That's why cars need gearboxes. To begin with, a car needs a huge amount of
+                   force and very little speed to get it moving, so the driver uses the biggest gear.
+
+                   Once the car's going, the driver switches to a smaller gear. More of the engine's
+                   power switches to making speed and the car goes faster.
+
+                   The driver uses the gearshift to make the engine generate more force or more
+                   speed depending on whether hill-climbing power, acceleration from a standstill,
+                   or pure speed is needed.
+
+
+
+
+
+
+
+
+           Level 02 - Mechatronics - Lesson 01]]></page><page Index="14"><![CDATA[Why do we must press on a clutch before changing gears?
+
+
+                   In practice, changing gears means meshing different sized gear
+                   wheels together, but you can't do that while the gearbox is
+                   transmitting power from the engine at high speed.
+
+                   That's why you need to press a car's clutch pedal before changing
+                   gears, which disengages the engine's input from the gearbox.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                The gear-box inside the car has dierent types of gears
+
+
+                   Spur gears
+
+                   spur gears are a type of cylindrical gear, with shafts that are
+                   parallel, and teeth that are straight and oriented parallel to the
+                   shafts. They’re the simplest and most common type of gear – easy
+                   to manufacture and suitable for a wide range of applications. The
+                   spur gears are typically used for lower-speed applications,
+                   although they can be used at almost any speed.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           Level 02 - Mechatronics - Lesson 01]]></page><page Index="15"><![CDATA[Helical gears
+
+                   Helical gears are one type of cylindrical
+                   gear where the teeth are curved
+                   compared to spur gears (straight teeth),
+                   properly designed helical gears can
+                   have a larger total contact ratio which
+                   can improve vibration and noise.
+
+
+
+
+
+                   Worm gear
+
+
+                   A worm gear is a gear consisting of a
+                   shaft with a spiral thread that engages
+                   with and drives a toothed wheel.
+
+
+                   It changes the rotational movement by
+                   90 degrees.
+
+
+
+
+
+                   Bevel gear
+
+                   Bevel gears are gears where the axes of
+                   the two shafts intersect.
+
+
+                   Bevel gears are most often mounted on
+                   shafts that are 90 degrees apart but can
+                   be designed to work at other angles as
+                   well.
+
+
+
+
+                   Rack and pinion gears
+
+                   A rack and pinion are a type of linear
+                   actuator that comprises a circular gear
+                   engaging a linear gear, which operates
+                   to translate rotational motion into linear
+                   motion.
+
+
+                   Driving the pinion into rotation causes
+                   the rack to be driven linearly. Driving
+                   the rack linearly will cause the pinion to
+                   be driven into a rotation.
+
+
+
+                                                                             https://www.youtube.
+                                                                             com/watch?v=edZnq
+                                                                             d638-w
+                                                                                                  Scan Here!
+
+
+           Level 02 - Mechatronics - Lesson 01]]></page><page Index="16"><![CDATA[Idler gear
+
+                   An idler-wheel is a gear that serves only to transmit rotation from
+                   one shaft to another, in applications where it is undesirable to
+                   connect them directly. Also, it is placed between a driving and a
+                   driven gear to transfer motion without change of direction or gear
+                   ratio
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                       https://mechanicalbase.com/what-is-idl
+                                       er-gear-why-it-is-important/
+
+                                                                          Scan Here!
+
+
+
+                   A gear train can include two gears or more. Gears in between the
+                   drive gear and the driven gear are called passive gears.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           Level 02 - Mechatronics - Lesson 01]]></page><page Index="17"><![CDATA[level
+
+                                                                                                02
+
+                 LESSON 2                                                                  Mechatronics
+
+
+
+
+
+
+
+
+                PULLEY & BELTS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           Level 02 - Mechatronics - Lesson 02]]></page><page Index="18"><![CDATA[What Is Pulley?
+
+
+                   Pulleys are simply a collection of one or more wheels over which
+                   you loop a rope to make it easier to lift things. Pulley is used
+                   singles or in combination to transmit energy & motion.
+                   For example, instead of pushing a load up, you can attach it to a
+                   rope and pulley above you and pulldown to move it up.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   Mechanical advantage of pulley
+
+                   Using multiple pulleys decreases the amount of force necessary to
+                   move an object by increasing the amount of rope used to raise the
+                   object. The mechanical advantage (MA) of a pulley system is equal
+                   to the number of ropes supporting the movable load.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           Level 02 - Mechatronics - Lesson 02]]></page><page Index="19"><![CDATA[Types of pulleys
+
+
+
+
+
+
+                       Fixed pulley
+
+                       It is stationary, meaning that it
+                       cannot be moved. A ﬁxed pulley is
+                       used to redirect the force in a rope
+                       A ﬁxed pulley has a mechanical
+                       advantage of 1.
+
+
+
+
+
+
+
+
+
+                       Movable pulley
+
+                       It has an axle that is "free" to
+                       move in space. A movable pulley is
+                       used to transform forces. A
+                       movable pulley has a mechanical
+                       advantage of 2. That is, if one end
+                       of the rope is anchored, pulling on
+                       the other end of the rope will
+                       apply a doubled force to the
+                       object attached to the pulley.
+
+
+
+
+
+
+
+
+
+
+
+                       Compound pulley
+
+                       it is a combination ﬁxed and
+                       movable pulley system.
+
+
+
+
+
+
+
+
+
+
+
+
+
+                Remember gears are also used to transmit power
+
+
+
+
+
+
+
+
+           Level 02 - Mechatronics - Lesson 02]]></page><page Index="20"><![CDATA[What is the dierence between gears and pulleys?
+
+
+
+
+
+
+                    A gear is a toothed machine part,
+                    such as a wheel, that meshes with
+                    another toothed part to transmit
+                    motion or to change speed or
+                    direction.
+
+
+
+
+
+                    However, they are not suitable
+                    when shafts are distant, they
+                    require lubrication due to the
+                    friction that occurs during contact
+                    between the teeth. Gears have no
+                    ﬂexibility.
+                    A pulley is a wheel with a grooved
+                    rim in which a rope can run in
+                    order to change the direction or
+                    point of application of a force
+                    applied to the rope
+
+
+
+
+
+
+
+                    They are suitable for transmitting power between 2 different shafts
+                    when pulleys are attached to chains or belts. The pulley system is
+                    much ﬂexible than the gear system.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           Level 02 - Mechatronics - Lesson 02]]></page><page Index="21"><![CDATA[Pulley and belt
+
+
+
+
+
+                    The belt drive can also be used to change the speed of rotation,
+                    either up or down, by using different sized pulleys.
+
+
+                    Belt drives transfer movement from one rotating pulley to
+                    another, each held on a shaft. Shafts and pulley wheels can be
+                    made out of any material, whereas pulley belts are generally
+                    made from a soft, ﬂexible material such as rubber.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    In a pulley system, the belt can either drive the pulleys normally
+                    in one direction or the belt may be cross belt , so that the
+                    direction of the driven shaft is reversed.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           Level 02 - Mechatronics - Lesson 02]]></page><page Index="22"><![CDATA[Idler pulley
+
+
+                    The idler pulley is a common part that's found on the majority of
+                    the vehicles on the road. Its primary function is to provide tension
+                    and guide the engine drive belt.
+
+
+
+
+                   Real-life applications on pulleys
+
+
+
+                   • Elevator
+                      Elevators work via a powerful electronic pulley system. Elevators
+                      make use of a system of several pulleys and counterweights to
+                      provide the lift system with both power and safety.
+
+
+
+
+
+
+
+                       https://www.youtube.com/watch?v=B6usgjKMXz0
+
+
+                                                                                        Scan Here!
+
+
+
+
+
+
+
+                   Have you ever seen a Lat pulldown machine in the gymnastic center?
+
+                   • Lat pull down
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                      Lat pulldown machine is simply a pulley connected to a rope the
+                      rope is connected to weights from a side and to handle from the
+                      other side.
+
+
+
+
+
+
+
+
+           Level 02 - Mechatronics - Lesson 02]]></page><page Index="23"><![CDATA[Pulleys with belts in cars
+
+
+                    There are several belts in a car system. The serpentine is one of
+                    the important belts in a car The motor makes the serpentine belt
+                    spin. Serpentine belt I connected to several pulleys that are
+                    responsible for running car devices.
+
+                    When the serpentine belt spins, it powers all the engine devices
+                    including, the power steering pump, water pump, alternator, and
+                    air conditioning as well.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    Note: An alternator is a device that converts mechanical energy into AC electrical energy.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           Level 02 - Mechatronics - Lesson 02]]></page><page Index="24"><![CDATA[level
+
+                                                                                                02
+
+                 LESSON 1                                                                     Arduino
+
+
+
+
+
+
+                ARDUINO
+
+
+
+
+
+
+                BOARDS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           Level 02 - Arduino - Lesson 01]]></page><page Index="25"><![CDATA[Have you ever played with a remote-controlled car or
+                   robot or used a remote control to change the channel on
+                   a TV?
+
+
+
+                   An Arduino board is like a special kind of remote control
+                   that you can program to do all sorts of things! What kind
+                   of cool gadgets or machines would you like to be able to
+                   control with your own custom-made  remote?"
+
+
+
+                   The Main Idea
+
+
+                   With Arduino, you can build robots, make music, create games,
+                   and much more. It is a fun way to learn about electronics and
+                   programming, and it can help you turn your ideas into real things
+                   that you can see and touch.
+
+                   Arduino is a tool that helps people create electronic devices that
+                   can do different things. It is a microprocessor “controller “ like a
+                   computer that can read information from the world around it via
+                   sensors  like a temperature sensor and then do something in
+                   response, like switch on an Ac or enable a ﬁre ﬁghting system.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           Level 02 - Arduino - Lesson 01]]></page><page Index="26"><![CDATA[Arduino consists of two parts; a printed circuit board and
+                   a program that tells the Arduino what to do.
+
+
+
+                   On the printed circuit board you can attach dierent
+                   types of sensors then control them through writing and
+                   uploading a code in a software program called 'Arduino
+                   IDE'   Arduino’s development environment.
+
+
+
+
+
+                                                     Arduino
+
+
+
+
+
+
+
+
+                           1. Arduino board                                2. Arduino IDE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                       Sensors and switches are                      Program the board to take its
+                     connected to the controller to                inputs and make decisions based
+                           give it information                       on the information it receives.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           Level 02 - Arduino - Lesson 01]]></page><page Index="27"><![CDATA[1. Arduino board
+
+
+
+                   What's on the board?
+
+                   There are many varieties of Arduino boards that can be used for
+                   different purposes. Some boards look a bit different from the one
+                   below, but most Arduino boards have the majority of these
+                   components in common:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   Power (USB / Barrel Jack)
+
+
+                   Every Arduino board needs a way to be connected to a power
+                   source. The Arduino UNO can be powered from a USB cable
+                   coming from your computer or a power supply that is terminated
+                   in a barrel jack.
+
+                   The USB connection is also how you will load code onto your
+                   Arduino board.
+
+
+
+
+
+
+                   NOTE
+                   Do NOT use a power supply greater than 20 Volts as you will overpower (and
+                   thereby destroy) you’re Arduino. The recommended voltage for most Arduino
+                   models is between 6 and 12 Volts.
+
+
+
+
+
+
+
+
+
+
+
+
+           Level 02 - Arduino - Lesson 01]]></page><page Index="28"><![CDATA[Pins     (Digital, Analog, 5V& 3.3V, GND)
+
+
+                   The pins on your Arduino are the places where you connect wires
+                   to construct a circuit.
+
+
+
+
+                   Digital:
+
+                   •  Across from the analog pins are the digital pins (0 through 13
+                      on the UNO). These pins can be used for both digital input (like
+                      telling if a button is pushed) and digital output (like powering
+                      an LED).
+
+
+                   Analog
+
+                   •  The area of pins under the ‘Analog In’ label (A0 through A5 on
+                      the UNO) is Analog In pins. These pins can read the signal
+                      from an analog sensor (like a temperature sensor) and convert
+                      it into a digital value that we can read.
+
+
+
+                   5V & 3.3V
+                   •  As you might guess, the 5V pin supplies 5 volts of power, and
+                      the 3.3V pin supplies 3.3 volts of power. Most of the simple
+                      components used with the Arduino run off of 5 or 3.3 volts.
+
+
+
+                   GND
+                   •  Short for ‘Ground’. There are several GND pins on the Arduino,
+                      any of which can be used to ground your circuit.
+
+
+
+
+
+
+
+
+
+                  Reset Button
+
+
+                   The Arduino has a reset button. Pushing it will temporarily
+                   connect the reset pin to ground and restart any code that is
+                   loaded on the Arduino.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           Level 02 - Arduino - Lesson 01]]></page><page Index="29"><![CDATA[2. Arduino IDE
+
+
+
+                   Selecting Arduino board
+
+                   Before you start, select an Arduino board because different boards
+                   have different features and capabilities that may be necessary for
+                   a particular project.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           Level 02 - Arduino - Lesson 01]]></page><page Index="30"><![CDATA[COM port
+
+
+                   The COM port   allows communication between the
+                   microcontroller on the Arduino board and the Arduino IDE. Before
+                   uploading the code, the com port must be selected ﬁrst.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  Start coding
+
+
+                   The coding screen is divided into two blocks. The setup is
+                   considered as the preparation block, while the loop is considered
+                   as the execution block. It is shown below:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           Level 02 - Arduino - Lesson 01]]></page><page Index="31"><![CDATA[NOTE
+                   Programming statements end with a semicolon.
+
+
+
+
+
+
+                  Blinking Led Code         (Beginner level)
+
+
+                   How can you make an alarm system with ﬂashing lights every
+                   second without manually pressing on the switch every second?
+
+
+
+                   1.  Open the Arduino IDE on your computer.
+
+                   2.  Connect your Arduino board to your computer using a
+                       USB cable.
+
+
+                   3.  Select the correct board type and port in the "Tools"
+                       menu of the IDE.
+
+                   4.  In the "File" menu, select "New" to create a new sketch.
+
+
+
+
+
+
+
+
+
+
+           Level 02 - Arduino - Lesson 01]]></page><page Index="32"><![CDATA[Type the following code into the new sketch window:
+
+
+
+                                                                   pinMode() function is a built-in
+                    void setup() {                                 function in that is used to conﬁgure
+                                                                   the mode of a speciﬁc pin on the
+                    pinMode(13, OUTPUT);                           Arduino board.
+                    }
+                    void loop() {                                  digitalWrite() is an in-built function
+                    digitalWrite(13,HIGH);                         in the Arduino. It is used to write a
+                                                                   HIGH or LOW value to a digital pin
+                    delay(1000);
+                    digitalWrite(13,LOW);
+
+                    delay(1000);                                   The delay() function in Arduino is
+                    }                                              used to pause the program for a
+                                                                   speciﬁed amount of time, speciﬁed
+                                                                   in milliseconds.
+
+
+
+                   This code will turn on and off the built-in LED on the Arduino
+                   board in a one-second interval.
+
+
+
+
+
+                   After writing the code:
+
+                   1.  Verify the code by clicking on the "Verify" button or
+                       selecting "Sketch" > "Verify/Compile" from the menu.
+                       Make sure there are no errors in the code.
+
+                   2.  Upload the code to the Arduino board by clicking on the
+                       "Upload" button.
+
+
+                   3.  Once the code is uploaded, the built-in LED on the
+                       Arduino board should start blinking in a one-second
+                       interval.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           Level 02 - Arduino - Lesson 01]]></page><page Index="33"><![CDATA[Blinking led     (intermediate level)
+
+
+
+                   Materials Needed:
+
+                       •   Arduino board and USB cable
+                       •   Breadboard
+                       •   LED
+                       •   Jumper wires
+                       •   Resistor
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  Challenge      (advanced level)
+
+
+                   Now, let’s apply what we’ve learned to make a trafﬁc light.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           Level 02 - Arduino - Lesson 01]]></page><page Index="34"><![CDATA[level
+
+                                                                                                02
+
+                 LESSON 2                                                                     Arduino
+
+
+
+
+
+
+
+                RING THE BELL
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           Level 02 - Arduino - Lesson 02]]></page><page Index="35"><![CDATA[How do computers store values?
+
+
+                  How computers remember our passwords every time we
+                  entre it?
+
+
+
+
+                   Imagine we have a set of drawers. Each
+                   drawer contains different objects of the
+                   same type. This is the same as variables.
+                   Thus, we name a 'Variable'(the drawer)
+                   then store a value (the object) in it.
+
+
+
+
+
+
+
+                  The Main Idea
+                   In a computer program, a variable is a container that has a name
+                   and stores information which can be changed or reused over and
+                   over again. It uses computer memory to store these variables.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           Level 02 - Arduino - Lesson 02]]></page><page Index="36"><![CDATA[For Example
+
+
+                   In a game, the current score (variable) of the player is stored; we
+                   would add 1 to the variable whenever the player gains a point, and
+                   subtract a point if he loses.
+
+
+                   To assign a variable as the score;
+
+                   Type of variable     name = value
+                                int          score = 100.
+
+
+
+
+
+                   What is int? What are the variable types?
+
+                        “Int” is a data type used in computer programming to represent
+                        integer. An integer is a whole number that can be positive,
+                        negative, or zero.
+
+                   We have many data types, these are the types of data that the
+                   programming world use and understand to help the program know
+                   what to do with the variable, let's know some of them.
+
+
+
+
+
+                   Data types
+
+
+                   Integer – int:                                      Float – ﬂoat:
+
+                   It holds only whole numbers                         Numeric data type for
+                   (-500 ,0 ,770). As the example                      numbers with fractions
+                   of the score value mentioned                        (-77.5,77.8).
+                   before.
+                                                                       >> ﬂoat x = -0.99;
+                   >> int x= 7;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           Level 02 - Arduino - Lesson 02]]></page><page Index="37"><![CDATA[Character – char:                                  String – string:
+
+                   Holds only a single letter as                      Sequence of characters,
+                   ('a', 'r', 't').                                   digits, or symbols—always
+                                                                      treated as text ( "hello",
+                   >> char x= 'b';                                    "+39503d").
+
+
+                                                                      >> string x= "Jermy";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   Where do we create the variables?
+
+                   They are preferred to be created before the setup function, so that
+                   all the functions in the program could see the variable, this is called
+                   global variable deﬁned in global scope.
+
+
+
+
+
+
+
+
+
+
+                                                                   Global Variable
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   Now that we have learned variables and its types, let's know what
+                   we will control today!
+
+
+
+
+
+
+
+           Level 02 - Arduino - Lesson 02]]></page><page Index="38"><![CDATA[Ring the bell code (beginner level)
+
+                   Can you provide an Arduino code that makes a bell ring when a
+                   push button is pressed?
+
+
+                   1.  Open the Arduino IDE on your computer.
+                   2. Connect your Arduino board to your computer using a USB cable.
+                   3. Select the correct board type and port in the "Tools" menu of the IDE.
+                   4. In the "File" menu, select "New" to create a new sketch.
+
+
+
+                   Sketch the code:
+                   Initialize the variables in the global scope, where the entire
+                   program will see and use these variables. Two variables are
+                   declared; one for the buzzer and one for the pushbutton. The values
+                   5 &13 refer to the pins connected in it.
+
+
+                   int buzzer = 13;
+                   int pushbutton=5;
+
+
+
+
+
+                   In the Setup function, we will set our components as input or
+                   output – buzzer and pushbutton.
+
+
+
+                   void setup() {                               Buzzer is written in the pin number
+                     pinMode(buzzer, OUTPUT);                   because it is declared in the global
+                     pinMode(pushbutton,INPUT);                 scope that buzzer = 13,
+                   }                                            Same for pushbutton =5.
+
+
+
+
+
+
+
+
+
+                   In the loop function, the Arduino wants to know if the button is
+                   pressed or not, so it has to read an input through a function called
+                   digitalRead()- Reads an input from a deﬁned pin. The value
+                   returned from the variable “reading” is either 0 or 1- LOW or HIGH.
+
+
+
+
+                   void loop() {                                Then declare a variable that reads
+                   int reading =                                the value each loop this is called
+                   digitalRead(pushbutton);                     local scope, where this value is not
+                                                                seen in the other functions.
+
+
+
+
+
+
+
+
+
+
+
+           Level 02 - Arduino - Lesson 02]]></page><page Index="39"><![CDATA[Start to compare and ask is the button clicked or not? If it is clicked
+                   then the buzzer must beep if it is not then the buzzer remains
+                   silent.
+
+
+                   This is called if statement – it is one of the conditional statements
+                   in programming.
+
+
+                       if ( reading=w1)
+                     {
+                       digitalWrite( buzzer,HIGH);
+                     }
+                     else {
+                          digitalWrite( buzzer,LOW);
+                     }
+                   }
+
+
+
+
+                   After writing the code
+
+                    1.  Verify the code by clicking on the "Verify" button or selecting
+                       "Sketch" > "Verify/Compile" from the menu. Make sure there are
+                       no errors in the code.
+
+
+                    2.  Connect the circuit as follows:
+
+                       Materials Needed:
+                       •  Arduino board and USB cable.
+                       •  Breadboard.
+                       •  Buzzer.
+                       •  Pushbutton.
+                       •  Jumper wires.
+                       •  Resistor.
+
+                    3.  Upload the code to the Arduino board by clicking on the
+                        "Upload" button.
+
+
+                    4.  Once the code is uploaded, try to press on the pushbutton now.
+
+
+
+
+                    Challenge:   Open the door
+
+
+                    Can you add a motor to your circuit so that after pressing the
+                    push button the motor rotates to open the door?
+
+
+                    Hint: a motor is a digital Output component.
+
+
+
+
+
+
+           Level 02 - Arduino - Lesson 02]]></page><page Index="40"><![CDATA[level
+
+                                                                                                02
+
+                 LESSON 3                                                                     Arduino
+
+
+
+
+
+
+
+                SWITCH CASE
+
+
+
+
+                & SERIAL READ
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           Level 02 - Arduino - Lesson 03]]></page><page Index="41"><![CDATA[A)  SWITCH CASE
+
+
+                   A switch case is a conditional statement that allows a program to
+                   evaluate a variable or expression and select one of several
+                   different code paths to execute based on the value of that variable
+                   or expression.
+
+
+                   Switch case statement is similar to “if-else “statement but can be
+                   more efﬁcient and easier to read for certain cases,  we use it if we
+                   have several conditions as “switch” is the conditional statement
+                   and “case” is  the  comparative statement were:
+
+                      If it’s TRUE-> the statement of this case is going to be executed
+                      then break out of the whole “switch case” statement
+
+
+                      And if it’s FALSE -> we’ll move to the next case to be compared
+                      and so on until whole cases are covered
+
+                      If the whole cases were false and none of the cases’ statements
+                      are executed then the execution is going to take place in the
+                      “default” statement which doesn’t have a “break”
+                      We might have as much cases as we want depending on the
+                      project that we work on.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           Level 02 - Arduino - Lesson 03]]></page><page Index="42"><![CDATA[Beginner level      (Even and odd detection)
+
+
+                   The following code is an example on switch case that detects even
+                   and odd numbers. If the number saved is even a green LED will be
+                   ON and if a the saved number is odd then a red LED will be ON
+
+
+
+
+                   Sketch the code
+
+
+                   int redled=13;                           We will assign an integer variable that has
+                   int greenled=11;                         no value to store the remainder of division
+                                                            in it.
+                   void setup()                             PS: remember when we said 'Variable'(the
+                   {                                        drawer) then store a value (the object) in it,
+                   pinMode(redled,OUTPUT);                  here we assigned an empty drawer to store
+                   pinMode(greenled,OUTPUT);                any integer object in it.
+                   Serial.begin(9600);
+                   }
+                   void loop()
+                   {
+                     int b;
+                     int num=10;
+
+
+                     if (num%2=w0)
+                     {                                      The percentage (%) sign is used here to
+                       b=0;                                 check the remainder of dividing num by 2
+                     }                                      then store it in variable b.
+                                                            If num is even then the remainder is 0 so
+                     else if (num%2~w0)                     b=0. If num is odd then the remainder is a
+                     {                                      positive value so b = a positive value.
+                        b=num%2;
+                     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           Level 02 - Arduino - Lesson 03]]></page><page Index="43"><![CDATA[switch(b)                                Since we can predict the speciﬁc values of b
+                   {case 0:                                 from the previous mathematical operations,
+                                                            we used the switch case to check the value
+                      Serial.print(num);                    of b
+
+
+                      Serial.println(" is an
+                   even value" );
+                                                            In case b is equal to zero then num is an
+                   digitalWrite(greenled,HIGH               even number. SO a green LED is on, and the
+                   );                                       value of num is printed
+                      delay (100);
+
+                   digitalWrite(greenled,LOW)
+                   ;                                        Break is used to break out (exit) from the
+                    break;                                  switch case loop once the case is satisﬁed
+
+
+
+
+
+
+
+
+
+
+                    default :                               In case that none of the previous
+                      Serial.print(num);                    mentioned cases has occurred then there’s
+                      Serial.println(" is an                a default sequence of instructions should
+                   odd value" );                            be executed. According to our workshop in
+                                                            case that our num is not even value then it’s
+                                                            an odd value.
+                   digitalWrite(redled,HIGH);
+                      delay (100);
+
+                   digitalWrite(redled,LOW);
+                     break;
+                    }
+                   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           Level 02 - Arduino - Lesson 03]]></page><page Index="44"><![CDATA[After sketching the code
+
+
+                    1.  Verify the code.
+
+                    2. Connect the circuit as follows.
+                          Materials Needed:
+                          •   Arduino board and USB cable.
+                          •   Breadboard.
+                          •   2 Resistors.
+                          •   RED LED.
+                          •   GREEN LED.
+
+                    3. Upload the code to the Arduino board.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    Now try to store odd value in num and upload the code again and
+                    observe what will happen.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           Level 02 - Arduino - Lesson 03]]></page><page Index="45"><![CDATA[A)  Serial.read
+
+
+                   •  It’s a function of the serial communication library that allows
+                      reading data that a user can enter to the serial monitor on
+                      Arduino IDE.
+
+
+                   This is how it works:
+                   •  When a user enter a data, this data goes to a receive buffer that
+                      accepts all of the entered data waiting to be read.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                  BUFFER
+
+
+
+                   •  Since we’ve known that the entered data may wait a bit of time
+                      in the buffer to be read and processed, you might think what
+                      happen if the buffer is already busy with data and cannot
+                      accept any further information?
+
+
+                   •  As an answer of that question there’s another function in the
+                      serial communication library that called Serial.availabe() that
+                      checks the number of currently stored data in the buffer.
+
+
+                   •  For example if there are 12 characters are stored in the buffer so
+                      “Serial.available” will return 12.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           Level 02 - Arduino - Lesson 03]]></page><page Index="46"><![CDATA[Intermediate level       (Controlable trac light)
+
+
+                   We will control the sequence of lighting of 3 LEDS ON and OFF by
+                   a speciﬁc data that we will enter in the serial monitor.
+                   If we entered letter ”y” a yellow LED is ON, If we entered letter ”g”
+                   a Green LED is ON, and If we entered letter ”r” a red LED is ON.
+
+
+                   Sketch the code
+
+
+                   int ledr= 2;                             We will assign an empty integer variable
+                   int ledg=3;                              (input) that has no value, to store the data
+                                                            that we input in serial monitor in it.
+                   int ledy= 4;
+                   int input;
+
+                   void setup()
+                   {
+                     Serial.begin(9600);
+                     pinMode(ledr, OUTPUT);
+                     pinMode(ledg, OUTPUT);
+                     pinMode(ledy, OUTPUT);
+                   }
+
+
+
+
+                                                                      First we should check if there’s
+                   Serial.begin(9600);                                any available space in the serial
+                     pinMode(ledr, OUTPUT);                           buffer. If the available space is
+                     pinMode(ledg, OUTPUT);                           more than zero then we can
+                                                                      input our data.
+                     pinMode(ledy, OUTPUT);
+                   }
+                   void loop()
+                                                                      Now let the serial monitor read
+                   {                                                  the data that we input through it
+                     if (Serial.available() > 0)                      then store the data in the
+                     {                                                variable input.
+                       input = Serial.read();
+
+
+                       switch (input)                                 Since we know the speciﬁc
+                       {                                              values of input, we will test it
+                         case 'y':                                    through switch case.
+                           digitalWrite(ledy, HIGH);
+                           delay(500);
+                          digitalWrite(ledy, LOW);                    In case input =y: Turn yellow LED
+                           break;                                     ON for while then OFF.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           Level 02 - Arduino - Lesson 03]]></page><page Index="47"><![CDATA[case 'g':                                          In case input =g: Turn green LED
+                           digitalWrite(ledg, HIGH);                  ON for while then OFF.
+                          delay(500);
+                          digitalWrite(ledg, LOW);
+                           break;
+                                                                      In case input =r: Turn red LED ON
+                         case 'r':                                    for while then OFF.
+                           digitalWrite(ledr, HIGH);
+                          delay(500);
+                          digitalWrite(ledr, LOW);
+                           break;
+
+
+
+
+
+                                                                      As a default if none of the
+                        default:                                      previous cases is occurred then
+                           digitalWrite(ledy, LOW);                   turn all the LEDS OFF
+                           digitalWrite(ledg, LOW);
+                           digitalWrite(ledr, LOW);
+                           break;
+                       }
+                     }                                                Don’t forget to close all of the
+                                                                      loops brackets:
+                   }                                                  Switch loop, if condition, then
+                                                                      the void loop.
+
+
+
+
+
+
+
+
+
+
+
+                   After sketching the code
+
+
+                    1.  Verify the code.
+
+                    2. Connect the circuit as follows.
+                        Materials Needed:
+                        •  Arduino board and USB cable.
+                        •  Breadboard.
+                        •  3 Resistors 220 ohm.
+                        •  Red, Green, and Yellow LEDS.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           Level 02 - Arduino - Lesson 03]]></page><page Index="48"><![CDATA[Connection:
+
+
+                          component         Position                         connection
+
+                          Arduino                                            GND  pin with negative pole
+                                                                             in breadboard.
+
+
+                          Red LED           Put RED LED in pins 18 and       Cathode with a 220 ohm
+                                            19 on breadboard                 resistor.
+                                                                             Anode with pin2 in arduino.
+
+                                                                             Cathode with a 220 ohm
+                          Green LED         Put Green LED in pins 15 and     resistor.
+                                            16                               Anode with pin 3 in arduino.
+
+                                                                             Cathode with a 220 ohm
+                          Yellow LED        Put Yellow LED in pins 18 and    resistor.
+                                            19                               Anode with pin 4 in arduino.
+
+                          Resistors                                          Connect the other terminal
+                                                                             of resistor with the negative
+                                                                             pole in the breadboard
+
+
+
+
+
+                    3.  Upload the code to the Arduino board.
+
+
+
+
+
+
+
+                   Advanced level       (Color mixer)
+
+
+                   Can you make a color mixer that when you enter two colors it
+                   mixes them up and give you the result.
+
+                   HINT: you can use RGB to mix up colors
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           Level 02 - Arduino - Lesson 03]]></page></pages></Search>

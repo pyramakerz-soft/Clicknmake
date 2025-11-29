@@ -1,0 +1,1 @@
+﻿var textForPages = ["27","28"];

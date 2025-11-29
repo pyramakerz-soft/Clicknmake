@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Search><pages Count="2"><page Index="1"><![CDATA[UNIT 01        [ Beginner ]                                                LESSON 01
+
+                  Chapter 01 : Design Domain.                                           Case Scenario.
+
+
+
+
+
+
+
+               Designing a Portable Dialysis Machine
+
+
+                   Introduction
+
+                   Hospitals are facing a critical shortage of kidney ltration devices,
+                   directly impacting patient care and endangering the lives of those
+                   with kidney failure. Dialysis is essential for ltering waste from the
+                   blood when the kidneys fail, and without sucient machines, patient
+                   treatment is delayed. As biomedical engineers of the future, you will
+                   tackle this challenge by designing a portable dialysis device that could
+                   be used both in hospitals and at home. This project combines biology,
+                   3D design, mechanics, electricity, and programming to create a
+                   real-world solution.
+
+
+
+                   Mission
+
+                   Your mission is to design a portable, ecient, and safe dialysis
+                   machine that can address the shortage of kidney ltration devices.
+                   The goal is to build a functional prototype that can be tested, and
+                   potentially deployed, to improve patient access to life-saving
+                   treatments.
+
+
+
+                   Scenario Context
+
+                   Who: Biomedical engineers, hospitals, patients, and healthcare
+                   providers.
+                   What: Hospitals need a portable, reliable dialysis machine to mitigate
+                   the shortage of kidney ltration devices.
+                   Where: The machine will be used in both hospital settings and
+                   potentially for home use.
+                   When: The need for dialysis devices is urgent, and the project must be
+                   completed as soon as possible to meet this demand.
+                   Why: Dialysis is vital for patients with kidney failure, and the shortage
+                   of devices puts patients at risk.
+
+
+                   This project focuses on developing a practical solution to this problem.
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                          03]]></page><page Index="2"><![CDATA[Driving Question
+
+                 How can we design a portable, safe, and ecient dialysis machine
+                 that can help solve the shortage of kidney ltration devices in
+                 hospitals and homes?
+
+                 Objectives/Goals
+
+
+                 By the end of this project, you will:
+                 1.  Identify and label major organs of the urinary system (kidneys, ureters, bladder, urethra)
+                     on a diagram.
+                 2.  Articulate the primary functions of the urinary system: blood ltration, urine production,
+                     regulation of uid and electrolyte balance.
+                 3.  Use Tinkercad to create a 3D model of a kidney, applying principles of proportion, scale,
+                     and symmetry.
+                 4.  Understand the concept of uid viscosity and control ow rates in dialysis lines.
+
+                 5.  Investigate materials used in dialysis (e.g., dialysate solutions) and how they impact the
+                     process
+                 6.  Add a water pump to the ltration system and manage the power system for portable
+                     dialysis.
+                 7.  Break down complex components into simpler parts for design and digital assembly.
+
+                 8.  Use Arduino to control a water pump and simulate the speed of blood dialysis, using PWM
+                     to adjust ow rates.
+
+                 9.  Create an interactive website explaining the dialysis machine using HTML, CSS, and
+                     JavaScript.
+
+
+                 Your Challenge
+
+                 By the end of this project, you’ll have:
+
+                   Designed a 3D model and physical prototype of a portable dialysis machine using Tinkercad
+                   and Arduino, simulating the blood ltration process.
+
+                   Understood the biological importance of your design by studying the urinary system and
+                   ensuring your machine supports kidney function and dialysis processes.
+
+                   Implemented uid ow control by programming an Arduino to regulate ow rates,
+                   simulating the speed and eciency of blood ltration.
+
+                   Created an interactive website that explains the design, components, and functionality of
+                   your dialysis machine for healthcare professionals and users.
+                   Presented your prototype and website to a panel of experts or peers, demonstrating how
+                   your solution addresses the shortage of dialysis machines in healthcare.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                         04]]></page></pages></Search>
