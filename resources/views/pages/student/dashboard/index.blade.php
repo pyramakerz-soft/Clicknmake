@@ -1,147 +1,192 @@
 @extends('layouts.app')
-
 @section('title')
-    Units
+Units
 @endsection
 
 @php
-    $menuItems = [
-        ['label' => 'Dashboard', 'icon' => 'fi fi-rr-table-rows', 'route' => route('student.index')],
-        ['label' => 'Assignment', 'icon' => 'fas fa-home', 'route' => route('student.assignment')],
-        ['label' => 'Chat', 'icon' => 'fa-solid fa-message', 'route' => route('chat.all')],
-    ];
+$menuItems = [
+['label' => 'Dashboard', 'icon' => 'fi fi-rr-table-rows', 'route' => route('student.index')],
+['label' => 'Assignment', 'icon' => 'fas fa-home', 'route' => route('student.assignment')],
+['label' => 'Chat', 'icon' => 'fa-solid fa-message', 'route' => route('chat.all')],
+];
 @endphp
 
 @section('sidebar')
-    @include('components.sidebar', ['menuItems' => $menuItems])
+@include('components.sidebar', ['menuItems' => $menuItems])
 @endsection
+
+@section('page_css')
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous">
+
+<style>
+    body {
+        background-color: #f8fafc;
+    }
+
+    .header-card {
+        border-radius: 18px;
+        padding: 20px;
+        background: linear-gradient(to right, #2E3646, #1F2533);
+        color: white;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #17253e;
+        border-bottom: 3px solid #525d6f;
+        display: inline-block;
+        margin-bottom: 1rem;
+        padding-bottom: 0.3rem;
+    }
+
+    .resource-card {
+        background-color: #ffffff;
+        border: none;
+        border-radius: 12px;
+        padding: 0;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        transition: all 0.3s ease;
+        cursor: pointer;
+        overflow: hidden;
+    }
+
+    .resource-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    .unit-img {
+        width: 100%;
+        height: 160px;
+        object-fit: cover;
+    }
+
+    .unit-title {
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: #17253e;
+        margin-bottom: 6px;
+    }
+
+    .unit-link {
+        text-decoration: none;
+        font-weight: 600;
+        color: #17253e;
+    }
+
+    .unit-link:hover {
+        text-decoration: underline;
+        color: #0f1827;
+    }
+</style>
+@endsection
+
+
+@section('sidebar')
+@include('components.sidebar', ['menuItems' => $menuItems])
+@endsection
+
 
 @section('content')
-    <div class="p-6">
-        <!-- Student Header Card -->
-        <div class="rounded-2xl flex items-center justify-between py-4 px-6 bg-gradient-to-r from-[#2E3646] to-[#1F2533] shadow-lg">
-            <div class="flex items-center space-x-5">
-                <img class="w-20 h-20 rounded-full object-cover ring-2 ring-white shadow-md"
-                     alt="avatar"
-                     src="{{ $student->image ? asset($student->image) : asset('images/default_user.jpg') }}" />
-                <div class="font-semibold text-white flex flex-col space-y-1">
-                    <h2 class="text-2xl">{{ $student->username }}</h2>
-                    <p class="text-gray-300">{{ $student->stage->name }}</p>
-                </div>
-            </div>
+<div class="container py-4">
 
-            <button onclick="openEditModal('editPassword')" class="hover:scale-110 transition-transform">
-                <i class="fas fa-edit text-white text-xl"></i>
-            </button>
+    <!-- Header -->
+    <div class="header-card d-flex justify-content-between align-items-center mb-4">
+        <div class="d-flex align-items-center">
+            <img src="{{ $student->image ? asset($student->image) : asset('images/default_user.jpg') }}"
+                class="rounded-circle me-3" width="70" height="70" style="object-fit: cover; border:3px solid white;">
+            <div>
+                <h4 class="mb-1">{{ $student->username }}</h4>
+                <small class="text-light">{{ $student->stage->name }}</small>
+            </div>
         </div>
 
-        <!-- Breadcrumb -->
-        <div class="p-3 text-[#667085] my-6 flex items-center text-sm">
-            <i class="fa-solid fa-house mx-2"></i>
-            <span class="text-[#D0D5DD] mx-1">/</span>
-            <a href="#" class="mx-1 cursor-pointer hover:underline hover:text-[#2E3646] transition-colors">Units</a>
-        </div>
-
-        <!-- Materials & Units -->
-        @foreach ($materials as $material)
-            <div class="mb-12">
-                <!-- Material Header -->
-                <div class="flex items-center mb-4">
-                    <i class="fa-solid fa-book text-[#2E3646] text-xl mr-3"></i>
-                    <h2 class="text-2xl font-bold text-[#2E3646]">{{ $material->title }}</h2>
-                </div>
-                <hr class="border-t border-gray-200 mb-6">
-
-                <!-- Units Grid -->
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                    @forelse ($material->units as $unit)
-                        <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden group">
-                            <div class="relative">
-                                @if ($unit->image)
-                                    <img src="{{ $unit->image }}" alt="{{ $unit->title }}"
-                                         class="object-cover w-full h-56 group-hover:scale-105 transition-transform duration-300">
-                                @else
-                                    <div class="flex items-center justify-center h-56 bg-gray-100 text-gray-400 text-lg">
-                                        No Image
-                                    </div>
-                                @endif
-                            </div>
-
-                            <div class="p-4">
-                                <h3 class="text-xl font-semibold text-gray-800 truncate mb-2">
-                                    {{ $unit->title }}
-                                </h3>
-                                <div class="flex justify-between items-center">
-                                    <a href="{{ route('student_units.unitContent', $unit->id) }}"
-                                       class="text-[#2E3646] text-sm font-medium hover:text-[#1F2533] transition-colors">
-                                        View Details
-                                    </a>
-                                    <i class="fa-solid fa-arrow-right text-[#2E3646] text-sm"></i>
-                                </div>
-                            </div>
-                        </div>
-                    @empty
-                        <p class="text-gray-500 italic">No units available for this material.</p>
-                    @endforelse
-                </div>
-            </div>
-        @endforeach
+        <button onclick="openEditModal('editPassword')" class="btn btn-light">
+            <i class="fas fa-edit"></i>
+        </button>
     </div>
+
+    <!-- Breadcrumb -->
+    <div class="text-secondary small mb-4">
+        <i class="fa-solid fa-house"></i>
+        <span class="mx-1">/</span>
+        <span>Units</span>
+    </div>
+
+    <!-- Materials -->
+    @foreach ($materials as $material)
+    <h3 class="section-title">{{ $material->title }}</h3>
+
+    <div class="row g-4 mb-5">
+
+        @forelse($material->units as $unit)
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="resource-card">
+
+                @if ($unit->image)
+                <img src="{{ $unit->image }}" class="unit-img">
+                @else
+                <div class="d-flex align-items-center justify-content-center unit-img bg-light text-muted">
+                    No Image
+                </div>
+                @endif
+
+                <div class="p-3">
+                    <div class="unit-title">{{ $unit->title }}</div>
+
+                    <a href="{{ route('student_units.unitContent', $unit->id) }}" class="unit-link">
+                        View Details →
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        @empty
+        <p class="text-muted fst-italic">No units available.</p>
+        @endforelse
+
+    </div>
+
+    @endforeach
+
+</div>
 @endsection
+
 @section('page_js')
-    <script>
-        function openModal(id, filePath) {
-            let modalContent = `
-            <embed src="${filePath}" width="100%" height="90%" />
-            <img src="{{ asset('assets/img/watermark 2.png') }}" 
-                class="absolute inset-0 w-full h-full opacity-50 z-10"
-                style="pointer-events: none;">
-        `;
-            document.getElementById(id + '-content').innerHTML = modalContent;
-            document.getElementById(id).classList.remove("hidden");
-        }
-
-        function closeModal(id) {
-            document.getElementById(id).classList.add("hidden");
-        }
-    </script>
-@endsection
-
-<form action="{{ route('changeStudentPassword') }}" method="POST" id="editPassword"
-    class="fixed inset-0 bg-gray-800 bg-opacity-50 flex items-center justify-center z-10 hidden">
-    @csrf
-    <div class="bg-white rounded-lg shadow-lg  w-[50%]">
-        <div class="px-6 py-4 border-b border-gray-200 flex justify-between items-center">
-            <h3 class="text-lg font-semibold text-gray-900">
-                Edit password
-            </h3>
-            <div class="flex justify-end">
-                <button onclick="closeModal('editPassword')" type="button"
-                    class="bg-gray-500 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded">Close</button>
-            </div>
-        </div>
-
-        <div class="px-3 mb-3">
-            <div class="rounded-2xl bg-[#F6F6F6] text-start px-4 md:px-6 py-3 md:py-4 my-4 md:my-5">
-                <p class="font-semibold text-base md:text-lg text-[#1C1C1E]">Password</p>
-                <input placeholder="Change Your Password" name="password" required
-                    class="w-full rounded-2xl p-2 md:p-4 mt-5 text-sm md:text-base" type="password"
-                    value="">
-            </div>
-
-            <button class="bg-[#17253E] font-bold text-base md:text-lg text-white rounded-2xl py-3 px-4 md:px-7"
-                type="submit">Save</button>
-        </div>
-
-    </div>
-</form>
-
 <script>
     function openEditModal(id) {
-        document.getElementById(id).classList.remove("hidden");
+        document.getElementById(id).classList.remove("d-none");
     }
 
     function closeModal(id) {
-        document.getElementById(id).classList.add("hidden");
+        document.getElementById(id).classList.add("d-none");
     }
 </script>
+@endsection
+
+
+<!-- Password Modal -->
+<form action="{{ route('changeStudentPassword') }}" method="POST"
+    id="editPassword"
+    class="position-fixed top-0 start-0 w-100 h-100 d-none"
+    style="background: rgba(0,0,0,0.6); z-index:1000;">
+    @csrf
+
+    <div class="bg-white rounded-3 shadow-lg p-4 mx-auto mt-5" style="max-width: 500px;">
+        <div class="d-flex justify-content-between mb-3">
+            <h5>Edit Password</h5>
+            <button type="button" class="btn btn-secondary btn-sm" onclick="closeModal('editPassword')">Close</button>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label fw-bold">Password</label>
+            <input type="password" name="password" required class="form-control" placeholder="Enter new password">
+        </div>
+
+        <button class="btn btn-primary w-100">Save</button>
+    </div>
+</form>
