@@ -54,9 +54,10 @@
                         <div class="mb-3">
                             <label for="ebook_path" class="form-label">Select Ebook</label>
                             <select name="ebook_path" class="form-control" id="ebook_path">
+                                <option value="">No Ebook Selected</option>
                                 @foreach (\App\Models\Ebook::all() as $ebook)
                                     <option value="{{ $ebook->file_path }}"
-                                        {{ Str::contains($unit->ebook_path, $ebook->file_path) ? 'selected' : '' }}>
+                                        {{ $unit->ebook_path === $ebook->file_path ? 'selected' : '' }}>
                                         {{ $ebook->title }}
                                     </option>
                                 @endforeach
