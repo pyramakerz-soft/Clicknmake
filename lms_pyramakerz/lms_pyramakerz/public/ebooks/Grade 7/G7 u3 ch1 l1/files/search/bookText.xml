@@ -1,0 +1,387 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Search><pages Count="5"><page Index="1"><![CDATA[UNIT 03         [ Advanced ]                                               LESSON 01
+                             [ Advanced ]
+                                                                                        LESSON 01
+              UNIT 03
+                  Chapter 01 : Programming.                                              Your rst GUI.
+                   Chapter 01 : Programming.
+                                                                                          Your rst GUI.
+
+
+             Stepping Stone:
+              Stepping Stone:
+
+
+
+
+                You need to know…                             You will be able to…
+
+
+
+
+                        what an algorithm is and how                  Understand the Concept of
+                        it helps in programming.                      Algorithm in IFTHEN-
+                                                                      ELSE Condition.
+                        How to actuate a servo motor
+                        using a pushbutton.                           Understand what is Python
+                                                                      and how it is used for
+                                                                      programming.
+                        The concept of "Arrays" in
+                        coding the Arduino.                           Explain what Tkinter is and how
+                                                                      it can be used to create
+                        How to Code and record the                    graphical interfaces.
+                        movement of the robotic arm.
+                                                                      Design the layout of their GUI
+                                                                      with buttons and sliders.
+                        How to Code the servo motor
+                        to sync it's movement with the
+                        Arduino.                                      Code the GUI using Tkinter to
+                                                                      include controls for moving the
+                                                                      robotic arm.
+
+
+
+
+
+
+
+
+                                                        Should we develop a computer
+                                                        program to control the robotic
+                  let's                                 arm? How would this benet factory
+                  let's
+                                                        operations?
+                Think                                   . ...............................................................................................................................................
+                 Think
+
+
+
+                                                        . ...............................................................................................................................................
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                          21]]></page><page Index="2"><![CDATA[Explore
+            Explore
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             Imagine how your
+
+             program will
+             function and what it
+
+             will look like.
+
+
+             Then, use the
+
+             provided software
+             to sketch its user
+
+             interface.                                                                           Scan Here!
+
+             https://excalidraw.com/
+
+
+
+
+
+
+
+
+
+
+
+                Watch it..
+                Watch it..
+
+
+                Let’s click on the link and
+                understand more about
+                how can we create a GUI to
+                control the robot arm.
+
+
+                                        Scan Here!
+                https://www.youtube.com/watch?v=Q3r_VhD99hs
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                         22]]></page><page Index="3"><![CDATA[Assessment
+                                 Assessment
+
+
+
+
+
+
+
+
+
+
+            Focus
+            Focus
+
+
+
+
+
+
+
+
+
+             1. How can "IF-THEN-ELSE" conditions make your robotic arm
+             smarter?
+
+                A) By making the arm heavier.
+                B) By allowing the arm to follow specic instructions based on conditions.
+                C) By making the arm move faster.
+                D) By increasing the arm's battery life.
+
+
+             2. How can you record and control your robotic arm’s actions
+             through code?
+
+
+                A) By writing a program that tracks and executes specic movements.
+                B) By using a pencil to draw the movements.
+                C) By pressing random buttons.
+                D) By changing the arm's shape.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                         23]]></page><page Index="4"><![CDATA[Practice
+            Practice
+
+
+
+
+
+
+
+             Start code your
+             program using python
+             and tkinter.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                         Name:
+                                                                                         Project: . ..... ....... ..... .. .. ..... .. ..... . . .. ... .... . .. . .. . .. ... .... . .... .. ..... .. .. ..... .. ..... .. ......... ..... ................................ ....... .. ....... ....... ......... .......... ........... ..... .... ...
+                                                                                             . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                                                                                         Ask
+                                                                                                  Imagine
+                                            After we made the program,
+                                            let’s go back to the EDP process            Improve
+                                                                                                 Plan
+                                            and add it to the improve part
+                                            to add it to our robotic arm.
+                                                                                        Create
+
+
+
+
+
+
+
+
+
+                  Now I can…
+
+
+
+
+
+                           Understand what is Python and how it is used for
+                           programming.
+
+                           Explain what Tkinter is and how it can be used to create
+                           graphical interfaces.
+
+                           Design the layout of their GUI with buttons and sliders.
+                           Understand the Concept of Algorithm in IF-THEN-ELSE
+                           Condition.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                         24]]></page><page Index="5"><![CDATA[Adam and Laila successfully
+                                                               assisted the factory workers
+                                                               by developing a fully
+                                                               functional robotic arm that
+                                                               can be controlled via a
+                                                               computer program.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                 The chief engineer
+                 expressed his gratitude to
+
+                 them for their outstanding
+                 eort today.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                          25]]></page></pages></Search>

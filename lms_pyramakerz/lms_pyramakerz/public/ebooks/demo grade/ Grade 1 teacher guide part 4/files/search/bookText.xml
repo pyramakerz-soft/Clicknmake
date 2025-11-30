@@ -1,0 +1,1819 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Search><pages Count="32"><page Index="1"><![CDATA[o  The teacher can guide the class through a discovery process by showing them an actual
+                          remote control and demonstrating how it works, either through a video or live
+                          demonstration.
+
+                       o  Students can observe how pressing buttons on the remote results in changes on the TV.
+                          The teacher can then explain the science behind it, introducing concepts such as infrared
+                          signals or wireless communication.
+
+                       o  Follow up with questions like, "Why do you think you don’t have to touch the TV for it to
+                          respond?"
+             2. Explore:
+
+               Teacher Role:
+
+                     Guide students through each step of the activity, ensuring they understand the process of
+                       scanning RFID tags and matching them to the correct animals.
+
+                     Offer assistance during the RFID scanning process, helping students if they encounter
+                       difficulties with the reader or tagging.
+
+                     Encourage students to ask questions about how RFID technology works and what they
+                       observe during the activity.
+
+                     Observe student participation, paying attention to how they engage with the technology and
+                       collaborate with peers.
+
+               Expected From Students:
+
+                     Students will actively scan RFID tags, match them to corresponding animals, and place the
+                       tags in the correct locations.
+                     Encourage teamwork by allowing students to work together in pairs or small groups to
+                       complete the task.
+
+                     After completing the scanning activity, students should reflect on what they learned about
+                       RFID and share their observations about the animals and how the technology helped in
+                       identifying them.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+               Activity - Do It: Exploring Animal Tags Through an RFID Scanning Activity
+
+
+               Objective:
+
+               Students will develop an understanding of identifying and categorizing animals by scanning RFID tags
+               to learn their names and decide where each tag belongs.
+
+                                                           91
+
+                                                           91]]></page><page Index="2"><![CDATA[Materials Needed:
+
+                     Printed animal images or models (e.g., lion, penguin, elephant, etc.)
+
+                     RFID tags (one for each animal)
+
+                     RFID reader connected to a computer or microcontroller (e.g., Arduino with an RFID module)
+                     Pre-programmed animal names linked to the RFID tags
+
+                     Worksheet for recording answers (optional)
+
+               Step-by-Step Activity Instructions:
+
+               1. Preparation:
+
+                     Assign RFID Tags: Attach RFID tags to animal images or models and program the reader to
+                       display the corresponding animal’s name when scanned.
+
+                     Set Up the Classroom: Arrange the animal images or models around the room, ensuring
+                       each tag is linked to the correct animal.
+
+                     Test the RFID Reader: Ensure the reader works correctly by scanning each tag to make sure
+                       it displays the right animal name.
+               2. Introduction:
+
+
+                     Explain the Purpose of the Activity:
+                       "Today, we’ll use RFID technology to identify animals. By scanning tags, we’ll discover the
+                       name of each animal and decide where it belongs. This activity will help us practice
+                       observation and matching skills while exploring how RFID works!"
+
+                     Briefly Discuss RFID Technology:
+                       "Have you ever used a card to open a door or pay for something? That’s RFID technology in
+                       action!"
+                       "RFID tags store information, and the reader retrieves this information when scanned."
+
+               3. "Do It" Activity:
+
+               Animal Tag Scanning Instructions:
+
+                   1.  Begin the Activity:
+
+                          o  Students take turns scanning the RFID tags using the reader.
+
+                          o  The animal’s name will appear on the display after scanning the tag.
+
+                   2.  Match the Tags:
+
+                          o  After scanning, students will decide which animal the tag belongs to based on the
+                              displayed name.
+                          o  Place the tag near or under the corresponding animal image/model.
+
+                   3.  Work in Steps:
+
+
+
+
+                                                           92
+
+                                                           92]]></page><page Index="3"><![CDATA[o  Start with a demonstration where the teacher scans a tag and identifies the
+                              matching animal as a group.
+
+                          o  Allow students to work independently or in pairs to complete the task.
+                   4.  Timers and Competition (Optional):
+
+                          o  Challenge students to match all tags in the shortest time.
+
+                          o  Award points for accuracy and teamwork.
+
+               4. Discovery Phase:
+
+                     Review Matches as a Class:
+
+                          o  Go through the tags and animal images together to verify if the matches are correct.
+
+                          o  Discuss which features helped students identify and match the tags to the animals.
+                     Correct Misconceptions:
+
+                          o  If there were any mismatches, discuss the key identifying features of each animal to
+                              clarify.
+
+                          o  Highlight the practical uses of RFID in real life, such as animal tracking, library
+                              systems, and inventory management.
+               5. Reflection:
+
+
+                     Class Discussion or Worksheet:
+                          o  Ask students to write down or share one interesting thing they learned about the
+                              animals during the activity.
+
+                          o  Discuss how RFID technology makes tasks like tracking or identification more
+                              efficient.
+
+                     Extend the Lesson:
+                          o  Brainstorm other real-world uses of RFID, such as in transportation cards, pet
+                              microchips, or inventory systems.
+
+
+         Strategies for implementation
+
+
+
+                   1.  Inquiry-Based Learning:
+
+                          o  Encourage students to ask questions about the animals while scanning the tags. For
+                              example: "What does this animal eat?" or "Where does it live?"
+
+                          o  Foster curiosity about the animals' characteristics and how RFID can help with their
+                              identification.
+
+                   2.  Collaboration:
+
+
+
+
+                                                           93
+
+                                                           93]]></page><page Index="4"><![CDATA[o  Pair students up to promote teamwork and shared problem-solving during the
+                              scanning and matching process. Collaboration helps students learn from each other
+                              and exchange ideas about how RFID works.
+
+                   3.  Formative Assessment:
+
+                          o  Use the tag matches and class discussions as a form of informal assessment to gauge
+                              students' understanding of RFID technology.
+
+                          o  Pay attention to how accurately and confidently students match the tags and
+                              whether they are able to explain why certain tags belong to specific animals.
+             3. Explain:
+
+               Teacher Role:
+
+                     Provide a brief introduction to RFID technology, its uses, and why it is important in various
+                       fields like animal tracking, inventory management, and more.
+
+                     Encourage students to share their prior knowledge about RFID and discuss observations
+                       during and after the video.
+                     Ask purposeful questions before, during, and after watching the video to maintain students’
+                       focus and stimulate critical thinking.
+
+               Expected From Students:
+
+                     Listen attentively to the introduction, actively watch the video, and participate in discussions
+                       and reflections.
+
+                     Note interesting points from the video and connect them to prior knowledge or classroom
+                       discussions.
+                     Inquire about concepts that are unclear or intriguing to deepen their understanding of RFID
+                       technology.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                           94
+
+                                                           94]]></page><page Index="5"><![CDATA[Pre-Watching: Setting a Purpose
+
+                   1.  Introduce RFID Technology:
+
+                          o  Explain: "RFID, or Radio Frequency Identification, is a technology that allows objects
+                              to be identified and tracked wirelessly. Today, we’ll explore how RFID works through
+                              a short video."
+
+                   2.  Set the Purpose:
+
+                          o  "While watching, think about the components of an RFID system and how the
+                              technology is applied. Try to identify the key parts mentioned and their functions."
+
+                   3.  Ask a Guiding Question:
+
+                          o  "Why do you think RFID is considered such an efficient technology for tracking items
+                              compared to older methods like barcodes?"
+
+               During Watching: Active Engagement
+
+                   1.  Provide a Note-Taking Template:
+
+                          o  Divide a worksheet into three columns:
+
+                                   Key Components of RFID (e.g., reader, tags)
+
+                                   Applications Mentioned (e.g., animal tracking, inventory management)
+
+                                   Questions or Observations
+                   2.  Pause for Key Moments:
+
+                          o  Stop the video at crucial points to ask questions like:
+
+                                   "What are the three main parts of an RFID system?"
+
+                                   "How does the RFID reader communicate with the tags?"
+
+                   3.  Encourage Active Watching:
+
+                          o  Ask students to jot down at least one question they have about how RFID works or
+                              its applications.
+
+               Post-Watching: Discussion and Reflection
+
+                   1.  Class Discussion:
+
+                          o  Ask students to share their observations from the video.
+
+                          o  Sample questions:
+
+                                   "What did you find most interesting about RFID technology?"
+                                   "How does RFID improve processes like tracking or inventory management?"
+
+                                   "What challenges do you think might arise when using RFID in real-world
+                                     applications?"
+
+                   2.  Reflect on Guiding Questions:
+
+                                                           95
+
+                                                           95]]></page><page Index="6"><![CDATA[o  Discuss the efficiency of RFID versus traditional methods like barcodes.
+
+                          o  Highlight any misconceptions or clarify complex points from the video.
+                   3.  Connect to Real-Life Applications:
+
+                          o  Lead a discussion on real-world scenarios where students may have encountered
+                              RFID technology (e.g., library systems, transportation cards, retail stores).
+
+
+          Strategies for implementation
+
+
+
+               1.  Think-Pair-Share:
+
+                       o  After the video, have students first think independently about their answers to the
+                          guiding questions, then discuss with a partner, and finally share with the class.
+
+               2.  Inquiry-Based Learning:
+
+                       o  Encourage students to ask "how" and "why" questions about RFID systems during the
+                          discussion to promote deeper understanding.
+
+               3.  Visual Learning:
+
+                       o  Use diagrams or flowcharts to explain how the RFID system works based on what was
+                          shown in the video.
+
+               4. Elaborate:
+               Teacher Role
+
+                     Facilitate activities by guiding students to explore how RFID systems work and apply their
+                       knowledge to create circuits or interactive models.
+
+                     Assist students in setting up RFID readers and tags in their projects, ensuring they
+                       understand how the technology is used in real-world applications.
+
+               Expected From Students
+
+                     Build and use a project involving RFID tags and readers to explore applications like
+                       identifying animals.
+                     Actively participate in setting up and scanning RFID tags to understand how data is read and
+                       applied.
+
+                     Share insights about what they learned and how RFID can be applied in different scenarios.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                           96
+
+                                                           96]]></page><page Index="7"><![CDATA[Strategies to Answer:
+
+               1.  Elimination Method: Rule out options that don’t fit logically. For example, a "candy" cannot be a
+                   machine component.
+
+               2.  Context Clues: Use knowledge from the lesson or video to identify the correct answer. For
+                   instance, RFID was discussed in the context of tracking and identifying.
+
+               3.  Think-Pair-Share: Discuss answers with a partner to reinforce understanding and share
+                   reasoning before confirming the final choice.
+               4. Evaluate:
+
+               Teacher Role
+
+                     Observe and evaluate student projects, focusing on creativity, accuracy, and application of
+                       RFID concepts.
+
+                     Offer constructive feedback to guide students in refining their work, emphasizing both
+                       strengths and areas for improvement.
+
+                     Allow students to present their projects and explain their understanding of RFID technology.
+
+               Expected From Students
+
+                     Demonstrate their understanding of RFID concepts through verbal and written responses.
+
+                     Present their final RFID-based projects, highlighting how the RFID reader interacts with tags
+                       and the information displayed.
+
+                     Explain how RFID works, its applications, and the steps they took to complete the project.
+
+
+
+                                                           97
+
+                                                           97]]></page><page Index="8"><![CDATA[Objective
+               Students will connect and use an RFID reader to scan tags and learn about animals.
+
+               Materials Needed
+
+                     RFID reader (connected to Arduino or similar
+                       microcontroller).
+
+                     RFID tags pre-programmed with animal names.
+                     Computer with Arduino IDE or other programming software.
+
+                     Animal models or printed images.
+
+                     Wires and breadboard for connections.
+
+               Step-by-Step Instructions
+
+                   1.  Set Up the RFID Reader:
+
+                          o  Connect the RFID reader to the microcontroller using jumper wires.
+
+                          o  Ensure the connections match the pin configuration in the setup code.
+                   2.  Load the Program:
+
+                          o  Upload the pre-written code to the microcontroller using the computer.
+
+                          o  Test the reader to ensure it detects tags and displays the correct animal name.
+
+                   3.  Scan RFID Tags:
+
+                          o  Students take turns scanning the tags using the reader.
+
+                          o  The display shows the animal name linked to the tag.
+
+
+                                                           98
+
+                                                           98]]></page><page Index="9"><![CDATA[4.  Match the Animals:
+
+                          o  Place the scanned tag near or under the corresponding animal image or model.
+                   5.  Troubleshoot:
+
+                          o  If a tag doesn’t read correctly, check connections or ensure the tag is close enough
+                              to the reader.
+
+               Reflection Questions
+
+                   1.  What happens when the tag is scanned by the reader?
+
+                   2.  Why is RFID more efficient than other tracking methods like barcodes?
+
+                   3.  How could you use RFID in a school project or daily life?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+               Relation to Standards
+
+
+                     Science and Technology Standards:
+                          o  Understanding the role of RFID in modern technology and its applications.
+
+                          o  Applying knowledge of electronic systems and programming to real-world scenarios.
+
+                          o  Problem-solving and critical thinking in STEM activities.
+
+                     Digital Literacy Standards:
+
+                          o  Developing proficiency in using hardware and software tools.
+                          o  Recognizing the ethical use of technology in applications like tracking and
+                              identification.
+
+                     Collaboration Standards:
+
+                          o  Working in teams to create and present projects.
+
+                          o  Demonstrating communication skills during presentations and discussions.
+
+
+
+
+
+                                                           99
+
+                                                           99]]></page><page Index="10"><![CDATA[Time frame: 90 minutes
+
+
+
+
+
+
+       Objectives:
+
+       Connect simple electric circuit using Led strip.
+
+       Understand the RGB colour.
+
+
+
+
+
+
+
+
+       Challenge Questions of the Lesson
+
+         How can you create a new color by
+       mixing different amounts of red, green,
+
+       and blue light?
+         What happens to the color when you
+       increase   or decrease the intensity of one
+       of the RGB colors?
+         Can you create white light by mixing
+
+       red, green, and blue? How about black
+
+       light?
+
+
+       SEL Relation
+
+         Self-Awareness: Understanding how
+       adjustments affect outcomes.
+         Self-Management: Managing intensity
+       to control results, similar to managing
+       emotions.
+         Social Awareness: Working together to
+       solve problems and communicate.
+         Relationship Skills: Practicing teamwork
+       and sharing ideas.
+         Responsible Decision-Making:
+       Reflecting on choices and their
+       consequences.
+
+
+
+
+
+
+
+                                                           100
+
+                                                           100]]></page><page Index="11"><![CDATA[1. Engage:
+                    Teacher Role
+
+
+                    Facilitate student engagement by encouraging them to connect the story to the lesson concept.
+                    Guide the discussion by asking open-ended questions and acknowledging student
+                    contributions.
+
+
+                    Expected From Students
+
+                         Listen actively to the story.
+
+                         Participate in discussions by sharing observations and ideas.
+                         Ask questions to clarify or expand understanding.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+               Strategies for Delivery
+
+
+
+
+                      1. Think-Pair-Share
+                          o  Ask students to think about how lights are used in everyday life to represent
+                              different things (e.g., traffic lights).
+
+                          o  Pair students to discuss ideas about using lights for animals, as mentioned in the
+                              story.
+
+                          o  Share ideas with the class to foster creativity and curiosity.
+
+                      2. Interactive Storytelling
+
+
+
+                                                           101
+
+                                                           101]]></page><page Index="12"><![CDATA[o  Pause at key moments in the story to ask predictive questions (e.g., “What do you
+                              think a ‘special light’ could be?”).
+
+                          o  Use props or visuals, such as LED strips or animal images, to make the story more
+                              engaging.
+
+               Questions and Possible Answers
+
+                   1.  What do you think will happen if we mix these colors together? Write the new color you
+                       think we’ll see.
+
+                          o  Red + Blue = Purple (or Magenta)
+
+                          o  Red + Green = Yellow
+
+                          o  Blue + Green = Cyan
+
+
+
+
+
+               Brainstorm Web
+
+               Central Idea: Mixing Colors
+
+                     Red + Blue
+
+                          o  Prediction: Purple, Violet, Magenta
+
+                     Red + Green
+
+                          o  Prediction: Yellow, Orange
+                     Blue + Green
+
+                          o  Prediction: Cyan, Aqua
+
+               Connections:
+
+                     Linking RGB color mixing to real-world applications like lighting, displays, and art.
+
+               Strategies for Delivery
+
+               1.  Prediction Chart:
+
+                          o  How to Implement:
+
+                                   Provide students with a chart to predict and document the results of mixing
+                                     colors.
+                                   Use their predictions to guide a discussion before testing the combinations.
+
+               2.  Group Activity:
+
+                          o  How to Implement:
+
+                                   Divide students into small groups to brainstorm ideas and record their
+                                     predictions on a shared web or poster.
+
+                                                           102
+
+                                                           102]]></page><page Index="13"><![CDATA[  Have groups present their webs and explain their reasoning.
+
+               3.  Hands-On Exploration:
+                          o  How to Implement:
+
+                                   Provide materials like colored pencils colors with red, blue, and green filters.
+
+                                   Let students experiment with color mixing to observe the results firsthand.
+
+               4. Explore:
+
+               Teacher Role
+
+                     Guide students in navigating the online game and understanding how light colors mix to
+                       form new ones.
+
+                     Encourage students to experiment with different color combinations in the simulation.
+
+                     Facilitate discussions about the outcomes observed in the game and how they relate to real-
+                       life applications of RGB color mixing.
+
+               Expected From Students
+
+                     Actively engage with the online game to explore how colors combine.
+
+                     Experiment with different combinations of red, green, and blue light.
+
+                     Record observations and reflect on how primary colors create new ones.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+               Materials Needed:
+
+                     A computer, laptop, or tablet with internet access.
+
+                     Access to the online simulation: PhET Color Vision Game.
+
+               Step-by-Step Instructions:
+
+                   1.  Open the provided link to access the PhET Color Vision simulation.
+
+                   2.  Explore the "RGB Bulbs" tab to view how different lights mix.
+
+                   3.  Turn on each light (red, green, blue) one by one and observe their individual effects.
+
+                   4.  Mix two colors (e.g., red and green) and note the resulting color.
+                   5.  Mix all three colors (red, green, and blue) and observe the outcome.
+
+                                                           103
+
+                                                           103]]></page><page Index="14"><![CDATA[6.  Record your observations for each combination in a table.
+
+                          o  Example:
+                                   Red + Green = Yellow
+
+                                   Red + Blue = Magenta
+
+                                   Blue + Green = Cyan
+
+                                   Red + Green + Blue = White
+
+                   7.  Experiment with adjusting the intensity of each light and observe how the resulting color
+                       changes.
+               Reflection Questions:
+
+
+                   1.  What happens when you combine all three primary colors at full intensity?
+                          o  Answer: The color turns white.
+
+                   2.  How does changing the intensity of a color affect the result?
+
+                          o  Answer: It alters the brightness and shade of the mixed color.
+
+                   3.  Which combinations surprised you the most, and why?
+
+                          o  Answer: Students' responses will vary based on personal observations.
+               3. Explain:
+
+               Teacher Role
+
+                     Explain how RGB colors mix to form new colors and how this concept applies to technology
+                       like screens and projectors.
+
+                     Guide students in discussions about the science behind light and color.
+
+                     Encourage students to connect what they observe in the video with their prior experiments
+                       and activities.
+
+               Expected From Students
+
+                     Engage actively by watching the video and noting key points.
+
+                     Share observations and insights during discussions.
+
+                     Reflect on how RGB color mixing applies to real-world scenarios.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                           104
+
+                                                           104]]></page><page Index="15"><![CDATA[Video Link: How to Mix Colors Using RGB Lights
+
+               Pre-Watching: Set a Purpose
+
+                     Strategy: "KWL Chart"
+
+                          o  Before watching, ask students to fill in the "K" (what they know) and "W" (what they
+                              want to know) sections of the chart.
+
+                          o  Example Questions:
+
+                                   What do you know about RGB color mixing?
+                                   What do you want to learn from this video?
+
+               During Watching: Active Engagement
+
+                     Strategy: "Video Pause and Predict"
+
+                          o  Pause the video at key moments (e.g., before mixing colors) and ask students to
+                              predict the outcomes.
+
+                          o  Example: "What color do you think will form if we mix red and blue lights?"
+               Post-Watching: Discussion and Reflection
+
+
+                     Strategy: "Think-Pair-Share"
+                          o  Facilitate a discussion using these questions:
+
+                                 1.  What did you observe about the way colors mix in the video?
+
+                                 2.  How does the video relate to the RGB model discussed earlier?
+
+                                 3.  Can you think of everyday technologies that use RGB color mixing?
+
+                          o  Encourage students to pair up, discuss their thoughts, and share with the class.
+
+
+
+                   4. Elaborate:
+               Teacher Role
+
+
+                     Encourage creativity and application by guiding students in hands-on activities and
+                       discussions about RGB light mixing.
+
+                     Provide constructive feedback during assessments and project work.
+
+                     Offer support and resources for students to complete challenges.
+
+               Expected From Students
+
+                     Demonstrate understanding by answering assessment questions accurately.
+
+                     Engage in practical activities to create LED strip circuits using the smart pad.
+                     Reflect on what they’ve learned and apply it to create a challenge project at home.
+
+
+
+                                                           105
+
+                                                           105]]></page><page Index="16"><![CDATA[  "Think-Aloud Method": Encourage students to explain their thought process when choosing an
+                   answer.
+
+                 "Process of Elimination": Guide students to eliminate incorrect answers based on their
+                   knowledge.
+               5. Evaluate:
+
+
+
+               Teacher Role
+
+                     Guide students as they design and implement their LED strip circuits within their animal
+                       house models.
+
+                     Provide constructive feedback on how well they integrate color mixing and technology into
+                       their designs, ensuring they understand the application of RGB color mixing to represent
+                       different animals or their habitats.
+
+                     Assess students’ creativity in designing the animal house and how effectively they use LED
+                       strips to simulate different environmental conditions for the animals
+
+               Expected From Students
+
+                     Reflect on how RGB color mixing works and how it can be applied in this animal house
+                       project.
+
+                     Explain their design choices, such as why they chose specific colors for the animals' lighting,
+                       and show how they set up their LED circuits to reflect their ideas.
+                     Students will build animal house models incorporating LED strips.
+
+
+
+                                                           106
+
+                                                           106]]></page><page Index="17"><![CDATA[Activity: Create LED strip circuits on a smart pad.
+
+
+               Materials Needed:
+
+                     LED strips (RGB)
+
+                     Smart pad for kids
+                     Batteries
+
+                     Connecting wires
+
+                     Switches
+
+               Step-by-Step Instructions:
+
+                   1.  Connect the LED strips to the smart pad.
+
+                   2.  Attach the wires to the LED strips and ensure they’re connected to the power source.
+
+                   3.  Add a switch to control the LEDs.
+                   4.  Test the circuit by turning the LEDs on and off and observing how the colors mix.
+
+               Reflection Questions:
+
+                   1.  What did you notice about the color changes when you adjusted the connections?
+
+                   2.  How can you use these circuits to teach others about RGB mixing?
+
+               Challenge
+
+                     Task: Make a paper about the uses of LED strips.
+
+                     Guidelines:
+
+                          1.  Research various applications of LED strips (e.g., home decoration, advertising,
+                              vehicles).
+
+                          2.  Add pictures and diagrams to illustrate their uses.
+                          3.  Write a short explanation of why LED strips are popular in each application.
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                           107
+
+                                                           107]]></page><page Index="18"><![CDATA[108
+
+                                                           108]]></page><page Index="19"><![CDATA[Showcase Evaluation Rubric (For Teacher Use)
+
+               Criteria         Excellent (4)      Good (3)           Satisfactory (2)   Needs
+                                                                                        Improvement (1)
+
+               Creativity in    Project is highly   Project is creative,  Design is basic   Design is minimal
+               Design           creative, with     though some        with minimal      with no clear
+                                thoughtful         aspects lack detail  thought put into   connection
+                                integration of     in color or space.   how colors relate   between colors
+                                colors and spaces                     to animals.       and animals.
+                                for the animals.
+
+               Understanding    Demonstrates       Demonstrates       Demonstrates a    Demonstrates
+               of RGB Mixing    excellent          good               basic             limited
+                                understanding of   understanding of   understanding of   understanding of
+                                RGB color mixing   RGB color mixing   RGB color mixing   RGB color mixing,
+                                and explains the   with some minor    but lacks clarity in  with
+                                outcomes clearly.   errors in         some areas.       misconceptions.
+                                                   explanation.
+               Technical Skills   Successfully     Integrates LED     LED strips are    LED strips are
+                                integrates LED     strips with good   functional but    poorly integrated
+                                strips into the    functionality but   color mixing is   or non-functional,
+                                project with       minor issues with   inaccurate or    with inaccurate
+                                smooth             color mixing.      incomplete.       color mixing.
+                                functioning and
+                                accurate color
+                                mixing.
+
+               Project          Project is         Presentation is    Presentation is   Presentation is
+               Presentation     presented clearly   clear, with       basic with        unclear, with little
+                                with detailed      suﬃcient           minimal           to no explanation
+                                explanations,      explanation and    explanation of    or eﬀort put into
+                                showing deep       adequate use of    the project.      material usage.
+                                reﬂection and      materials.
+                                thoughtful use of
+                                materials.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                           109
+
+                                                           109]]></page><page Index="20"><![CDATA[Relation to Standards
+
+                     Next Generation Science Standards (NGSS): 4-PS3-4 Energy and Matter – Students will
+                       observe and describe how energy can be transferred through light, speciﬁcally RGB light
+                       mixing.
+                     Common Core Standards for Mathematics (CCSS.MATH.CONTENT.3.MD.A.1): Apply
+                       mathematical concepts to describe and predict color mixing outcomes.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                           110
+
+                                                           110]]></page><page Index="21"><![CDATA[Time Frame: 90 mins
+
+
+
+
+
+
+       Objectives:
+
+           Understand what is LED matrix
+           Recognize the role of LED matrix in our
+
+            project and connect it on smart pad.
+
+
+
+
+
+
+
+
+
+
+       Challenge Questions of the Lesson
+
+        What do you notice about the LED matrix
+       when it lights up?
+        How can we use the LED matrix to show
+
+       different shapes or letters?
+
+
+
+
+
+
+
+
+
+       SEL Relation
+
+         Self-Awareness – Recognizing feelings in
+       LED patterns (e.g., smiley for happiness),
+       building confidence in observations.
+
+         Self-Management – Practicing patience,
+       focus, and perseverance when creating
+
+       patterns.
+         Social Awareness – Appreciating different
+
+       designs and respecting classmates' ideas.
+         Relationship Skills – Working together,
+
+       sharing ideas, and helping each other.
+         Responsible Decision-Making –
+
+       Choosing patterns wisely and problem-
+
+       solving when designs don’t work.
+
+
+                                                           111
+
+                                                           111]]></page><page Index="22"><![CDATA[Engage:
+
+               Teacher Role:
+
+
+                     Introduce the lesson by telling a story about Adam and Laila discovering an LED
+                       matrix in their project.
+                     Ask thought-provoking questions to spark curiosity, such as, "What do you think will
+                       happen when Adam and Laila turn on the LED matrix?"
+                     Guide students in connecting the story to real-life applications of LED matrices in
+                       their project.
+
+               Expected From Students:
+
+
+                     Listen actively and participate in the story discussion by sharing their thoughts and
+                       predictions.
+                     Ask questions when curious or confused, just like Adam and Laila in the story.
+                     Work together to explore how the LED matrix can be used in their project.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          Strategies for implementation
+
+               You can apply the same strategies applied before in the story part.
+
+
+
+
+
+
+
+
+
+                                                           112
+
+                                                           112]]></page><page Index="23"><![CDATA[Questions and Possible Answers
+
+               Question: What colors could we use on our lights to show hot and cold
+               places where animals live?
+
+               Possible Answers:
+
+                   1.  Desert: We could use yellow, orange, or red to represent the
+                       hot temperatures in the desert. These colors are often
+                       associated with warmth and heat.
+
+                   2.  Underwater: For underwater, we could use blue and green to
+                       reflect the cool and calming atmosphere of the ocean. These
+                       colors are commonly associated with water and cold
+                       environments.
+
+                   3.  Snowy Place: In a snowy place, we could use white, light blue,
+                       or icy blue to represent the cold and frosty environment, as
+                       these colors symbolize snow, ice, and cold temperatures.
+
+
+        Strategies for implementation
+
+
+
+                   1.  Brainstorming Session
+
+                          o  How to Implement: Ask students to think about the colors they associate with hot,
+                              cold, and neutral places. Then, let them share their thoughts aloud while the teacher
+                              records ideas on a whiteboard. This creates a collaborative environment and helps
+                              students express their ideas.
+
+                   2.  Visual Stimuli
+
+                          o  How to Implement: Show the three photos (desert, underwater, snowy place) and
+                              ask students to suggest which colors could represent the environments in the
+                              pictures. This strategy uses visuals to stimulate thinking and help students connect
+                              the colors to real-life environments.
+
+                   3.   color Associations
+
+                          o  How to Implement: Ask students to close their eyes and imagine being in each of
+                              the three environments (desert, underwater, snowy place). Then, have them choose
+                              colors that would help them feel like they belong in each place. This method taps
+                              into sensory and emotional connections with colors.
+
+                   4.  Think-Pair-Share
+
+                          o  How to Implement: Have students individually come up with their color choices,
+                              then pair up with a classmate to compare answers. Afterward, students can share
+                              their pair’s ideas with the class. This promotes collaboration and helps students
+                              think critically about the colors they chose.
+
+                   5.  Interactive Voting
+
+
+                                                           113
+
+                                                           113]]></page><page Index="24"><![CDATA[o  How to Implement: After brainstorming the colors for each environment, use an
+                              online tool or physical voting system to allow students to vote on the  colors they
+                              think would best represent each place. This makes the activity more engaging and
+                              gives students a sense of involvement in the decision-making process.
+
+               2..Explore:
+
+               Teacher Role
+
+                     Guide students in understanding the relationship between colors and environments (e.g.,
+                       hot vs. cold places).
+
+                     Facilitate hands-on engagement with the LED matrix by providing instructions, answering
+                       questions, and encouraging creativity.
+
+                     Ensure students understand the connection between colors and their symbolic meanings.
+
+               Expected From Students
+
+                     Participate actively by identifying the appropriate colors for different animal habitats.
+
+                     Operate the LED matrix to light up the chosen colors and create patterns.
+
+                     Reflect on how the colors represent various environments and how patterns can
+                       communicate information.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+               Materials Needed:
+
+                     Animal cards with pictures of animals and their habitats
+
+                     LED matrix board
+
+                     LED lights (RGB)
+
+                     Control buttons or switches
+
+                                                           114
+
+                                                           114]]></page><page Index="25"><![CDATA[115]]></page><page Index="26"><![CDATA[Video: How RGB LEDs Work
+
+               Pre-Watching: Set a Purpose
+
+                     Explain to students that the video will show how RGB LEDs work to create different colors.
+
+                     Ask students to think about how primary colors (red, green, and blue) combine to form
+                       other colors.
+
+                     Provide students with a note-taking sheet where they can write down any new terms or
+                       concepts they hear.
+
+               During Watching: Active Engagement
+
+                     Encourage students to pause the video at certain points to discuss what they’ve learned
+                       (e.g., how combining red and blue creates magenta).
+
+                     Ask students to observe the examples of color mixing shown in the video and write down
+                       any interesting insights.
+
+               Post-Watching: Discussion and Reflection
+
+                     Discussion Questions:
+
+                          1.  How do the three primary colors of light combine to create different colors?
+                          2.  What happens when all three colors (red, green, and blue) are mixed?
+
+                          3.  How does the brightness of an LED affect the color that is seen?
+
+                     Reflection Activity:
+
+                          o  Have students explain the concept of RGB color mixing in their own words.
+
+                          o  Ask them to predict what happens if one of the LEDs in the RGB setup fails and how
+                              that would affect the color produced.
+               Strategies for Delivery
+
+
+                   1.  Think-Pair-Share: After watching, pair students to discuss what they learned, then share
+                       with the class.
+
+                   2.  Graphic Organizer: Use a Venn diagram to compare and contrast colors created by mixing
+                       red, green, and blue.
+
+                   3.  Demonstration with Hands-On Application: Use RGB LEDs and a controller in class to
+                       reinforce concepts shown in the video.
+
+                   4.  Interactive Q&A: Encourage students to ask and answer each other’s questions about the
+                       video content.
+
+
+
+
+
+
+
+
+
+                                                           116
+
+                                                           116]]></page><page Index="27"><![CDATA[4.Elaborate:
+               Teacher Role
+
+
+                     Encourage students to think creatively about how they can use the LED matrix in practical
+                       scenarios.
+
+                     Guide students in creating circuits while ensuring safety precautions are followed.
+
+                     Support students in answering questions and refining their understanding of how the LED
+                       matrix works.
+
+                     Provide feedback and motivate students to explore further applications at home.
+
+               Expected From Students
+
+                     Apply knowledge of LEDs and color mixing to design LED matrix circuits on a smart pad.
+
+                     Answer focus questions thoughtfully and demonstrate an understanding of the concepts.
+                     Participate in the practice activity by building circuits and reflecting on their work.
+
+                     Tackle the home challenge by researching and documenting real-world uses of LED matrices.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+         Strategies for implementation
+
+
+
+                     Recall and Explain: Ask students to explain their answers and relate them to what they
+                       learned in the video and activities.
+
+                     Interactive Quiz: Use an online quiz tool (e.g., Kahoot) to make answering fun and engaging.
+
+                     Real-Life Connection: Ask students to brainstorm where LED matrices might be used in real-
+                       world situations.
+
+
+
+
+
+                                                           117
+
+                                                           117]]></page><page Index="28"><![CDATA[Objective: Create an LED matrix circuit on a smart pad.
+
+               Materials Needed
+
+                     Smart pad
+
+                     LED matrix module
+
+                     Connecting wires
+
+                     Battery or power source
+
+                     Resistors (if needed)
+
+
+
+
+
+               Step-by-Step Instructions
+
+                   1.  Connect the LED matrix module to the smart pad.
+
+                   2.  Use the connecting wires to link the LED matrix pins to the appropriate ports on the smart
+                       pad.
+                   3.  Ensure that the circuit is properly grounded to avoid short circuits.
+
+
+
+
+
+
+                                                           118
+
+                                                           118]]></page><page Index="29"><![CDATA[5.Evaluate:
+               Teacher Role
+
+
+                      Facilitate assessments and provide feedback. Guide students in evaluating their
+                       understanding of the concepts and implementation of their projects. Provide constructive
+                       criticism to improve their designs.
+
+               Expected From Students:
+
+                     Answer questions about LED matrices, animal housing, and the integration process.
+
+                     Demonstrate an understanding of the concepts taught during the session.
+
+                     Successfully implement the LED matrix in their animal’s house project.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+               Evaluate the students' work on the main project: adding the LED matrix to their animal’s house.
+               Include a rubric for consistent evaluation:
+
+               Criteria       Excellent (4)           Good (3)         Satisfactory (2)   Needs
+                                                                                         Improvement (1)
+
+               Integration of  LED matrix is fully    LED matrix is    LED matrix is     LED matrix is non-
+               LED Matrix     functional and          functional but   functional but    functional or not
+                              seamlessly integrated   slightly         integration is    integrated.
+                              with the house design.   misaligned with   incomplete or
+                                                      the house        poorly executed.
+                                                      design.
+
+               House Design  Animal house is well-    Animal house is   Animal house     Animal house
+                              designed, creative, and   adequately     design is basic   design is
+                              eﬀectively              designed but     and lacks         incomplete or not
+                              accommodates the LED  lacks creativity   attention to
+
+                                                           119
+
+                                                           119]]></page><page Index="30"><![CDATA[matrix.                 or polish.       detail.           functional.
+
+               Presentation   Student clearly explains  Student explains  Student struggles   Student cannot
+                              the project,            the project but   to explain the   explain the
+                              demonstrates            lacks clarity in   project or answer  project or answer
+                              functionality, and      some areas.      questions.        questions.
+                              answers questions
+                              conﬁdently.
+
+
+
+
+               Relation to Standards:
+
+                     NGSS (Next Generation Science Standards): MS-ETS1-4: Develop a model to generate data
+                       for iterative testing and modification of a proposed object, tool, or process such that an
+                       optimal design can be achieved.
+
+                     ISTE Standards for Students: Standard 4a: Students know and use a deliberate design
+                       process for generating ideas, testing theories, creating innovative artifacts, or solving
+                       authentic problems.
+
+               End of the story:
+
+               Praise the students for their efforts and participation, acknowledging their ideas and teamwork.
+               Then, connect their learning to Adam and Laila’s journey, highlighting how they also explored and
+               discovered their project.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                           120
+
+                                                           120]]></page><page Index="31"><![CDATA[Encourage them to participate in the STEAM competition
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+               Guide them to follow the EDP and work on their own zoo exhibit.
+
+
+               Make them answer these questions as they will help them to find about their
+               project.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                           121
+
+                                                           121]]></page><page Index="32"><![CDATA[Show students’ work throughout the project in the "Create Your Story" section.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                           122
+
+                                                           122]]></page></pages></Search>

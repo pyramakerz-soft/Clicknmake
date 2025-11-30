@@ -1,0 +1,916 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Search><pages Count="13"><page Index="1"><![CDATA[Unit
+
+
+
+
+                3
+
+
+
+
+
+
+           Lesson
+
+
+                2
+
+
+
+
+
+
+          Beyond Imagination
+
+
+          Find Your Way.
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                       Ready, Set, Learn!
+
+
+                                       You will be able to:
+
+
+                                          •  Know what coding is and how it helps characters move and
+                                             solve problems.
+                                          •  Use mBlock to create and play a simple maze game.
+
+                                          •  Use motion blocks to move characters forward, backward,
+                                             left, and right.
+
+                                          •  Understand X and Y directions to guide the character
+                                             through the maze.
+
+                                          •  Use costumes to change how the character direction.
+                                          •  Add clicking events and sensing blocks to make the game
+                                             more fun.
+
+                                          •  Put coding steps in the right order (sequencing).
+                                          •  Use algorithms to give the character a list of clear steps.
+
+
+
+
+
+
+
+
+
+
+
+
+          56]]></page><page Index="2"><![CDATA[Ms. Sara: “Let’s create a fun game to help everyone learn how to find their way around!”
+
+          Adam: “Ooh! We can make a game on our tablets!”
+
+          Laila: “What if it’s a maze?”
+          Khaled: “And the player is a kid in a wheelchair trying to find the way out!”
+
+          Ms. Sara: “That’s a brilliant idea! ”
+
+
+            Let’s
+
+            Think!
+
+
+
+          Order the Plant’s Life!
+          Which happens first, next, and last?
+
+          Match the steps below with the correct order to show how a plant grows.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                               Figure 36: Pictures showing the different stages of a plant’s
+                                               growth from seed to sprout.
+
+                                                                                                            57]]></page><page Index="3"><![CDATA[Hello friends!
+
+
+
+
+
+
+          we just learned that to make something work, the
+          steps need to happen in the right order. Now, let’s
+          find out how we can do the same thing when we
+          write code!
+
+
+
+
+
+            Explorer’s
+
+            Toolkit
+
+
+
+
+
+                 DIY Lab
+
+           Help Khaled Reach the Merry-Go-Round!
+
+          Khaled wants to go to the merry-go-round in the middle of the maze. Can you help him
+          find the way? Let’s use an algorithm — that means a list of steps to follow!
+
+          What to do:
+
+              1. Look closely at the maze.
+              2. Use the cut-out arrows (or draw your own) to show Khaled’s moves:
+
+                ↑ Move Forward  ← Turn Left   →Turn Right
+
+              3. Put the arrows in the right order — from START to FINISH.
+              4. Glue them in the boxes to show each move.
+
+              5. With your teacher, write the steps down like a story:
+                   (for example: Forward, Turn Right, Forward...)
+
+          Now Let’s Add a Fun Challenge!
+            •  If Khaled turns Left or Right, mark the arrow
+               with an “X”.
+
+            •  If he moves Forward or Backward, mark it with “Y”.
+          Steps:
+
+            •
+
+            •
+            •
+
+            •
+
+
+
+                                                                              Figure 37: Maze activity.
+
+
+          58]]></page><page Index="4"><![CDATA[Screen Lessons
+
+           Click on the link to learn more about Sequencing.
+                https://www.youtube.com/watch?v=zW3YZdPmCnM
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                       Figure 38: A coding activity showing a sequence of arrow commands guiding
+                                         a character on a grid to reach a red flag.
+
+
+
+
+                                         Wrap-up Time!
+
+
+
+
+
+          Sequencing means putting steps in the right
+          order.
+
+          Algorithm is a list of steps to solve a problem or
+          do something.
+
+            •  The X-axis is a line that goes side to side
+               (like when you move left and right).
+
+            •  The Y-axis is a line that goes up and down
+               (like when you move up and down).
+
+
+
+            Assessment
+
+
+
+
+
+
+                   Apprentice
+
+          1 .  What does sequencing mean?
+
+            A.  Jumping up and down
+
+            B.  Putting steps in the right order
+            C.  Going left and right
+
+            D.  Moving up and down
+
+
+
+                                                                                                            59]]></page><page Index="5"><![CDATA[2 .  What is an algorithm?
+
+            A.  A type of robot
+            B.  A list of steps to solve a problem or do something
+
+            C.  A type of dance
+
+            D.  A list of favorite foods
+          3 .  Which direction does the X-axis go?
+
+            A.  Up and down
+
+            B.  Side to side (left and right)
+            C.  Forward and backward
+
+            D.  Around in a circle
+
+
+                      Builder
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+         Figure 39: Khaled in a wheelchair  Figure 40: A colorful maze used      Figure 41: A merry-go-round
+              sprite for coding activity.          as the background.            sprite for the coding project.
+
+            •  Use the maze photo and set it as background
+
+            •  Add Khaled and the merry-go round as sprites
+
+            •  Use costumes to change how the character direction.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                      Figure 43: mBlock costume editor showing Khaled’s
+                                                          sprite being edited for movement directions.
+                Figure 42: Khaled’s sprite moving
+                    through a maze in mBlock.
+
+
+
+          60]]></page><page Index="6"><![CDATA[Showcase
+
+          Arrange the code to make khaled move, right, left, up and down.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        Figure 44: mBlock screen with movement
+                                         blocks to arrange for Khaled’s directions.
+
+
+
+
+
+                              Great job on your design!
+
+
+
+
+
+
+
+          Now let’s go back to the EDP steps. It’s
+          time to moveto the plan part and add
+          this.                                                                                  Name:
+                                                                                                 Project:
+                                                                                                  Ask
+                                                                                                           Imagine
+
+                                                                                                   Plan
+
+                                                                                                           Create
+                                                                                                  Improve
+                Now I Can
+
+                Know what coding is and how it helps characters move and solve problems.       
+
+                Use mBlock to create and play a simple maze game.                                              
+                Use motion blocks to move characters forward, backward, left, and right.          
+
+                Understand X and Y directions to guide the character through the maze.                         
+
+                Use costumes to change how the character looks and the direction it faces.         
+                Add clicking events and sensing blocks to make the game more fun.                              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                            61]]></page><page Index="7"><![CDATA[Ms. Sara: “Look what we've built together! What do you think?”
+
+          Adam: “It's amazing! Everyone can play!”
+
+          Laila: “We made a playground that's fair for everyone!”
+
+          khaled: “This is the best playground ever!”
+
+          Ms. Sara: “What did we learn by working together?”
+
+          Adam: “We can solve problems with the Engineering Design Process!”
+
+          Laila: “And everyone deserves to have fun!”
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          62]]></page><page Index="8"><![CDATA[Unit Glossary
+
+
+
+
+             Keyword                                           Definition
+
+
+          Sidewalks           Are paths on the side of the road where people walk safely.
+
+          Sequence            It means putting things in the right order from first to last.
+
+
+          Sprite              Is a character or object in a computer game or animation.
+
+          The X-axis          Is a line that goes side to side (like when you move left and right).
+
+
+          The Y-axis          Is a line that goes up and down (like when you move up and down).
+
+
+
+
+                Mission Innovate
+
+          Design an Accessible Public Space.
+
+          Now It’s Your Turn
+
+          Choose a public space—like a crosswalk, park path, school gate, or bus stop—and redesign
+          it to make it safe and easy for everyone to use, including people with disabilities.
+          Think Critically by Answering These Questions:
+
+            •  What makes it hard for some people to use this space right now?
+
+
+
+
+
+
+
+
+
+            •  What changes can you add to help someone in a wheelchair, or with hearing or vision
+               difficulties?
+
+
+
+
+
+
+
+
+
+            •  How does your design help everyone move safely and independently?
+
+
+
+
+
+
+
+
+
+            •  Can you use recycled or simple materials to build your model?
+
+
+
+
+
+
+
+
+
+
+                                                                                                            63]]></page><page Index="9"><![CDATA[Project Guidelines
+
+
+
+                                                         1
+
+
+
+                                                      Choose a Place
+
+                                                      Pick a public area where you think
+                                                      changes could help more people access it.
+
+
+
+
+                        2
+
+
+
+                     Research
+
+                     Learn what features make places accessible—like
+                     ramps, sound signals, wide spaces, or tactile paths.
+
+
+
+                                                    3
+
+
+
+
+                                                 Design
+                                                 Use creative materials to build a model that
+                                                 shows your accessible design idea.
+
+
+
+
+                           4
+
+
+
+
+                        Present
+
+                        Share your model and explain how it helps people
+                        with different abilities use the space safely and
+                        comfortably.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          64]]></page><page Index="10"><![CDATA[Project Rubric
+
+
+          What We Look For                  Super!                    Good!                   Not Yet
+
+
+           Science                                                                   
+           Did you think about       I said what is hard      I said one thing that  I did not say what is
+           what people need?         for some people          is hard and one          hard or how to help.
+                                     and how to help.         way to help.
+
+           Technology                                                                
+
+           Did you use smart         I used smart things      I used one smart         I did not use any
+           ideas like sounds,        to help people.          idea.                    smart ideas.
+           lights, or signs?
+
+           Engineering                                                               
+
+           Did you build a good      My model is neat         My model works           My model is messy
+           model?                    and really helps         but needs a little       or does not show the
+                                     people.                  fixing.                  idea.
+
+           Art                                                                       
+
+           Is your design            My model is fun,         My model has some  My model is plain
+           creative and              colorful, and looks      color and creativity.    and needs more
+           colorful?                 great.                                            work.
+
+           Math                                                                      
+
+           Did you think about       I used math like         I used a little math.    I did not use math in
+           size and space?           size and shape in                                 my model.
+                                     my model.
+
+           Thinking                                                                  
+
+           Did you answer the        I answered all the       I answered some of  I did not answer the
+           questions?                questions with           the questions.           questions.
+                                     good ideas.
+
+           Materials                                                                 
+
+           Did you use simple        I used old or simple     I used some helpful      I did not use helpful
+           or recycled things?       things in a smart        things.                  materials.
+                                     way.
+
+           Talking                                                                   
+
+           Did you talk about        I explained my           I explained a little.    I did not explain my
+           your work?                model clearly and                                 work well.
+                                     proudly.
+
+
+
+
+
+                                                                                                            65]]></page><page Index="11"><![CDATA[CER
+
+
+
+
+
+
+
+
+
+
+
+                                                         i
+                      Claim                                                       Reasoning
+
+
+
+
+
+                                                  Evidence
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          66]]></page><page Index="12"><![CDATA[My Journal
+
+         Add your success stories of the week
+
+
+
+
+
+
+                       Week 1                                              Week 2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                       Week 3                                              Week 4
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                            67]]></page><page Index="13"><![CDATA[My Journal
+
+          Add your success stories of the week
+
+
+
+
+
+
+                       Week 5                                               Week 6
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                       Week 7                                               Week 8
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          68]]></page></pages></Search>

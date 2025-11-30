@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Search><pages Count="2"><page Index="1"><![CDATA[Connect servos                                                                LESSON 02
+                  Connect servos
+                                                                                                 LESSON 02
+
+
+
+
+
+
+                                                        If the servo motor can control the
+                                                        direction of the conveyor belt, what do
+                                                        you think would happen if it stopped
+                                                        working? How could you design a backup
+                                                        system to ensure that the candies still
+                  let's                                 reach the correct sorting area?
+                  let's
+                                                        . ...............................................................................................................................................
+                Think                                   . ...............................................................................................................................................
+                 Think
+
+                                                        The servo motor relies on sensors to know
+                                                        where to guide the candies. What
+                                                        challenges might arise if the sensors fail
+                                                        to detect the candies properly, and how
+                                                        could the factory prevent or x this issue?
+
+
+                                                        . ...............................................................................................................................................
+
+                                                        . ...............................................................................................................................................
+
+
+
+
+             Explore
+             Explore
+
+
+
+
+                                  Connect the servo motor with the color sensor on the
+                                  Arduino board.
+
+                                  What challenges might we face in controlling multiple
+                                  servomotors independently?
+
+
+                                  . .............................................................................................................................................................................................
+
+
+
+                                                                        Watch it..
+                                                                        Watch it..
+
+                                                                        Let’s watch the following
+                                                                        video:
+
+
+
+                                                                                                Scan Here!
+                                                                        https://youtu.be/tHOH-bYjR4k?si=Jzih_eAuHloMf_iQ
+
+
+
+
+
+
+
+                                                          21]]></page><page Index="2"><![CDATA[Assessment
+                                 Assessment
+
+
+
+
+
+
+
+
+
+
+
+
+            Practice
+            Practice
+
+
+
+
+
+
+             Now try to attach more than
+
+             one servo to Arduino circuit.
+
+
+
+
+
+
+
+
+
+                                                                                              Name:  . .........................................................................................................................................................................................................
+                  Showcase..                                           After we learned       Ask  . ................................................................................................................................................................................................
+                                                                                              Project:
+                                                                                                     Imagine
+                                                                       what are the parts we
+                                                                       need for our machine,
+                                                                       let’s go back to our   Improve  Plan
+                                                                       EDP paper and add
+                 Adding color sensor                                   these parts to the    Create
+                 to the design.                                        create part..
+
+
+
+
+
+
+                  Now I can…
+
+
+
+
+                           Understand the concept and how to connect a color
+                           sensor in circuit.
+
+
+                           Wire and connect sensor to a circuit, including and
+                           understanding sensor specications and outputs.
+
+                           Understanding how to control servo motors, including the use
+                           of PWM (Pulse Width Modulation) signals.
+
+                           How to link between the i/p signals from the sensor and
+                           the brain then the o/p to the servo motors.
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                         22]]></page></pages></Search>

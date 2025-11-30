@@ -1,0 +1,1 @@
+﻿positionForPages[9]={page:9,positions:[{word:"",left:0.205915,top:0.106073,width:0.007531,height:0.015498},{word:"Reflection Questions ",left:0.235229,top:0.102788,width:0.175980,height:0.020970}]};

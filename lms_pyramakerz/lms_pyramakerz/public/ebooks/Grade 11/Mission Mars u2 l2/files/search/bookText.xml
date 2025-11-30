@@ -1,0 +1,626 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Search><pages Count="8"><page Index="1"><![CDATA[Unit
+
+
+
+
+                2
+
+
+
+
+
+
+           Lesson
+
+
+                2
+
+
+
+
+
+
+          Innovators in Action
+
+
+          Shielding from the Red
+
+
+
+          Danger.
+
+
+
+
+
+
+                                         Ready, Set, Learn!
+
+
+
+                                         You Need to Know
+
+                                            •  How temperature sensors (e.g., thermistors or
+                                              thermocouples) work and how they can be used to
+                                              measure temperature changes.
+
+                                            •  How to program the rover to make decisions based on
+                                              sensor data.
+
+                                            •  The basic structure of coding with "if-else" statements,
+                                              loops, and conditionals.
+
+                                         You will be able to:
+
+                                            •  Recognise the biological impact of radiation on living
+                                              organisms, including its role in DNA damage and cell
+                                              health.
+                                            •  Understand the relationship between temperature and
+                                              radiation on Mars and how it affects rover behaviour.
+
+                                            •  Code the rover to reroute when the temperature reaches
+                                              dangerous levels, based on the data from the temperature
+                                              sensor.
+
+
+
+
+
+
+          32]]></page><page Index="2"><![CDATA[Let’s
+
+            Think!
+
+
+
+          Why is it important for the rover to avoid areas with high radiation, and how can this
+          help us determine which regions on Mars might be unsafe for humans to live in?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            Explorer’s
+
+            Toolkit
+
+
+
+
+                DIY Lab
+
+
+            •  Radiation on Mars can harm DNA and damage cell health.
+            •  Astronauts need rovers to explore the surface and mark areas of high radiation.
+
+            •  Today, you will act like scientists testing shields and detectors to find out which areas
+               are safe or unsafe.
+          You have three identical yeast–sugar mixtures labeled: Control, UV-30s, and UV-120s.
+          Each mixture is placed in a sealed bottle covered with a balloon or plastic wrap and kept
+          in a warm environment. Every 15 minutes for one hour, measure the circumference of each
+          balloon (in centimeters) to monitor gas production.
+
+
+
+
+
+
+
+
+
+
+                                                                                                            33]]></page><page Index="3"><![CDATA[Time (min)              Control (cm)             UV-30s (cm)              UV-120s (cm)
+
+
+
+          0
+
+
+
+          15
+
+
+
+          30
+
+
+          45
+
+
+          60
+
+
+          Analysis Questions:
+          Which sample produced the largest amount of gas (biggest balloon), and what does this
+          indicate?
+
+
+
+
+
+
+
+
+
+
+          How did increasing the length of UV exposure affect the yeast’s ability to grow and
+          carry out respiration?
+
+
+
+
+
+
+
+
+
+
+
+          Using scientific vocabulary, explain how radiation can cause DNA damage and impact
+          overall cell health.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          34]]></page><page Index="4"><![CDATA[CER
+
+
+
+
+
+
+
+
+
+
+
+                                                         i
+                      Claim                                                       Reasoning
+
+
+
+
+
+                                                  Evidence
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                            35]]></page><page Index="5"><![CDATA[Screen Lessons
+
+          Click on the link to learn more about the relation between temperature and radiation.
+                https://youtu.be/je-qc7sxYzU?si=NCYdoq7oE-zNFxyf
+
+
+               Dig Deeper
+
+          Click on the link to learn more about temperature sensor and how it works.
+                https://atlas-scientific.com/blog/how-do-temperature-sensors-
+                work/?srsltid=AfmBOor_kwBsl6RP0y3k7-0K5HoSnMTyIA-
+                cf4BSomhgSVcKWjPGySwv
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                   Hey friends
+                                                  let’s wrap up!
+
+
+
+
+          Radiation is powerful energy that can harm living
+          organisms. It can damage DNA, which is like the
+          “instruction book” inside every cell. When DNA is
+          damaged, cells may not grow properly, may stop
+          working, or even die. This is why astronauts need
+          protection from high radiation on Mars.
+
+            •  Radiation carries energy. When radiation (like
+               sunlight or cosmic rays) hits a surface, it can
+               transfer energy and cause the material to heat up.
+
+            •  Areas with higher radiation often show higher temperature readings, while shaded or
+               protected areas tend to be cooler.
+            •  On Mars, radiation is not always visible, but its effect can often be noticed in the
+               temperature changes of the rover’s surroundings and equipment.
+
+
+
+
+
+
+
+
+          36]]></page><page Index="6"><![CDATA[Assessment
+
+
+
+
+
+
+                   Apprentice
+
+          Q1 (Multiple Choice):
+
+          Which of the following is NOT a place where temperature sensors are commonly used?
+
+            A.  Ovens
+            B.  Refrigerators
+
+            C.  Smartphones
+
+            D.  Paint brushes
+          Which sensor might a Mars Rover use to record the Martian environment?
+
+            A.  Thermistor
+            B.  Barometer
+
+            C.  Gyroscope
+            D.  Compass
+
+
+
+
+          Q2 (Complete the sentence):
+          Radiation can cause materials to ..................... faster, which affects their temperature.
+
+          Q3 (Open-ended):
+
+          Explain why cars have temperature sensors inside their engines.
+
+
+
+
+
+
+
+
+
+
+
+          How could temperature sensors help astronauts when they build shelters on Mars?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                            37]]></page><page Index="7"><![CDATA[Builder
+
+          Now, attach the temperature sensor to your rover, program it, and view the readings on the
+          serial monitor.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   Mastermind
+
+          Imagine your rover took these readings in 1 day:
+
+          Morning: –60 °C, radiation high
+          Afternoon: –20 °C, radiation medium
+
+          Night: –70 °C, radiation low
+          Question: Which time of day would be the safest for astronauts to explore outside?
+          Why?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          38]]></page><page Index="8"><![CDATA[Showcase
+
+          Upgrade your code and Code the rover to reroute when the temperature reaches
+          dangerous levels, based on the data from the temperature sensor.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                         Great job till now!
+
+
+
+
+
+
+
+          Now that you're done Let’s go back to the EDP
+          steps and add this to improve part.
+                                                                                                 Name:
+                                                                                                 Name:
+                                                                                                 Project:
+                                                                                                 Project:
+                                                                                                  Ask Ask
+                                                                                                           Imagine
+                                                                                                           Imagine
+                                                                                                   Plan
+                                                                                                   Plan
+                                                                                                            Create
+                                                                                                           Create
+                                                                                                  Improve
+                                                                                                  Improve
+                Now I Can
+                Recognize how radiation affects living organisms and explain its role
+                in DNA damage and overall cell health.                                                 
+
+                Understand how temperature and radiation are connected on Mars
+                and describe how these factors influence rover behavior.                               
+                Write and apply code so the rover can automatically change its path
+                when the temperature sensor detects dangerous levels.                                  
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                            39]]></page></pages></Search>

@@ -1,0 +1,1 @@
+﻿positionForPages[36]={page:36,positions:[{word:"Attach to Sunboard:",left:0.120943,top:0.083793,width:0.176820,height:0.019726},{word:"Once the box is dry, put it to the desired location on the sunboard. ",left:0.181449,top:0.116875,width:0.537492,height:0.019198},{word:"66",left:0.488813,top:0.956153,width:0.022415,height:0.013184}]};

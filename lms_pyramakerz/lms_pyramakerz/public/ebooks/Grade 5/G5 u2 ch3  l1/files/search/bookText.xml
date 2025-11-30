@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Search><pages Count="4"><page Index="1"><![CDATA[LESSON 01
+                                                                                                 LESSON 01
+                                  Robotics Domain
+              Chapter 03                                                                  Let’s control the
+                                                                                                   oater.
+
+
+
+
+
+
+
+             Stepping Stone:
+              Stepping Stone:
+
+
+
+                You need to know …                         You will be able to…
+
+
+                        What an Arduino is and its basic            Writing and understanding more
+                        components.
+                                                                    complex code to control motors.
+                        How to upload code to an
+                        Arduino.                                    Understanding of motor drivers and
+                                                                    how to use them.
+                        Familiarity with the Arduino IDE
+                        and basic syntax.
+
+                        How to connect components
+                        on a breadboard.
+
+
+                 Mrs. Sara : Today, we're going to take it
+                 a step further we need to control our
+                 oater and make it move right and left
+                 how do you think we could do that?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                    Laila got an idea and said: I think we
+                                                                    will be using Arduino.
+
+
+
+
+                                                             Why is it necessary to consider the
+                                                             voltage and current requirements of
+                     let's                                   motors when integrating them with
+                     let's
+                                                             control circuitry like an Arduino?
+                   Think                                     . .........................................................................................................................
+                   Think
+
+                                                             . .........................................................................................................................
+
+
+
+
+
+
+                                                          38]]></page><page Index="2"><![CDATA[Explore
+                                Explore
+
+
+
+
+
+
+
+
+
+                                               Hi friends! Let's build our
+
+                                               circuit using the Arduino.
+
+
+
+
+
+
+                      1.                  Connect two motors directly to the Arduino,
+                                          write some code, and then test it out.
+
+
+
+                      What do you observe?
+
+                      . ...........................................................................................................................................................................................................................
+
+                      . ...........................................................................................................................................................................................................................
+
+
+                      2.  Now try to connect them through a
+                         motor driver and test again.
+
+                      What do you observe?
+
+
+                      . ...........................................................................................................................................................................................................................
+
+                      . ...........................................................................................................................................................................................................................
+
+
+
+
+
+
+
+
+
+
+                                                                Watch it..            WHAT IS A MOTOR DRIVER
+                                                                Watch it..
+                                                                                      ROBOTICS FOR BEGINNERS
+
+
+                                                                Follow this link:
+
+
+                                                                 https://www.youtube.com/watch?
+                                                                  v=9ShJ6IH0ZLs            Scan Here!
+
+
+
+
+
+
+
+
+
+
+
+
+                                                          39]]></page><page Index="3"><![CDATA[Assessment
+                                    Assessment
+
+
+
+
+
+
+
+
+               Focus
+               Focus
+
+
+                 Choose the correct answer from the choices
+
+                 for each question:
+
+                   1.  What is the primary function of a motor
+
+                       driver in an Arduino project?
+
+                       A.  To provide power to the Arduino.
+                       B.  To control the speed and direction of motors.
+                       C.  To read sensor data.
+                       D.  To store programs.
+
+
+                   2.  Which motor driver is commonly used with
+                       Arduino for controlling DC motors?
+
+                       A.  L298N.
+                       B.  LM35.
+
+                       C.  IR Sensor.
+                       D.  HC-SR04.
+
+
+                   3.  What type of motors can the L298N motor
+                       driver control?
+
+                       A.  Stepper motors only.
+                       B.  Servo motors only.
+                       C.  DC motors and stepper motors.
+
+
+
+
+
+
+                  Practice
+                  Practice
+
+
+
+
+                   Try to add a potentiometer
+                   to your circuit and code.
+
+
+
+
+
+
+
+
+
+
+                                                         40]]></page><page Index="4"><![CDATA[Name:
+                                                                                        Project:  . . ...... ... ... .. .............. ............... ................ ............... ................ ............... ................ ............... ......... ................ ............ ......... ....... ......... ..
+                                                                                           . . ... .. ............. ................ ............... ................ ............... ................ ............... ................ ......... ............... ............. ......... ... ......... .... ..
+                 Now go to the                                                         Ask        Imagine
+                 improve part in your
+                 EDP paper and add                                                    Improve    Plan
+
+                 this enhancement.
+                                                                                      Create
+
+
+
+
+
+
+
+
+
+
+
+
+                    Showcase
+
+
+
+
+
+                 Connect oater motors to Arduino and make your
+                 oater move forward 30seconds then right 30
+
+                 seconds then backward 3o second then turn left.
+
+
+
+
+
+
+
+
+
+
+                        Now I can…
+
+
+
+
+
+
+                            Understand how motor driver works.
+
+
+
+
+                            Move my oater in all directions.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                          41]]></page></pages></Search>

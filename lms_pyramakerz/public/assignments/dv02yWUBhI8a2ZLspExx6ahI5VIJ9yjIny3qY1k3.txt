@@ -1,0 +1,53 @@
+Test Plan
+
+Prepared by: Hassan
+
+Dates: 2024/9/1 to 2024/9/5
+
+TABLE OF CONTENTS
+
+
+1.0 INTRODUCTION
+This test plan outlines the testing strategy for a comprehensive dashboard application that supports multiple user roles: Admin, School, and Teacher. The dashboard allows for user management, school and grade creation, program assignment, class management, and student progress tracking.
+
+
+2.0 OBJECTIVES AND TASKS
+2.1 Objectives
+- Verify the functionality and permissions for each user role: Admin, School, and Teacher. - Ensure that the Admin can manage users, schools, grades, programs, classes, students, and teachers effectively. - Confirm that School roles can manage their own students, teachers, and classes, and view student progress. - Validate that Teacher roles can access their classes, manage assignments, and view student progress.
+2.2 Tasks
+- Test Admin functionalities including user and permission management, school creation, grade assignment, program allocation, and report generation. - Test School functionalities for managing students, teachers, classes, and progress reports. - Test Teacher functionalities for viewing classes, assignments, and student progress.
+
+
+3.0 SCOPE
+The scope includes testing all features available to Admin, School, and Teacher roles within the dashboard and associated teacher application. This includes user management, school and grade creation, program assignment, class management, and progress tracking.
+
+
+4.0 Testing Strategy
+4.1 Alpha Testing (Unit Testing)
+- Perform unit testing on individual components such as user management, program assignment, and report generation to ensure they work as expected.
+4.2 System and Integration Testing
+- Conduct system testing to ensure that all components work together seamlessly. This includes integration testing of user permissions, school and grade management, and class assignments.
+4.4 User Acceptance Testing
+- Validate that the application meets user needs and requirements for Teacher roles. Ensure the user experience aligns with expectations and functional requirements.
+4.7 Beta Testing
+- Perform beta testing with a small group of users to gather feedback on usability and identify any issues that were not discovered during earlier testing phases.
+
+
+6.0 Environment Requirements
+Browser: Chrome,FireFox,Safari
+Devices: Android , IOS
+
+
+7.0 Test Schedule
+[2024-09-01 to 2024-09-05]
+
+
+9.0 Features to Be Tested
+Admin role functionalities: user management, school creation, grade assignment, program allocation, class management, and report generation.
+School role functionalities: student, teacher, and class management; viewing student progress and reports.
+Teacher role functionalities: class access, assignment management, and student progress tracking.
+
+
+11.0 Resources/Roles & Responsibilities
+Aya
+Omar

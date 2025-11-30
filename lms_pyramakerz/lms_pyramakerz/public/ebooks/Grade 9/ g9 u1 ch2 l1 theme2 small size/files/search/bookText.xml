@@ -1,0 +1,670 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Search><pages Count="9"><page Index="1"><![CDATA[UNIT 01        [ Beginner ]                                                LESSON 01
+
+                  Chapter 02 : Electricity Domain.                                       PCB Creation.
+
+
+
+
+
+
+               Stepping Stone:
+               Stepping Stone:
+
+
+
+                 You need to know…                               You will be able to…
+
+
+                         Fundamental principles of                      Understand basic functions of
+                         circuit design.                                Eagle and PCB layout tools.
+                                                                        Create a detailed schematic for
+                         Identify key elements in                       circuits.
+                         schematic designs for circuits.
+                                                                        Analyse circuit design and PCB
+                                                                        layout.
+                                                                        Develop and fabricate custom
+                                                                        PCB layouts.
+                                                                        Recognise logic gates.
+
+
+
+
+
+
+
+
+
+                                                                 If you could invent a new coee
+                                                                 machine to make daily coee
+                                                                 easier, how would control it?
+              let's                                               . .................................................................................................................
+               let's
+
+
+
+            Think                                                What role do circuits play in
+                                                                  . .................................................................................................................
+            Think
+
+                                                                 controlling various vending
+                                                                 machine parts, such as the water
+                                                                 pump or payment system?
+
+
+                                                                  . .................................................................................................................
+
+                                                                  . .................................................................................................................
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                          12]]></page><page Index="2"><![CDATA[Explore
+               Explore
+
+
+
+
+
+
+
+
+                                      You have old electronic devices (e.g., remote
+                                      controls, calculators, or old phones). open the
+
+                                      devices to locate the PCB and observe its
+                                      components, layout, and structure.
+
+
+                 Use a breadboard to build a
+                 basic LED circuit.
+
+                 compare how this circuit might
+                 look if created on a PCB:
+
+
+                 . ...........................................................................................................................
+
+                 . ...........................................................................................................................
+
+                 . ...........................................................................................................................
+
+
+
+                  WATCH IT..
+
+
+
+
+
+                                       Click on the link to learn more about PCB.
+
+                                       https://www.youtube.com/watch?v=YJr-kHy
+                                       6STg&ab_channel=SabinsCivilEngineering
+                                                                                               Scan Here!
+
+
+
+
+
+
+                                              A Printed Circuit Board (PCB) is a at board used to
+                                              connect and hold electronic components. It is made of
+                                              a solid material, usually berglass, with thin copper
+                                              layers that form pathways for electricity. These
+                                              pathways replace wires and help connect components
+                                              like resistors, capacitors, and chips. PCBs are used in
+                                              almost all electronic devices, such as computers,
+                                              phones, and TVs, because they make circuits compact,
+                                              reliable, and easy to produce.
+
+
+
+
+
+
+
+
+
+                                                          13]]></page><page Index="3"><![CDATA[Assessment Exercise
+
+
+
+
+
+
+
+
+
+                          Focus
+                          Focus
+
+
+
+
+
+              What was one of the main challenges with early electronic circuits that
+              led to the invention of printed circuit boards (PCBs)?
+              A) They were too simple to be eective.
+              B) They were dicult to repair and scale up due to manual wiring.
+              C) They were too expensive to manufacture.
+              D) They required too many components to function.
+
+
+              Why is a resistive mask applied to the copper plate before etching in
+              the PC?
+
+              A) To enhance the color of the PCB.
+              B) To protect certain areas of the copper from being etched away.
+              C) To improve the mechanical strength of the PCB.
+              D) To facilitate the soldering of components.
+
+              Why is the solder mask typically green, and what is its primary
+              function?
+
+              A) It is green to match the aesthetic of electronic devices and prevents
+                  oxidation.
+              B) It is green to signify that the PCB is ready for assembly and protects
+                  against dust.
+              C) It is green to indicate the quality of the copper traces and to insulate
+                  the board.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                          14]]></page><page Index="4"><![CDATA[How might we use basic principles
+                                                                  like "ON" and "OFF" to control
+                                                                  more complex systems?
+               let's                                              . .................................................................................................................
+               let's
+
+
+                                                                  . .................................................................................................................
+            Think                                                 How do you think computers
+            Think
+                                                                  process decisions so quickly?
+
+                                                                  . .................................................................................................................
+
+                                                                  . .................................................................................................................
+
+
+
+
+
+
+             Explore
+              Explore
+
+
+
+
+
+
+
+
+
+
+                                  Use switches and lamps to simulate
+                                  NOT, OR and AND gate.
+
+                                  https://logic.ly/demo/
+                                                                                               Scan Here!
+
+
+
+               Start with AND gate using 2 switches turn the switches on
+               ON / OFF,
+               Observe the eect of the lamp and write the truth table
+               for this simple circuit:
+
+
+
+               . .............................................................................................................................................................................................................................................................
+
+               . .............................................................................................................................................................................................................................................................
+
+               . .............................................................................................................................................................................................................................................................
+
+               . .............................................................................................................................................................................................................................................................
+
+               . .............................................................................................................................................................................................................................................................
+
+               . .................................................................................................................................................................................................................................................
+
+
+
+
+
+
+
+
+                                                          15]]></page><page Index="5"><![CDATA[Now add NOT gate in the second stage after AND, Observe
+               the eect of it on the lamp.
+
+
+
+               Repeat the previous 2 steps for OR gate and deduce what
+               will happen to the lamp.
+
+
+
+
+               . .............................................................................................................................................................................................................................................................
+
+               . .............................................................................................................................................................................................................................................................
+
+               . .............................................................................................................................................................................................................................................................
+
+               . .............................................................................................................................................................................................................................................................
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                 WATCH IT..
+
+
+
+
+
+                                       Click on the link to learn more about logic
+                                       gates.
+
+                                       https://www.youtube.com/watch?v=INEtYZqtjTo
+                                                                                               Scan Here!
+
+
+
+                                       Click on the link to learn how you can use eagle
+                                       software to design PCB circuit.
+                                       https://www.youtube.com/watch?v=59tpNGn3L2o
+                                                                                               Scan Here!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                          16]]></page><page Index="6"><![CDATA[In this PCB project, we are adding ICs:
+
+                                            Integrated Circuit (IC) is a small electronic
+                                            component made of multiple tiny
+                                            electronic parts like transistors, resistors,
+                                            and diodes, all combined into a single
+                                            chip.
+
+
+
+
+
+               It performs specic tasks or operations in an electronic
+               circuit, such as logic operations, signal processing, or memory
+               storage.
+
+
+
+
+
+                Logic Gates:
+
+
+               1.  AND Gate
+
+                       Combines two or more inputs.
+                       The output is ON (1) only when all inputs are ON (1).
+                       Example: A light turns on only if two switches are
+                       pressed.
+
+               2.  NOT Gate
+
+
+                       Has a single input.
+                       The output is the opposite of the input.
+                       Example: If the input is ON (1), the output is OFF (0).
+
+
+               3.  NOR Gate
+
+                       Combines two or more inputs.
+                       The output is ON (1) only when all inputs are OFF (0).
+                       Example: A warning light stays o unless both
+                       conditions (like temperature and pressure) are safe.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                          17]]></page><page Index="7"><![CDATA[Assessment Exercise
+
+
+
+
+
+
+
+
+
+                          Focus
+                           Focus
+
+
+
+
+               How many inputs and outputs do you have?! And what is the
+               logic of this design represrnting it using the truth table?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  Tea Switch       Coee Switch       Coin Switch      Coee Output        Tea Output
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                          18]]></page><page Index="8"><![CDATA[Practice
+                           Practice
+
+
+
+
+               Transform your circuit into PCB using Eagle software.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        Return back to the EDP paper and
+                                        add this to the plan part.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                          19]]></page><page Index="9"><![CDATA[SHOWCASE
+
+
+
+
+                Make your PCB and add it to your project.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    NOW I CAN..
+
+
+
+                    Understand Basic functions of Eagle and PCB layout tools.
+                    Create a detailed schematic for circuits.
+                    Analyse circuit design and PCB layout.
+                    Develop and fabricate custom PCB layouts.
+                    Recognise logic gates.
+
+
+
+
+
+
+
+
+
+                                                          20]]></page></pages></Search>

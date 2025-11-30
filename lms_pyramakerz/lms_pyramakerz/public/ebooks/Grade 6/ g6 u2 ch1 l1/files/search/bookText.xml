@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Search><pages Count="4"><page Index="1"><![CDATA[UNIT 02         [ Intermediate  ]                                          LESSON 01
+
+                  Chapter 01 : Robotics Domain.                            Measure the heart rate!
+
+
+
+
+
+
+               Stepping Stone:
+               Stepping Stone:
+
+
+
+                 You need to know…                               You will be able to…
+
+
+                         What sensors are and their role in             Recognise what is MAX30100 pulse
+                         collecting data.                               oximeter, and how it detects heart rate.
+
+                         Microcontrollers like Arduino and how          Understand how to connect the sensor
+                         to code them.                                  to an Arduino and display the reading
+                                                                        on an LCD screen.
+                         How to add LCD for data display.               Write full code to control the pulse
+                                                                        oximeter and display the data on both
+                                                                        the screen and a connected mobile app.
+
+
+
+
+              They transitioned from simple simulations to more complex models, incorporating pumps and
+              controllers to mimic the heart's pumping action and the regulation of blood ow.
+
+
+
+
+
+              Mrs. Sara:
+              "Now, Let’s x the device it
+              looks like the heart rate
+              sensor is damaged.
+
+              Adam: We have to replace it
+              to measure our heart rate
+
+
+
+
+
+
+
+
+
+
+                                                                   How do you think a sensor
+               let's                                               can be used to detect
+               let's
+                                                                   heart rate?
+
+
+            Think                                                  . ............................................................................................................
+            Think
+                                                                   . ............................................................................................................
+
+                                                                   . ............................................................................................................
+
+
+
+
+
+
+                                                          23]]></page><page Index="2"><![CDATA[Explore
+               Explore
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                 Connect the  MAX30100 pulse oximeter
+                 sensor with the arduino.
+
+                 https://youtu.be/tmeOOL58KLM?si=RsnaRIfN
+                 Exuh1Ysf
+
+
+
+
+                                                                                               Scan Here!
+
+
+                    WATCH IT..
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  Let’s learn more about our
+                  MAX30100 pulse oximeter
+                  sensor:
+
+                  https://www.youtube.com/watch?v=
+                  ciNjo1yBvTE
+
+
+
+
+
+
+
+
+
+                  Scan Here!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                          24]]></page><page Index="3"><![CDATA[Assessment Exercise
+
+
+
+
+
+
+
+
+
+                          Focus
+                          Focus
+
+
+
+
+              What does a pulse oximeter sensor measure?
+
+              A) Blood pressure.
+              B) Body temperature.
+              C) Heart rate and blood oxygen level.
+              D) Muscle movement.
+
+              What is the role of an LCD screen in this project?
+
+              A) To display the heart rate reading.
+              B) To power the robot.
+              C) To control the robot's movements.
+              D) To store the heart rate data.
+
+              What is the rst step in building a heart rate monitor with an
+              Arduino?
+
+              A) Write the code.
+              B) Connect the sensor to the Arduino.
+              C) Power on the Arduino.
+              D) Calibrate the sensor.
+
+
+
+
+
+
+
+
+                         Practice
+                          Practice
+
+
+
+
+              Write full code to control the pulse oximeter and display the data
+              on the screen and add bluetooth module to connect to mobile app.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                          25]]></page><page Index="4"><![CDATA[Now let’s go back to our EDP paper
+                                        and add this to the create part!
+
+
+
+
+
+
+
+
+
+
+
+
+                    NOW I CAN..
+
+
+
+                       Write full code to control the pulse oximeter and display the data on
+                       both the screen and a connected mobile app.
+                       Understand how to connect the sensor to an Arduino and display the
+                       reading on an LCD screen.
+                       Recognise what is MAX30100 pulse oximeter, and how it detects heart
+                       rate.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                         26]]></page></pages></Search>

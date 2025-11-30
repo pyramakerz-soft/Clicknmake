@@ -1,0 +1,365 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Search><pages Count="5"><page Index="1"><![CDATA[UNIT 02         [ Intermediate  ]                                          LESSON 01
+
+                  Chapter 02 : Robotics Domain.                                     Discover Sensors.
+
+
+
+
+
+
+               Stepping Stone:
+               Stepping Stone:
+
+
+
+                 You need to know…                               You will be able to…
+
+
+                         block-based programming                        Explain how water level sensors,
+                         (e.g., Scratch or block) to                    temperature sensors, and
+                         write simple codes.                            humidity sensors work and what
+                                                                        they measure.
+                         Awareness of what sensors are
+                         and their role in collecting data.             Incorporate water level and
+                                                                        temperature sensors into your
+                         Microcontrollers like Arduino                  climate change device,
+                         and how to code them.                          demonstrating how these
+                                                                        sensors collect environmental
+                                                                        data.
+                                                                        Learn basic coding principles to
+                                                                        program their sensors, enabling
+                                                                        the device to respond
+                                                                        automatically to changes.
+
+                                                                        Recognize the function of
+                                                                        BMP280 sensor.
+
+
+
+
+
+
+
+
+
+              After discussing their
+              model with Mr. Sara,
+              Adam and Laila realized
+              they needed to make
+              their project even more
+              interactive.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                          15]]></page><page Index="2"><![CDATA[Mr. Sara said, “What if
+              you used some tools to
+              collect real information
+              from the environment?”
+
+
+              Adam was excited and
+              said, “That’s a great idea!
+              We could use a water
+              level tool to measure how
+              much water is left in the
+              pond and a temperature
+              tool to track how hot it’s
+              getting.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              Laila: "And we can add a
+              small screen to display
+              the readings!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                          16]]></page><page Index="3"><![CDATA[How can we measure the change
+                let's                                            that happens by climate change?
+                 let's
+                                                                 . .................................................................................................................
+
+              Think                                              . .................................................................................................................
+              Think
+                                                                 . .................................................................................................................
+
+
+
+
+
+
+
+
+               Explore
+               Explore
+
+
+
+
+
+
+
+
+
+
+                                   Get ready to dive into a fun game to explore and
+                                   review the functions of our 5 senses!
+
+
+
+
+                Use what you know about sight, hearing, taste, touch,
+                and smell to tackle exciting challenges and test your
+                understanding.
+
+                https://www.abcya.com/games/five_senses
+                                                                                              Scan Here!
+
+
+
+
+
+
+
+
+
+
+                                        Just like our ve senses help us understand the world
+                                        around us, there are special devices called sensors
+                                        that can detect changes in their surroundings.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                          17]]></page><page Index="4"><![CDATA[Question
+
+
+                 Pair each human sense with its corresponding sensor.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                        . ......................................................
+                   . .................................................................................
+
+                                                                                        . ......................................................
+                . ..............................................................................
+
+                                                                                          . ..................................................
+
+
+
+                                                                                          . ..................................................
+              . .................................................
+
+
+                                                                                             . .........................................
+
+              . .................................................
+                                                                                             . .........................................
+
+
+
+
+
+
+                    WATCH IT..
+
+
+
+
+                                        Let’s understand more about sensors
+                                        by watching this video.
+                                        https://www.youtube.com/watch?v=XI49uFm5HRE&t=27s
+                                                                                               Scan Here!
+
+
+
+
+
+
+
+
+
+
+                                                          18]]></page><page Index="5"><![CDATA[Assessment Exercise
+
+
+
+
+
+
+
+
+
+                          Focus
+                          Focus
+
+
+
+
+              Which of the following is NOT a type of sensors?
+              A) Temperature sensor.
+              B) Light sensor.
+              C) Book sensor.
+              D) Motion sensor.
+
+
+              What does a temperature sensor detect?
+              A) Sound.
+              B) Light.
+              C) Heat.
+              D) Movement.
+
+
+              Where might you nd a light sensor being used?
+              A) In a refrigerator.
+              B) On a streetlight.
+              C) In a washing machine.
+              D) On a bicycle.
+
+              Which sensor would most likely be used in a security system?
+
+              A) Temperature sensor.
+              B) Light sensor.
+              C) Motion sensor.
+              D) Sound sensor.
+
+
+
+
+
+
+
+
+                         Practice
+                          Practice
+
+
+
+
+              Make a presentation about sensors that we can use in our climate detector
+              and why did you use them.
+
+
+
+
+
+
+
+
+
+
+                                                          19]]></page></pages></Search>

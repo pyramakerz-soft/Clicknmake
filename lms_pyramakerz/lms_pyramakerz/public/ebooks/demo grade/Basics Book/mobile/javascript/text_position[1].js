@@ -1,0 +1,1 @@
+﻿positionForPages[1]={page:1,positions:[{word:"NEW EDDITION",left:0.395947,top:0.052821,width:0.208104,height:0.022430}]};

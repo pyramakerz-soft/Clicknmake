@@ -1,0 +1,1 @@
+﻿positionForPages[7]={page:7,positions:[{word:"40",left:0.473613,top:0.955483,width:0.036572,height:0.018048},{word:"Create your Story",left:0.279678,top:0.114892,width:0.424939,height:0.036907}]};

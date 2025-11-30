@@ -1,0 +1,1 @@
+﻿positionForPages[11]={page:11,positions:[{word:"Search for any famous building for ex : Taj mahal tinkercad",left:0.103309,top:0.354062,width:0.768608,height:0.025377},{word:"Open first link to appear and click on copy and tinker ",left:0.103309,top:0.628712,width:0.691353,height:0.025341}]};

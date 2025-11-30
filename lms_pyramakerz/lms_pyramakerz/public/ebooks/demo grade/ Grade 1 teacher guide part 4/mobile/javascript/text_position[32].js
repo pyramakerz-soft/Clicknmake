@@ -1,0 +1,1 @@
+﻿positionForPages[32]={page:32,positions:[{word:"122 ",left:0.485957,top:0.925117,width:0.032277,height:0.017450},{word:"Show students’ work throughout the project in the \"Create Your Story\" section.",left:0.120935,top:0.084532,width:0.595165,height:0.017450},{word:"122",left:0.483270,top:0.956153,width:0.033622,height:0.013184}]};

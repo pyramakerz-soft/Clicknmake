@@ -1,0 +1,371 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Search><pages Count="5"><page Index="1"><![CDATA[UNIT 02         [ Intermediate  ]                                          LESSON 01
+
+                  Chapter 02 : Programming Domain.                                                     IOT.
+
+
+
+
+
+
+               Stepping Stone:
+               Stepping Stone:
+
+
+
+                 You need to know…                               You will be able to…
+
+
+                         The function of Bluetooth                      Develop a basic mobile
+                         client in MIT App inventor.                    application interface that can
+                                                                        receive and display temperature
+                                                                        readings from the sensor via
+                         App inventor interface
+                                                                        Bluetooth.
+                         and how to make design for
+                         your application.                              Apply basic block-based coding
+                                                                        principles to program the
+                                                                        Bluetooth module and
+                                                                        temperature sensor, ensuring
+                                                                        the mobile app can read and
+                                                                        display data.
+
+
+
+
+
+
+
+              Adam and Laila were thrilled
+              with their project, especially
+              with the sensors showing
+              real-time data. As they
+              tested the water level and
+              temperature sensors, their
+              friend, Maya, walked over to
+              check out what they were
+              up to.
+
+              Maya (curious): "Wow, this is
+              really cool! But what if you
+              could check the temperature
+              from anywhere? You
+              wouldn’t even have to stand
+              next to the project."
+
+              Adam: "That would be
+              awesome, but how would we
+              make that work?"
+
+
+
+
+
+
+
+
+
+
+                                                          27]]></page><page Index="2"><![CDATA[Maya thought for a
+             moment, then snapped
+             her ngers with
+             excitement.
+
+             Maya: "Why don’t you
+             make a mobile app and
+             connect the temperature
+             sensor through
+             Bluetooth? You could read
+             the data on your phone
+             from anywhere in the
+             park!"
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                   How can we get the data from
+                                                                   the sensor remotely?
+               let's                                               . .............................................................................................................
+               let's
+
+
+
+            Think                                                  . .............................................................................................................
+            Think
+                                                                   . .............................................................................................................
+
+                                                                   . .............................................................................................................
+
+                                                                   . .............................................................................................................
+
+                                                                   . .............................................................................................................
+
+
+
+
+
+
+
+
+               Imagine if your toys, your refrigerator, or even your
+               pet's collar could communicate with each other! IoT
+               makes this possible by connecting these items to the
+               internet so they can share information.
+
+               For example, a smart thermostat can let you know if
+               your house is too hot or too cold.
+
+
+
+
+
+
+
+
+
+
+                                                          28]]></page><page Index="3"><![CDATA[Explore
+               Explore
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                Use the following program to design
+
+                how your app will look like.
+
+                https://excalidraw.com/
+                                                                                              Scan Here!
+
+
+
+
+                    WATCH IT..
+
+
+
+
+                                        Let’s learn more about IOT by
+                                        watching this video.
+                                        https://youtu.be/uEsKZGOxNKw
+                                                                                              Scan Here!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                         29]]></page><page Index="4"><![CDATA[Assessment Exercise
+
+
+
+
+
+
+
+
+
+                          Focus
+                          Focus
+
+
+
+
+              Which component is used to connect the Arduino to a
+              smartphone wirelessly?
+
+
+              A)  Resistor.
+              B)  Capacitor.
+              C)  Bluetooth Module.
+              D)  LED.
+
+
+              In the Arduino code, what does the command digitalWrite
+              (ledPin, HIGH); do?
+
+
+              A)  Turns the LED o.
+              B)  Turns the LED on.
+              C)  Blinks the LED.
+
+
+
+
+
+
+
+
+
+                         Practice
+                          Practice
+
+
+
+              Complete the code to make the mobile application work
+              and connect it to Bluetooth module.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                          30]]></page><page Index="5"><![CDATA[Let's return to the EDP paper and
+                                        include this in the create section.
+
+
+
+
+
+
+
+
+
+
+
+                     NOW I CAN..
+
+
+
+
+                        Apply basic block-based coding principles to program the
+                        Bluetooth module and temperature sensor, ensuring the mobile
+                        app can read and display data.
+                        Develop a basic mobile application interface that can receive and
+                        display temperature readings from the sensor via Bluetooth.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                          31]]></page></pages></Search>

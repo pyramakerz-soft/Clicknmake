@@ -1,0 +1,464 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Search><pages Count="6"><page Index="1"><![CDATA[UNIT 02         [ Intermediate  ]                                          LESSON 01
+
+                  Chapter 02 : Robotics Domain.                    Make it Function with Servos!
+
+
+
+
+
+
+               Stepping Stone:
+               Stepping Stone:
+
+
+
+                 You need to know…                               You will be able to…
+
+
+                         How to connect electric                        connect and control servo motors
+                         circuit and its basic                          using Arduino
+                         components.
+                                                                        Create prosthetic hand
+                         What is a microcontroller?                     movements, adjusting angles to
+                                                                        achieve dierent motions.
+                         What is a servo motor?
+                                                                        Utilize Arduino libraries to gain
+                                                                        eciency in programming and
+                                                                        controlling their prosthetic arm.
+
+
+
+
+
+
+
+
+
+              They designed the arm in
+              Tinkercad, and soon they were
+              thinking about how to make it
+              move.
+
+              Laila: "We can use a yellow DC
+              motor to make it move, right?"
+
+              Adam (shaking his head):
+              "Not quite. I heard Mrs.sara
+              said before If we want the arm
+              to move in dierent directions
+              and at dierent angles, it
+              would be better to use a servo
+              motor. But the question is, how
+              many do we need? One might
+              not be enough".
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                          37]]></page><page Index="2"><![CDATA[How can we make a prosthetic
+                                                                   hand move like our own arm to
+                let's                                              pick up and place objects?
+                 let's
+
+                                                                   . .............................................................................................................
+              Think                                                . .............................................................................................................
+              Think
+
+
+                                                                   . .............................................................................................................
+
+
+
+
+
+
+
+
+               Explore
+               Explore
+
+
+
+
+
+
+
+
+
+
+
+                    WATCH IT..
+
+
+
+                                        Discover how the arm should work after
+                                        adding the servos to it through this link.
+                                        https://youtube.com/shorts/L2v3AynQ2FA?si=mtsu
+                                        JmmPRvQD1V9X
+                                                                                              Scan Here!
+
+
+
+
+
+                    READ ABOUT IT..
+
+
+                 Discover how we can use the prosthetic arm
+                 through this link.
+                 https://www.ottobock.com/en-ea/what-to-know-about-
+                 prosthetic-arms-and-hands                                                    Scan Here!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                          38]]></page><page Index="3"><![CDATA[NOW I CAN..
+
+
+
+                       Dene what a servo motor is and describe its role in creating
+                       controlled movements.
+                       Analyse and decide whether gears or pulleys would be more eective
+                       for the project goal.
+
+
+
+
+
+
+
+
+
+
+                   Now that we’ve explored how gears, pulleys, and
+                   servos bring movement to our robotic arm, it’s
+                   time to think about how to power it.
+
+
+                   Just like our muscles rely on signals from the brain
+                   to move, robotic arms need electricity to function.
+
+
+                   In this next section, we’ll learn how to build
+                   circuits and connect motors to give our robotic
+                   arm the energy it needs to come to life!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                          24]]></page><page Index="4"><![CDATA[The program is not working.
+                                    Can you nd the mistake in how the motors are
+                                    written?
+
+
+
+
+
+
+                  Fix it so the program can work!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                          39]]></page><page Index="5"><![CDATA[Assessment Exercise
+
+
+
+
+
+
+
+
+
+
+                          Focus
+                          Focus
+
+
+
+
+              You have several servo motors, an Arduino, and a breadboard.
+              Try to connect them to make a working circuit! And add a push
+              button to each one.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              Write the code for the previous circuit to make it work.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                         40]]></page><page Index="6"><![CDATA[After you are done go back to the
+                                        EDP paper and add this to create
+                                        part.
+
+
+
+
+
+
+
+
+
+
+
+                  SHOW CASE
+
+
+
+                Connect servo motors to the hand, set
+                the code for it and make it move.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    NOW I CAN..
+
+
+
+                       Connect and control servo motors using Arduino
+                       Create prosthetic hand movements, adjusting angles to achieve
+                       dierent motions.
+                       Utilize Arduino libraries to gain eciency in programming and
+                       controlling their prosthetic hand.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                          41]]></page></pages></Search>
