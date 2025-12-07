@@ -188,9 +188,8 @@ $userAuth = auth()->guard('teacher')->user();
                                                     <i class="fas fa-play"></i>
                                                 </a>
                                                 @else
-                                                <a href="{{ route('teacher.resources.view', [$res->id, "teacher"]) }}"
-                                                    class="btn btn-sm btn-outline-primary flex-grow-1"
-                                                    target="_blank">
+                                                <a href="{{ asset($res->file_path) }}" target="_blank"
+                                                    class="btn btn-sm btn-outline-primary flex-grow-1">
                                                     <i class="fas fa-eye"></i> View
                                                 </a>
                                                 @endif

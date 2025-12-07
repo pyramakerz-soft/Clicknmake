@@ -245,7 +245,11 @@ $menuItems = [
                                 <div class="fw-bold">{{ $res->title }}</div>
                                 <div class="resource-type">{{ strtoupper($res->type) }}</div>
                             </div>
-                            <a href="{{ route('observer.resources.view', [$res->id, "lesson"]) }}" target="_blank"
+                            <!-- <a href="{{ route('observer.resources.view', [$res->id, "lesson"]) }}" target="_blank"
+                                class="btn btn-sm btn-outline-primary ms-3">
+                                {{ strtoupper($res->type) === 'ZIP' ? 'Download' : 'View' }}
+                            </a> -->
+                            <a href="{{ asset($res->path) }}" target="_blank"
                                 class="btn btn-sm btn-outline-primary ms-3">
                                 {{ strtoupper($res->type) === 'ZIP' ? 'Download' : 'View' }}
                             </a>
@@ -284,7 +288,11 @@ $menuItems = [
                                     <div class="fw-bold">{{ $res->title }}</div>
                                     <div class="resource-type">{{ strtoupper($res->type) }}</div>
                                 </div>
-                                <a href="{{ route('observer.resources.view', [$res->id, "theme"]) }}" target="_blank"
+                                <!-- <a href="{{ route('observer.resources.view', [$res->id, "theme"]) }}" target="_blank"
+                                    class="btn btn-sm btn-outline-primary ms-3">
+                                    {{ strtoupper($res->type) === 'ZIP' ? 'Download' : 'View' }}
+                                </a> -->
+                                <a href="{{ asset($res->path) }}" target="_blank"
                                     class="btn btn-sm btn-outline-primary ms-3">
                                     {{ strtoupper($res->type) === 'ZIP' ? 'Download' : 'View' }}
                                 </a>
