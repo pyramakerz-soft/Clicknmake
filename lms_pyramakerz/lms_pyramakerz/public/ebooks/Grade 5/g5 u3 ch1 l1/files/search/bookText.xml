@@ -1,36 +1,41 @@
-﻿<?xml version="1.0" encoding="utf-8"?><Search><pages Count="3"><page Index="1"><![CDATA[(مﺪﻘﺘﻣ ىﻮﺘﺴﻣ)   ﻊﺑاﺮﻟا ةﺪﺣﻮﻟا
+﻿<?xml version="1.0" encoding="utf-8"?><Search><pages Count="3"><page Index="1"><![CDATA[UNIT 04         [ Advanced ]                                               LESSON 01
+                             [ Advanced ]
+                                                                                        LESSON 01
+              UNIT 04
+                  Chapter 01 : Programming.                                       Design your app.
+                   Chapter 01 : Programming.
+                                                                                  Design your app.
 
-         صﺎﺨﻟا ﻚﻘﻴﺒﻄﺗ ﻢﻴﻤﺼﺗو ﺮﻳﻮﻄﺗ | لوﻷا سرﺪﻟا                                   ﺔﺠﻣﺮﺒﻟا :لوﻷا ﻞﺼﻔﻟا
 
+              Stepping Stone:
+              Stepping Stone:
 
 
 
+               You need to know …                              You will be able to…
 
 
-                                                                         :قﻼﻄﻧﻻا ﺔﻄﻘﻧ
-                                                                         :قﻼﻄﻧﻻا ﺔﻄﻘﻧ
 
+                                                                        How to control the oater with
+                        Identify App inventor interface
+                                                                        mobile.
+                        and how to make design for
+                        your application.
+                                                                        Understand the function of
+                        How to make simple code                         Bluetooth client in MIT App
+                        using app inventor.                             inventor.
 
 
-                               …ﻰﻠﻋ اردﺎﻗ نﻮﻜﺘﺳ                                    …فﺮﻌﺗ نأ ﺐﺠﻳ
 
 
 
+                   Mrs. Sara
+                 Alright, team! We made the oater, let’s
+                 think of how can we control the oater
+                 remotely and direct it to certain directions?
 
-                 ماﺪﺨﺘﺳﺎﺑ ﻢﺋﺎﻌﻟا جذﻮﻤﻨﻟا ﻲﻓ ﻢﻜﺤﺘﻟا                     با ﺞﻣﺎﻧﺮﺑ ﺔﻬﺟاو ﻰﻠﻋ فﺮﻌﺘﻟا
-                                   .لﻮﻤﺤﻤﻟا ﻒﺗﺎﻬﻟا                   ﺔﻴﻔﻴﻛو app inventor رﻮﺘﻨﻔﻧا
-                                                                           .ﻚﺑ صﺎﺧ ﻖﻴﺒﻄﺗ ﻢﻴﻤﺼﺗ
-                  ﻞﺧاد ثﻮﺗﻮﻠﺒﻟا ﻞﻴﻤﻋ ﺔﻔﻴﻇو ﺔﻓﺮﻌﻣ
-               mit app inventor رﻮﺘﻨﻔﻧا با ﺞﻣﺎﻧﺮﺑ                     ﻲﺠﻣﺮﺑ دﻮﻛ ﺔﺑﺎﺘﻛ ﺔﻴﻔﻴﻛ ﻢﻠﻌﺗ
-                                                                   رﻮﺘﻨﻔﻧا با ﺞﻣﺎﻧﺮﺑ ماﺪﺨﺘﺳﺎﺑ ﻂﻴﺴﺑ
-                                                                                    app inventor
 
 
-                                                                                             ةرﺎﺳ ﺔﻤﻠﻌﻤﻟا
-                                                                     ،ﻢﺋﺎﻌﻟا جذﻮﻤﻨﻟا ﻢﻴﻤﺼﺗ ﻲﻓ ﺎﻨﺤﺠﻧ ﺪﻘﻟ !ﻖﻳﺮﻓ ،ﻊﺋار
-                                                                  ﻪﻬﻴﺟﻮﺗو ﺪﻌﺑ ﻦﻋ ﺎﻬﺑ ﻢﻜﺤﺘﻟا ﺔﻴﻔﻴﻛ ﻲﻓ نﻵا ﺮﻜﻔﻨﻠﻓ
-                                                                           ُ
-                                                                                     ؟ﺔﺑﻮﻠﻄﻤﻟا تﺎﻫﺎﺠﺗﻻا ﻮﺤﻧ
 
 
 
@@ -45,28 +50,24 @@
 
 
 
+                                                                    Laila
+                                                                           Oh, I know! We could use a remote
+                                                                           control or a mobile phone.
 
 
-                                                  ﻰﻠﻴﻟ
-                   وأ ﺪﻌﺑ ﻦﻋ ﻢﻜﺤﺗ زﺎﻬﺟ ماﺪﺨﺘﺳا ﺎﻨﻨﻜﻤﻳ !ةﺮﻜﻓ يﺪﻟ
-                      ُ
-                                         .لﻮﻤﺤﻤﻟا ﻒﺗﺎﻬﻟا
 
 
 
+                                                            How can we operate or control
+                                                            the oater remotely by using the
+                                                            mobile phone?
+                     let's                                  . .............................................................................................................................................
+                     let's
 
-                 وأ ﻢﺋﺎﻌﻟا جذﻮﻤﻨﻟا ﻞﻴﻐﺸﺗ ﺎﻨﻨﻜﻤﻳ ﻒﻴﻛ
+                   Think                                    . .............................................................................................................................................
+                   Think
 
-               ؟لﻮﻤﺤﻤﻟا ﻒﺗﺎﻬﻟا ﺮﺒﻋ ﺪﻌﺑ ﻦﻋ ﻪﺑ ﻢﻜﺤﺘﻟا
-                                            ُ
-                                                                                        ﺎﻴﻫ
-                                                                                         ﺎﻴﻫ
-                                                                                            ّ َ ّ َ
-                                                             . .............................................................................................................................................
-                                                                                      ﺮـ ِ ﻜﻔﻧ
-                                                                                      ﺮـ ِ ﻜﻔُﻧ ُ
-                                                             . .............................................................................................................................................  ّّ
-                                                             . .............................................................................................................................................
+                                                            . .............................................................................................................................................
 
 
 
@@ -75,10 +76,8 @@
 
 
 
-                                                         45]]></page><page Index="2"><![CDATA[ﻒ ِ ﺸﻜﺘﺴﻧ ﺎﻴﻫ
-                                               ﻒ ِ ﺸﻜﺘﺴﻧ ﺎﻴﻫ
-                                                                                     ّ َ ّ َ
-                                                 ْْ
+                                                         45]]></page><page Index="2"><![CDATA[Explore
+                                Explore
 
 
 
@@ -92,31 +91,34 @@
 
 
 
-                                          Bluetooth controlled Robot
-                                          using Arduino Uno and MIT
-                                          APP Inventor
-                                                                          ﺖﻧﺮﺘﻧﻹا ﺮﺒﻋ ﺔﺣﺎﺘﻤﻟا ﺞﻣاﺮﺒﻟا ﺪﺣأ مﺪﺨﺘﺳا
-                                                                         .ﻚﻘﻴﺒﻄﺘﻟ ﺔﻴﻣﻮﺳﺮﻟا ﺔﻬﺟاﻮﻟا ﻢﻴﻤﺼﺘﻟ
-                    ﻲﻧوﺮﺘﻜﻟﻹا ﻊﻗﻮﻤﻟا ةرﺎﻳﺰﺑ ﻢﻗ
 
+                                                                  Watch it..              Bluetooth controlled Robot
+                                                                  Watch it..
+                                                                                          using Arduino Uno and MIT
+                                                                                          APP Inventor
+                  Use the following online software to
+                  sketch how the user interface of your
+                                                                   Check the following video to
+                  application will look like.
+                                                                   understand more about how you will
+                                                                   be able to control your oater.
+                                                                    https://www.youtube.com/watch?
+                                                                     v=QC6TDIduhfg&t=60s
 
-                     https://www.youtube.com/watch?
-                     v=QC6TDIduhfg&t=60s
 
 
 
 
 
+                    https://excalidraw.com/                                                   Scan Here!
 
-                                                               https://excalidraw.com/
 
-                                                 ﻲﺗﻻا دﻮﻜﻟا ﺢﺴﻤﺑ ﻢﻗ
-                                                                                                      ﻲﺗﻻا دﻮﻜﻟا ﺢﺴﻤﺑ ﻢﻗ
+                                                            Scan Here!
 
 
-                                                   ﻢﻴﻴﻘﺘﻟا
-                                                   ﻢﻴﻴﻘﺘﻟا
 
+                                   Assessment
+                                    Assessment
 
 
 
@@ -124,18 +126,18 @@
 
 
 
-                                                                                               ﺰــﻛر
-                                                                                               ﺰــﻛر
 
+               Focus
+               Focus
 
 
-                     ﻊﻣ ﻞﻋﺎﻔﺘﻟا ﻦﻴﻣﺪﺨﺘﺴﻤﻠﻟ ﻦﻜﻤﻳ ﻒﻴﻛ       .2            ﺎﻬﻣﺪﺨﺘﺴﻳ ﻲﺘﻟا ﺔﻠﻴﺳﻮﻟا ﻲﻫ ﺎﻣ      .1
-                         ؟ﻖﻴﺒﻄﺘﻟا لﻼﺧ ﻦﻣ ﻢﺋﺎﻌﻟا جذﻮﻤﻨﻟا            ؟ﻢﺋﺎﻌﻟا جذﻮﻤﻨﻟا ﻊﻣ ﻞﺻاﻮﺘﻠﻟ ﻖﻴﺒﻄﺘﻟا
+                1.  How does the application                  2.  How do users interact with the
+                   communicate with the oater?                  oater through the application?
 
-                        .ﺔﺷﺎﺸﻟا ﻰﻠﻋ ﺲﻤﻠﻟا تاءﺎﻤﻳإ    أ(                                    .ثﻮﺗﻮﻠﺒﻟا    أ(
-                                      .ﺔﻴﺗﻮﺼﻟا ﺮﻣاوﻷا  ب(                                 .يﺎﻓ ياﻮﻟا  ب(
-                             .زﺎﻬﺠﻟا ﻰﻠﻋ ﺔﻳدﺎﻤﻟا رارزﻷا  ج(                     .ءاﺮﻤﺤﻟا ﺖﺤﺗ ﺔﻌﺷﻷا  ج(
-                                   .ﻪﺟﻮﻟا ﻰﻠﻋ فﺮﻌﺘﻟا  د(           (NFC) ىﺪﻤﻟا ﺐﻳﺮﻗ لﺎﺼﺗﻻا ﺔﻴﻨﻘﺗ  د(
+                   A.  Bluetooth.                                 A.  Touch gestures on the screen.
+                   B.  Wi-Fi.                                     B.  Voice commands.
+                   C.  Infrared.                                  C.  Physical buttons on the device.
+                   D.  NFC.                                       D.  Facial recognition.
 
 
 
@@ -152,16 +154,16 @@
 
 
 
-                                                         46]]></page><page Index="3"><![CDATA[ﺐﻳرﺪﺘﻟا
-                                                                                     ﺐﻳرﺪﺘﻟا
+                                                         46]]></page><page Index="3"><![CDATA[Practice
+                  Practice
 
 
 
+                   Design and code your
 
+                   application.
 
-                                                                      ﺔﺠﻣﺮﺑو ﻢﻴﻤﺼﺘﺑ ﻢﻗ
 
-                                                                                .نﻵا ﻚﻘﻴﺒﻄﺗ
 
 
 
@@ -179,25 +181,24 @@
 
 
 
+                                                                                         Name:
+                                                                                         Project: . ........................... ....................................... ....................................... ...................................... ....................................... ...................
+                                                                                            . ........................... ....................................... ....................................... ...................................... ....................................... ..........
+                                                                                         Ask
+                                                                                                 Imagine
+                                        Now go to the improve
+                                                                                        Improve
+                                        part in your EDP paper and                              Plan
+                                        add this enhancement.                          Create
 
-                                 Name:
-                                 Project: . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  . . . . . . . . . . . . . . . . . . . . . . . .
-                                  Ask
-                         Imagine
-                                       "رﻮﻃ" ناﻮﻨﻌﺑ ءﺰﺠﻟا ﻰﻟإ نﻵا ﻞﻘﺘﻧا
-                                                  ﻢﻴﻤﺼﺘﻟا ﺔﻴﻠﻤﻋ ﺔﻗرو ﻲﻓ
-                                  Improve
-                         Plan
-                                         .ﻦﻴﺴﺤﺘﻟا اﺬﻫ ﻒﺿأو ﻲﺳﺪﻨﻬﻟا
-                                   Create
 
 
 
 
 
 
-                              ﻚﺑ صﺎﺨﻟا ﻢﺋﺎﻌﻟا جذﻮﻤﻨﻟا ﻚﻳﺮﺤﺘﺑ ﻢﻗ           ضوﺮﻌﻤﻟا جذﻮﻤﻨﻟا
 
+                     Showcase                           Move your oater.
 
 
 
@@ -210,15 +211,16 @@
 
 
 
-                                                                               ...ﻲﻨﻨﻜﻤﻳ نﻵا
 
+                      Now I can…
 
 
 
 
 
 
-                     Bluetooth client ﺖﻨﻳﻼﻛ ثﻮﺗﻮﻠﺑ ةادأ ﺔﻔﻴﻇو ﻢﻬﻓ
+                          Understand the function of Bluetooth client.
+
 
 
 

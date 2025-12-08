@@ -1,63 +1,74 @@
-﻿<?xml version="1.0" encoding="utf-8"?><Search><pages Count="3"><page Index="1"><![CDATA[(ﻂﺳﻮﺘﻣ ىﻮﺘﺴﻣ)   ﺔﻴﻧﺎﺜﻟا ةﺪﺣﻮﻟا
+﻿<?xml version="1.0" encoding="utf-8"?><Search><pages Count="3"><page Index="1"><![CDATA[UNIT 02         [ Intermediate ]                                           LESSON 01
+                             [ Intermediate ]
+                                                                                        LESSON 01
+             UNIT 02
+                  Chapter 01 : Robotics Domain.                               Function Your System.
+                  Chapter 01 : Robotics Domain.
+                                                                              Function Your System.
 
-          ﻚﺑ صﺎﺨﻟا مﺎﻈﻨﻟا ﻞﻴﻐﺸﺗ | لوﻷا سرﺪﻟا                              تﺎﺗﻮﺑوﺮﻟا لﺎﺠﻣ :لوﻷا ﻞﺼﻔﻟا
+             Stepping Stone:
+              Stepping Stone:
 
 
 
-                                                                         :قﻼﻄﻧﻻا ﺔﻄﻘﻧ
-                                                                         :قﻼﻄﻧﻻا ﺔﻄﻘﻧ
 
+                You need to know …                             You will be able to…
 
 
-                                   …ﻰﻠﻋ اردﺎﻗ نﻮﻜﺘﺳ                                …فﺮﻌﺗ نأ ﺐﺠﻳ
 
+                        Ohm’s Law: Knowledge of                      Wire and connect a color
+                        voltage, current, and                        sensor accurately within an
+                        resistance relationships.                    electrical circuit.
 
-                ﻞﺧاد ﺔﻗﺪﺑ ناﻮﻟﻷا ﺮﻌﺸﺘﺴﻣ ﺐﻴﻛﺮﺗو ﻞﻴﺻﻮﺗ                  ﺪﻬﺠﻟا تﺎﻗﻼﻋ ﺔﻓﺮﻌﻣ :موأ نﻮﻧﺎﻗ
-                                         .ﺔﻴﺋﺎﺑﺮﻬﻛ ةﺮﺋاد                           .ﺔﻣوﺎﻘﻤﻟاو رﺎﻴﺘﻟاو
+                        How to write and connect                     Connect and control multiple
+                        sensors to a circuit, including              servo motors within a single
+                        understanding sensor                         circuit.
+                        specications and outputs.
+                                                                     Test and calibrate the color
+                        How to calibrate and test                    sensor for precise and
+                        sensors for accurate readings.               accurate color detection.
 
+                        How to control servo motors,                 Congure and power the
+                        including the use of PWM (Pulse              circuit to operate multiple
+                        Width Modulation) signals.                   servo motors and synchronize
+                        how to connect and power                     their movements eectively.
+                        multiple servos within a circuit.
+                                                                     How to link between the i/p
+                        What a code is. and Arduino                  signals from the sensor and
+                        IDE software.                                the brain then the o/p to the
+                                                                     servo motors.
+                        How to Install libraries
+                        including <servo.h>
 
-                 ﻮﻓﺮﻴﺳ تﺎﻛﺮﺤﻣ ةﺪﻋ ﻲﻓ ﻢﻜﺤﺘﻟاو ﻞﻴﺻﻮﺗ                 تاﺮﻌﺸﺘﺴﻤﻟا ﻞﻴﺻﻮﺗو ﺔﺑﺎﺘﻛ ﺔﻴﻔﻴﻛ
-                                        .ةﺪﺣاو ةﺮﺋاد ﻞﺧاد          ﻢﻬﻓ ﻚﻟذ ﻲﻓ ﺎﻤﺑ ،ﺔﻴﺋﺎﺑﺮﻬﻛ ةﺮﺋاﺪﺑ
-                                                                           تﺎﻔﺻاﻮﻤﻟاو تاﺮﻌﺸﺘﺴﻤﻟا
-                ﻰﻠﻋ لﻮﺼﺤﻠﻟ ناﻮﻟﻷا ﺮﻌﺸﺘﺴﻣ ﻂﺒﺿو رﺎﺒﺘﺧا                                      .تﺎﺟﺮﺨﻤﻟاو
-                                    .ناﻮﻟﻸﻟ ﻖﻴﻗد ﻒﺸﻛ
-                                                                  رﺎﻌﺸﺘﺳﻻا ةﺰﻬﺟأ رﺎﺒﺘﺧاو ﻂﺒﺿ ﺔﻴﻔﻴﻛ
-                ﻞﻴﻐﺸﺘﻟ ﺔﻴﺋﺎﺑﺮﻬﻜﻟا ةﺮﺋاﺪﻟا ﻞﻴﻐﺸﺗو ﻞﻴﺻﻮﺗ                    .ﺔﻘﻴﻗد تاءاﺮﻗ ﻰﻠﻋ لﻮﺼﺤﻠﻟ
-                     ﺎﻬﺗﺎﻛﺮﺣ ﺔﻨﻣاﺰﻣو ﻮﻓﺮﻴﺳ تﺎﻛﺮﺤﻣ ةﺪﻋ
-                                           .لﺎﻌﻓ ﻞﻜﺸﺑ             ،ﻮﻓﺮﻴﺴﻟا تﺎﻛﺮﺤﻣ ﻲﻓ ﻢﻜﺤﺘﻟا ﺔﻴﻔﻴﻛ
-                                                                   ﻞﻳﺪﻌﺗ تارﺎﺷإ ماﺪﺨﺘﺳا ﻚﻟذ ﻲﻓ ﺎﻤﺑ
-                ﺮﻌﺸﺘﺴﻤﻟا ﻦﻣ ةدراﻮﻟا تارﺎﺷﻹا ﻂﺑر ﺔﻴﻔﻴﻛ            ﻞﻴﻐﺸﺗو ﻞﻴﺻﻮﺗ ﺔﻴﻔﻴﻛو ،ﺔﻀﺒﻨﻟا ضﺮﻋ
-                  تارﺎﺷﻹا لﺎﺳرإ ﻢﺛ (ﻞﻘﻌﻟا) ﻢﻜﺤﺘﻟا ةﺪﺣﻮﺑ                 ةﺮﺋاد ﻞﺧاد ﻮﻓﺮﻴﺳ تﺎﻛﺮﺤﻣ ةﺪﻋ
-                            .ﻮﻓﺮﻴﺴﻟا تﺎﻛﺮﺤﻣ ﻰﻟإ ﺔﺟرﺎﺨﻟا                                    .ﺔﻴﺋﺎﺑﺮﻬﻛ
 
 
-                                                                   ﺐﻫ ﺎﻣو ﺔﻴﺠﻣﺮﺒﻟا تﺎﻤﻴﻠﻌﺘﻟا ﻲﻫ ﺎﻣ
-                                                                     .ﻮﻨﻳودرﻸﻟ ﺔﻠﻣﺎﻜﺘﻤﻟا ﺮﻳﻮﻄﺘﻟا ﺔﺌﻴﺑ
+                                                          What could have gone wrong with the
+                                                          electrical system that might cause the
+                                                          machine to fail?
 
+                                                          . ...............................................................................................................................................
+                  let's                                   . ...............................................................................................................................................
+                  let's
 
-                                                                  ﻚﻟذ ﻲﻓ ﺎﻤﺑ تﺎﺒﺘﻜﻤﻟا ﺖﻴﺒﺜﺗ ﺔﻴﻔﻴﻛ
-                                                                                          .<servo.h>
+                Think                                     How would you troubleshoot and x
+                Think
+                                                          the electrical problem to get the
+                                                          sorter back up and running?
 
 
+                                                          . ...............................................................................................................................................
 
+                                                          . ...............................................................................................................................................
 
 
 
-                         مﺎﻈﻨﻟا ﻲﻓ ثﺪﺤﻳ ﺪﻗ يﺬﻟا ﺄﻄﺨﻟا ﻮﻫ ﺎﻣ
-                 ؟زﺎﻬﺠﻟا ﻞﺸﻓ ﻲﻓ ﺐﺒﺴﺘﻳ ﺪﻗ يﺬﻟاو ﻲﺋﺎﺑﺮﻬﻜﻟا
 
 
-                                                               . ...............................................................................................................................................
-                                                                                           ﺎﻴﻫ
-                                                               . ...............................................................................................................................................  ّ َ
 
-                      ﺔﻴﺋﺎﺑﺮﻬﻜﻟا ﺔﻠﻜﺸﻤﻟا حﻼﺻإ ﻚﻨﻜﻤﻳ ﻒﻴﻛ                                  ﺮـ ِ ﻜﻔُﻧ
-                  زﺎﻬﺟ ﻞﻴﻐﺸﺗ ةدﺎﻋإ ﻦﻣ ﻦﻜﻤﺘﺗ ﻰﺘﺣ ﺎﻬﺘﺠﻟﺎﻌﻣو                                ّ
-                                                 ؟ىﺮﺧأ ةﺮﻣ زﺮﻔﻟا
 
-                                                               . ...............................................................................................................................................
 
-                                                               . ...............................................................................................................................................
+                                                          18]]></page><page Index="2"><![CDATA[Explore
+             Explore
 
 
 
@@ -66,48 +77,44 @@
 
 
 
-                                                          18]]></page><page Index="2"><![CDATA[ﻒ ِ ﺸﻜﺘﺴﻧ ﺎﻴﻫ
-                                                               ﻒ ِ ﺸﻜﺘﺴﻧ ﺎﻴﻫ
-                                                                                                     ّ َ ّ َ
-                                                                 ْْ
 
 
 
 
 
 
+              Collect the following components from the lab to make your color
+              sensor circuit and name each:
 
 
 
 
 
 
-                                     ناﻮﻟﻷا رﺎﻌﺸﺘﺳا ةﺮﺋاد ﻊﻨﺼﻟ ﺮﺒﺘﺨﻤﻟا ﻦﻣ ﺔﻴﻟﺎﺘﻟا تﺎﻧﻮﻜﻤﻟا ﻊﻤﺟا
-                                                                                :ﺎﻬﻨﻣ ﻞﻛ ﺔﻴﻤﺴﺘﺑ ﻢﻗو
 
 
+              . ...............................................................................................................................................
 
 
 
 
 
 
-                                                                                                           . ...............................................................................................................................................
 
+              . ...............................................................................................................................................
 
 
 
 
 
 
-                                                                                                           . ...............................................................................................................................................
+              . ...............................................................................................................................................
 
 
 
 
 
 
-                                                                                                           . ...............................................................................................................................................
 
 
 
@@ -117,27 +124,30 @@
 
 
 
+                                                                   Read about it
+                  Watch it..
+                  Watch it..
+                                                                   Read this search to know more
+                                                                   about color sensors technics:
+                  To understand more
+                                                                   https://circuitdigest.com/microcontroller-projects/
+                  about the connection,                            interfacing-color-sensor-with-arduino
+                  let’s watch this video:                                                      Scan Here!
 
+                                           Scan Here!
+                  https://www.youtube.com/watch?v=cRR5jDKTKno
 
 
 
 
 
 
-                   ﻚﻟذ ﻦﻋ أﺮﻘﻧ ﺎﻴﻫ
-                                                                      ﻚﻟذ ﺪﻫﺎﺸﻧ ﺎﻴﻫ
-                                                                      ﻚﻟذ ﺪﻫﺎﺸﻧ ﺎﻴﻫ
-                    ﻲﻧوﺮﺘﻜﻟﻹا ﻊﻗﻮﻤﻟا ةرﺎﻳﺰﺑ ﻢﻗ
-                   https://circuitdigest.com/microcontroller-projects/  ﺔﻗﻼﻌﻟا هﺬﻫ ﻦﻋ ﺪﻳﺰﻤﻟا ﻢﻬﻔﻟ
-                   interfacing-color-sensor-with-arduino
-                                               ﻲﺗﻻا دﻮﻜﻟا ﺢﺴﻤﺑ ﻢﻗ
-                                                                      ﻲﻧوﺮﺘﻜﻟﻹا ﻊﻗﻮﻤﻟا ةرﺎﻳﺰﺑ ﻢﻗ
 
-                                                                                             ﻲﺗﻻا دﻮﻜﻟا ﺢﺴﻤﺑ ﻢﻗ
-                                                                      https://www.youtube.com/watch?v=cRR5jDKTKno
 
 
 
+                                                          19]]></page><page Index="3"><![CDATA[Assessment
+                                 Assessment
 
 
 
@@ -145,72 +155,60 @@
 
 
 
-                                                          19]]></page><page Index="3"><![CDATA[ﻢﻴﻴﻘﺘﻟا
-                                                  ﻢﻴﻴﻘﺘﻟا
 
 
 
+            Focus
+            Focus
 
 
 
 
 
 
-                                                                                              ﺰــﻛر
-                                                                                              ﺰــﻛر
+             Watch the video and refer to the link to understand how the
+             colour sensor detects and outputs RGB values.
 
 
+             Observe and record the RGB ranges for at least ve colours as
+             shown in the experiment.
 
 
+             Fill in the table with the Red (R), Green (G), and Blue (B) values
+             for each colour.
 
 
+            Color Sensor RGB Value Table
 
-                  ﻢﻴﻘﻟ ناﻮﻟﻷا ﺮﻌﺸﺘﺴﻣ فﺎﺸﺘﻛا ﺔﻴﻔﻴﻛ ﻢﻬﻔﻟ ﻂﺑاﺮﻟا ﻰﻟإ ﻊﺟراو ﻮﻳﺪﻴﻔﻟا ﺪﻫﺎﺷ
-                                                                                          .ﺎﻬﺟاﺮﺧإو RGB
 
+                 Color      Red (R)      Green (G)     Blue (B)
 
-                .ﺔﺑﺮﺠﺘﻟا ﻲﻓ ﺢﺿﻮﻣ ﻮﻫ ﺎﻤﻛ ﻞﻗﻷا ﻰﻠﻋ ناﻮﻟأ ﺔﺴﻤﺨﻟ RGB تﺎﻗﺎﻄﻧ ﻞﺠﺳو ﺐﻗار
+                 Red
 
 
-                                       .نﻮﻟ ﻞﻜﻟ (B) قرزﻷاو (G) ﺮﻀﺧﻷاو (R) ﺮﻤﺣﻷا ﻢﻴﻘﺑ لوﺪﺠﻟا ﻸﻣا
+                 Green
 
 
+                 Blue
 
+                 Yellow
 
+                 Purple
 
-                                                                       RGB ناﻮﻟﻷا ﺮﻌﺸﺘﺴﻣ ﻢﻴﻗ لوﺪﺟ
 
 
-                                                               (B) قرزأ   (G) ﺮﻀﺧأ    (R) ﺮﻤﺣأ     نﻮﻟ
 
 
-                                                                                                   ﺮﻤﺣأ
 
+            Practice
+            Practice
 
-                                                                                                   ﺮﻀﺧأ
 
-                                                                                                   قرزأ
 
 
-                                                                                                  ﺮﻔﺻأ
 
-                                                                                                 ﻲﺠﺴﻔﻨﺑ
-
-
-
-
-
-
-                                                                                      ﺐﻳرﺪﺘﻟا
-                                                                                      ﺐﻳرﺪﺘﻟا
-
-
-
-
-
-                                                                .ﻮﻨﻳودرﻷﺎﺑ ناﻮﻟﻷا زﺮﻓ ﺮﻌﺸﺘﺴﻣ ﻞﺻﻮﻨﻟ
-
-
+            Let’s connect the color sorting sensor
+            to the Arduino.
 
 
 

@@ -1,38 +1,51 @@
-﻿<?xml version="1.0" encoding="utf-8"?><Search><pages Count="4"><page Index="1"><![CDATA[(ﻂﺳﻮﺘﻣ ىﻮﺘﺴﻣ)   ﺔﻴﻧﺎﺜﻟا ةﺪﺣﻮﻟا
+﻿<?xml version="1.0" encoding="utf-8"?><Search><pages Count="4"><page Index="1"><![CDATA[UNIT 02         [ Intermediate ]                                           LESSON 01
+                             [ Intermediate ]
+                                                                                        LESSON 01
+              UNIT 02
+                  Chapter 01 : Robotics Domain.                                Control with joystick.
+                   Chapter 01 : Robotics Domain.
+                                                                               Control with joystick.
 
-          ﻢﻜﺤﺘﻟا ﺎﺼﻋ ماﺪﺨﺘﺳﺎﺑ ﻢﻜﺤﺘﻟا | لوﻷا سرﺪﻟا                         تﺎﺗﻮﺑوﺮﻟا لﺎﺠﻣ :لوﻷا ﻞﺼﻔﻟا
+              Stepping Stone:
+              Stepping Stone:
 
 
 
-                                                                         :قﻼﻄﻧﻻا ﺔﻄﻘﻧ
-                                                                         :قﻼﻄﻧﻻا ﺔﻄﻘﻧ
 
+                You need to know …                             You will be able to…
 
 
-                                   …ﻰﻠﻋ اردﺎﻗ نﻮﻜﺘﺳ                                …فﺮﻌﺗ نأ ﺐﺠﻳ
+                                                                        Create and Design a Joystick
+                        What is meant by electricity &                  Controller.
+                        how it works.
+                                                                        Design a basic joystick
+                        Dierent between Series &                       controller circuit.
+                        Parallel connection.
+                                                                        Explain how a joystick controller
+                        Voltage, resistance, and                        sends signals to control devices.
+                        current.
 
+                        The function of the AVO meter
+                        and how to use it.
 
-                 ﻢﻜﺤﺘﻟا ﺎﺼﻋ ﻢﻜﺤﺗ ةﺪﺣو ﻢﻴﻤﺼﺗو ءﺎﺸﻧإ              ﻞﻤﻌﺗ ﻒﻴﻛو ءﺎﺑﺮﻬﻜﻟﺎﺑ دﻮﺼﻘﻤﻟا ﺎﻣ
+                        What is a diode and how to
+                        connect it in a circuit.
 
-                   ةﺪﺣﻮﻟ ﺔﻴﺳﺎﺳأ ﺔﻴﻧوﺮﺘﻜﻟإ ةﺮﺋاد ﻢﻴﻤﺼﺗ                 ﻲﻟاﻮﺘﻟا ﻰﻠﻋ ﻞﻴﺻﻮﺘﻟا ﻦﻴﺑ قﺮﻔﻟا
-                                      ﻢﻜﺤﺘﻟا ﺎﺼﻋ ﻢﻜﺤﺗ                          يزاﻮﺘﻟا ﻰﻠﻋ ﻞﻴﺻﻮﺘﻟاو
 
 
-                      ﺎﺼﻋ ﻢﻜﺤﺗ ةﺪﺣو لﺎﺳرإ ﺔﻴﻔﻴﻛ حﺮﺷ                         رﺎﻴﺘﻟاو ﺔﻣوﺎﻘﻤﻟاو ﺪﻬﺠﻟا
-                   ةﺰﻬﺟﻷا ﻲﻓ ﻢﻜﺤﺘﻠﻟ تارﺎﺷﻺﻟ ﻢﻜﺤﺘﻟا
 
-                                                                      ﺔﻴﻔﻴﻛو ﺮﺘﻴﻣﻮﻓﻷا زﺎﻬﺟ ﺔﻔﻴﻇو
-                                                                                           ﻪﻣاﺪﺨﺘﺳا
 
 
-                                                                       ﺔﻴﻔﻴﻛو ﻲﺋﺎﻨﺜﻟا مﺎﻤﺼﻟا ﻮﻫ ﺎﻣ
-                                                                                  ةﺮﺋاﺪﻟا ﻲﻓ ﻪﻠﻴﺻﻮﺗ
 
 
 
 
 
+                  let's
+                  let's
 
+                Think
+                 Think
 
 
 
@@ -42,14 +55,15 @@
 
 
 
-                                                                                           ﺎﻴﻫ
-                                                                                              ّ َ
+                Ever wondered how video games know which way you’re moving your
+                character?
 
-                                                                                         ﺮـ ِ ﻜﻔُﻧ
-                                                                                         ّ
+                What do you think is inside a joystick that helps it control movement?
 
 
+                 . ........................................................................................................................................................................................................................................................................
 
+                 . ........................................................................................................................................................................................................................................................................
 
 
 
@@ -57,16 +71,13 @@
 
 
 
+                                                          17]]></page><page Index="2"><![CDATA[Explore
+            Explore
 
 
-                               ؟ﻚﺘﻴﺼﺨﺷ كﺮﺤﺗ هﺎﺠﺗا يأ ﻲﻓ ﻮﻳﺪﻴﻔﻟا بﺎﻌﻟأ فﺮﻌﺗ ﻒﻴﻛ ﺎﻣﻮﻳ ﺖﻟءﺎﺴﺗ ﻞﻫ
-                                                                                         ً
-                               ؟ﺔﻛﺮﺤﻟﺎﺑ ﻢﻜﺤﺘﻟا ﻲﻓ ﺎﻫﺪﻋﺎﺴﻴﻟ ﻢﻜﺤﺘﻟا ﺎﺼﻋ ﻞﺧاد دﻮﺟﻮﻣ ﻪﻧأ ﺪﻘﺘﻌﺗ يﺬﻟا ﺎﻣ
 
 
-                                                                                                          . ........................................................................................................................................................................................................................................................................
 
-                                                                                                          . ........................................................................................................................................................................................................................................................................
 
 
 
@@ -74,16 +85,18 @@
 
 
 
-                                                          17]]></page><page Index="2"><![CDATA[ﻒ ِ ﺸﻜﺘﺴﻧ ﺎﻴﻫ
-                                                               ﻒ ِ ﺸﻜﺘﺴﻧ ﺎﻴﻫ
-                                                                                                     ّ َ ّ َ
-                                                                  ْْ
 
 
+             Attach servo motors
 
+             to your robotic arm,
 
+             and then write and
 
+             upload the code to
+             ensure the motors
 
+             function correctly.
 
 
 
@@ -91,20 +104,26 @@
 
 
 
-                                                                              تﺎﻛﺮﺤﻣ ﻞﻴﺻﻮﺘﺑ ﻢﻗ
 
-                                                                              ﻲﻟﻵا عارﺬﻟﺎﺑ ﻮﻓﺮﻴﺴﻟا
 
-                                                                     دﻮﻜﻟا ﺐﺘﻛا ﻢﺛ ،ﻚﺑ صﺎﺨﻟا
-                                                                      نأ ﻦﻣ ﺪﻛﺄﺘﻠﻟ ﻪﻠﻴﻤﺤﺘﺑ ﻢﻗو
 
-                                                                          ﻞﻜﺸﺑ ﻞﻤﻌﺗ تﺎﻛﺮﺤﻤﻟا
 
-                                                                                                   .ﺢﻴﺤﺻ
 
 
 
 
+                  Watch it..
+                  Watch it..
+                                                                   Read about it
+                  To know more about joy
+                  stick and how to connect it
+                  with arduino.
+                                                                   Let’s understand more about
+                                                                   joysticks and their types.
+                                                                   https://www.lenovo.com/us/en/glossary/
+                                                                   joystick/?orgRef=https%253A%252F%252
+                                          Scan Here!               Fwww.google.com%252F        Scan Here!
+                  https://www.youtube.com/watch?v=MlDi0vO9Evg
 
 
 
@@ -115,18 +134,7 @@
 
 
 
-                                                                    ﻚﻟذ ﺪﻫﺎﺸﻧ ﺎﻴﻫ
-                                                                    ﻚﻟذ ﺪﻫﺎﺸﻧ ﺎﻴﻫ
 
-                    ﻚﻟذ ﻦﻋ أﺮﻘﻧ ﺎﻴﻫ
-                                                                      ﺎﺼﻋ ﻦﻋ ﺪﻳﺰﻤﻟا ﺔﻓﺮﻌﻤﻟ
-                                                                    ﺎﻬﻠﻴﺻﻮﺗ ﺔﻴﻔﻴﻛو ﻢﻜﺤﺘﻟا
-                    ﻢﻜﺤﺘﻟا ﺎﺼﻋ ﻰﻠﻋ ﺮﺜﻛأ فﺮﻌﺘﻧ ﺎﻨﻋد
-                            .ﺔﻔﻠﺘﺨﻤﻟا ﺎﻬﻋاﻮﻧأو                               ﻮﻨﻳودرﻷا ﻊﻣ
-                   https://www.lenovo.com/us/en/glossary/
-                   joystick/?orgRef=https%253A%252F%252
-                   Fwww.google.com%252F        ﻲﺗﻻا دﻮﻜﻟا ﺢﺴﻤﺑ ﻢﻗ                          ﻲﺗﻻا دﻮﻜﻟا ﺢﺴﻤﺑ ﻢﻗ
-                                                                   https://www.youtube.com/watch?v=MlDi0vO9Evg
 
 
 
@@ -142,6 +150,8 @@
 
 
 
+                                                          18]]></page><page Index="3"><![CDATA[Assessment
+                                 Assessment
 
 
 
@@ -152,68 +162,68 @@
 
 
 
+            Focus
+            Focus
 
-                                                          18]]></page><page Index="3"><![CDATA[ﻢﻴﻴﻘﺘﻟا
-                                                  ﻢﻴﻴﻘﺘﻟا
 
 
 
 
 
 
+             Choose the correct answer:
 
 
+             1. What is the primary function of a joystick module?
 
+                A) To display images.
+                B) To control motion.
+                C) To play music.
+                D) To charge batteries.
 
 
-                                                                                               ﺰــﻛر
-                                                                                               ﺰــﻛر
+             2. In which of the following applications are joysticks NOT
+             commonly used?
 
+                A) Video game controllers.
+                B) Remote-controlled cars.
+                C) Microwave ovens.
+                D) Flight simulators.
 
+             3. What type of signal does a joystick module produce?
 
+                A) Audio signal.
+                B)  Visual signal.
+                C) Electronic signal.
+                D) Magnetic signal.
 
 
+             4. How does a joystick typically detect movement?
 
+                A) Through a camera.
+                B) Using potentiometers or sensors.
+                C) With a microphone.
+                D) By measuring temperature changes.
 
-                                                                                   :ﺔﺤﻴﺤﺼﻟا ﺔﺑﺎﺟﻹا ﺮﺘﺧا
 
 
-                                                       ؟ﻢﻜﺤﺘﻟا ﺎﺼﻋ ةﺪﺣﻮﻟ ﺔﻴﺳﺎﺳﻷا ﺔﻔﻴﻇﻮﻟا ﻲﻫ ﺎﻣ
 
-                                                                                          رﻮﺼﻟا ضﺮﻋ   ( أ
-                                                                                   ﺔﻛﺮﺤﻟا ﻲﻓ ﻢﻜﺤﺘﻟا   ( ب
-                                                                                   ﻰﻘﻴﺳﻮﻤﻟا ﻞﻴﻐﺸﺗ     ( ج
-                                                                                      تﺎﻳرﺎﻄﺒﻟا ﻦﺤﺷ   ( د
 
 
 
-                                   ؟ﻊﺋﺎﺷ ﻞﻜﺸﺑ ﻢﻜﺤﺘﻟا ﺎﺼﻋ مﺪﺨﺘﺴ ُ ﺗ ﻻ ﺔﻴﻟﺎﺘﻟا تﺎﺒﻳرﺪﺘﻟا ﻦﻣ يأ ﻲﻓ
 
-                                                                    ﻮﻳﺪﻴﻔﻟا بﺎﻌﻟأ ﻲﻓ ﻢﻜﺤﺘﻟا تاﺪﺣو     ( أ
-                                                                ﺪﻌﺑ ﻦﻋ ﺎﻬﺑ ﻢﻜﺤﺘﻟا ﻢﺘﻳ ﻲﺘﻟا تارﺎﻴﺴﻟا   ( ب
-                                                                   ُ
-                                                                                   ﻒﻳووﺮﻜﻴﻤﻟا ناﺮﻓأ   ( ج
-                                                                                    ناﺮﻴﻄﻟا تﺎﻴﻛﺎﺤﻣ   ( د
 
 
 
-                                                        ؟ﻢﻜﺤﺘﻟا ﺎﺼﻋ ةﺪﺣو ﺎﻬﺠﺘﻨﺗ ﻲﺘﻟا ةرﺎﺷﻹا عﻮﻧ ﺎﻣ
 
-                                                                                         ﺔﻴﺗﻮﺻ ةرﺎﺷإ  ( أ
-                                                                                          ﺔﻴﺋﺮﻣ ةرﺎﺷإ  ( ب
-                                                                                      ﺔﻴﻧوﺮﺘﻜﻟإ ةرﺎﺷإ  ( ج
-                                                                                   ﺔﻴﺴﻴﻃﺎﻨﻐﻣ ةرﺎﺷإ    ( د
 
 
 
-                                                              ؟ ً ةدﺎﻋ ﺔﻛﺮﺤﻟا ﻢﻜﺤﺘﻟا ﺎﺼﻋ ﻒﺸﺘﻜﺗ ﻒﻴﻛ
 
-                                                                                     اﺮﻴﻣﺎﻜﻟا لﻼﺧ ﻦﻣ  ( أ
-                                                            تاﺮﻌﺸﺘﺴﻤﻟا وأ ﺪﻬﺠﻟا ﺲﻴﻳﺎﻘﻣ ماﺪﺨﺘﺳﺎﺑ       ( ب
-                                                                               نﻮﻓوﺮﻜﻴﻤﻟا ماﺪﺨﺘﺳﺎﺑ    ( ج
-                                                                    ةراﺮﺤﻟا ﺔﺟرد تاﺮﻴﻐﺗ سﺎﻴﻗ لﻼﺧ ﻦﻣ   ( د
 
 
+                                                          19]]></page><page Index="4"><![CDATA[Practice
+            Practice
 
 
 
@@ -221,6 +231,12 @@
 
 
 
+             Build a joystick circuit,
+             write the necessary
+             code, and then observe
+             how the joystick
+             functions within the
+             circuit.
 
 
 
@@ -229,66 +245,40 @@
 
 
 
-                                                          19]]></page><page Index="4"><![CDATA[ﺐﻳرﺪﺘﻟا
-                                                                                      ﺐﻳرﺪﺘﻟا
 
 
 
 
 
+                  Shawcase..
 
+                                                                                                Name:
+                                                                                                Project: . ........ ... .... .. . ........... ........... ........... .......... ........... ........... ........... .......... ........... ........... ........... .......... ........... ........... ........... .......... ...........
+                                                                                                  . ........ .......... ........... ........... ........... .......... ........... ........... ........... .......... ........... ........... ........... .......... ........... ........... ........... .......... ..
+                                                                                                Ask
+                                                                                                      Imagine
+                                                               After we learned how can we
+               Adding a joystick to                            connect the JOY STICK, let’s go   Improve  Plan
+               control the robotic arm.                       back to the EDP process and     Create
+                                                               add it to the create part to add
+                                                               it to our robotic arm.
 
-                                                                             ،ﻢﻜﺤﺘﻟا ﺎﺼﻋ ةﺮﺋاد ءﺎﻨﺒﺑ ﻢﻗ
-                                                                                 ﻢﺛ ،مزﻼﻟا دﻮﻜﻟا ﺐﺘﻛاو
-                                                                                   ﺎﺼﻋ ﻞﻤﻌﺗ ﻒﻴﻛ ﻆﺣﻻ
 
-                                                                                     .ةﺮﺋاﺪﻟا ﻞﺧاد ﻢﻜﺤﺘﻟا
 
 
 
 
 
 
+                  Now I can…
 
 
 
 
-
-
-
-
-
-
-                                                                           .ضوﺮﻌﻤﻟا جذﻮﻤﻨﻟا
-
-                       ﻢﺳﻻا
-                       عوﺮﺸﻤﻟا
-                       . . .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. . ... . .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .
-                      . . .. .. .. .. .. .. .. . . . . .. .. . . .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. . ... . .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. ..
-                      رﺎﺴﻔﺘﺳﻻا
-                 رﻮﺼﺘﻟا
-                                 ﺎﺼﻋ ﻞﻴﺻﻮﺗ ﺔﻴﻔﻴﻛ ﺎﻨﻤﻠﻌﺗ نأ ﺪﻌﺑ
-                       ﺮﻳﻮﻄﺘﻟا                                             ﻲﻓ ﻢﻜﺤﺘﻠﻟ ﻢﻜﺤﺗ ﺎﺼﻋ ﺔﻓﺎﺿإ
-                 ﻂﻴﻄﺨﺘﻟا            ﺔﻴﻠﻤﻋ ﻰﻟإ دﻮﻌﻧ ﺎﻴﻫ ،ﻢﻜﺤﺘﻟا
-                                   ﺎﻬﻔﻴﻀﻧو ﻲﺳﺪﻨﻬﻟا ﻢﻴﻤﺼﺘﻟا                                   .ﻲﻟﻵا عارﺬﻟا
-                       ﻊﻴﻨﺼﺘﻟا
-                                   ﻊﻣ ﺎﻬﺠﻣﺪﻟ ﻊﻴﻨﺼﺘﻟا ﻢﺴﻗ ﻰﻟإ
-                                                .ﻲﻟﻵا ﺎﻨﻋارذ
-
-
-
-
-
-                                                                                 ...ﻲﻨﻨﻜﻤﻳ نﻵا
-
-
-
-
-                                                            ﻢﻜﺤﺘﻟا ﺎﺼﻋ ﻢﻜﺤﺗ ةﺪﺣو ﻢﻴﻤﺼﺗو ءﺎﺸﻧإ
-                                           ﻢﻜﺤﺘﻟا ﺎﺼﻋ ﻢﻜﺤﺗ ةﺪﺣﻮﻟ ﺔﻴﺳﺎﺳأ ﺔﻴﻧوﺮﺘﻜﻟإ ةﺮﺋاد ﻢﻴﻤﺼﺗ
-
-                           ةﺰﻬﺟﻷا ﻲﻓ ﻢﻜﺤﺘﻠﻟ تارﺎﺷﻺﻟ ﻢﻜﺤﺘﻟا ﺎﺼﻋ ﻢﻜﺤﺗ ةﺪﺣو لﺎﺳرإ ﺔﻴﻔﻴﻛ حﺮﺷ
-
+                     Create and Design a Joystick Controller.
+                     I can design a basic joystick controller circuit.
+                     I can explain how a joystick controller sends signals to
+                     control devices.
 
 
 

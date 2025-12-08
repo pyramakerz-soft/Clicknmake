@@ -1,147 +1,79 @@
-﻿<?xml version="1.0" encoding="utf-8"?><Search><pages Count="4"><page Index="1"><![CDATA[UNIT 03         [ Advanced ]                                               LESSON 01
+﻿<?xml version="1.0" encoding="utf-8"?><Search><pages Count="3"><page Index="1"><![CDATA[UNIT 03         [ Advanced ]                                               LESSON 01
+                             [ Advanced ]
+              UNIT 03
+                                                                                        LESSON 01
+                  Chapter 01 : Programming.                              Control the speed of re truck.
+                   Chapter 01 : Programming.
+                                                                          Control the speed of re truck.
 
-                  Chapter 01 : Web Development.                                   Protect Your body!
+                Stepping Stone:
+                Stepping Stone:
 
 
 
+                  You need to know …                       You will be able to…
 
 
 
-               Stepping Stone:
-               Stepping Stone:
+                          App inventor interface and how           Control the speed of re truck
+                          to make design for your                  through App inventor.
+                          application.
+                                                                   Make an app for emergency call.
+                          How to make simple code using
+                          app inventor.
+                                                                   Understand the function of clock,
+                                                                   texting and location sensor blocks.
 
 
 
-                 You need to know…                               You will be able to…
 
 
-                         Recognize the basic structure of an            Create ordered and unordered lists.
-                         HTML document, including tags.
 
-                         How to add and format text, and how
-                                                                        Understand and build tables in HTML.
-                         to embed images using the <img> tag.
 
-                                                                        Understand the purpose of CSS and
-                                                                        how it works with HTML.
 
 
-                                                                        Apply basic inline, internal, and
-                                                                        external CSS.
 
 
-                                                                        Style text and set background colors.
 
+                                                                           Mrs. sara
+                                                                          Okay, team! We’ve
+                                                                          built the re truck.
 
 
+                                                                          Now, let’s control it
+                                                                          using the mobile
+                                                                          phone.
 
 
 
-               As they delved into the world of robotics, the class recognized the importance of programming in
-               controlling and automating these devices. They began to explore programming languages and
-               software tools to create applications that could monitor heart rate, analyze data, and provide
-               real-time feedback.
 
 
 
 
 
-               Adam:
-               "I have another idea! What if
-               we create a website to help
-               people understand and protect
-               their body systems?"
 
-               Laila:
-               "That sounds amazing! What
-               would it include?"
 
 
+                                                                 What changes or upgrades could
+                                                                 improve the eciency of the re
+                                                                 truck control system?
 
+                                                                 . ........................................................................................................................
+                   let's                                         . ........................................................................................................................
+                   let's
 
+                 Think                                           . ........................................................................................................................
+                 Think
 
+                                                                 . ........................................................................................................................
+                                                                 . ........................................................................................................................
 
 
 
 
 
 
-
-
-
-
-
-                                                          31]]></page><page Index="2"><![CDATA[Adam:
-                                                                                   Let’s create sections
-                                                                                   for each body system,
-                                                                                   and don’t forget to
-                                                                                   add ‘Healthy Tips’ for
-                                                                                   each one. What
-                                                                                   interactive features
-                                                                                   could make it
-                                                                                   engaging?
-
-
-
-
-
-
-
-
-
-
-
-               Mrs. Sara:
-               "I love this idea, Adam!
-               A website can reach so
-               many people and
-               spread awareness."
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                                                   Think about the information you
-                                                                   could include on your website to
-                                                                   raise awareness about taking
-               let's                                               care of the circulatory system.
-               let's
-                                                                   Visualize how your website
-                                                                   would look and what features it
-            Think                                                  might have.
-            Think
-
-                                                                   . ............................................................................................................
-
-                                                                   . ............................................................................................................
-
-                                                                   . ............................................................................................................
-
-                                                                   . ............................................................................................................
-
-                                                                   . ............................................................................................................
-
-
-
-
-
-
-                                                          32]]></page><page Index="3"><![CDATA[Explore
+                                                         29]]></page><page Index="2"><![CDATA[Explore
                Explore
 
 
@@ -154,8 +86,6 @@
 
 
 
-                                     Create Web page using HTML about circulatory
-                                     system awareness.
 
 
 
@@ -164,19 +94,23 @@
 
 
 
+                 Review this code, try it
 
-                    WATCH IT..
+                 out, and describe what
+                 you notice about how
 
+                 the slider functions.
 
 
+                 https://www.youtube.com/watch?v=ex6W_LYBGuA
 
-                                        How to add a hyperlink and make lists
-                                        in html.
-                                        https://www.youtube.com/watch?v=MCJzOK8QEF4
 
-                                                                                              Scan Here!
+                                 . ..........................................................................................................................................................................................................................
 
+                                 . ..........................................................................................................................................................................................................................
 
+                                 . ..........................................................................................................................................................................................................................
+                 Scan Here!
 
 
 
@@ -185,12 +119,21 @@
 
 
 
+                  Watch it..
+                   Watch it..
 
 
 
+                  Check the following video to
+                  understand more about how
+                  you will be able to control
+                  your re truck Speed using
+                  App inventor.
 
 
+                                               Scan Here!
 
+                    https://www.youtube.com/watch?v=IPgiB9ZdchQ
 
 
 
@@ -203,6 +146,8 @@
 
 
 
+                                                         30]]></page><page Index="3"><![CDATA[Assessment
+                                 Assessment
 
 
 
@@ -215,86 +160,62 @@
 
 
 
+            Focus
+            Focus
 
 
 
 
 
+             Choose the correct answer from the choices
+             for each question.
 
-                                                          33]]></page><page Index="4"><![CDATA[Assessment Exercise
 
+             1.  What does a slider in App Inventor look like?
 
+             A) A text box.
+             B) A button.
+             C) A bar with a movable button.
+             D) A dropdown menu.
 
 
 
+              2.  Which property sets how much the slider's
+                  value changes with each step?
 
+             A) StepSize.
+             B) ValueChange.
 
+             C) Increment.
+             D) SliderJump.
 
 
-                          Focus
-                           Focus
 
 
+            Practice                                                                          Name:
+            Practice
+                                                                                              Project:
+                                                                                                 . ..... ........ ........ ........ ........ ....... ........ ........ ........ ....... ........ ........ ........ ....... ........ ........ ........ ....... ........ ........ ........ ....... ........ ........ ........
+                                                                                              Ask  . ..... . ....... ........ ........ ........ ....... ........ ....... . .. ...... ....... ........ ........ ........ ....... ........ ........ ........ ....... ........ ........ ........ ....... ........ ........ ........ ........ .
+                                                                                                     Imagine
+                                                                                              Improve
+                                                                                                     Plan
+             Create a mobile
+             application using App                                                           Create
+             Inventor to control both
+             the movement and speed
 
+             of the truck.                                               Don’t forget to go back to the
+                                                                         plan part in your EDP paper
+                                                                         and add this enhancement.
 
 
-              Which list is best used to dene terms using HTML?
-               A) Ordered list.
-               B) Dictionary list.
-               C) Unordered list.
-               D) Description list.
 
 
-              Which list marks each item with a bullet in HTML?
-               A) Bulleted list.
-               B) Ordered list.
-               C) Description list.
-               D) Unordered list.
 
 
 
 
 
 
-
-
-                          Practice
-                          Practice
-
-
-
-
-               Create navigation bar for your website using the lists and the following tag
-               <nav> </nav>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                                          34]]></page></pages></Search>
+                                                          31]]></page></pages></Search>

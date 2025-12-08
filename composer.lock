@@ -4,8 +4,598 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6218ecc84a7771828ad81286b327dcd9",
+    "content-hash": "5f2d54b5e507078ce57b7c7fc970a7b7",
     "packages": [
+        {
+            "name": "aspose-cloud/aspose-words-cloud",
+            "version": "25.11.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/aspose-words-cloud/aspose-words-cloud-php.git",
+                "reference": "4329605ca923519b699e4f8abaac8d2f87e66f7c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/aspose-words-cloud/aspose-words-cloud-php/zipball/4329605ca923519b699e4f8abaac8d2f87e66f7c",
+                "reference": "4329605ca923519b699e4f8abaac8d2f87e66f7c",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "guzzlehttp/guzzle": "^7.4.0",
+                "php": "^8.1",
+                "phpseclib/phpseclib": "^3.0.12"
+            },
+            "require-dev": {
+                "behat/behat": "3.10.0",
+                "friendsofphp/php-cs-fixer": "3.0.*",
+                "phpunit/phpunit": "9.5.13",
+                "squizlabs/php_codesniffer": "3.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Aspose\\Words\\": "src/Aspose/Words",
+                    "Aspose\\Words\\Tests\\": "tests/Aspose/Words"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Aspose",
+                    "homepage": "https://products.aspose.cloud/words/family/"
+                }
+            ],
+            "description": "Open, generate, edit, split, merge, compare and convert Word documents. Integrate Cloud API into your solutions to manipulate documents. Convert PDF to Word (DOC, DOCX, ODT, RTF and HTML) and in the opposite direction.",
+            "homepage": "https://github.com/aspose-words-cloud/aspose-words-cloud-php",
+            "keywords": [
+                "convert",
+                "create",
+                "creator",
+                "docx",
+                "docx to pdf",
+                "edit",
+                "fields",
+                "generate",
+                "generator",
+                "html",
+                "html to word",
+                "images",
+                "jpg",
+                "mailmerge",
+                "maker",
+                "merge",
+                "office",
+                "paragraph",
+                "pdf",
+                "pdf to docx",
+                "pdf to word",
+                "png",
+                "report",
+                "reporting",
+                "rtf",
+                "split",
+                "statistics",
+                "table",
+                "text",
+                "watermark",
+                "word",
+                "word to html",
+                "word to pdf"
+            ],
+            "support": {
+                "issues": "https://github.com/aspose-words-cloud/aspose-words-cloud-php/issues",
+                "source": "https://github.com/aspose-words-cloud/aspose-words-cloud-php/tree/25.11.0"
+            },
+            "time": "2025-12-01T05:03:24+00:00"
+        },
+        {
+            "name": "aspose/pdf",
+            "version": "24.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/aspose-pdf/Aspose.PDF-for-PHP-via-Java.git",
+                "reference": "1dfaed5417fbc9847d4a9664507ebfe3ebc0dbfe"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/aspose-pdf/Aspose.PDF-for-PHP-via-Java/zipball/1dfaed5417fbc9847d4a9664507ebfe3ebc0dbfe",
+                "reference": "1dfaed5417fbc9847d4a9664507ebfe3ebc0dbfe",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "aspose\\pdf\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "Aspose",
+                    "homepage": "https://products.aspose.com/pdf/php-java"
+                }
+            ],
+            "description": "A powerful library for manipulating and converting PDF files.",
+            "homepage": "https://products.aspose.com/pdf/php-java",
+            "keywords": [
+                "Aspose Java API",
+                "Aspose PDF",
+                "Aspose Total",
+                "BMP",
+                "BMP to PDF",
+                "CGM",
+                "CGM to PDF",
+                "CJK",
+                "DICOM to PDF",
+                "EMF to PDF",
+                "EPUB to PDF",
+                "J2SE",
+                "JPG to PDF",
+                "LaTeX to PDF",
+                "MAC",
+                "MD to PDF",
+                "MHTML to PDF",
+                "Markdown to PDF",
+                "Maven",
+                "MobiXML",
+                "PCL",
+                "PCL to PDF",
+                "PDF to DOC",
+                "PDF to EPUB",
+                "PDF to HTML",
+                "PDF to LaTeX",
+                "PDF to PDF A_1b",
+                "PDF to PDF A_2a",
+                "PDF to PDF A_3U",
+                "PDF to PDF A_3a",
+                "PDF to PDF A_3b",
+                "PDF to PPTX",
+                "PDF to SVG",
+                "PDF to TIFF",
+                "PDF to TXT",
+                "PDF to TeX",
+                "PDF to XLS",
+                "PDF to XLSX",
+                "PDF to XPS",
+                "PDFA",
+                "PDFA to PDF",
+                "PNG to PDF",
+                "PS to PDF",
+                "Postscript to PDF",
+                "SVG to PDF",
+                "TIFF to PDF",
+                "TXT to PDF",
+                "TeX to PDF",
+                "XFDF",
+                "XML to PDF",
+                "XPS",
+                "XPS to PDF",
+                "XSLFO",
+                "XSLFO to PDF",
+                "annotation",
+                "attachment",
+                "bookmark",
+                "cmyk",
+                "data source",
+                "doc",
+                "document compression",
+                "docx",
+                "emf",
+                "epub",
+                "export",
+                "extract text",
+                "fdf",
+                "font",
+                "form",
+                "gif",
+                "graph",
+                "html",
+                "html to pdf",
+                "image",
+                "jpeg",
+                "link",
+                "linux",
+                "markdown",
+                "md",
+                "mht",
+                "pdf",
+                "pdf java class",
+                "pdf java library",
+                "pdf to docx",
+                "png",
+                "postscript",
+                "pptx",
+                "print",
+                "ps",
+                "security",
+                "signature",
+                "stamp",
+                "svg",
+                "table creation",
+                "tex",
+                "text",
+                "text extraction",
+                "tiff",
+                "truetype",
+                "unicode",
+                "watermark",
+                "windows",
+                "xls",
+                "xlsx",
+                "xml"
+            ],
+            "support": {
+                "issues": "https://github.com/aspose-pdf/Aspose.PDF-for-PHP-via-Java/issues",
+                "source": "https://github.com/aspose-pdf/Aspose.PDF-for-PHP-via-Java/tree/24.6"
+            },
+            "time": "2024-06-07T18:04:19+00:00"
+        },
+        {
+            "name": "aspose/pdf-sdk-php",
+            "version": "25.9.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/aspose-pdf-cloud/aspose-pdf-cloud-php.git",
+                "reference": "77dbe2acb7b2551c3afb1bed3a28bd4516902461"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/aspose-pdf-cloud/aspose-pdf-cloud-php/zipball/77dbe2acb7b2551c3afb1bed3a28bd4516902461",
+                "reference": "77dbe2acb7b2551c3afb1bed3a28bd4516902461",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "guzzlehttp/guzzle": "^7.4",
+                "php": ">=5.5"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "*",
+                "squizlabs/php_codesniffer": "~2.6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Aspose\\PDF\\": "src/Aspose/PDF/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Aspose PDF Cloud",
+                    "homepage": "https://products.aspose.cloud/pdf/cloud"
+                }
+            ],
+            "description": "Aspose.PDF Cloud is a REST API for creating and editing PDF files. It can also be used to convert PDF files to different formats like DOC, HTML, XPS, TIFF and many more. Aspose.PDF Cloud gives you control: create PDFs from scratch or from HTML, XML, template, database, XPS or an image. Render PDFs to image formats such as JPEG, PNG, GIF, BMP, TIFF and many others. Aspose.PDF Cloud helps you manipulate elements of a PDF file like text, annotations, watermarks, signatures, bookmarks, stamps and so on. Its REST API also allows you to manage PDF pages by using features like merging, splitting, and inserting. Add images to a PDF file or convert PDF pages to images.",
+            "homepage": "https://products.aspose.cloud/pdf/cloud",
+            "keywords": [
+                ".net",
+                "Aspose.PDF",
+                "Aspose.PDF-Cloud",
+                "Aspose.Total-Cloud",
+                "BMP",
+                "Circle-Annotation",
+                "Convert-PDF",
+                "DOC-to-PDF",
+                "DOCX-to-PDF",
+                "EPUB-to-PDF",
+                "Extract-Image",
+                "Fetch-Text",
+                "Line-Annotation",
+                "MD-to-PDF",
+                "MHT-to-PDF",
+                "Markdown-to-PDF",
+                "MobiXML",
+                "OCR-Layers",
+                "PCL",
+                "PCL-to-PDF",
+                "PDF-Attachment",
+                "PDF-Bookmark",
+                "PDF-Document",
+                "PDF-Form-Fields",
+                "PDF-Image",
+                "PDF-Link",
+                "PDF-OCR",
+                "PDF-Page",
+                "PDF-Text",
+                "PDF-to-DOC",
+                "PDF-to-DOCX",
+                "PDF-to-EPUB",
+                "PDF-to-HTML",
+                "PDF-to-MobiXML",
+                "PDF-to-PDFA",
+                "PDF-to-PPTX",
+                "PDF-to-SVG",
+                "PDF-to-TEX",
+                "PDF-to-TIFF",
+                "PDF-to-XFA",
+                "PDF-to-XLS",
+                "PDF-to-XML",
+                "PDF-to-XPS",
+                "PDFA3",
+                "PS-to-PDF",
+                "PostScript-to-PDF",
+                "Replace-Image",
+                "Replace-Text",
+                "SVG-to-PDF",
+                "Square-Annotation",
+                "Squiggly-Annotation",
+                "TEX-to-PDF",
+                "Underline-Annotation",
+                "Web-to-PDF",
+                "XFDF",
+                "XML-to-PDF",
+                "XPS",
+                "XPS-to-PDF",
+                "XSIF-to-PDF",
+                "XSLFO",
+                "annotation",
+                "api",
+                "aspose",
+                "cloud",
+                "convert",
+                "converter",
+                "create-pdf",
+                "csharp",
+                "doc",
+                "docx",
+                "dotnet",
+                "emf",
+                "epub",
+                "fdf",
+                "gif",
+                "html",
+                "html-to-pdf",
+                "jpeg",
+                "markdown",
+                "md",
+                "mht",
+                "pdf",
+                "pdf-to-image",
+                "png",
+                "postscript",
+                "pptx",
+                "ps",
+                "rest",
+                "stamp",
+                "svg",
+                "tex",
+                "text",
+                "tiff",
+                "xls",
+                "xlsx",
+                "xml"
+            ],
+            "support": {
+                "issues": "https://github.com/aspose-pdf-cloud/aspose-pdf-cloud-php/issues",
+                "source": "https://github.com/aspose-pdf-cloud/aspose-pdf-cloud-php/tree/25.9.0"
+            },
+            "time": "2025-09-25T22:18:01+00:00"
+        },
+        {
+            "name": "aspose/slides",
+            "version": "25.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/aspose-slides/Aspose.Slides-for-PHP-via-Java.git",
+                "reference": "647bf02ad3c6f7d86d1f95ccf221e8ca938a215e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/aspose-slides/Aspose.Slides-for-PHP-via-Java/zipball/647bf02ad3c6f7d86d1f95ccf221e8ca938a215e",
+                "reference": "647bf02ad3c6f7d86d1f95ccf221e8ca938a215e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "aspose\\slides\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "Aspose",
+                    "homepage": "https://products.aspose.com/slides/php-java"
+                }
+            ],
+            "description": "Aspose.Slides for PHP via Java is a PowerPoint PHP API for creating, manipulating, and managing presentations. It allows applications and developers to read, write, convert, and manipulate PowerPoint presentations in PHP.",
+            "homepage": "https://products.aspose.com/slides/php-java",
+            "keywords": [
+                "BMP",
+                "POTM",
+                "POTX",
+                "PPS",
+                "PPSM",
+                "PPSX",
+                "PPTM",
+                "PowerPoint",
+                "PowerPoint to PDF",
+                "XPS",
+                "convert",
+                "gif",
+                "jpeg",
+                "odp",
+                "pdf",
+                "png",
+                "pot",
+                "ppt",
+                "pptx",
+                "svg",
+                "tiff"
+            ],
+            "support": {
+                "issues": "https://github.com/aspose-slides/Aspose.Slides-for-PHP-via-Java/issues",
+                "source": "https://github.com/aspose-slides/Aspose.Slides-for-PHP-via-Java/tree/25.9"
+            },
+            "time": "2025-09-16T17:28:30+00:00"
+        },
+        {
+            "name": "aspose/slides-sdk-php",
+            "version": "25.10",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/aspose-slides-cloud/aspose-slides-cloud-php.git",
+                "reference": "417f4fae7edefbc8f463007302c88516b18e3f01"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/aspose-slides-cloud/aspose-slides-cloud-php/zipball/417f4fae7edefbc8f463007302c88516b18e3f01",
+                "reference": "417f4fae7edefbc8f463007302c88516b18e3f01",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "guzzlehttp/guzzle": "^7.4",
+                "monolog/monolog": "*",
+                "php": ">=5.5"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^8.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Aspose\\Slides\\Cloud\\Sdk\\": "sdk/",
+                    "Aspose\\Slides\\Cloud\\Sdk\\Api\\": "sdk/api/",
+                    "Aspose\\Slides\\Cloud\\Sdk\\Model\\": "sdk/model/",
+                    "Aspose\\Slides\\Cloud\\Sdk\\Tests\\": "tests/",
+                    "Aspose\\Slides\\Cloud\\Sdk\\Tests\\Api\\": "tests/api/",
+                    "Aspose\\Slides\\Cloud\\Sdk\\Tests\\Utils\\": "tests/utils/",
+                    "Aspose\\Slides\\Cloud\\Sdk\\Tests\\UseCases\\": "tests/usecases/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "This repository contains Aspose Cloud SDK for PHP source code. Aspose Cloud SDK for PHP lets PHP developers convert and process a variety of file formats in the cloud quickly and easily.",
+            "homepage": "https://github.com/aspose-slides-cloud/aspose-slides-cloud-php",
+            "keywords": [
+                "aspose",
+                "aspose cloud",
+                "php"
+            ],
+            "support": {
+                "issues": "https://github.com/aspose-slides-cloud/aspose-slides-cloud-php/issues",
+                "source": "https://github.com/aspose-slides-cloud/aspose-slides-cloud-php/tree/25.10"
+            },
+            "time": "2025-10-29T14:10:53+00:00"
+        },
+        {
+            "name": "aspose/words-sdk-php",
+            "version": "25.11.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/aspose-words-cloud/aspose-words-cloud-php.git",
+                "reference": "4329605ca923519b699e4f8abaac8d2f87e66f7c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/aspose-words-cloud/aspose-words-cloud-php/zipball/4329605ca923519b699e4f8abaac8d2f87e66f7c",
+                "reference": "4329605ca923519b699e4f8abaac8d2f87e66f7c",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "guzzlehttp/guzzle": "^7.4.0",
+                "php": "^8.1",
+                "phpseclib/phpseclib": "^3.0.12"
+            },
+            "require-dev": {
+                "behat/behat": "3.10.0",
+                "friendsofphp/php-cs-fixer": "3.0.*",
+                "phpunit/phpunit": "9.5.13",
+                "squizlabs/php_codesniffer": "3.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Aspose\\Words\\": "src/Aspose/Words",
+                    "Aspose\\Words\\Tests\\": "tests/Aspose/Words"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Aspose",
+                    "homepage": "https://products.aspose.cloud/words/family/"
+                }
+            ],
+            "description": "Open, generate, edit, split, merge, compare and convert Word documents. Integrate Cloud API into your solutions to manipulate documents. Convert PDF to Word (DOC, DOCX, ODT, RTF and HTML) and in the opposite direction.",
+            "homepage": "https://github.com/aspose-words-cloud/aspose-words-cloud-php",
+            "keywords": [
+                "convert",
+                "create",
+                "creator",
+                "docx",
+                "docx to pdf",
+                "edit",
+                "fields",
+                "generate",
+                "generator",
+                "html",
+                "html to word",
+                "images",
+                "jpg",
+                "mailmerge",
+                "maker",
+                "merge",
+                "office",
+                "paragraph",
+                "pdf",
+                "pdf to docx",
+                "pdf to word",
+                "png",
+                "report",
+                "reporting",
+                "rtf",
+                "split",
+                "statistics",
+                "table",
+                "text",
+                "watermark",
+                "word",
+                "word to html",
+                "word to pdf"
+            ],
+            "support": {
+                "issues": "https://github.com/aspose-words-cloud/aspose-words-cloud-php/issues",
+                "source": "https://github.com/aspose-words-cloud/aspose-words-cloud-php/tree/25.11.0"
+            },
+            "abandoned": "aspose-cloud/aspose-words-cloud",
+            "time": "2025-12-01T05:03:24+00:00"
+        },
         {
             "name": "brick/math",
             "version": "0.12.3",
@@ -2877,6 +3467,125 @@
             "time": "2024-11-21T10:36:35+00:00"
         },
         {
+            "name": "paragonie/constant_time_encoding",
+            "version": "v3.1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/paragonie/constant_time_encoding.git",
+                "reference": "d5b01a39b3415c2cd581d3bd3a3575c1ebbd8e77"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/paragonie/constant_time_encoding/zipball/d5b01a39b3415c2cd581d3bd3a3575c1ebbd8e77",
+                "reference": "d5b01a39b3415c2cd581d3bd3a3575c1ebbd8e77",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8"
+            },
+            "require-dev": {
+                "infection/infection": "^0",
+                "nikic/php-fuzzer": "^0",
+                "phpunit/phpunit": "^9|^10|^11",
+                "vimeo/psalm": "^4|^5|^6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "ParagonIE\\ConstantTime\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Paragon Initiative Enterprises",
+                    "email": "security@paragonie.com",
+                    "homepage": "https://paragonie.com",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Steve 'Sc00bz' Thomas",
+                    "email": "steve@tobtu.com",
+                    "homepage": "https://www.tobtu.com",
+                    "role": "Original Developer"
+                }
+            ],
+            "description": "Constant-time Implementations of RFC 4648 Encoding (Base-64, Base-32, Base-16)",
+            "keywords": [
+                "base16",
+                "base32",
+                "base32_decode",
+                "base32_encode",
+                "base64",
+                "base64_decode",
+                "base64_encode",
+                "bin2hex",
+                "encoding",
+                "hex",
+                "hex2bin",
+                "rfc4648"
+            ],
+            "support": {
+                "email": "info@paragonie.com",
+                "issues": "https://github.com/paragonie/constant_time_encoding/issues",
+                "source": "https://github.com/paragonie/constant_time_encoding"
+            },
+            "time": "2025-09-24T15:06:41+00:00"
+        },
+        {
+            "name": "paragonie/random_compat",
+            "version": "v9.99.100",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/paragonie/random_compat.git",
+                "reference": "996434e5492cb4c3edcb9168db6fbb1359ef965a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/996434e5492cb4c3edcb9168db6fbb1359ef965a",
+                "reference": "996434e5492cb4c3edcb9168db6fbb1359ef965a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">= 7"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.*|5.*",
+                "vimeo/psalm": "^1"
+            },
+            "suggest": {
+                "ext-libsodium": "Provides a modern crypto API that can be used to generate random bytes."
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Paragon Initiative Enterprises",
+                    "email": "security@paragonie.com",
+                    "homepage": "https://paragonie.com"
+                }
+            ],
+            "description": "PHP 5.x polyfill for random_bytes() and random_int() from PHP 7",
+            "keywords": [
+                "csprng",
+                "polyfill",
+                "pseudorandom",
+                "random"
+            ],
+            "support": {
+                "email": "info@paragonie.com",
+                "issues": "https://github.com/paragonie/random_compat/issues",
+                "source": "https://github.com/paragonie/random_compat"
+            },
+            "time": "2020-10-15T08:29:30+00:00"
+        },
+        {
             "name": "paragonie/sodium_compat",
             "version": "v2.4.0",
             "source": {
@@ -3479,6 +4188,116 @@
                 }
             ],
             "time": "2025-08-21T11:53:16+00:00"
+        },
+        {
+            "name": "phpseclib/phpseclib",
+            "version": "3.0.47",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phpseclib/phpseclib.git",
+                "reference": "9d6ca36a6c2dd434765b1071b2644a1c683b385d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/9d6ca36a6c2dd434765b1071b2644a1c683b385d",
+                "reference": "9d6ca36a6c2dd434765b1071b2644a1c683b385d",
+                "shasum": ""
+            },
+            "require": {
+                "paragonie/constant_time_encoding": "^1|^2|^3",
+                "paragonie/random_compat": "^1.4|^2.0|^9.99.99",
+                "php": ">=5.6.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "*"
+            },
+            "suggest": {
+                "ext-dom": "Install the DOM extension to load XML formatted public keys.",
+                "ext-gmp": "Install the GMP (GNU Multiple Precision) extension in order to speed up arbitrary precision integer arithmetic operations.",
+                "ext-libsodium": "SSH2/SFTP can make use of some algorithms provided by the libsodium-php extension.",
+                "ext-mcrypt": "Install the Mcrypt extension in order to speed up a few other cryptographic operations.",
+                "ext-openssl": "Install the OpenSSL extension in order to speed up a wide variety of cryptographic operations."
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "phpseclib/bootstrap.php"
+                ],
+                "psr-4": {
+                    "phpseclib3\\": "phpseclib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jim Wigginton",
+                    "email": "terrafrost@php.net",
+                    "role": "Lead Developer"
+                },
+                {
+                    "name": "Patrick Monnerat",
+                    "email": "pm@datasphere.ch",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Andreas Fischer",
+                    "email": "bantu@phpbb.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Hans-Jürgen Petrich",
+                    "email": "petrich@tronic-media.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Graham Campbell",
+                    "email": "graham@alt-three.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "PHP Secure Communications Library - Pure-PHP implementations of RSA, AES, SSH2, SFTP, X.509 etc.",
+            "homepage": "http://phpseclib.sourceforge.net",
+            "keywords": [
+                "BigInteger",
+                "aes",
+                "asn.1",
+                "asn1",
+                "blowfish",
+                "crypto",
+                "cryptography",
+                "encryption",
+                "rsa",
+                "security",
+                "sftp",
+                "signature",
+                "signing",
+                "ssh",
+                "twofish",
+                "x.509",
+                "x509"
+            ],
+            "support": {
+                "issues": "https://github.com/phpseclib/phpseclib/issues",
+                "source": "https://github.com/phpseclib/phpseclib/tree/3.0.47"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/terrafrost",
+                    "type": "github"
+                },
+                {
+                    "url": "https://www.patreon.com/phpseclib",
+                    "type": "patreon"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/phpseclib/phpseclib",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2025-10-06T01:07:24+00:00"
         },
         {
             "name": "psr/clock",

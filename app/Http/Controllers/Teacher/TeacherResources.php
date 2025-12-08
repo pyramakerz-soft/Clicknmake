@@ -342,150 +342,84 @@ class TeacherResources extends Controller
         } elseif ($type === "theme") {
             $resource = MaterialResource::findOrFail($id);
             $file = $resource->path;
+        } else {
+            abort(404, "Unknown resource type");
         }
 
         $fullPath = public_path($file);
-        $ext = strtolower(pathinfo($file, PATHINFO_EXTENSION));
+        if (!file_exists($fullPath)) {
+            abort(404, "File not found.");
+        }
 
-        $converted = null;
+        $ext = strtolower(pathinfo($file, PATHINFO_EXTENSION));
+        $name = pathinfo($file, PATHINFO_FILENAME) . '_' . $resource->id;
+
+        $converted = [];
         $convertedType = null;
 
-        // Detect platform (Windows / Linux)
-        $isWindows = strtoupper(substr(PHP_OS, 0, 3)) === 'WIN';
+        $outputDir = storage_path('app/public/converted/' . $name);
+        if (!is_dir($outputDir)) mkdir($outputDir, 0777, true);
 
-        // LibreOffice path
-        $soffice = $isWindows
-            ? '"C:\\Program Files\\LibreOffice\\program\\soffice.com"'
-            : 'libreoffice';
-
-        if (!$isWindows) {
-            putenv("HOME=/tmp");
-            putenv("TMPDIR=" . storage_path("temp"));
-        }
-
-        // ============================
-        // PPT/PPTX → SLIDES (PNG/JPG)
-        // ============================
-        if (in_array($ext, ['ppt', 'pptx'])) {
-            $outputDir = storage_path('app/public/converted/slides/' . pathinfo($file, PATHINFO_FILENAME));
-            if (!is_dir($outputDir)) mkdir($outputDir, 0777, true);
-
-            $existingSlides = array_merge(glob($outputDir . '/*.png'), glob($outputDir . '/*.jpg'));
-
-            if (count($existingSlides) === 0) {
-                $format = $isWindows ? 'jpg' : 'png';
-                $cmd = $soffice . " --headless --convert-to $format --outdir \"$outputDir\" \"$fullPath\"";
-                exec($cmd . " 2>&1", $output, $result);
-                if ($result !== 0) dd("LibreOffice conversion failed.", $cmd, $output);
-
-                $existingSlides = array_merge(glob($outputDir . '/*.png'), glob($outputDir . '/*.jpg'));
-            }
-
-            $slides = [];
-            foreach ($existingSlides as $img) {
-                $slides[] = str_replace(storage_path('app/public/'), 'storage/', $img);
-            }
-
-            $converted = $slides;
-            $convertedType = 'slides';
-        }
-
-        // ============================
-        // PDF → IMAGES
-        // ============================
-        if ($ext === 'pdf') {
-            $outputDir = storage_path('app/public/converted/pdf_images/' . pathinfo($file, PATHINFO_FILENAME));
-            if (!is_dir($outputDir)) mkdir($outputDir, 0777, true);
-
+        // ------------------ Cloud Conversion ------------------
+        $cloudExts = ['pdf', 'ppt', 'pptx', 'doc', 'docx'];
+        if (in_array($ext, $cloudExts)) {
+            // If already converted, skip
             $existing = glob($outputDir . '/*.png');
-
-            if (count($existing) === 0) {
+            if (count($existing) > 0) {
+                foreach ($existing as $img) {
+                    $converted[] = str_replace(storage_path('app/public/'), 'storage/', $img);
+                }
+                $convertedType = 'slides';
+            } else {
                 try {
-                    $imagick = new Imagick();
-                    $imagick->setResolution(150, 150);
-                    $imagick->readImage($fullPath);
+                    $converter = new \App\Services\CloudConverter();
+                    $files = $converter->convertToImages($fullPath, $ext);
 
-                    foreach ($imagick as $index => $page) {
-                        $page->setImageFormat("png");
-                        $page->writeImage($outputDir . "/page_" . ($index + 1) . ".png");
+                    if (!$files || !is_array($files)) {
+                        throw new \RuntimeException("Cloud conversion failed for $file");
                     }
 
-                    $imagick->clear();
-                    $imagick->destroy();
-                } catch (\Exception $e) {
-                    dd("PDF → Image conversion failed", $e->getMessage());
-                }
+                    foreach ($files as $index => $cloudFile) {
+                        if (!isset($cloudFile['FileData'])) continue;
 
-                $existing = glob($outputDir . '/*.png');
-            }
+                        $imageData = base64_decode($cloudFile['FileData']);
+                        if (!$imageData) continue;
 
-            $pages = [];
-            foreach ($existing as $img) {
-                $pages[] = str_replace(storage_path('app/public/'), 'storage/', $img);
-            }
+                        $savePath = $outputDir . "/page_" . ($index + 1) . ".png";
+                        file_put_contents($savePath, $imageData);
 
-            $converted = $pages;
-            $convertedType = 'slides';
-        }
-
-        // ============================
-        // DOC/DOCX → PDF → IMAGES
-        // ============================
-        if (in_array($ext, ['doc', 'docx'])) {
-            $tempPdfDir = storage_path('app/public/converted/docx_pdf/');
-            if (!is_dir($tempPdfDir)) mkdir($tempPdfDir, 0777, true);
-
-            $pdfPath = $tempPdfDir . pathinfo($file, PATHINFO_FILENAME) . ".pdf";
-
-            // Convert DOCX → PDF via LibreOffice
-            if (!file_exists($pdfPath)) {
-                $cmd = $soffice . " --headless --convert-to pdf --outdir \"$tempPdfDir\" \"$fullPath\"";
-                exec($cmd . " 2>&1", $output, $result);
-                if ($result !== 0) dd("DOCX → PDF conversion failed", $cmd, $output);
-            }
-
-            // Convert PDF → IMAGES
-            $outputDir = storage_path('app/public/converted/docx_images/' . pathinfo($file, PATHINFO_FILENAME));
-            if (!is_dir($outputDir)) mkdir($outputDir, 0777, true);
-
-            $existing = glob($outputDir . '/*.png');
-
-            if (count($existing) === 0) {
-                try {
-                    $imagick = new Imagick();
-                    $imagick->setResolution(150, 150);
-                    $imagick->readImage($pdfPath);
-
-                    foreach ($imagick as $index => $page) {
-                        $page->setImageFormat("png");
-                        $page->writeImage($outputDir . "/page_" . ($index + 1) . ".png");
+                        $converted[] = str_replace(
+                            storage_path('app/public/'),
+                            'storage/',
+                            $savePath
+                        );
                     }
 
-                    $imagick->clear();
-                    $imagick->destroy();
-                } catch (\Exception $e) {
-                    dd("DOCX PDF → Image conversion failed", $e->getMessage());
+                    $convertedType = 'slides';
+                } catch (\Throwable $e) {
+                    dd("Cloud conversion error: " . $e->getMessage());
                 }
-
-                $existing = glob($outputDir . '/*.png');
             }
-
-            $pages = [];
-            foreach ($existing as $img) {
-                $pages[] = str_replace(storage_path('app/public/'), 'storage/', $img);
-            }
-
-            $converted = $pages;
-            $convertedType = 'slides';
         }
 
-        // ============================
-        // IMAGES + VIDEO (direct)
-        // ============================
-        if (in_array($ext, ['jpg', 'jpeg', 'png', 'gif', 'webp', 'mp4', 'mov', 'webm'])) {
-            return view('pages.teacher.resources.view', compact('resource', 'file', 'ext', 'converted', 'convertedType'));
+        // ------------------ Direct images & videos ------------------
+        $directExts = ['jpg', 'jpeg', 'png', 'gif', 'webp', 'mp4', 'mov', 'webm'];
+        if (in_array($ext, $directExts)) {
+            return view('pages.teacher.resources.view', compact(
+                'resource',
+                'file',
+                'ext',
+                'converted',
+                'convertedType'
+            ));
         }
 
-        return view('pages.teacher.resources.view', compact('resource', 'file', 'ext', 'converted', 'convertedType'));
+        return view('pages.teacher.resources.view', compact(
+            'resource',
+            'file',
+            'ext',
+            'converted',
+            'convertedType'
+        ));
     }
 }

@@ -7,6 +7,12 @@
     "require": {
         "php": "^8.1",
         "ext-gd": "*",
+        "aspose-cloud/aspose-words-cloud": "^25.11",
+        "aspose/pdf": "^24.6",
+        "aspose/pdf-sdk-php": "^25.9",
+        "aspose/slides": "^25.9",
+        "aspose/slides-sdk-php": "^25.10",
+        "aspose/words-sdk-php": "^25.11",
         "guzzlehttp/guzzle": "^7.2",
         "laravel/framework": "^10.10",
         "laravel/sanctum": "^3.3",
@@ -70,5 +76,11 @@
         }
     },
     "minimum-stability": "stable",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "repositories": {
+        "aspose-pdf": {
+            "type": "vcs",
+            "url": "https://github.com/aspose-pdf-cloud/aspose-pdf-cloud-php"
+        }
+    }
 }

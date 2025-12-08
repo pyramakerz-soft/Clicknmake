@@ -1,5 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8"?><Search><pages Count="3"><page Index="1"><![CDATA[ﻢﻴﻤﺼﺘﻟا قﺎﻄﻧ                                                                         ﻊﺑاﺮﻟا ﻞﺼﻔﻟا
-                                                                    ﺎﻬﺘﻳﺎﻤﺣو تﺎﻧﻮﻜﻤﻟا ﻦﻴﻣﺎﺗ | لوﻷا سرﺪﻟا
+﻿<?xml version="1.0" encoding="utf-8"?><Search><pages Count="3"><page Index="1"><![CDATA[Robotics Domain                                          Bluetooth connected.
+                                                                                                 LESSON 01
+              Chapter 02                                                                         LESSON 01
 
 
 
@@ -7,33 +8,33 @@
 
 
 
-                                                                     :قﻼﻄﻧﻻا ﺔﻄﻘﻧ
-                                                                     :قﻼﻄﻧﻻا ﺔﻄﻘﻧ
 
+             Stepping Stone:
+              Stepping Stone:
 
 
 
-                              …ﻰﻠﻋ اردﺎﻗ نﻮﻜﺘﺳ                                   …فﺮﻌﺗ نأ ﺐﺠﻳ
+                You need to know …                         You will be able to…
 
 
+                        Understanding of basic                      Identifying the correct pins for
+                        electronic components.
+                                                                    connecting the Bluetooth module to
+                        Writing simple Arduino                      the Arduino.
+                        sketches (code).                            Writing code to initialize and
+                                                                    communicate with the Bluetooth
+                        Basic knowledge of digital and
+                        analog pins.                                module.
+                                                                    Sending and receiving data via
+                        Basic understanding of what                 Bluetooth.
+                        Bluetooth is and how it works.
 
-                   ةﺪﺣو ﻞﻴﺻﻮﺘﻟ ﺔﺒﺳﺎﻨﻤﻟا ﺬﻓﺎﻨﻤﻟا ﻰﻠﻋ فﺮﻌﺘﻟا         تﺎﻧﻮﻜﻤﻠﻟ ﺔﻴﺳﺎﺳﻷا ئدﺎﺒﻤﻟا بﺎﻌﻴﺘﺳا
-                                   .ﻮﻨﻳودرﻷا حﻮﻠﺑ ثﻮﺗﻮﻠﺒﻟا                               .ﺔﻴﻧوﺮﺘﻜﻟﻹا
-                                                                        ﺔﻴﻤﻗﺮﻟا ﺬﻓﺎﻨﻤﻟا تﺎﻴﺳﺎﺳﺄﺑ مﺎﻤﻟإ
-                   .ثﻮﺗﻮﻠﺒﻟا ﺮﺒﻋ ﺎﻬﻟﺎﺳرإو تﺎﻧﺎﻴﺒﻟا ﻞﻘﻧ ﻦﻴﻜﻤﺗ
-                                                                                         .ﺔﻳﺮﻇﺎﻨﺘﻟاو
-                     ثﻮﺗﻮﻠﺒﻟا ةﺪﺣو ﺔﺌﻴﻬﺘﻟ مزﻼﻟا دﻮﻜﻟا ﺔﺠﻣﺮﺑ
-                                                                        حﻮﻠﻟ ﺔﻄﻴﺴﺑ داﻮﻛأ ﺔﺑﺎﺘﻛو داﺪﻋإ
-                                         .ﺎﻬﻌﻣ ﻞﻋﺎﻔﺘﻟاو
-                                                                                           .ﻮﻨﻳودرﻷا
-                                                                       ﺔﻴﻟآو ثﻮﺗﻮﻠﺒﻟا ﺔﻔﻴﻇﻮﻟ مﺎﻋ ﻢﻬﻓ
-                                                                                             .ﻪﻠﻤﻋ
 
+                 Adam
+                Our oater isn't working as expected. We’ve
+                checked all the connections, but it's still not
+                responding through the application.
 
-                                                                                                       مدآ
-                                                                    .بﻮﻠﻄﻤﻟا ﻞﻜﺸﻟﺎﺑ ﻞﻤﻌﻳ ﻻ ﺎﻨﺑ صﺎﺨﻟا ﻢﺋﺎﻌﻟا جذﻮﻤﻨﻟا
-                                                                    ﻖﻓاﻮﺘﻣ ﺮﻴﻏ لاﺰﻳ ﻻ ﻪﻨﻜﻟ ،تﻼﻴﺻﻮﺘﻟا ﻊﻴﻤﺟ ﺺﺤﻔﺑ ﺎﻨﻤﻗ
-                                                                                                 .ﻖﻴﺒﻄﺘﻟا ﻊﻣ
 
 
 
@@ -49,106 +50,107 @@
 
 
 
+                                                                  This is because we still missing a step. The
+                                                                  oater won't respond to commands without
+                                                                  a proper connection between the Arduino
+                                                                  and the mobile application.
 
 
-                  .ﺪﻌﺑ تاﻮﻄﺨﻟا ﻊﻴﻤﺟ ﻞﻤﻜﻧ ﻢﻟ ﺎﻨﻧأ ﻮﻫ ﻚﻟذ ﻲﻓ ﺐﺒﺴﻟا
-                     نود ﺮﻣاوﻸﻟ ﺔﺑﺎﺠﺘﺳﻻا ﻦﻣ ﻢﺋﺎﻌﻟا جذﻮﻤﻨﻟا ﻦﻜﻤﺘﻳ ﻦﻟ
-                 .لﻮﻤﺤﻤﻟا ﻖﻴﺒﻄﺘﻟاو ﻮﻨﻳودرﻷا حﻮﻟ ﻦﻴﺑ لﺎﻌﻓ لﺎﺼﺗا ءﺎﺸﻧإ
+                                                             What innovative possibilities can be
+                                                             unlocked by using Bluetooth module in
+                     let's                                   Arduino projects, and how can this
+                     let's
+                                                             transform everyday objects into
+                                                             smart devices?
+                   Think                                     . .........................................................................................................................
+                   Think
 
 
+                                                             . .........................................................................................................................
 
-                 ماﺪﺨﺘﺳا ﺎﻬﺤﻴﺘﻳ ﻲﺘﻟا ﺔﻳرﺎﻜﺘﺑﻻا صﺮﻔﻟا ﻲﻫ ﺎﻣ
-                   ﻒﻴﻛو ،ﻮﻨﻳودرﻷا ﻊﻳرﺎﺸﻣ ﻲﻓ ثﻮﺗﻮﻠﺒﻟا ةﺪﺣو
-                                                                                         ﺎﻴﻫ
-                 ﺔﻳدﺎﻌﻟا تاودﻷا ﻞﻳﻮﺤﺗ ﻰﻟإ ﻚﻟذ يدﺆﻳ نأ ﻦﻜﻤﻳ                               ﺎﻴﻫ
-                                             ؟ﺔﻴﻛذ ةﺰﻬﺟأ ﻰﻟإ                                ّ َ ّ َ
-                                                                                       ﺮـ ِ ﻜﻔُﻧ ُ
-                                                                                       ّّ
-                                                              . .........................................................................................................................  ﺮـ ِ ﻜﻔﻧ
 
-                                                              . .........................................................................................................................
 
 
 
+                                                         48]]></page><page Index="2"><![CDATA[Explore
+                                  Explore
 
 
-                                                         48]]></page><page Index="2"><![CDATA[ﻒ ِ ﺸﻜﺘﺴﻧ ﺎﻴﻫ
-                                                ﻒ ِ ﺸﻜﺘﺴﻧ ﺎﻴﻫ
-                                                                                      ّ َ ّ َ
-                                                  ْْ
 
 
 
 
 
 
+                                                                              Watch it..       Interfacing of Bluetooth
+                                                                              Watch it..
+                                                                                               module with Arduino
+                                                                              Follow this link:
+                  Do your search for how you can
+                  connect Bluetooth module and write
+                                                                               https://youtu.be/qip6e92TqNo?si=
+                  the code for that.                                           Wv1XzDCXSQv4GmvJ
+                                                                                                Scan Here!
 
 
-                                   Interfacing of Bluetooth
-                                   module with Arduino
 
-                                                         ثﻮﺗﻮﻠﺒﻟا ةﺪﺣو ﻞﻴﺻﻮﺗ ﺔﻴﻔﻴﻛ ﻦﻋ ﺚﺤﺑا
+                                   Assessment
+                                    Assessment
 
-                   https://youtu.be/qip6e92TqNo?si=                .ﻚﻟﺬﻟ ﺔﻴﺠﻣﺮﺒﻟا ةﺮﻔﺸﻟا ﺐﺘﻛاو
-                   Wv1XzDCXSQv4GmvJ
-                                    ﻲﺗﻻا دﻮﻜﻟا ﺢﺴﻤﺑ ﻢﻗ
 
 
 
-                                                  ﻢﻴﻴﻘﺘﻟا
-                                                  ﻢﻴﻴﻘﺘﻟا
 
 
+               Focus
+               Focus
 
 
+                1.  What is the primary purpose               2.  Which of the following is a
+                   of a Bluetooth module in an                   common Bluetooth module used
+                   Arduino project?                              with Arduino?
 
-                                                                                                 ﺰــﻛر
-                                                                                                 ﺰــﻛر
+                   A.  To provide internet connectivity.          A.  HC-05.
+                   B.  To enable wireless communication.          B.  ESP8266.
+                   C.  To power the Arduino board.                C.  NRF24L01.
+                   D.  To store data.                             D.  MPU6050.
 
 
 
-                     ﺔﻌﺋﺎﺷ ثﻮﺗﻮﻠﺑ ةﺪﺣو ﻲﻫ ﻲﻠﻳ ﺎﻤﻣ يأ      .2               ةﺪﺣو ﻦﻣ ﻲﺴﻴﺋﺮﻟا ضﺮﻐﻟا ﻮﻫ ﺎﻣ      .1
-                              ؟ﻮﻨﻳودرﻷا حﻮﻟ ﻊﻣ ماﺪﺨﺘﺳﻻا                      ؟ﻮﻨﻳودرأ عوﺮﺸﻣ ﻲﻓ ثﻮﺗﻮﻠﺒﻟا
 
-                                              HC-05    أ(                       .ﺖﻧﺮﺘﻧﻹﺎﺑ لﺎﺼﺗا ﺮﻴﻓﻮﺘﻟ    أ(
-                                            ESP8266  ب(                     .ﻲﻜﻠﺳﻼﻟا لﺎﺼﺗﻻا ﻦﻴﻜﻤﺘﻟ  ب(
 
-                                          NRF24L01  ج(                           .ﻮﻨﻳودرﻷا حﻮﻟ ﻞﻴﻐﺸﺘﻟ  ج(
-                                          MPU6050  د(                                   .تﺎﻧﺎﻴﺒﻟا ﻦﻳﺰﺨﺘﻟ  د(
 
+                                                     Name:
+                                                                         Showcase
+                                                     Project: . . ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... .. ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ...
+                                                       . . ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... .. . ... .. . .. .. . ... ... ... . .. ... ... ... ... .. . ... .. . ... . .. ... ... ... ... ... ... ... ...
+                                                     Ask
+                                                           Imagine
+                Now go to the
+                improve part in your                Improve  Plan
+                EDP paper and add                                        Test the oater
+                this enhancement                    Create
+                                                                               in water
 
 
 
+                      Now I can…
 
-                                                                        Name:  . . ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... .. ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ...  Project:
-                        ضوﺮﻌﻤﻟا جذﻮﻤﻨﻟا                           Imagine  . . ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... .. . ... .. . .. .. . ... ... ... . .. ... ... ... ... .. . ... .. . ... . .. ... ... ... ... ... ... ... ...  Ask
-                                                                                          ناﻮﻨﻌﺑ ءﺰﺠﻟا ﻰﻟإ نﻵا ﻞﻘﺘﻧا
-                                                                        Improve              ﺔﻴﻠﻤﻋ ﺔﻗرو ﻲﻓ "رﻮﻃ"
-                                                                  Plan
-                                                                                               ﻲﺳﺪﻨﻬﻟا ﻢﻴﻤﺼﺘﻟا
-                          ﻢﺋﺎﻌﻟا جذﻮﻤﻨﻟا ﺮﺒﺘﺧا                           Create               .ﻦﻴﺴﺤﺘﻟا اﺬﻫ ﻒﺿأو
-                         ءﺎﻤﻟا ﻲﻓ ﻚﺑ صﺎﺨﻟا
 
 
 
+                           Connect Bluetooth module to Arduino board
 
-                                                                                ...ﻲﻨﻨﻜﻤﻳ نﻵا
+                           and write the code.
 
 
 
 
-                  .ﺔﻴﺠﻣﺮﺒﻟا ةﺮﻔﺸﻟا ﺔﺑﺎﺘﻛو ﻮﻨﻳودرﻷا حﻮﻠﺑ ثﻮﺗﻮﻠﺒﻟا ةﺪﺣو ﻞﻴﺻﻮﺗ
 
 
 
+                                                         49]]></page><page Index="3"><![CDATA[Create your Story
 
-
-
-
-
-
-
-                                                         49]]></page><page Index="3"><![CDATA[ﻚﺘﺼﻗ ﺊﺸﻧأ
 
 
 

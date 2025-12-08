@@ -1,1 +1,1 @@
-﻿positionForPages[5]={page:5,positions:[{word:"CREATE YOUR STORY",left:0.259628,top:0.091176,width:0.480731,height:0.036907}]};
+﻿positionForPages[5]={page:5,positions:[{word:"36",left:0.474342,top:0.955484,width:0.035113,height:0.018047},{word:"And the winners for the science fair are laila ",left:0.182612,top:0.156623,width:0.621525,height:0.021650},{word:"and Adam for their smart re truck project.",left:0.182612,top:0.179881,width:0.608259,height:0.021649}]};
