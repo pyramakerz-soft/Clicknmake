@@ -357,17 +357,24 @@ class TeacherResources extends Controller
         $converted = [];
         $convertedType = null;
 
-        $outputDir = storage_path('app/public/converted/' . $name);
+        // ---------- Save conversions inside public/converted/... ----------
+        $outputDir = public_path('converted/' . $name);
         if (!is_dir($outputDir)) mkdir($outputDir, 0777, true);
 
-        // ------------------ Cloud Conversion ------------------
+        // ---------- Cloud Conversion ----------
         $cloudExts = ['pdf', 'ppt', 'pptx', 'doc', 'docx'];
         if (in_array($ext, $cloudExts)) {
-            // If already converted, skip
+
+            // If already converted -> load
             $existing = glob($outputDir . '/*.png');
             if (count($existing) > 0) {
                 foreach ($existing as $img) {
-                    $converted[] = str_replace(storage_path('app/public/'), 'storage/', $img);
+                    // Return as /converted/filename.png
+                    $relative = str_replace(public_path(), '', $img);
+                    $relative = str_replace('\\', '/', $relative);
+                    $relative = ltrim($relative, '/');
+
+                    $converted[] = $relative;
                 }
                 $convertedType = 'slides';
             } else {
@@ -388,11 +395,11 @@ class TeacherResources extends Controller
                         $savePath = $outputDir . "/page_" . ($index + 1) . ".png";
                         file_put_contents($savePath, $imageData);
 
-                        $converted[] = str_replace(
-                            storage_path('app/public/'),
-                            'storage/',
-                            $savePath
-                        );
+                        $relative = str_replace(public_path(), '', $savePath);
+                        $relative = str_replace('\\', '/', $relative);   // convert \ to /
+                        $relative = ltrim($relative, '/');               // remove leading slash
+
+                        $converted[] = $relative;
                     }
 
                     $convertedType = 'slides';
@@ -402,7 +409,7 @@ class TeacherResources extends Controller
             }
         }
 
-        // ------------------ Direct images & videos ------------------
+        // ---------- Direct images and videos ----------
         $directExts = ['jpg', 'jpeg', 'png', 'gif', 'webp', 'mp4', 'mov', 'webm'];
         if (in_array($ext, $directExts)) {
             return view('pages.teacher.resources.view', compact(
