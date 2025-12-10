@@ -82,18 +82,13 @@ class ObserverController extends Controller
 
         $request->validate([
             'name' => 'required|string',
-            'username' => [
-                'required',
-                'regex:/^[\p{Arabic}A-Za-z][\p{Arabic}A-Za-z0-9_ ]*$/u',
-                Rule::unique('observers')->ignore($student->id),
-            ],
             'gender' => 'required|string',
             'password' => 'required|string|confirmed|min:6',
         ]);
 
         $student->update([
             'name' => $request->input('name'),
-            'username' => $request->input('username'),
+            // 'username' => $request->input('username'),
             'gender' => $request->input('gender'),
             'password' => Hash::make($request->password)
         ]);
