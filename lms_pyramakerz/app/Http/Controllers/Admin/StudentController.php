@@ -177,6 +177,7 @@ class StudentController extends Controller
     public function destroy(string $id)
     {
         $student = Student::findOrFail($id);
+        dd($student);
         \Log::info('Students deleted by user: ' . auth()->user()->name . ' at ' . now() . ' with IDs: ' . implode(', ', $student));
         $student->delete();
         return redirect()->back()->with('success', 'Student deleted successfully.');

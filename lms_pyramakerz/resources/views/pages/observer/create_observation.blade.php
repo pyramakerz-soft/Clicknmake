@@ -73,9 +73,25 @@
             <form action="{{ route('observation.store') }}" id="obsform" method="POST" enctype="multipart/form-data"
                 class="mb-4 flex" style="gap:10px; padding:10px" id="observation_form">
                 @csrf
+                <input type="hidden" id="old_teacher_id" value="{{ old('teacher_id') }}">
+                <input type="hidden" id="old_school_id" value="{{ old('school_id') }}">
+                <input type="hidden" id="old_city_id" value="{{ old('city_id') }}">
+                <input type="hidden" id="old_grade_id" value="{{ old('grade_id') }}">
+                <input type="hidden" id="old_coteacher_id" value="{{ old('coteacher_id') }}">
+
                 <input type="hidden" name="template_id" value="{{ $selectedTemplateId }}">
 
                 <div class="questions mb-3" style="max-width: 65%;">
+                @if ($errors->any())
+                    <div class="mb-4 p-4 bg-red-100 border border-red-400 text-red-700 rounded">
+                        <strong>There were some problems with your submission:</strong>
+                        <ul class="mt-2 list-disc list-inside">
+                            @foreach ($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                @endif
                     @foreach ($headers as $header)
                         <h1 class="text-lg font-semibold text-[#667085] mb-4" style="font-size:24px">{{ $header->header }}
                         </h1>
@@ -88,11 +104,14 @@
                                 <div class="flex items-center space-x-6">
                                     @for ($i = 1; $i <= $question->max_rate; $i++)
                                         <div class="flex flex-col items-center ml-3">
-                                            <input type="radio" id="{{ $question->id . '-' . $i }}"
-                                                name="question-{{ $question->id }}" value="{{ $i }}"
-                                                class="custom-radio" required>
-                                            <label for="{{ $question->id . '-' . $i }}"
-                                                class="text-sm text-gray-700 mt-1">{{ $i }}</label>
+                                            <input type="radio"
+                                                id="{{ $question->id . '-' . $i }}"
+                                                name="question-{{ $question->id }}"
+                                                value="{{ $i }}"
+                                                class="custom-radio"
+                                                required
+                                                {{ old('question-'.$question->id) == $i ? 'checked' : '' }}>
+                                            <label for="{{ $question->id . '-' . $i }}" class="text-sm text-gray-700 mt-1">{{ $i }}</label>
                                         </div>
                                     @endfor
                                 </div>
@@ -105,7 +124,7 @@
                         improvement, and recommendations for professional development</h3>
                     <textarea name="note" placeholder="Enter your comments here..."
                         class="w-full mb-3 p-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-black focus:border-black"
-                        rows="4"></textarea>
+                        rows="4">{{ old('note') }}</textarea>
 
                     <button type="submit" id="submit-button" class="mt-2 text-white hover:bg-blue-700 px-4 py-2 rounded-lg"
                         style="background-color: #17253e;">Create Observation</button>
@@ -116,7 +135,7 @@
                             <label for="observation_name" class="block text-sm font-medium text-gray-700">Observation
                                 Name</label>
                             <input class="w-full p-2 border border-gray-300 rounded" type="text" name="observation_name"
-                                required>
+                                value="{{ old('observation_name') }}" required>
                         </div>
                         <div class="mb-3">
                             <label for="observer" class="block text-sm font-medium text-gray-700">Observer Username</label>
@@ -132,7 +151,9 @@
                                 required>
                                 <option value="">Select Teacher</option>
                                 @foreach ($teachers as $teacher)
-                                    <option value="{{ $teacher->id }}">{{ $teacher->name }}</option>
+                                    <option value="{{ $teacher->id }}" {{ old('teacher_id') == $teacher->id ? 'selected' : '' }}>
+                                        {{ $teacher->name }}
+                                    </option>
                                 @endforeach
                             </select>
                         </div>
@@ -166,27 +187,24 @@
                             <select name="grade_id" id="grade_id" class="w-full p-2 border border-gray-300 rounded"
                                 required>
                                 <option value="" disabled selected>Select Grade</option>
-                                @foreach ($grades as $grade)
-                                    <option value="{{ $grade->id }}">{{ $grade->name }}</option>
-                                @endforeach
                             </select>
                         </div>
                         <div class="mb-3">
                             <label for="lesson_segment" class="block text-sm font-medium text-gray-700">Subject
                                 Area(Multiselect)</label>
-                            <select class="w-full p-2 border border-gray-300 rounded" name="lesson_segment[]"
-                                id="lesson_segment" multiple required style="overflow: hidden;">
-                                <option value="Beginning">Beginning</option>
-                                <option value="Middle">Middle</option>
-                                <option value="End">End</option>
+                            <select class="w-full p-2 border border-gray-300 rounded" name="lesson_segment[]" id="lesson_segment" multiple required style="overflow: hidden;">
+                                <option value="Beginning" {{ collect(old('lesson_segment'))->contains('Beginning') ? 'selected' : '' }}>Beginning</option>
+                                <option value="Middle" {{ collect(old('lesson_segment'))->contains('Middle') ? 'selected' : '' }}>Middle</option>
+                                <option value="End" {{ collect(old('lesson_segment'))->contains('End') ? 'selected' : '' }}>End</option>
                             </select>
                         </div>
 
                         <div class="mb-3">
                             <label for="date" class="block text-sm font-medium text-gray-700">Date of
                                 Observation</label>
-                            <input type="date" name="date" required
-                                class="w-full p-2 border border-gray-300 rounded">
+                            <input type="date" name="date"
+                                class="w-full p-2 border border-gray-300 rounded"
+                                value="{{ old('date') }}" required>
                         </div>
                     </div>
                 </div>
@@ -273,156 +291,144 @@
             }
         });
     </script> --}}
-    <script>
-        $(document).ready(function() {
-            function updateOptions(selectedValue, selectToUpdate) {
-                // Enable all options first
-                $(`#${selectToUpdate} option`).prop("disabled", false);
+   <script>
+$(document).ready(function() {
+    // Retrieve previous values from hidden inputs
+    var oldTeacherId = $('#old_teacher_id').val();
+    var oldCoTeacherId = $('#old_coteacher_id').val();
+    var oldSchoolId = $('#old_school_id').val();
+    var oldCityId = $('#old_city_id').val();
+    var oldGradeId = $('#old_grade_id').val();
 
-                // Disable the matching option in the other select
-                if (selectedValue) {
-                    $(`#${selectToUpdate} option[value="${selectedValue}"]`)
-                        .prop("disabled", true)
-                        .addClass("dim-option");
-                }
-            }
+    function updateOptions(selectedValue, selectToUpdate) {
+        // Enable all options first
+        $(`#${selectToUpdate} option`).prop("disabled", false).removeClass("dim-option");
 
-            // Trigger getProgramsByGroup on group change
-            $("#teacher_id").change(function() {
-                var teacherId = $("#teacher_id").val();
-                updateOptions(teacherId, "coteacher_id"); // Update coteacher dropdown
-                getSchool(teacherId);
-            });
+        // Disable the matching option in the other select
+        if (selectedValue) {
+            $(`#${selectToUpdate} option[value="${selectedValue}"]`)
+                .prop("disabled", true)
+                .addClass("dim-option");
+        }
+    }
 
-            $("#coteacher_id").change(function() {
-                var coteacherId = $("#coteacher_id").val();
-                updateOptions(coteacherId, "teacher_id"); // Update teacher dropdown
-            });
+    // Trigger getSchool and getStages on teacher change
+    $("#teacher_id").change(function() {
+        var teacherId = $(this).val();
+        updateOptions(teacherId, "coteacher_id"); // Update coteacher dropdown
+        getSchool(teacherId, oldSchoolId, oldCityId); // Pass old values
+        getStages(teacherId, oldGradeId);
+    });
 
-            // Trigger change on page load to fetch programs for the selected group
-            $("#teacher_id").trigger("change");
+    $("#coteacher_id").change(function() {
+        var coteacherId = $(this).val();
+        updateOptions(coteacherId, "teacher_id"); // Update teacher dropdown
+    });
 
-            // Update city select when school is selected
-            $("select[name='school_id']").change(function() {
-                var selectedSchool = $(this).find(":selected");
-                var schoolCity = selectedSchool.data("city"); // Retrieve the city from the data attribute
-                var citySelect = $("select[name='city_id']");
+    // Trigger change on page load
+    if (oldTeacherId) {
+        $("#teacher_id").val(oldTeacherId).trigger("change");
+    } else {
+        $("#teacher_id").trigger("change");
+    }
 
-                citySelect.empty(); // Clear existing city options
-                if (schoolCity) {
-                    citySelect.append(
-                        '<option value="' + schoolCity + '" selected>' + schoolCity + '</option>'
-                    );
-                }
-            });
-        });
+    // School -> City & Co-teacher
+    $("select[name='school_id']").change(function() {
+        var selectedSchool = $(this).find(":selected");
+        var schoolCity = selectedSchool.data("city");
+        var citySelect = $("select[name='city_id']");
 
-        function getSchool(teacherId) {
+        citySelect.empty();
+        if (schoolCity) {
+            citySelect.append(
+                '<option value="' + schoolCity + '" selected>' + schoolCity + '</option>'
+            );
+        }
+
+        // Load co-teachers
+        var schoolId = $(this).val();
+        var coteacherSelect = $("select[name='coteacher_id']");
+        if (schoolId) {
             $.ajax({
-                url: '/LMS/lms_pyramakerz/public/observer/observation/get_school/' + teacherId,
-                // url: "/observer/observation/get_school/" + teacherId,
+                url: '/LMS/lms_pyramakerz/public/observer/observation/get_coteachers/' + schoolId,
                 type: "GET",
                 dataType: "json",
                 success: function(data) {
-                    // Clear the existing options
-                    $("select[name='school_id']").empty();
-
-                    if (data.error) {
-                        $("select[name='school_id']").append(
-                            '<option value="" selected disabled>' + data.error + "</option>"
-                        );
-                    } else {
-                        // Loop through each school and append them to the school_id dropdown
-                        $("select[name='school_id']").append(
-                            '<option value="" selected disabled>Select School</option>'
-                        );
-                        data.forEach(function(school) {
-                            $("select[name='school_id']").append(
-                                '<option value="' +
-                                school.id +
-                                '" data-city="' +
-                                school.city +
-                                '">' +
-                                school.name +
-                                "</option>"
+                    coteacherSelect.empty().append('<option value="">None</option>');
+                    if (data.length > 0) {
+                        $.each(data, function(key, value) {
+                            var selected = oldCoTeacherId == value.id ? 'selected' : '';
+                            coteacherSelect.append(
+                                '<option value="' + value.id + '" ' + selected + '>' + value.name + '</option>'
                             );
                         });
+                    } else {
+                        coteacherSelect.append('<option value="" disabled>No Co-Teachers Available</option>');
                     }
                 },
                 error: function(xhr, status, error) {
                     console.error("AJAX Error:", error);
-                },
-            });
-        }
-
-        function getStages(teacherId) {
-            $.ajax({
-                url: '/LMS/lms_pyramakerz/public/observer/observation/get_stages/' + teacherId,
-                // url: '/observer/observation/get_stages/' + teacherId,
-                type: "GET",
-                dataType: "json",
-                success: function(data) {
-                    console.log(data);
-                    // Clear the existing options
-                    $('select[name="grade_id"]').empty();
-                    if (!data || data.length === 0) {
-                        $('select[name="grade_id"]').append(
-                            '<option value="" selected disabled>No Available School</option>'
-                        );
-                    } else {
-                        $.each(data, function(key, value) {
-                            $('select[name="grade_id"]').append(
-                                '<option value="' + value.id + '">' + value.name + '</option>'
-                            );
-                        });
-
-                    }
-                },
-                error: function(xhr, status, error) {
-                    console.error('AJAX Error:', error);
                 }
             });
         }
-    </script>
-    <script>
-        $(document).ready(function() {
-            $("select[name='school_id']").change(function() {
-                var schoolId = $(this).val();
-                var coteacherSelect = $("select[name='coteacher_id']");
+    });
 
-                if (schoolId) {
-                    $.ajax({
-                        url: '/LMS/lms_pyramakerz/public/observer/observation/get_coteachers/' + schoolId,
-                        // url: "/observer/observation/get_coteachers/" + schoolId,
-                        type: "GET",
-                        dataType: "json",
-                        success: function(data) {
-                            coteacherSelect.empty();
-                            coteacherSelect.append(
-                                '<option value="">Select Co-Teacher</option>');
+    // Functions to fetch schools & stages
+    function getSchool(teacherId, oldSchoolId = null, oldCityId = null) {
+        $.ajax({
+            url: '/LMS/lms_pyramakerz/public/observer/observation/get_school/' + teacherId,
+            type: "GET",
+            dataType: "json",
+            success: function(data) {
+                var schoolSelect = $("select[name='school_id']");
+                schoolSelect.empty();
 
-                            if (data.length > 0) {
-                                $.each(data, function(key, value) {
-                                    coteacherSelect.append(
-                                        '<option value="' + value.id + '">' + value
-                                        .name + '</option>'
-                                    );
-                                });
-                            } else {
-                                coteacherSelect.append(
-                                    '<option value="" disabled>No Co-Teachers Available</option>'
-                                );
-                            }
-                        },
-                        error: function(xhr, status, error) {
-                            console.error("AJAX Error:", error);
-                        }
-                    });
+                if (data.error) {
+                    schoolSelect.append('<option value="" selected disabled>' + data.error + '</option>');
                 } else {
-                    coteacherSelect.empty();
-                    coteacherSelect.append('<option value="">Select Co-Teacher</option>');
+                    schoolSelect.append('<option value="" selected disabled>Select School</option>');
+                    data.forEach(function(school) {
+                        var selected = oldSchoolId == school.id ? 'selected' : '';
+                        schoolSelect.append(
+                            '<option value="' + school.id + '" data-city="' + school.city + '" ' + selected + '>' + school.name + '</option>'
+                        );
+                    });
+                    // Trigger change to populate city & coteacher
+                    if (oldSchoolId) schoolSelect.trigger('change');
                 }
-            });
+            },
+            error: function(xhr, status, error) {
+                console.error("AJAX Error:", error);
+            },
         });
-    </script>
+    }
+
+    function getStages(teacherId, oldGradeId = null) {
+        $.ajax({
+            url: '/LMS/lms_pyramakerz/public/observer/observation/get_stages/' + teacherId,
+            type: "GET",
+            dataType: "json",
+            success: function(data) {
+                var gradeSelect = $('select[name="grade_id"]');
+                gradeSelect.empty();
+                if (!data || data.length === 0) {
+                    gradeSelect.append('<option value="" selected disabled>No Available School</option>');
+                } else {
+                    $.each(data, function(key, value) {
+                        var selected = oldGradeId == value.id ? 'selected' : '';
+                        gradeSelect.append(
+                            '<option value="' + value.id + '" ' + selected + '>' + value.name + '</option>'
+                        );
+                    });
+                }
+            },
+            error: function(xhr, status, error) {
+                console.error('AJAX Error:', error);
+            }
+        });
+    }
+
+});
+</script>
+
 @endsection

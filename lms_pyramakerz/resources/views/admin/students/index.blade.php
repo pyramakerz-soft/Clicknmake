@@ -92,15 +92,9 @@
                                                         class="btn btn-info">Edit</a>
                                                 @endcan
                                                 @can('delete student')
-                                                    <form action="{{ route('students.destroy', $student->id) }}" method="POST"
-                                                        style="display:inline-block;">
-                                                        @csrf
-                                                        @method('DELETE')
-                                                        <button type="submit" class="btn btn-danger"
-                                                            onclick="return confirm('Are you sure you want to delete this student?');">
-                                                            Delete
-                                                        </button>
-                                                    </form>
+                                                    <button type="button" class="btn btn-danger single-delete-btn" data-student-id="{{ $student->id }}">
+                                                        Delete
+                                                    </button>
                                                 @endcan
                                             </td>
                                         </tr>
@@ -353,6 +347,39 @@ $(document).ready(function () {
             });
         }
     });
+
+    // 🔹 Handle single student delete using the same deleteMultipleForm
+    $('.single-delete-btn').on('click', function () {
+        let studentId = $(this).data('student-id');
+
+        // Use the existing deleteMultipleForm
+        let $form = $('#deleteMultipleForm');
+
+        // Remove any previous student_ids inputs
+        $form.find('input[name="student_ids"]').remove();
+
+        // Add the single student ID
+        $('<input>').attr({
+            type: 'hidden',
+            name: 'student_ids[]',
+            value: studentId
+        }).appendTo($form);
+
+        // Trigger submit with confirmation
+        Swal.fire({
+            title: "Delete Student?",
+            text: "Are you sure you want to delete this student?",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonText: "Yes, Delete",
+            cancelButtonText: "Cancel"
+        }).then((result) => {
+            if (result.isConfirmed) {
+                $form.submit();
+            }
+        });
+    });
+
 });
 </script>
 

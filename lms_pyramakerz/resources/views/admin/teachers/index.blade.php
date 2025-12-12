@@ -65,16 +65,22 @@
                     </div>
 
                     <form id="filterForm" action="{{ route('teachers.index') }}" method="GET"
-                        class="d-flex justify-content-evenly mb-3">
-                        <select name="school" id="school" class="form-select w-25">
-                            <option disabled selected hidden>Filter By School</option>
-                            @foreach ($schools as $school)
-                                <option value="{{ $school->id }}"
-                                    {{ request('school') == $school->id ? 'selected' : '' }}>
-                                    {{ $school->name }}
-                                </option>
-                            @endforeach
-                        </select>
+                        class="d-flex mb-3" style="justify-content: space-between;">
+
+                        <div class="d-flex gap-2">
+                            <input type="text" name="search" class="form-control w-50"
+                                placeholder="Search by teacher name..."
+                                value="{{ request('search') }}">
+                            <select name="school" id="school" class="form-select w-50">
+                                <option disabled selected hidden>Filter By School</option>
+                                @foreach ($schools as $school)
+                                    <option value="{{ $school->id }}"
+                                        {{ request('school') == $school->id ? 'selected' : '' }}>
+                                        {{ $school->name }}
+                                    </option>
+                                @endforeach
+                            </select>
+                        </div>           
                         <a class="btn btn-secondary" href="{{ route('teachers.index') }}">Clear</a>
                     </form>
 

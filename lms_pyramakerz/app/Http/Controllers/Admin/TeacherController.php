@@ -19,14 +19,16 @@ class TeacherController extends Controller
      */
     public function index(Request $request)
     {
-        // $this->updateTeacherNames();
-
         $teacherQuery = Teacher::with('school')->whereNull('alias_id');
 
         $schools = School::all();
 
-        if ($request->has('school') && $request->school != null) {
+        if ($request->filled('school')) {
             $teacherQuery->where('school_id', $request->school);
+        }
+
+        if ($request->filled('search')) {
+            $teacherQuery->where('name', 'LIKE', '%' . $request->search . '%');
         }
 
         $teachers = $teacherQuery->paginate(10)->appends($request->query());
