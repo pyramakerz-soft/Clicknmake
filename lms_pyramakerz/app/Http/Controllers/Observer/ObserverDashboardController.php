@@ -30,18 +30,29 @@ class ObserverDashboardController extends Controller
         // dd($request->all());
         $observer = Auth::guard('observer')->user();
         // dd($observer);
-        $teachers = Teacher::with('school')->whereNull('alias_id')->get();
+        $teachers = Teacher::with('school')->withTrashed()->whereNull('alias_id')->get();
         $schools = School::all();
         $cities = School::distinct()->whereNotNull('city')->pluck('city');
         $observers = Observer::all();
         $stages = Stage::all();
         $templates = ObservationTemplate::all();
         // $query = Observation::where('observer_id', $observer->id);
-        $query = Observation::with(['school', 'subject', 'stage', 'teacher', 'observer', 'histories.observation_question'])
-            ->where('observer_id', $observer->id);
+        // $query = Observation::with(['school', 'subject', 'stage', 'teacher', 'observer', 'histories.observation_question'])
+        //     ->where('observer_id', $observer->id);
+
+        $query = Observation::with([
+            'school',
+            'subject',
+            'stage',
+            'observer',
+            'histories.observation_question',
+            'teacher' => function ($q) {
+                $q->withTrashed();
+            }
+        ])->where('observer_id', $observer->id);
 
         if ($request->filled('teacher_id')) {
-            $teacherIds = Teacher::where('id', $request->teacher_id)
+            $teacherIds = Teacher::withTrashed()->where('id', $request->teacher_id)
                 ->orWhere('alias_id', $request->teacher_id)->pluck('id');
             $query->whereIn('teacher_id', $teacherIds);
         }
